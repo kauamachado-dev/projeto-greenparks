@@ -43,16 +43,3 @@ nav {
     margin-left: 32px;
 }
 
-#titulo1{
-    margin-top: -450px;
-    font-size: clamp(5.75em, 1em + 7vw, 10.5em);
-    font-family: Arial white;
-}
-
-img{
-    width: 100%;
-}
-
-#titulo2{
-    margin-top: 400;
-}
