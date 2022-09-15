@@ -1,6 +1,7 @@
 
 /* INICIO - CORPO DO SITE */
 body {
+    background-color: #ffffff;
     overflow-x: hidden;
     height: 4000px;
 }
@@ -73,6 +74,51 @@ img{
 }
 
 #titulo2{
-    margin-top: 400;
+    margin-top: -740px;
+    position: absolute;
+    top: 40%;
+    left: 790px;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
 /* FINAL - TÍTULO RESPONSIVO */
+
+#sobrenos{
+    margin-top: 100px;
+    width: 50%;
+    height: 110vh;
+}
+
+#titulo3{
+    margin-top: 100px;
+    position: absolute;
+    top: 40%;
+    left: 130px;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 5vw, 10.5em);
+}
+
+#aula{
+    margin-top: 250px;
+    position: absolute;
+    right: 0%;
+    width: 50%;
+    height: 110vh;
+}
+
+#titulo4{
+    margin-top: 150px;
+    position: absolute;
+    top: 387vh;
+    right: 10%;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 5vw, 10.5em);
+}
+
+#evento{
+    margin-top: 180vh;
+    position: absolute;
+    left: 0%;
+    width: 50%;
+    height: 110vh;
+}
