@@ -1,9 +1,11 @@
 body {
     overflow-x: hidden;
-    height: 4000px;
+    height: 600px;
+    width: 100%;
+ 
 }
 
-* {
+/* * {
     margin: 0;
     padding: 0;
 }
@@ -31,6 +33,7 @@ nav {
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     background: #5bb318;
     height: 13vh;
+    margin-top: 0%;
 }
 
 .nav-list {
@@ -41,4 +44,68 @@ nav {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+} */
+
+/* Campos formulario */  
+
+ *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+   font-size: arial;
+}
+/*Alinhando os campos */
+body{
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    align-items: right;
+    justify-content: right;
+}
+
+/* Largura do formulário */
+ form{
+    width: 100%;
+    max-width: 350px; 
+    margin-top: 5%;
+    margin-right: 20%;
+ }
+
+ /* Largura dos campos */
+div.single-input{
+    width: 110%;
+    margin: 25px 0; 
+    position: relative;
+}
+/* TEXTO */
+div.single-input label{
+    font-size: 18px;
+    position: absolute;
+    left: 0;
+    bottom: 33px;
+    color: #128013;
+    cursor: text;
+    transition: 0.3s ease-in-out;
+}
+/* BARRA E TEXTO DAS INFORMAÇÕES */
+div.single-input .input{
+    width: 100%;
+    padding: 10px;
+    color: #000000;
+    border: 0;
+    border-bottom: 4px solid #5BB318;
+    outline: 0;
+    font-size: 12px;
+}
+/* BARRA NA TRANSIÇÃO */
+div.single-input .input:focus,
+div.single-input .input:valid{
+    border-bottom: 2px solid #128013;
+}
+/* TEXTO NA TRANSIÇÃO */
+div.single-input .input:focus ~ label,
+div.single-input .input:valid ~ label{
+    transform: translateY(-24px);
+    font-size: 16px;
+    color: #128013;
 }
