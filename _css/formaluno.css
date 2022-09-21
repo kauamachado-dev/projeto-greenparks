@@ -119,9 +119,27 @@ div.single-input .input:valid ~ label{
    padding: 10px;
    font-weight: bold;
 }
-    .btn-1{
-        background-color: #FFE60B;
-    }
-    .btn-2{
-        background-color: #7DCE13;
-    }
+.btn1{
+    float: right; 
+    border:1px solid;
+    padding: 11px 21px;
+    background:#5BB318;
+    color:white;
+    border-radius:20px;
+    font-size: 20px;
+    font-family: arial, helvetica;
+    text-decoration:none;
+    vertical-align: middle;
+ } 
+
+  .btn2{
+    float:left;
+    border:1px solid;
+    padding: 13px 40px;
+    background: #FFE60B;
+    color:white;
+    border-radius:20px;
+    font-size: 20px;
+    font-family: Arial, helvetica;
+    text-decoration:none;
+  }
