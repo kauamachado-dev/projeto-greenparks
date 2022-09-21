@@ -109,3 +109,19 @@ div.single-input .input:valid ~ label{
     font-size: 16px;
     color: #128013;
 }
+
+.btn{
+   font-size: 18px;
+   font-family: Arial, Helvetica, sans-serif;
+   text-align: center;
+   margin-bottom: 30px;
+   display: block;
+   padding: 10px;
+   font-weight: bold;
+}
+    .btn-1{
+        background-color: #FFE60B;
+    }
+    .btn-2{
+        background-color: #7DCE13;
+    }
