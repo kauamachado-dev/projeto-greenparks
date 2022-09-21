@@ -1,0 +1,50 @@
+/* INICIO - CORPO DO SITE */
+body {
+    background-color: #ffffff;
+    overflow-x: hidden;
+    height: 4000px;
+}
+/* FINAL - CORPO DO SITE */
+/* INICIO - ALL */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* FINAL - ALL */
+/* INICIO - LETRAS DO MENU DE NAVEGAÇÃO */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+/* INICIO - LOGO MENU DE NAVEGAÇÃO */
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+/* FINAL - LOGO MENU DE NAVEGAÇÃO */
+/* INICIO - MENU DE NAVEGAÇÃO */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #5bb318;
+    height: 13vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+/* FINAL - MENU DE NAVEGAÇÃO */
