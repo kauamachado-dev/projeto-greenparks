@@ -1,11 +1,14 @@
 <?php
 
 $hostname = "localhost";
-$bancodedados = "db_greenparks";
+$dbname = "db_greenparks";
 $usuario = "root";
 $senha = "";
 
-$mysqli = new mysqli($hostname, $usuario, $senha, $bancodedados);
-if ($mysqli ->connect_errno) {
-    echo "Falha ao conectar: (" . $mysqli->connect_errno . ") " . $mysqli->connect_error
-}
+
+    $conexao = mysqli_connect($hostname, $usuario, $senha, $dbname);
+    if(!$conexao){
+        die("Houve um erro: ".mysqli_connect_error());
+    }
+
+?>
