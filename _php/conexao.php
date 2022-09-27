@@ -1,14 +1,26 @@
 <?php
 
-$hostname = "localhost";
-$dbname = "db_greenparks";
-$usuario = "root";
-$senha = "";
+    $host = "localhost";
+    $usuario = "root";
+    $senha = "";
+    $dataBase = "greenpark";
 
+    global $pdo;
 
-    $conexao = mysqli_connect($hostname, $usuario, $senha, $dbname);
-    if(!$conexao){
-        die("Houve um erro: ".mysqli_connect_error());
+    //CONEXÃO A BANCO
+    $conn = mysqli_connect($host, $usuario, $senha, $dataBase);
+    
+    if($conn->connect_errno){
+        echo "Falha na conexão: (" . $conn->connect_errno . ")" . $conn->connect_error;
+    }   
+
+    //CONEXÃO PDO
+    try{  
+        $cpdo = new PDO("mysql::host=$host;dbname=" . $dataBase, $usuario, $senha);           
+    //Conexão realizada, se não...
     }
 
+    catch(PDOException $err){
+        echo "Erro: Conexão ao banco de dados falhou!";
+    }
 ?>
