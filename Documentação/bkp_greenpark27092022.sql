@@ -1,6 +1,6 @@
 -- MariaDB dump 10.19  Distrib 10.4.24-MariaDB, for Win64 (AMD64)
 --
--- Host: localhost    Database: greenpark
+-- Host: localhost    Database: greenparks
 -- ------------------------------------------------------
 -- Server version	10.4.24-MariaDB
 
@@ -154,6 +154,7 @@ CREATE TABLE `responsavel` (
 
 LOCK TABLES `responsavel` WRITE;
 /*!40000 ALTER TABLE `responsavel` DISABLE KEYS */;
+INSERT INTO `responsavel` VALUES (1,'Thiago Thomas Araújo',0),(2,'Carolina rosa Freitas',0),(3,'Jaqueline Hernandes Baptista',0),(4,'Michael Roberto da Silva',0),(5,'Maria Carolina Fernandes',0),(6,'Jorge Gabriel de Souza',0);
 /*!40000 ALTER TABLE `responsavel` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -212,7 +213,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Marcele','2009-06-10','marcele.dutra@geradornv.com.br','(43) 99205-2454 ','485.860.166-83   ','hKz=BWy07@G',1,0),(2,'Rosiméri','2005-07-12','rosimeri.souza@geradornv.com.br','(43) 96781-1358 ','771.877.469-46','tJdsTvG+*VNN',1,0),(3,'Douglas','2006-10-06','douglas.almeida@geradornv.com.br','(43) 98230-1546','349.464.319-93','AIZgbvvugQO7',1,0),(4,'Joana','2005-08-26','joana.franca@geradornv.com.br','(43) 97105-3285','315.011.579-57','3TACsD**6073',1,0),(5,'Caio','2009-08-27','caio.padua@geradornv.com.br','(43) 98636-6748','622.166.799-25','_UcKkUKctWjC',1,0),(6,'Adson','2007-11-15','adson.guerini@geradornv.com.br','(43) 98515-6256','453.871.109-89','5TYu0gYS_N(G',1,0),(7,'Evelyn','1992-08-22','evelyn.branco@geradornv.com.br','(43) 96788-7887','510.266.609-63','GS#LW)r0+u6*',2,0),(8,'Raimundo','1996-01-25','raimundo.campelo@geradornv.com.br','(43) 98753-2667','305.838.329-03','auOvU@Rn9TWB',2,0),(9,'ADM','2000-09-15','greenpower.adm@gmail.com','43 956689253','155.040.196-60   ','green123',0,0);
+INSERT INTO `usuario` VALUES (1,'Marcele Antonia Baptista','2009-06-10','marcele.dutra@geradornv.com.br','(43) 99205-2454 ','485.860.166-83   ','hKz=BWy07@G',1,3),(2,'Rosiméri Radgonda da Silva','2005-07-12','rosimeri.souza@geradornv.com.br','(43) 96781-1358 ','771.877.469-46','tJdsTvG+*VNN',1,4),(3,'Douglas Rodrigues Freitas','2006-10-06','douglas.almeida@geradornv.com.br','(43) 98230-1546','349.464.319-93','AIZgbvvugQO7',1,2),(4,'Joana Braganza Araújo','2005-08-26','joana.franca@geradornv.com.br','(43) 97105-3285','315.011.579-57','3TACsD**6073',1,1),(5,'Caio Henrique de Souza','2009-08-27','caio.padua@geradornv.com.br','(43) 98636-6748','622.166.799-25','_UcKkUKctWjC',1,6),(6,'Adson Matos Fernandes','2007-11-15','adson.guerini@geradornv.com.br','(43) 98515-6256','453.871.109-89','5TYu0gYS_N(G',1,5),(7,'Evelyn','1992-08-22','evelyn.branco@geradornv.com.br','(43) 96788-7887','510.266.609-63','GS#LW)r0+u6*',2,0),(8,'Raimundo','1996-01-25','raimundo.campelo@geradornv.com.br','(43) 98753-2667','305.838.329-03','auOvU@Rn9TWB',2,0),(9,'ADM','2000-09-15','greenpower.adm@gmail.com','43 956689253','155.040.196-60   ','green123',0,0);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -225,4 +226,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-26 17:23:54
+-- Dump completed on 2022-09-27 21:32:15
