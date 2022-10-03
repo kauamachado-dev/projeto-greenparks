@@ -127,7 +127,7 @@ img{
     font-size: 35px;
     padding: 11px 30px;
     margin-left: 1000px;
-    margin-top: -75xpx;
+    margin-top: -70px;
     position: absolute;
 }
 
@@ -137,7 +137,7 @@ img{
     margin-top: 260px;
     position: absolute;
     top: 40%;
-    left: 130px;
+    left: 66px;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
@@ -147,7 +147,7 @@ img{
     position: absolute;
     width: 300px;
     height: 5px;
-    margin-left: 9%;
+    margin-left: 5%;
     margin-top: 25%;
 }
 
@@ -160,13 +160,41 @@ img{
     height: 90vh;
 }
 
+/*TEXTO AULAS */
+.aulas{
+    font-family: 'Arimo';
+    margin-top: 1500px;
+    position: absolute;
+    top: 40%;
+    left: 68px;
+    text-align: left;
+    font-size: clamp(2.0em, 1em + 5vw, 1.0em);
+    line-height: 50px;
+}
+
+/* BOTÃO AULAS */
+.botao2{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFB200;
+    border-color: #FFB200;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 11px 30px;
+    margin-left: 450px;
+    margin-top: 800px;
+    position: absolute;
+}
+
+
 /* TÍTULO EVENTOS */
 #titulo4{
     font-family: 'Passion One';
-    margin-top: 80px;
+    margin-top: 75px;
     position: absolute;
     top: 387vh;
-    right: 20%;
+    margin-left: 50%;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
@@ -186,7 +214,34 @@ img{
     position: absolute;
     width: 350px;
     height: 5px;
-    margin-left: 59%;
+    margin-left: 50%;
     margin-top: 95%;
 }
 
+/* TEXTO DE DESCRIÇÃO EVENTOS */
+.eventos{
+    font-family: 'Arimo';
+    margin-top: 2450px;
+    position: absolute;
+    top: 40%;
+    left: 675px;
+    text-align: left;
+    font-size: clamp(2.0em, 1em + 5vw, 1.0em);
+    line-height: 50px;
+}
+
+
+/* BOTÃO EVENTOS */
+.botao3{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFB200;
+    border-color: #FFB200;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 11px 30px;
+    margin-left: 1000px;
+    margin-top: 1600px;
+    position: absolute;
+}
