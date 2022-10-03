@@ -9,8 +9,15 @@
             $sql->bindValue("senha, $senha");
             $sql->execute();
         }
-
     }
- 
-    
+    if($sql->rowCount() > 0){
+        $dado = $sql->fetch();
+
+        echo $dado['id_usuario'];
+
+         $_SESSION['idUser'] = $dado['id_usuario'];
+        return true;
+    }else{
+        return false;
+}    
 ?>
