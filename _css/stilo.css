@@ -71,56 +71,122 @@ img{
     top: 40%;
     left: 20%;
     text-align: center;
-    font-size: clamp(3.75em, 1em + 7vw, 10.5em);
+    font-size: clamp(3.75em, 1em + 10vw, 10.5em);
+    color: #09400A;
 }
 
+/* TÍTULO SOBRE NÓS */
 #titulo2{
-    font-family: 'PassionOne-Bold';
-    margin-top: -740px;
+    font-family: 'Passion One';
+    margin-top: -560px;
     position: absolute;
     top: 40%;
-    left: 790px;
+    left: 680px;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
 /* FINAL - TÍTULO RESPONSIVO */
 
+/* IMAGEM SOBRE NÓS */
 #sobrenos{
     margin-top: 100px;
-    width: 50%;
-    height: 110vh;
+    width: 40%;
+    height: 90vh;
 }
 
+/* LINHA ABAIXO DE SOBRE NÓS */
+.linha1{
+    background-color: #D62509;
+    position: absolute;
+    width: 450px;
+    height: 5px;
+    margin-left: 50%;
+    margin-top: -36%;
+}
+
+/* TEXTO DE DESCRIÇÃO SOBRE NÓS */
+.sobre{
+    font-family: 'Arimo';
+    margin-top: 685px;
+    position: absolute;
+    top: 40%;
+    left: 680px;
+    text-align: left;
+    font-size: clamp(2.0em, 1em + 5vw, 1.0em);
+    line-height: 50px;
+}
+
+/* BOTÃO SOBRE NÓS */
+.botao1{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFB200;
+    border-color: #FFB200;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 11px 30px;
+    margin-left: 1000px;
+    margin-top: -75xpx;
+    position: absolute;
+}
+
+/* TÍTULO AULAS */
 #titulo3{
-    margin-top: 100px;
+    font-family: 'Passion One';
+    margin-top: 260px;
     position: absolute;
     top: 40%;
     left: 130px;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
+/* LINHA ABAIXO DE AULAS */
+.linha2{
+    background-color: #D62509;
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    margin-left: 9%;
+    margin-top: 25%;
+}
 
+/* IMAGEM AULAS */
 #aula{
     margin-top: 250px;
     position: absolute;
     right: 0%;
-    width: 50%;
-    height: 110vh;
+    width: 40%;
+    height: 90vh;
 }
 
+/* TÍTULO EVENTOS */
 #titulo4{
-    margin-top: 150px;
+    font-family: 'Passion One';
+    margin-top: 80px;
     position: absolute;
     top: 387vh;
-    right: 10%;
+    right: 20%;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
 
+/* IMAGEM EVENTOS */
 #evento{
     margin-top: 180vh;
     position: absolute;
     left: 0%;
-    width: 50%;
-    height: 110vh;
+    width: 40%;
+    height: 90vh;
 }
+
+/* LINHA ABAIXO DE EVENTOS */
+.linha3{
+    background-color: #D62509;
+    position: absolute;
+    width: 350px;
+    height: 5px;
+    margin-left: 59%;
+    margin-top: 95%;
+}
+

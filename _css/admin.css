@@ -2,7 +2,7 @@
 body {
     background-color: #ffffff;
     overflow-x: hidden;
-    height: 500px;
+    height: 900px;
 }
 /* FINAL - CORPO DO SITE */
 /* INICIO - ALL */
@@ -50,56 +50,65 @@ nav {
 /* FINAL - MENU DE NAVEGAÇÃO */
 
 .titulo{
-    font-size: 100px;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    text-align: center;
+    font-size: 100px; /*tamanho da fonte*/
+    font-family: 'Passion One';
+    text-align: center; /*centraliza o títilo*/
 }
 
-/*INICIO - IMAGENS/BOTÕES*/
+/* INÍCIO - BOTÕES COM IMAGEM */
 .img1{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    border-radius: 50%;/*margem redonda*/
+    height: 200px; /*altura da imagem*/
+    width: 200px; /*largura da imagem*/
     margin-left: 15%;
     margin-top: 10%;
     position: absolute;
 }
 .img2{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    border-radius: 50%;/*margem redonda*/
+    height: 200px; /*altura da imagem*/
+    width: 200px; /*largura da imagem*/
     margin-left: 45%;
     margin-top: 10%;
     position: absolute;
 }
 .img3{
-    border-radius: 50%;
-    height: 200px;
-    width: 200px;
+    border-radius: 50%; /*margem redonda*/
+    height: 200px; /*altura da imagem*/
+    width: 200px; /*largura da imagem*/
     margin-left: 75%;
     margin-top: 10%;
     position: absolute;
 }
+/*FINAL - BOTÕES COM IMAGEM*/
+/*INÍCIO - TEXTO DE DESCRIÇÃO*/
 .texto1{
-    font-size: 50px;
-    margin-left: 18%;
-    margin-top: 25%;
-    position: absolute;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif
+    font-size: 50px; /*tamanho da fonte*/
+    margin-left: 18%; 
+    margin-top: 25%; 
+    position: absolute; 
+    font-family: 'Passion One';
 }
 .texto2{
-    font-size: 50px;
+    font-size: 50px; /*tamanho da fonte*/
     margin-left: 47%;
-    margin-top: 25%;
-    position: absolute;
-    font-family:system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin-top: 25%; 
+    position: absolute; 
+    font-family: 'Passion One';
 }
 .texto3{
-    font-size: 50px;
-    margin-left: 77%;
-    margin-top: 25%;
+    font-size: 50px; /*tamanho da fonte*/
+    margin-left: 77%; 
+    margin-top: 25%; 
     position: absolute;
-    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    font-family: 'Passion One';
 }
-
-/*FINAL - IMAGENS/BOTÕES*/
+/*FINAL - TEXTO DE DESCRIÇÃO*/
+/*INÍCIO LINHA VERMELHA*/
+.linha{
+    background-color:#d62509;/*cor da linha*/
+    width: 760px; /*tamanho/largura*/
+    height: 5px; /*altura/grossura da linha*/
+    margin-left: 22%;/*posição da linha*/
+}
+/*FINAL LINHA VERMELHA*/
