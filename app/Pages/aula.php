@@ -11,13 +11,13 @@
         <nav>
             <a class="logo" href="index.html">GREEN PARKS</a>
             <ul class="nav-list">
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="sobre.html">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="aula.html">AULAS</a></li> 
-                <li><a href="evento.html">EVENTOS</a></li>     
+                <li><a style="color: #ffe60b" href="index.html">INÍCIO</a></li>
+                <li><a href="app/Pages/sobre.html">SOBRE</a></li> 
+                <li><a href="app/Pages/aula.html">AULAS</a></li> 
+                <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
             </ul>
         </nav>
-    </header>
+    </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
 </body>
 </html>
