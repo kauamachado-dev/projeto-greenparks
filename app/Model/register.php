@@ -10,27 +10,27 @@ $username_err = $password_err = $confirm_password_err = "";
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
     // Validar nome de usuário
-    if(empty(trim($_POST["username"]))){
+    if(empty(trim($_POST["nome_usuario"]))){
         $username_err = "Por favor coloque um nome de usuário.";
-    } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["username"]))){
+    } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["nome_usuario"]))){
         $username_err = "O nome de usuário pode conter apenas letras, números e sublinhados.";
     } else{
         // Prepare uma declaração selecionada
-        $sql = "SELECT id FROM users WHERE username = :username";
+        $sql = "SELECT id_usuario FROM usuario WHERE nome_usuario = :nome_usuario";
         
         if($stmt = $pdo->prepare($sql)){
             // Vincule as variáveis à instrução preparada como parâmetros
-            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
+            $stmt->bindParam(":nome_usuario", $param_username, PDO::PARAM_STR);
             
             // Definir parâmetros
-            $param_username = trim($_POST["username"]);
+            $param_username = trim($_POST["nome_usuario"]);
             
             // Tente executar a declaração preparada
             if($stmt->execute()){
                 if($stmt->rowCount() == 1){
                     $username_err = "Este nome de usuário já está em uso.";
                 } else{
-                    $username = trim($_POST["username"]);
+                    $username = trim($_POST["nome_usuario"]);
                 }
             } else{
                 echo "Ops! Algo deu errado. Por favor, tente novamente mais tarde.";
@@ -42,12 +42,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     }
     
     // Validar senha
-    if(empty(trim($_POST["password"]))){
+    if(empty(trim($_POST["senha_usuario"]))){
         $password_err = "Por favor insira uma senha.";     
-    } elseif(strlen(trim($_POST["password"])) < 6){
+    } elseif(strlen(trim($_POST["senha_usuario"])) < 6){
         $password_err = "A senha deve ter pelo menos 6 caracteres.";
     } else{
-        $password = trim($_POST["password"]);
+        $password = trim($_POST["senha_usuario"]);
     }
     
     // Validar e confirmar a senha
@@ -64,12 +64,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
         
         // Prepare uma declaração de inserção
-        $sql = "INSERT INTO users (username, password) VALUES (:username, :password)";
+        $sql = "INSERT INTO usuario (nome_usuario, senha_usuario) VALUES (:nome_usuario, :senha_usuario)";
          
         if($stmt = $pdo->prepare($sql)){
             // Vincule as variáveis à instrução preparada como parâmetros
-            $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
-            $stmt->bindParam(":password", $param_password, PDO::PARAM_STR);
+            $stmt->bindParam(":nome_usuario", $param_username, PDO::PARAM_STR);
+            $stmt->bindParam(":senha_usuario", $param_password, PDO::PARAM_STR);
             
             // Definir parâmetros
             $param_username = $username;
@@ -111,12 +111,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Nome do usuário</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <input type="text" name="nome_usuario" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
             <div class="form-group">
                 <label>Senha</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+                <input type="password" name="senha_usuario" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">
