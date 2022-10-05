@@ -53,7 +53,7 @@ nav {
 /* ÍNICIO - PARALLAX */
 section{
     width: 100%;
-    height: 300px;
+    height: 170px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -64,8 +64,18 @@ background-image: url(images/teste.jpg);
 height: 600px;
 }
 /* FINAL - PARALLAX */
-/* INICIO - TÍTULO RESPONSIVO */
 
+/* ONDA ABAIXO DO PARALLAX */
+.onda1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 68%;
+}
+
+
+/* INICIO - TÍTULO RESPONSIVO */
 .titulo1{
     font-family: 'Passion One';
     position: absolute;
@@ -79,20 +89,14 @@ height: 600px;
 /* TÍTULO SOBRE NÓS */
 #titulo2{
     font-family: 'Passion One';
-    margin-top: -46%;
-    margin-left: 50%;
+    margin-top: -15%;
+    margin-left: 13%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
 /* FINAL - TÍTULO RESPONSIVO */
 
-/* IMAGEM SOBRE NÓS */
-#sobrenos{
-    margin-top: -10%;
-    width: 50%;
-    height: 15%;
-}
 
 /* LINHA ABAIXO DE SOBRE NÓS */
 .linha1{
@@ -100,8 +104,8 @@ height: 600px;
     position: absolute;
     width: 450px;
     height: 5px;
-    margin-left: 50%;
-    margin-top: -63%;
+    margin-left: 13%;
+    margin-top: -22%;
 }
 
 /* TEXTO DE DESCRIÇÃO SOBRE NÓS */
@@ -109,10 +113,10 @@ height: 600px;
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    top: 40%;
-    left: 680px;
+    top: 13%;
+    left: 13%;
     text-align: left;
-    font-size: clamp(2.0em, 1em + 5vw, 1.0em);
+    font-size: clamp(1.5em, 1em + 5vw, 1.0em);
     line-height: 50px;
 }
 
@@ -125,11 +129,38 @@ height: 600px;
     border-color: #FFB200;
     border-radius: 7px;
     font-size: 35px;
-    padding: 11px 30px;
-    margin-left: 70%;
-    margin-top: -30%;
+    padding: 11px 20px;
+    margin-left: 30%;
+    margin-top: 10%;
     position: absolute;
 }
+
+/* ONDA ABAIXO DO SOBRE */
+.onda2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 195%;
+}
+
+
+/* PARALLAX ENTRE SOBRE E AULAS */
+section:nth-of-type(5){
+    background-image: url(images/teste.jpg);
+    height: 600px;
+    }
+
+
+/* ONDA ABAIXO DO SOBRE */
+.onda3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 200%;
+}
+
 
 /* TÍTULO AULAS */
 #titulo3{
@@ -165,8 +196,7 @@ height: 600px;
     margin-top: -20%;
     margin-left: 5%;
     position: absolute;
-    text-align: left;
-    font-size: clamp(2.0em, 1em + 5vw, 1.0em);
+    font-size: clamp(1.5em, 1em + 5vw, 1.0em);
     line-height: 50px;
 }
 
@@ -207,7 +237,7 @@ height: 600px;
 
 /* LINHA ABAIXO DE EVENTOS */
 .linha3{
-    background-color: rgb(75, 37, 214);
+    background-color: #D62509;
     position: absolute;
     width: 350px;
     height: 5px;
@@ -222,7 +252,7 @@ height: 600px;
     margin-left: 50%;
     position: absolute;
     text-align: left;
-    font-size: clamp(2.0em, 1em + 5vw, 1.0em);
+    font-size: clamp(1.5em, 1em + 5vw, 1.0em);
     line-height: 50px;
 }
 
