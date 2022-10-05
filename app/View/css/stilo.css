@@ -50,20 +50,20 @@ nav {
 }
 /* FINAL - MENU DE NAVEGAÇÃO */
 
-/* ÍNICIO - IMAGEM RESPONSIVA */
-.container{
-    width: 1550px;
-    margin: auto;
-    position: relative;
-}
-.container{
+/* ÍNICIO - PARALLAX */
+section{
     width: 100%;
+    height: 300px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
 }
-img{
-    max-width: 100%;
-    max-height: 100%;
+section:nth-of-type(1){
+background-image: url(images/teste.jpg);
+height: 600px;
 }
-/* FINAL - IMAGEM RESPONSIVA */
+/* FINAL - PARALLAX */
 /* INICIO - TÍTULO RESPONSIVO */
 
 .titulo1{
@@ -79,10 +79,9 @@ img{
 /* TÍTULO SOBRE NÓS */
 #titulo2{
     font-family: 'Passion One';
-    margin-top: -560px;
+    margin-top: -46%;
+    margin-left: 50%;
     position: absolute;
-    top: 40%;
-    left: 680px;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
@@ -90,9 +89,9 @@ img{
 
 /* IMAGEM SOBRE NÓS */
 #sobrenos{
-    margin-top: 100px;
-    width: 40%;
-    height: 90vh;
+    margin-top: -10%;
+    width: 50%;
+    height: 15%;
 }
 
 /* LINHA ABAIXO DE SOBRE NÓS */
@@ -102,7 +101,7 @@ img{
     width: 450px;
     height: 5px;
     margin-left: 50%;
-    margin-top: -36%;
+    margin-top: -63%;
 }
 
 /* TEXTO DE DESCRIÇÃO SOBRE NÓS */
@@ -127,18 +126,17 @@ img{
     border-radius: 7px;
     font-size: 35px;
     padding: 11px 30px;
-    margin-left: 1000px;
-    margin-top: -70px;
+    margin-left: 70%;
+    margin-top: -30%;
     position: absolute;
 }
 
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
-    margin-top: 260px;
+    margin-top: -5%;
+    margin-left: 5%;
     position: absolute;
-    top: 40%;
-    left: 66px;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
@@ -149,25 +147,24 @@ img{
     width: 300px;
     height: 5px;
     margin-left: 5%;
-    margin-top: 25%;
+    margin-top: -22%;
 }
 
 /* IMAGEM AULAS */
 #aula{
-    margin-top: 250px;
+    margin-top: -25%;
+    margin-left: 55%;
     position: absolute;
-    right: 0%;
-    width: 40%;
-    height: 90vh;
+    width: 50%;
+    height: 90%;
 }
 
 /*TEXTO AULAS */
 .aulas{
     font-family: 'Arimo';
-    margin-top: 1500px;
+    margin-top: -20%;
+    margin-left: 5%;
     position: absolute;
-    top: 40%;
-    left: 68px;
     text-align: left;
     font-size: clamp(2.0em, 1em + 5vw, 1.0em);
     line-height: 50px;
@@ -183,8 +180,8 @@ img{
     border-radius: 7px;
     font-size: 35px;
     padding: 11px 30px;
-    margin-left: 450px;
-    margin-top: 800px;
+    margin-left: 35%;
+    margin-top: 10%;
     position: absolute;
 }
 
@@ -192,21 +189,20 @@ img{
 /* TÍTULO EVENTOS */
 #titulo4{
     font-family: 'Passion One';
-    margin-top: 75px;
-    position: absolute;
-    top: 387vh;
+    margin-top: 39%;
     margin-left: 50%;
+    position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
 
 /* IMAGEM EVENTOS */
 #evento{
-    margin-top: 180vh;
+    margin-top: 40%;
+    margin-left: 0%;
     position: absolute;
-    left: 0%;
-    width: 40%;
-    height: 90vh;
+    width: 50%;
+    height: 100%;
 }
 
 /* LINHA ABAIXO DE EVENTOS */
@@ -216,16 +212,15 @@ img{
     width: 350px;
     height: 5px;
     margin-left: 50%;
-    margin-top: 95%;
+    margin-top: 44%;
 }
 
 /* TEXTO DE DESCRIÇÃO EVENTOS */
 .eventos{
     font-family: 'Arimo';
-    margin-top: 2450px;
+    margin-top: 46%;
+    margin-left: 50%;
     position: absolute;
-    top: 40%;
-    left: 675px;
     text-align: left;
     font-size: clamp(2.0em, 1em + 5vw, 1.0em);
     line-height: 50px;
