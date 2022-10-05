@@ -207,7 +207,7 @@ height: 600px;
 
 /* LINHA ABAIXO DE EVENTOS */
 .linha3{
-    background-color: #D62509;
+    background-color: rgb(75, 37, 214);
     position: absolute;
     width: 350px;
     height: 5px;
