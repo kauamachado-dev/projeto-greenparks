@@ -1,6 +1,6 @@
 -- MariaDB dump 10.19  Distrib 10.4.24-MariaDB, for Win64 (AMD64)
 --
--- Host: localhost    Database: greenparks
+-- Host: localhost    Database: greenpark
 -- ------------------------------------------------------
 -- Server version	10.4.24-MariaDB
 
@@ -28,7 +28,7 @@ CREATE TABLE `aula` (
   KEY `fk_usuario_aula` (`id_usuario`),
   KEY `fk_aula_oficina` (`id_oficina`),
   CONSTRAINT `fk_aula_oficina` FOREIGN KEY (`id_oficina`) REFERENCES `oficina` (`id_oficina`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_usuario_aula` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
+  CONSTRAINT `fk_aula_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
@@ -50,7 +50,7 @@ DROP TABLE IF EXISTS `endereco`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `endereco` (
-  `id_endereco` int(11) NOT NULL,
+  `id_endereco` int(11) NOT NULL AUTO_INCREMENT,
   `cep_endereco` varchar(20) NOT NULL,
   `bairro_endereco` varchar(50) NOT NULL,
   `rua_endereco` varchar(50) NOT NULL,
@@ -58,8 +58,8 @@ CREATE TABLE `endereco` (
   `id_usuario` int(11) NOT NULL,
   PRIMARY KEY (`id_endereco`),
   KEY `fk_usuario_id_usuario` (`id_usuario`),
-  CONSTRAINT `fk_usuario_id_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `fk_endereco_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -80,7 +80,7 @@ DROP TABLE IF EXISTS `eventos`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `eventos` (
-  `id_eventos` int(11) NOT NULL,
+  `id_eventos` int(11) NOT NULL AUTO_INCREMENT,
   `nome_enventos` varchar(100) NOT NULL,
   `data_eventos` date NOT NULL,
   `desc_eventos` varchar(250) NOT NULL,
@@ -88,7 +88,7 @@ CREATE TABLE `eventos` (
   PRIMARY KEY (`id_eventos`),
   KEY `fk_eventos_endereco` (`id_endereco`),
   CONSTRAINT `fk_eventos_endereco` FOREIGN KEY (`id_endereco`) REFERENCES `endereco` (`id_endereco`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -109,7 +109,7 @@ DROP TABLE IF EXISTS `oficina`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `oficina` (
-  `id_oficina` int(11) NOT NULL,
+  `id_oficina` int(11) NOT NULL AUTO_INCREMENT,
   `data_oficina` date NOT NULL,
   `horario_oficina` time NOT NULL,
   `desc_oficina` varchar(100) NOT NULL,
@@ -118,9 +118,9 @@ CREATE TABLE `oficina` (
   PRIMARY KEY (`id_oficina`),
   KEY `fk_usuario_id_endereco` (`id_endereco`),
   KEY `fk_usuario_oficina` (`id_usuario`),
-  CONSTRAINT `fk_usuario_id_endereco` FOREIGN KEY (`id_endereco`) REFERENCES `endereco` (`id_endereco`) ON DELETE NO ACTION ON UPDATE NO ACTION,
-  CONSTRAINT `fk_usuario_oficina` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+  CONSTRAINT `fk_oficina_endereco` FOREIGN KEY (`id_endereco`) REFERENCES `endereco` (`id_endereco`) ON DELETE NO ACTION ON UPDATE NO ACTION,
+  CONSTRAINT `fk_oficina_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
+) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -141,11 +141,11 @@ DROP TABLE IF EXISTS `responsavel`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `responsavel` (
-  `id_responsavel` int(11) NOT NULL,
+  `id_responsavel` int(11) NOT NULL AUTO_INCREMENT,
   `nome_responsavel` varchar(100) NOT NULL,
   `cpf_responsavel` int(20) NOT NULL,
   PRIMARY KEY (`id_responsavel`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -166,10 +166,10 @@ DROP TABLE IF EXISTS `tipo_usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `tipo_usuario` (
-  `id_tipo_usuario` int(11) NOT NULL,
+  `id_tipo_usuario` int(11) NOT NULL AUTO_INCREMENT,
   `descricao` varchar(45) NOT NULL,
   PRIMARY KEY (`id_tipo_usuario`)
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=4 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -178,7 +178,7 @@ CREATE TABLE `tipo_usuario` (
 
 LOCK TABLES `tipo_usuario` WRITE;
 /*!40000 ALTER TABLE `tipo_usuario` DISABLE KEYS */;
-INSERT INTO `tipo_usuario` VALUES (0,'adm'),(1,'aluno'),(2,'professor');
+INSERT INTO `tipo_usuario` VALUES (1,'adm'),(2,'professor'),(3,'aluno');
 /*!40000 ALTER TABLE `tipo_usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -190,7 +190,7 @@ DROP TABLE IF EXISTS `usuario`;
 /*!40101 SET @saved_cs_client     = @@character_set_client */;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `usuario` (
-  `id_usuario` int(11) NOT NULL,
+  `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
   `nome_usuario` varchar(100) NOT NULL,
   `nasc_usuario` date NOT NULL,
   `email_usuario` varchar(100) NOT NULL,
@@ -204,7 +204,7 @@ CREATE TABLE `usuario` (
   KEY `fk_usuario_responsavel` (`id_responsavel`),
   CONSTRAINT `fk_usuario_responsavel` FOREIGN KEY (`id_responsavel`) REFERENCES `responsavel` (`id_responsavel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_tipo_usuario` FOREIGN KEY (`id_tipo_usuario`) REFERENCES `tipo_usuario` (`id_tipo_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -226,4 +226,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-09-27 21:32:15
+-- Dump completed on 2022-10-06 15:26:29
