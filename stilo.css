@@ -1,0 +1,303 @@
+
+/* INICIO - CORPO DO SITE */
+body {
+    background-color: #ffffff;
+    
+    height: 3000px;
+}
+/* FINAL - CORPO DO SITE */
+/* INICIO - ALL */
+* {
+    margin: 0;
+    padding: 0;
+}
+/* FINAL - ALL */
+/* INICIO - LETRAS DO MENU DE NAVEGAÇÃO */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+/* INICIO - LOGO MENU DE NAVEGAÇÃO */
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+/* FINAL - LOGO MENU DE NAVEGAÇÃO */
+/* INICIO - MENU DE NAVEGAÇÃO */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Arimo', sans-serif;
+    background: #5bb318;
+    height: 13vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+/* FINAL - MENU DE NAVEGAÇÃO */
+
+/* ÍNICIO - PARALLAX */
+section{
+    width: 100%;
+    height: 165px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}
+section:nth-of-type(1){
+background-image: url(images/teste.jpg);
+height: 600px;
+}
+/* FINAL - PARALLAX */
+
+/* ONDA ABAIXO DO PARALLAX */
+.onda1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 63%;
+}
+
+
+/* INICIO - TÍTULO RESPONSIVO */
+.titulo1{
+    font-family: 'Passion One';
+    position: absolute;
+    top: 40%;
+    left: 20%;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 10vw, 10.5em);
+    color: #09400A;
+}
+
+/* TÍTULO SOBRE NÓS */
+#titulo2{
+    font-family: 'Passion One';
+    margin-top: -14%;
+    margin-left: 16%;
+    position: absolute;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 5vw, 10.5em);
+}
+/* FINAL - TÍTULO RESPONSIVO */
+
+
+/* LINHA ABAIXO DE SOBRE NÓS */
+.linha1{
+    background-color: #D62509;
+    position: absolute;
+    width: 450px;
+    height: 5px;
+    margin-left: 13%;
+    margin-top: -20%;
+}
+
+/* TEXTO DE DESCRIÇÃO SOBRE NÓS */
+.sobre{
+    font-family: 'Arimo';
+    margin-top: 685px;
+    position: absolute;
+    top: 13%;
+    left: 13%;
+    text-align: left;
+    font-size: clamp(1.5em, 1em + 5vw, 1.0em);
+    line-height: 50px;
+}
+
+/* BOTÃO SOBRE NÓS */
+.botao1{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFB200;
+    border-color: #FFB200;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 11px 20px;
+    margin-left: 32%;
+    margin-top: 10%;
+    position: absolute;
+}
+
+/* ONDA ABAIXO DO SOBRE */
+.onda2{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 160%;
+}
+
+/* <<<<<<< PARALLAX ENTRE SOBRE E AULAS >>>>>> */
+section:nth-of-type(5){
+    background-image: url(images/teste.jpg);
+    height: 10%;
+    }
+
+
+/* ONDA ACIMA AULAS */
+.onda3{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 165%;
+}
+
+
+
+/* TÍTULO AULAS */
+#titulo3{
+    font-family: 'Passion One';
+    margin-top: 9%;
+    margin-left: 70%;
+    position: absolute;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 5vw, 10.5em);
+}
+/* LINHA ABAIXO DE AULAS */
+.linha2{
+    background-color: #D62509;
+    position: absolute;
+    width: 255px;
+    height: 5px;
+    margin-left: 68%;
+    margin-top: -7%;
+}
+
+/* IMAGEM AULAS 
+#aula{
+    margin-top: -17%;
+    margin-left: 55%;
+    position: absolute;
+    width: 50%;
+    height: 90%;
+}*/
+
+/*TEXTO AULAS */
+.aulas{
+    font-family: 'Arimo';
+    margin-top: -5%;
+    margin-left: 62%;
+    position: absolute;
+    font-size: clamp(1.5em, 1em + 5vw, 1.0em);
+    line-height: 50px;
+}
+
+/* BOTÃO AULAS */
+.botao2{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFB200;
+    border-color: #FFB200;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 11px 30px;
+    margin-left: 82%;
+    margin-top: 25%;
+    position: absolute;
+}
+
+/* ONDA ABAIXO AULAS */
+.onda4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 253%;
+}
+
+/* <<<<<<< PARALLAX ENTRE AULAS E EVENTOS >>>>>> */
+section:nth-of-type(8){
+    background-image: url(images/teste.jpg);
+    height: 9.8%;
+    }
+
+
+
+/* ONDA ABAIXO AULAS */
+.onda5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 258%;
+}
+
+/* TÍTULO EVENTOS */
+#titulo4{
+    font-family: 'Passion One';
+    margin-top: -9%;
+    margin-left: 15%;
+    position: absolute;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 5vw, 10.5em);
+}
+
+/* IMAGEM EVENTOS 
+#evento{
+    margin-top: 40%;
+    margin-left: 0%;
+    position: absolute;
+    width: 50%;
+    height: 100%;
+}*/
+
+/* LINHA ABAIXO DE EVENTOS */
+.linha3{
+    background-color: #D62509;
+    position: absolute;
+    width: 347px;
+    height: 5px;
+    margin-left: 13%;
+    margin-top: -3%;
+}
+
+/* TEXTO DE DESCRIÇÃO EVENTOS */
+.eventos{
+    font-family: 'Arimo';
+    margin-top: -1%;
+    margin-left: 13%;
+    position: absolute;
+    text-align: left;
+    font-size: clamp(1.5em, 1em + 5vw, 1.0em);
+    line-height: 50px;
+}
+
+
+/* BOTÃO EVENTOS */
+.botao3{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFB200;
+    border-color: #FFB200;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 11px 30px;
+    margin-left: 35%;
+    margin-top: 18%;
+    position: absolute;
+}
+
+
+footer{
+    background-color: #09400A;
+}
