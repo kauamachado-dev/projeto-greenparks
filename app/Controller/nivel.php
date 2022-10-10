@@ -16,7 +16,7 @@ function NivelAdm() {
     }
 }
 
-// Nivel de acesso para o colaborador
+// Nivel de acesso para o professor
 function NivelProf() {
     if (!isset($_SESSION['id_usuario'])) {  // Se usuario não estiver logado
         header("location: ../../../index.php");
@@ -30,7 +30,7 @@ function NivelProf() {
     }
 }
 
-// Nivel de acesso para o colaborador
+// Nivel de acesso para o aluno
 function NivelAlun() {
     if (!isset($_SESSION['id_usuario'])) {  // Se usuario não estiver logado
         header("location: ../../../index.php");

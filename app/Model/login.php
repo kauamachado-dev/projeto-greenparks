@@ -1,91 +1,91 @@
 <?php
-// Inicialize a sessão
+// INICIA SESSÃO.
 session_start();
  
-// Verifique se o usuário já está logado, em caso afirmativo, redirecione-o para a página de boas-vindas
+// VERIFICA SE O USUÁRIO ESTÁ LOGADO, SE SIM, REDIRECIONA PARA PAGINA DE BEM VINDO.
 if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
     header("location: welcome.php");
     exit;
 }
  
-// Incluir arquivo de configuração
+// INCLUI ARQUIVO DE CONEXÃO.
 require_once "config.php";
  
-// Defina variáveis e inicialize com valores vazios
+// DEFINA AS VARIAVEIS E INICIA COMO VAZIAS.
 $username = $password = "";
 $username_err = $password_err = $login_err = "";
  
-// Processando dados do formulário quando o formulário é enviado
+// PROCESSA OS DADOS DO FORMULÁRIO, QUANDO O FORMULÁRIO É ENVIADO.
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
-    // Verifique se o nome de usuário está vazio
+    // VERIFICA SE O NOME DE USUÁRIO ESTÁ VAZIO.
     if(empty(trim($_POST["username"]))){
         $username_err = "Por favor, insira o nome de usuário.";
     } else{
         $username = trim($_POST["username"]);
     }
     
-    // Verifique se a senha está vazia
+    // VEREFICA SE A SENHA ESTÁ VAZIA
     if(empty(trim($_POST["password"]))){
         $password_err = "Por favor, insira sua senha.";
     } else{
         $password = trim($_POST["password"]);
     }
     
-    // Validar credenciais
+    // VALIDA AS CREDENCIAIS.
     if(empty($username_err) && empty($password_err)){
-        // Prepare uma declaração selecionada
+        // PREPARA UMA DECLARAÇÃO SELECIONADA.
         $sql = "SELECT id, username, password FROM users WHERE username = :username";
         
         if($stmt = $pdo->prepare($sql)){
-            // Vincule as variáveis à instrução preparada como parâmetros
+            // VINCULA AS VARIÁVEIS a INSTRUÇÃO PREPARADA COMO PARÂMETROS.
             $stmt->bindParam(":username", $param_username, PDO::PARAM_STR);
             
-            // Definir parâmetros
+            // DEFINE PARAMETROS.
             $param_username = trim($_POST["username"]);
             
             // Tente executar a declaração preparada
             if($stmt->execute()){
-                // Verifique se o nome de usuário existe, se sim, verifique a senha
+                // VERIFICA SE O NOME DE USUÁRIO EXISTE, SE SIM, VERIFICA A SENHA.
                 if($stmt->rowCount() == 1){
                     if($row = $stmt->fetch()){
                         $id = $row["id"];
                         $username = $row["username"];
                         $hashed_password = $row["password"];
                         if(password_verify($password, $hashed_password)){
-                            // A senha está correta, então inicie uma nova sessão
+                            // SENHA CORRETA, INICIA SESSÃO.
                             session_start();
                             
-                            // Armazene dados em variáveis de sessão
+                            // ARMAZENA DADOS EM VARIÁVEIS DE SESSÃO.
                             $_SESSION["loggedin"] = true;
                             $_SESSION["id"] = $id;
                             $_SESSION["username"] = $username;                            
                             
-                            // Redirecionar o usuário para a página de boas-vindas
+                            // REDIRECIONA O USUÁRIO PARA PÁGINA DE BEM VINDO.
                             header("location: welcome.php");
                         } else{
-                            // A senha não é válida, exibe uma mensagem de erro genérica
+                            // A SENHA É INVALIDA, EXIBE UMA MENSAGEM DE ERRO.
                             $login_err = "Nome de usuário ou senha inválidos.";
                         }
                     }
                 } else{
-                    // O nome de usuário não existe, exibe uma mensagem de erro genérica
+                    // O NOME DE USUÁRIO É INVALIDO, EXIBE MENSAGEM DE ERRO.
                     $login_err = "Nome de usuário ou senha inválidos.";
                 }
             } else{
                 echo "Ops! Algo deu errado. Por favor, tente novamente mais tarde.";
             }
 
-            // Fechar declaração
+            // FECHA DECLARAÇÃO.
             unset($stmt);
         }
     }
     
-    // Fechar conexão
+    // FECHA CONEXÃO.
     unset($pdo);
 }
 ?>
- 
+ <!-- HTML  --> 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
@@ -101,13 +101,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <div class="wrapper">
         <h2>Login</h2>
         <p>Por favor, preencha os campos para fazer o login.</p>
-
         <?php 
         if(!empty($login_err)){
             echo '<div class="alert alert-danger">' . $login_err . '</div>';
         }        
         ?>
-
+         <!-- FORMULÁRIO  --> 
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Nome do usuário</label>

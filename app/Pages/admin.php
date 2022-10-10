@@ -11,7 +11,7 @@
 </head>
 <body>
      <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
-     <<header>
+    <header>
         <nav>
             <a class="logo" href="index.html">GREEN PARKS</a>
             <ul class="nav-list">
@@ -22,7 +22,7 @@
             </ul>
         </nav>
     </header> 
-
+    <!--FINAL DO MENU DE NAVEGAÇÃO-->
     <div class="titulo">Área administrativa</div>
     <div class="linha"></div>
     <a href="aula.html">
