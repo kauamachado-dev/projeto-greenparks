@@ -2,7 +2,7 @@
 // Inicia a sessão em todas as paginas referente a essa
 session_start(); 
 
-// Nivel de acesso para o técnico
+// Nivel de acesso para o administrador
 function NivelAdm() {
    if (!isset($_SESSION['id_usuario'])) {  // Se usuario não estiver logado
         header("location: ../../../index.php");
@@ -17,7 +17,7 @@ function NivelAdm() {
 }
 
 // Nivel de acesso para o colaborador
-function Nivel() {
+function NivelProf() {
     if (!isset($_SESSION['id_usuario'])) {  // Se usuario não estiver logado
         header("location: ../../../index.php");
         exit;
@@ -31,7 +31,7 @@ function Nivel() {
 }
 
 // Nivel de acesso para o colaborador
-function Nivel() {
+function NivelAlun() {
     if (!isset($_SESSION['id_usuario'])) {  // Se usuario não estiver logado
         header("location: ../../../index.php");
         exit;
