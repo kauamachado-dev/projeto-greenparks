@@ -2,8 +2,8 @@
 /* INICIO - CORPO DO SITE */
 body {
     background-color: #ffffff;
-    overflow-x: hidden;
-    height: 4000px;
+    
+    height: 3000px;
 }
 /* FINAL - CORPO DO SITE */
 /* INICIO - ALL */
@@ -53,7 +53,7 @@ nav {
 /* ÍNICIO - PARALLAX */
 section{
     width: 100%;
-    height: 170px;
+    height: 165px;
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -71,7 +71,7 @@ height: 600px;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 68%;
+    top: 63%;
 }
 
 
@@ -89,8 +89,8 @@ height: 600px;
 /* TÍTULO SOBRE NÓS */
 #titulo2{
     font-family: 'Passion One';
-    margin-top: -15%;
-    margin-left: 13%;
+    margin-top: -14%;
+    margin-left: 16%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -105,7 +105,7 @@ height: 600px;
     width: 450px;
     height: 5px;
     margin-left: 13%;
-    margin-top: -22%;
+    margin-top: -20%;
 }
 
 /* TEXTO DE DESCRIÇÃO SOBRE NÓS */
@@ -130,7 +130,7 @@ height: 600px;
     border-radius: 7px;
     font-size: 35px;
     padding: 11px 20px;
-    margin-left: 30%;
+    margin-left: 32%;
     margin-top: 10%;
     position: absolute;
 }
@@ -141,32 +141,32 @@ height: 600px;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 195%;
+    top: 160%;
 }
 
-
-/* PARALLAX ENTRE SOBRE E AULAS */
+/* <<<<<<< PARALLAX ENTRE SOBRE E AULAS >>>>>> */
 section:nth-of-type(5){
     background-image: url(images/teste.jpg);
-    height: 600px;
+    height: 10%;
     }
 
 
-/* ONDA ABAIXO DO SOBRE */
+/* ONDA ACIMA AULAS */
 .onda3{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 200%;
+    top: 165%;
 }
+
 
 
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
-    margin-top: -5%;
-    margin-left: 5%;
+    margin-top: 9%;
+    margin-left: 70%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -175,26 +175,26 @@ section:nth-of-type(5){
 .linha2{
     background-color: #D62509;
     position: absolute;
-    width: 300px;
+    width: 255px;
     height: 5px;
-    margin-left: 5%;
-    margin-top: -22%;
+    margin-left: 68%;
+    margin-top: -7%;
 }
 
-/* IMAGEM AULAS */
+/* IMAGEM AULAS 
 #aula{
-    margin-top: -25%;
+    margin-top: -17%;
     margin-left: 55%;
     position: absolute;
     width: 50%;
     height: 90%;
-}
+}*/
 
 /*TEXTO AULAS */
 .aulas{
     font-family: 'Arimo';
-    margin-top: -20%;
-    margin-left: 5%;
+    margin-top: -5%;
+    margin-left: 62%;
     position: absolute;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
     line-height: 50px;
@@ -210,46 +210,71 @@ section:nth-of-type(5){
     border-radius: 7px;
     font-size: 35px;
     padding: 11px 30px;
-    margin-left: 35%;
-    margin-top: 10%;
+    margin-left: 82%;
+    margin-top: 25%;
     position: absolute;
 }
 
+/* ONDA ABAIXO AULAS */
+.onda4{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 253%;
+}
+
+/* <<<<<<< PARALLAX ENTRE AULAS E EVENTOS >>>>>> */
+section:nth-of-type(8){
+    background-image: url(images/teste.jpg);
+    height: 9.8%;
+    }
+
+
+
+/* ONDA ABAIXO AULAS */
+.onda5{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 258%;
+}
 
 /* TÍTULO EVENTOS */
 #titulo4{
     font-family: 'Passion One';
-    margin-top: 39%;
-    margin-left: 50%;
+    margin-top: -9%;
+    margin-left: 15%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
 }
 
-/* IMAGEM EVENTOS */
+/* IMAGEM EVENTOS 
 #evento{
     margin-top: 40%;
     margin-left: 0%;
     position: absolute;
     width: 50%;
     height: 100%;
-}
+}*/
 
 /* LINHA ABAIXO DE EVENTOS */
 .linha3{
     background-color: #D62509;
     position: absolute;
-    width: 350px;
+    width: 347px;
     height: 5px;
-    margin-left: 50%;
-    margin-top: 44%;
+    margin-left: 13%;
+    margin-top: -3%;
 }
 
 /* TEXTO DE DESCRIÇÃO EVENTOS */
 .eventos{
     font-family: 'Arimo';
-    margin-top: 46%;
-    margin-left: 50%;
+    margin-top: -1%;
+    margin-left: 13%;
     position: absolute;
     text-align: left;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
@@ -267,7 +292,12 @@ section:nth-of-type(5){
     border-radius: 7px;
     font-size: 35px;
     padding: 11px 30px;
-    margin-left: 1000px;
-    margin-top: 1600px;
+    margin-left: 35%;
+    margin-top: 18%;
     position: absolute;
+}
+
+
+footer{
+    background-color: #09400A;
 }
