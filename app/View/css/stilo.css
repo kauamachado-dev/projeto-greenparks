@@ -178,14 +178,25 @@ section:nth-of-type(5){
     margin-top: -8%;
 }
 
-/* IMAGEM AULAS 
-#aula{
-    margin-top: -17%;
-    margin-left: 55%;
-    position: absolute;
-    width: 50%;
-    height: 90%;
-}*/
+/* EFEITO CARROSSEL AULAS */
+.galery{
+    margin-top: -4%;
+    width: 600px;
+    height: 400px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.galery .fotos{
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img{
+    width: 19.9%;
+}
 
 /*TEXTO AULAS */
 .aulas{
@@ -218,7 +229,7 @@ section:nth-of-type(5){
     bottom: 0;
     left: 0;
     right: 0;
-    top: 275%;
+    top: 300%;
 }
 
 /* <<<<<<< PARALLAX ENTRE AULAS E EVENTOS >>>>>> */
@@ -235,7 +246,7 @@ section:nth-of-type(8){
     bottom: 0;
     left: 0;
     right: 0;
-    top: 280%;
+    top: 305%;
 }
 
 /* TÍTULO EVENTOS */
