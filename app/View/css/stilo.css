@@ -1,8 +1,15 @@
-
 /* INICIO - CORPO DO SITE */
 body {
     background-color: #ffffff;
+<<<<<<< HEAD
     
+=======
+<<<<<<< HEAD
+    
+=======
+
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     height: 3000px;
 }
 /* FINAL - CORPO DO SITE */
@@ -53,7 +60,15 @@ nav {
 /* ÍNICIO - PARALLAX */
 section{
     width: 100%;
+<<<<<<< HEAD
     height: 165px;
+=======
+<<<<<<< HEAD
+    height: 165px;
+=======
+    height: 143px;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -61,7 +76,7 @@ section{
 }
 section:nth-of-type(1){
 background-image: url(images/teste.jpg);
-height: 600px;
+height: 690px;
 }
 /* FINAL - PARALLAX */
 
@@ -71,7 +86,15 @@ height: 600px;
     bottom: 0;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     top: 63%;
+=======
+<<<<<<< HEAD
+    top: 63%;
+=======
+    top: 77%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 
@@ -89,8 +112,18 @@ height: 600px;
 /* TÍTULO SOBRE NÓS */
 #titulo2{
     font-family: 'Passion One';
+<<<<<<< HEAD
     margin-top: -14%;
     margin-left: 16%;
+=======
+<<<<<<< HEAD
+    margin-top: -14%;
+    margin-left: 16%;
+=======
+    margin-top: -18%;
+    margin-left: 10%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -104,8 +137,16 @@ height: 600px;
     position: absolute;
     width: 450px;
     height: 5px;
+<<<<<<< HEAD
     margin-left: 13%;
     margin-top: -20%;
+<<<<<<< HEAD
+=======
+=======
+    margin-left: 8%;
+    margin-top: -22%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 /* TEXTO DE DESCRIÇÃO SOBRE NÓS */
@@ -113,8 +154,8 @@ height: 600px;
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    top: 13%;
-    left: 13%;
+    top: 18%;
+    left: 8%;
     text-align: left;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
     line-height: 50px;
@@ -131,7 +172,14 @@ height: 600px;
     font-size: 35px;
     padding: 11px 20px;
     margin-left: 32%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     margin-top: 10%;
+=======
+    margin-top: 9%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
     position: absolute;
 }
 
@@ -141,13 +189,29 @@ height: 600px;
     bottom: 0;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     top: 160%;
+=======
+<<<<<<< HEAD
+    top: 160%;
+=======
+    top: 185%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 /* <<<<<<< PARALLAX ENTRE SOBRE E AULAS >>>>>> */
 section:nth-of-type(5){
     background-image: url(images/teste.jpg);
+<<<<<<< HEAD
     height: 10%;
+=======
+<<<<<<< HEAD
+    height: 10%;
+=======
+    height: 10.6%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     }
 
 
@@ -157,11 +221,23 @@ section:nth-of-type(5){
     bottom: 0;
     left: 0;
     right: 0;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     top: 165%;
 }
 
 
 
+<<<<<<< HEAD
+=======
+=======
+    top: 190%;
+}
+
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
@@ -178,6 +254,10 @@ section:nth-of-type(5){
     width: 255px;
     height: 5px;
     margin-left: 68%;
+<<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     margin-top: -7%;
 }
 
@@ -189,12 +269,49 @@ section:nth-of-type(5){
     width: 50%;
     height: 90%;
 }*/
+<<<<<<< HEAD
+=======
+=======
+    margin-top: -8%;
+}
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
+
+/* EFEITO CARROSSEL AULAS */
+.galery{
+    margin-top: -4%;
+    width: 600px;
+    height: 400px;
+    background-color: #ffffff;
+    overflow: hidden;
+}
+
+.galery .fotos{
+    width: 500%;
+    animation-name: animacao;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+}
+
+.galery .fotos img{
+    width: 19.9%;
+}
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
 
 /*TEXTO AULAS */
 .aulas{
     font-family: 'Arimo';
+<<<<<<< HEAD
     margin-top: -5%;
     margin-left: 62%;
+=======
+<<<<<<< HEAD
+    margin-top: -5%;
+    margin-left: 62%;
+=======
+    margin-top: -6%;
+    margin-left: 59%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
     line-height: 50px;
@@ -211,7 +328,15 @@ section:nth-of-type(5){
     font-size: 35px;
     padding: 11px 30px;
     margin-left: 82%;
+<<<<<<< HEAD
     margin-top: 25%;
+=======
+<<<<<<< HEAD
+    margin-top: 25%;
+=======
+    margin-top: 23%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
 }
 
@@ -221,31 +346,71 @@ section:nth-of-type(5){
     bottom: 0;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     top: 253%;
+=======
+<<<<<<< HEAD
+    top: 253%;
+=======
+    top: 300%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 /* <<<<<<< PARALLAX ENTRE AULAS E EVENTOS >>>>>> */
 section:nth-of-type(8){
     background-image: url(images/teste.jpg);
+<<<<<<< HEAD
     height: 9.8%;
+=======
+<<<<<<< HEAD
+    height: 9.8%;
+=======
+    height: 10%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     }
 
 
 
+<<<<<<< HEAD
 /* ONDA ABAIXO AULAS */
+=======
+<<<<<<< HEAD
+/* ONDA ABAIXO AULAS */
+=======
+/* ONDA ACIMA EVENTOS */
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 .onda5{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
+<<<<<<< HEAD
     top: 258%;
+=======
+<<<<<<< HEAD
+    top: 258%;
+=======
+    top: 305%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 /* TÍTULO EVENTOS */
 #titulo4{
     font-family: 'Passion One';
     margin-top: -9%;
+<<<<<<< HEAD
     margin-left: 15%;
+=======
+<<<<<<< HEAD
+    margin-left: 15%;
+=======
+    margin-left: 10%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -266,7 +431,15 @@ section:nth-of-type(8){
     position: absolute;
     width: 347px;
     height: 5px;
+<<<<<<< HEAD
     margin-left: 13%;
+=======
+<<<<<<< HEAD
+    margin-left: 13%;
+=======
+    margin-left: 8%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     margin-top: -3%;
 }
 
@@ -274,7 +447,15 @@ section:nth-of-type(8){
 .eventos{
     font-family: 'Arimo';
     margin-top: -1%;
+<<<<<<< HEAD
     margin-left: 13%;
+=======
+<<<<<<< HEAD
+    margin-left: 13%;
+=======
+    margin-left: 8%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
     text-align: left;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
@@ -292,12 +473,31 @@ section:nth-of-type(8){
     border-radius: 7px;
     font-size: 35px;
     padding: 11px 30px;
+<<<<<<< HEAD
     margin-left: 35%;
     margin-top: 18%;
+=======
+<<<<<<< HEAD
+    margin-left: 35%;
+    margin-top: 18%;
+=======
+    margin-left: 28%;
+    margin-top: 24%;
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
 }
 
 
+<<<<<<< HEAD
 footer{
     background-color: #09400A;
 }
+=======
+<<<<<<< HEAD
+footer{
+    background-color: #09400A;
+}
+=======
+>>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
