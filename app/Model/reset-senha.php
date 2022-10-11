@@ -1,24 +1,24 @@
 <?php
-// Inicialize a sessão
+// INICIA SESSÃO.
 session_start();
  
-// Verifique se o usuário está logado, caso contrário, redirecione para a página de login
+// VERIFICA SE O USUARIO ESTA LOGADO, SE SIM, REDIRECIONA PARA PÁGINA DE LOGIN.
 if(!isset($_SESSION["loggedin"]) || $_SESSION["loggedin"] !== true){
     header("location: login.php");
     exit;
 }
  
-// Incluir arquivo de configuração
+// INCLUI ARQUIVO DE CONEXÃO.
 require_once "config.php";
  
-// Defina variáveis e inicialize com valores vazios
+// DEFINE VARIAVEIS E DEFINE COMO VAZIO.
 $new_password = $confirm_password = "";
 $new_password_err = $confirm_password_err = "";
  
-// Processando dados do formulário quando o formulário é enviado
+// PROCESSA DADOS DO FORMULÁRIO, QUANDO FORMULÁRIO É ENVIADO.
 if($_SERVER["REQUEST_METHOD"] == "POST"){
  
-    // Validar nova senha
+    // VALIDA SENHA.
     if(empty(trim($_POST["new_password"]))){
         $new_password_err = "Por favor insira a nova senha.";     
     } elseif(strlen(trim($_POST["new_password"])) < 6){
@@ -27,7 +27,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
         $new_password = trim($_POST["new_password"]);
     }
     
-    // Validar e confirmar a senha
+    // VALIDA E CONFIRMA SENHA.
     if(empty(trim($_POST["confirm_password"]))){
         $confirm_password_err = "Por favor, confirme a senha.";
     } else{
@@ -36,24 +36,24 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
             $confirm_password_err = "A senha não confere.";
         }
     }
-        
-    // Verifique os erros de entrada antes de atualizar o banco de dados
+     
+    //VERIFIQUE OS ERROS DE ENTRADA ANTES DE ATUAIZAR O BANCO DE DADOS.
     if(empty($new_password_err) && empty($confirm_password_err)){
-        // Prepare uma declaração de atualização
+        // PREPARA UMA DECLARAÇÃO SELECIONADA.
         $sql = "UPDATE usuario SET password = :password WHERE id = :id";
         
         if($stmt = $pdo->prepare($sql)){
-            // Vincule as variáveis à instrução preparada como parâmetros
+            // VINCULA AS VARIÁVEIS A INSTRUÇÃO PREPARADA COMO PARÂMETROS.
             $stmt->bindParam(":password", $param_password, PDO::PARAM_STR);
             $stmt->bindParam(":id", $param_id, PDO::PARAM_INT);
             
-            // Definir parâmetros
+            // DEFINE PARÂMETROS.
             $param_password = password_hash($new_password, PASSWORD_DEFAULT);
             $param_id = $_SESSION["id"];
             
-            // Tente executar a declaração preparada
+            // TENTA EXECUTAR UMA DECLARAÇÃO PREPARADA.
             if($stmt->execute()){
-                // Senha atualizada com sucesso. Destrua a sessão e redirecione para a página de login
+                // SENHA ATUALIZADA. DESTROI SESSÃO E REDIRECIONA PARA PÁGINA DE LOGIN.
                 session_destroy();
                 header("location: login.php");
                 exit();
@@ -61,12 +61,12 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                 echo "Ops! Algo deu errado. Por favor, tente novamente mais tarde.";
             }
 
-            // Fechar declaração
+            // FECHA DECLARAÇÃO.
             unset($stmt);
         }
     }
     
-    // Fechar conexão
+    // FECHA CONEXÃO.
     unset($pdo);
 }
 ?>
