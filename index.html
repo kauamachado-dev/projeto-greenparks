@@ -7,6 +7,7 @@
     <meta charset='utf-8'>
     <title>HOME</title>
     <link href="app/View/css/stilo.css" rel="stylesheet">
+    <link href="app/View/css/animation.css" rel="stylesheet">
 </head>
 <body>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
@@ -28,12 +29,13 @@
     </section>
 
     <div>
+        <!-- ONDA -->
         <svg  class="onda1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
              fill="#FFFF"
              fill-opacity="1"
-             d="M0,224L60,208C120,192,240,160,360,160C480,160,600,192,720,213.3C840,235,960,245,1080,240C1200,235,1320,213,1380,202.7L1440,192L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-          </svg>
+             d="M0,160L60,144C120,128,240,96,360,106.7C480,117,600,171,720,213.3C840,256,960,288,1080,288C1200,288,1320,256,1380,240L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        </svg>
     </div>
 
 
@@ -51,71 +53,88 @@
             <p>Também divulgamos eventos próximos a</p>
             <p>região norte de Londrina.</p>
         </div>
+
+        
+        <!-- ONDA -->
         <svg class="onda2" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
             <path
              fill="#FFFF"
              fill-opacity="1"
-              d="M0,128L60,160C120,192,240,256,360,272C480,288,600,256,720,208C840,160,960,96,1080,69.3C1200,43,1320,53,1380,58.7L1440,64L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+             d="M0,128L60,149.3C120,171,240,213,360,229.3C480,245,600,235,720,192C840,149,960,75,1080,58.7C1200,43,1320,85,1380,106.7L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
         </svg>
           <button type="button" class="botao1" onclick= "">SAIBA MAIS</button>
 
         
 <!-- TEXTO E SEÇÃO AULAS!-->
   <section></section>
-  <svg class="onda3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path
-     fill="#FFFF"
-     fill-opacity="1"
-     d="M0,128L60,160C120,192,240,256,360,272C480,288,600,256,720,208C840,160,960,96,1080,69.3C1200,43,1320,53,1380,58.7L1440,64L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-</svg>
+
+        <!-- ONDA -->
+        <svg class="onda3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+            fill="#FFFF"
+            fill-opacity="1"
+            d="M0,128L60,149.3C120,171,240,213,360,229.3C480,245,600,235,720,192C840,149,960,75,1080,58.7C1200,43,1320,85,1380,106.7L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        </svg>
     <section class="container">
-        <div id="titulo3">AULAS</div>
+      <div id="titulo3">AULAS</div>
     </section>
         <div class="linha2"></div>
         <div class="aulas">
             <P>As aulas serão oferecidas à população de</P>
-            <P>forma gratuita, para que todos tenham</P>
-            <P>acesso. Isso vai acontecer de forma</P>
-            <P>segura e confiável, onde os instrutores</P>
-            <P>vão ter acesso ao contato com os pais</P>
-            <P>dos alunos menores de idade, e caso</P>
-            <P>ocorra algum imprevisto sempre</P>
-            <P>entrarão em contato.</P>
+            <P>forma gratuita, para que todos tenham acesso.</P>
+            <P>Isso vai acontecer de forma segura e</P>
+            <P>confiável, onde os instrutores vão ter</P>
+            <P>acesso ao contato com os pais dos alunos </P>
+            <P>menores de idade, e caso ocorra algum</P>
+            <P>imprevisto sempre entrarão em contato.</P>
         </div>
-        <!-- <img id="aula" src="app/View/css/images/aulas.png"> !-->
-        <svg class="onda4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-            <path
-             fill="#FFFF"
-             fill-opacity="1"
-             d="M0,192L60,160C120,128,240,64,360,64C480,64,600,128,720,165.3C840,203,960,213,1080,202.7C1200,192,1320,160,1380,144L1440,128L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
-        </svg>
+        <!-- EFEITO CARROSSEL -->
+        <main class="main">
+            <section class="galery">
+                <div class="fotos">
+                    <img src="app/View/css/images/img1.png">
+                    <img src="app/View/css/images/img2.png">
+                    <img src="app/View/css/images/img3.png">
+                    <img src="app/View/css/images/img4.png">
+                    <img src="app/View/css/images/img5.png">
+                    <img src="app/View/css/images/img1.png">
+                </div>
+            </section>
+        </main>
+
+        <!-- ONDA -->
+            <svg class="onda4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+                <path
+                fill="#5bb318"
+                fill-opacity="1"
+                d="M0,160L60,144C120,128,240,96,360,106.7C480,117,600,171,720,213.3C840,256,960,288,1080,288C1200,288,1320,256,1380,240L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+            </svg>
         <button type="button" class="botao2" onclick= "">AULAS</button>
 
 
 <!-- TEXTO E SEÇÃO SOBRE EVENTOS!-->
 <section></section>
-<svg  class="onda5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path
-     fill="#FFFF"
-     fill-opacity="1"
-     d="M0,192L60,160C120,128,240,64,360,64C480,64,600,128,720,165.3C840,203,960,213,1080,202.7C1200,192,1320,160,1380,144L1440,128L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
-</svg>
-<section></section>
-    <section class="container"></section>
-        <div id="titulo4">EVENTOS</div>
-        <div class="linha3"></div>
-        <div class="eventos">
-            <P>Se você está afim de ficar por dentro dos</P>
-            <P>eventos que vão acontecer na sua região,</P>
-            <P>clique no botão para conhecer nossa página</P>
-            <P>de eventos e não perder mais nada que rolar</P>
-            <P>por perto!</P></div>
-           <button type="button" class="botao3" onclick= "">EVENTOS</button>
-            <!-- <img id="evento" src="app/View/css/images/evento.png"> -->
-    </section>
 
-    <footer>
-        Algumas informações de copyright ou talvez alguma informação do autor de um <article>
-      </footer>
-    
+        <!-- ONDA -->
+        <svg  class="onda5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+            <path
+            fill="#ffb200"
+            fill-opacity="1"
+            d="M0,160L60,144C120,128,240,96,360,106.7C480,117,600,171,720,213.3C840,256,960,288,1080,288C1200,288,1320,256,1380,240L1440,224L1440,320L1380,320C1320,320,1200,320,1080,320C960,320,840,320,720,320C600,320,480,320,360,320C240,320,120,320,60,320L0,320Z"></path>
+        </svg>
+    <section></section>
+        <section class="container"></section>
+            <div id="titulo4">EVENTOS</div>
+            <div class="linha3"></div>
+            <div class="eventos">
+                <P>Se você está afim de ficar por dentro dos</P>
+                <P>eventos que vão acontecer na sua região,</P>
+                <P>clique no botão para conhecer nossa página</P>
+                <P>de eventos e não perder mais nada que rolar</P>
+                <P>por perto!</P></div>
+            <button type="button" class="botao3" onclick= "">EVENTOS</button>
+                <!-- <img id="evento" src="app/View/css/images/evento.png"> -->
+        </section>
+
+
  </body>
