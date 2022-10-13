@@ -4,8 +4,12 @@ body {
 <<<<<<< HEAD
     
 =======
+<<<<<<< HEAD
+    
+=======
 
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     height: 3000px;
 }
 /* FINAL - CORPO DO SITE */
@@ -59,8 +63,12 @@ section{
 <<<<<<< HEAD
     height: 165px;
 =======
+<<<<<<< HEAD
+    height: 165px;
+=======
     height: 143px;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,8 +89,12 @@ height: 690px;
 <<<<<<< HEAD
     top: 63%;
 =======
+<<<<<<< HEAD
+    top: 63%;
+=======
     top: 77%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 
@@ -104,9 +116,14 @@ height: 690px;
     margin-top: -14%;
     margin-left: 16%;
 =======
+<<<<<<< HEAD
+    margin-top: -14%;
+    margin-left: 16%;
+=======
     margin-top: -18%;
     margin-left: 10%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -123,10 +140,13 @@ height: 690px;
 <<<<<<< HEAD
     margin-left: 13%;
     margin-top: -20%;
+<<<<<<< HEAD
+=======
 =======
     margin-left: 8%;
     margin-top: -22%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 /* TEXTO DE DESCRIÇÃO SOBRE NÓS */
@@ -153,6 +173,9 @@ height: 690px;
     padding: 11px 20px;
     margin-left: 32%;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     margin-top: 10%;
 =======
     margin-top: 9%;
@@ -169,8 +192,12 @@ height: 690px;
 <<<<<<< HEAD
     top: 160%;
 =======
+<<<<<<< HEAD
+    top: 160%;
+=======
     top: 185%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 /* <<<<<<< PARALLAX ENTRE SOBRE E AULAS >>>>>> */
@@ -179,8 +206,12 @@ section:nth-of-type(5){
 <<<<<<< HEAD
     height: 10%;
 =======
+<<<<<<< HEAD
+    height: 10%;
+=======
     height: 10.6%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     }
 
 
@@ -191,16 +222,22 @@ section:nth-of-type(5){
     left: 0;
     right: 0;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     top: 165%;
 }
 
 
 
+<<<<<<< HEAD
+=======
 =======
     top: 190%;
 }
 
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
@@ -218,6 +255,9 @@ section:nth-of-type(5){
     height: 5px;
     margin-left: 68%;
 <<<<<<< HEAD
+=======
+<<<<<<< HEAD
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     margin-top: -7%;
 }
 
@@ -229,9 +269,12 @@ section:nth-of-type(5){
     width: 50%;
     height: 90%;
 }*/
+<<<<<<< HEAD
+=======
 =======
     margin-top: -8%;
 }
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 
 /* EFEITO CARROSSEL AULAS */
 .galery{
@@ -261,9 +304,14 @@ section:nth-of-type(5){
     margin-top: -5%;
     margin-left: 62%;
 =======
+<<<<<<< HEAD
+    margin-top: -5%;
+    margin-left: 62%;
+=======
     margin-top: -6%;
     margin-left: 59%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
     line-height: 50px;
@@ -283,8 +331,12 @@ section:nth-of-type(5){
 <<<<<<< HEAD
     margin-top: 25%;
 =======
+<<<<<<< HEAD
+    margin-top: 25%;
+=======
     margin-top: 23%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
 }
 
@@ -297,8 +349,12 @@ section:nth-of-type(5){
 <<<<<<< HEAD
     top: 253%;
 =======
+<<<<<<< HEAD
+    top: 253%;
+=======
     top: 300%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 /* <<<<<<< PARALLAX ENTRE AULAS E EVENTOS >>>>>> */
@@ -307,8 +363,12 @@ section:nth-of-type(8){
 <<<<<<< HEAD
     height: 9.8%;
 =======
+<<<<<<< HEAD
+    height: 9.8%;
+=======
     height: 10%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     }
 
 
@@ -316,8 +376,12 @@ section:nth-of-type(8){
 <<<<<<< HEAD
 /* ONDA ABAIXO AULAS */
 =======
+<<<<<<< HEAD
+/* ONDA ABAIXO AULAS */
+=======
 /* ONDA ACIMA EVENTOS */
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 .onda5{
     position: absolute;
     bottom: 0;
@@ -326,8 +390,12 @@ section:nth-of-type(8){
 <<<<<<< HEAD
     top: 258%;
 =======
+<<<<<<< HEAD
+    top: 258%;
+=======
     top: 305%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
 }
 
 /* TÍTULO EVENTOS */
@@ -337,8 +405,12 @@ section:nth-of-type(8){
 <<<<<<< HEAD
     margin-left: 15%;
 =======
+<<<<<<< HEAD
+    margin-left: 15%;
+=======
     margin-left: 10%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -362,8 +434,12 @@ section:nth-of-type(8){
 <<<<<<< HEAD
     margin-left: 13%;
 =======
+<<<<<<< HEAD
+    margin-left: 13%;
+=======
     margin-left: 8%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     margin-top: -3%;
 }
 
@@ -374,8 +450,12 @@ section:nth-of-type(8){
 <<<<<<< HEAD
     margin-left: 13%;
 =======
+<<<<<<< HEAD
+    margin-left: 13%;
+=======
     margin-left: 8%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
     text-align: left;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
@@ -397,9 +477,14 @@ section:nth-of-type(8){
     margin-left: 35%;
     margin-top: 18%;
 =======
+<<<<<<< HEAD
+    margin-left: 35%;
+    margin-top: 18%;
+=======
     margin-left: 28%;
     margin-top: 24%;
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
     position: absolute;
 }
 
@@ -409,4 +494,10 @@ footer{
     background-color: #09400A;
 }
 =======
+<<<<<<< HEAD
+footer{
+    background-color: #09400A;
+}
+=======
 >>>>>>> c132eaada481632a39a023da0f4acb5bd531a5d8
+>>>>>>> f45cac3f315eb28bad39c8a1f19fac3104b90b70
