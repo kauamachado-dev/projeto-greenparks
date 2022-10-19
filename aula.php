@@ -23,6 +23,9 @@
     <section class="container">
         <div class="titulo1">AULAS</div>
     </section>
+    <div class="subtitulo1">
+        <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
+      </div>
     <div class="linha1"></div>
     <!-- IMAGEM PRIMEIRO ESPORTE -->
     <img id="futebol" src="app/View/css/images/img5.png">
@@ -47,12 +50,48 @@
     </section>
     <div class="linha3"></div>
     <div class="volei">
-            <P>Futebol é um dos esportes mais praticados no Brasil!</P>
-            <P>E nada melhor que além de brincar, as pessoas apendam as</P>
-            <P>regras, técnicas do esporte, etc... ​</P>
+            <P>Inscreva-se na aula de volei e jogue com segurança em</P>
+            <P>alguma quadra próxima a sua casa!</P>
             </div>
     <button type="button" class="botao2" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE VOLEI -->
-
+    <!-- IMAGEM TERCEIRO ESPORTE -->
+        <img id="basquete" src="app/View/css/images/img1.png">
+   <!-- TÍTULO TERCEIRO ESPORTE -->
+    <section class="container">
+        <div id="titulo4">BASQUETE</div>
+    </section>
+    <div class="linha4"></div>
+    <div class="basquete">
+            <P>Jogar basquete com aos amigos é tão bom quanto aprender</P>
+            <P>mais sobre o esporte, venha participar!</P>
+            </div>
+    <button type="button" class="botao3" onclick= "">SAIBA MAIS</button>
+    <!-- FINAL SEÇÃO DE BASQUETE -->
+        <!-- IMAGEM QUARTO ESPORTE -->
+        <img id="skate" src="app/View/css/images/img2.png">
+   <!-- TÍTULO QUARTO ESPORTE -->
+    <section class="container">
+        <div id="titulo5">SKATE</div>
+    </section>
+    <div class="linha5"></div>
+    <div class="skate">
+            <P>Venha aprender as manobras do skate e aprender a</P>
+            <P>radicalidade do esporte!</P>
+            </div>
+    <button type="button" class="botao4" onclick= "">SAIBA MAIS</button>
+    <!-- FINAL SEÇÃO DE SKATE -->
+        <!-- IMAGEM QUINTO ESPORTE -->
+        <img id="handeball" src="app/View/css/images/img3.png">
+   <!-- TÍTULO QUINTOSS ESPORTE -->
+    <section class="container">
+        <div id="titulo6">HANDEBALL</div>
+    </section>
+    <div class="linha6"></div>
+    <div class="handeball">
+            <P>Convide seus amigos e se inscreva na aula de handeball!</P>
+            </div>
+    <button type="button" class="botao5" onclick= "">SAIBA MAIS</button>
+    <!-- FINAL SEÇÃO DE HANDEBALL -->
 </body>
 </html>
