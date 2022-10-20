@@ -1,5 +1,4 @@
 body { 
-    background-color: #D62509;
     overflow-x: hidden;
     height: 4000px;
 }
@@ -71,7 +70,7 @@ nav {
     position: absolute;
     text-align: center;
     font-size: clamp(1.0em, 1em + 5vw, 1.5em);
-}
+}   
 /* TÍTULO FUTEBOL */
 #titulo2{
     font-family: 'Passion One';

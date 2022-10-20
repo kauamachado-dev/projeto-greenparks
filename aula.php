@@ -12,8 +12,8 @@
             <a class="logo" href="index.html">GREEN PARKS</a>
             <ul class="nav-list">
                 <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="app/Pages/sobre.html">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="app/Pages/aula.html">AULAS</a></li> 
+                <li><a href="sobre.html">SOBRE</a></li> 
+                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
                 <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
             </ul>
         </nav>
@@ -39,7 +39,7 @@
             <P>E nada melhor que além de brincar, as pessoas apendam as</P>
             <P>regras, técnicas do esporte, etc... ​</P>
             </div>
-    <button type="button" class="botao1" onclick= "">SAIBA MAIS</button>
+    <a href="app/Pages/futebol.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
     <!-- IMAGEM SEGUNDO ESPORTE -->
