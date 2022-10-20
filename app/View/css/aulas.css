@@ -42,3 +42,125 @@ nav {
     letter-spacing: 3px;
     margin-left: 32px;
 }
+
+/* INICIO - TÍTULO RESPONSIVO */
+.titulo1{
+    font-family: 'Passion One';
+    position: absolute;
+    top: 15%;
+    left: 40%;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 10vw, 6.5em);
+    color: #09400A;
+}
+/*LINHA ABAIXO DO PRIMEIRO TÍTULO */
+.linha1{
+    background-color: #D62509;
+    position: absolute;
+    width: 320px;
+    height: 5px;
+    margin-left: 37%;
+    margin-top: 8%;
+}
+/* TÍTULO FUTEBOL */
+#titulo2{
+    font-family: 'Passion One';
+    margin-top: 2%;
+    margin-left: 10%;
+    position: absolute;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 5vw, 10.5em);
+    color: #021803;
+}
+/* LINHA ABAIXO DE FUTEBOL */
+.linha2{
+    background-color: #D62509;
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+/*IMAGEM FUTEBOL*/
+#futebol{
+    height: 10%;
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+/*TEXTO FUTEBOL*/
+.futebol{
+    font-family: 'Arimo';
+    margin-top: 685px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: left;
+    font-size: clamp(1.4em, 1em + 5vw, 1.0em);
+    line-height: 40px;
+}
+/*BOTÃO FUTEBOL*/
+.botao1{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFB200;
+    border-color: #FFB200;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 10px 19px;
+    margin-left: 10%;
+    margin-top: 20%;
+    position: absolute;
+}
+/* TÍTULO VOLEI */
+#titulo3{
+    font-family: 'Passion One';
+    margin-top: 2%;
+    margin-left: 10%;
+    position: absolute;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 5vw, 10.5em);
+    color: #021803;
+}
+/* LINHA ABAIXO DE VOLEI */
+.linha3{
+    background-color: #D62509;
+    position: absolute;
+    width: 300px;
+    height: 5px;
+    margin-left: 10%;
+    margin-top: 8%;
+}
+/*IMAGEM VOLEI*/
+#volei{
+    height: 10%;
+    width: 35%;
+    margin-left: 10%;
+    margin-top: 15%;
+}
+/*TEXTO VOLEI*/
+.volei{
+    font-family: 'Arimo';
+    margin-top: 685px;
+    position: absolute;
+    top: 20%;
+    left: 10%;
+    text-align: left;
+    font-size: clamp(1.4em, 1em + 5vw, 1.0em);
+    line-height: 40px;
+}
+/*BOTÃO VOLEI*/
+.botao2{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFB200;
+    border-color: #FFB200;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 10px 19px;
+    margin-left: 10%;
+    margin-top: 20%;
+    position: absolute;
+}
