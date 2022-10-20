@@ -11,9 +11,9 @@
         <nav>
             <a class="logo" href="index.html">GREEN PARKS</a>
             <ul class="nav-list">
-                <li><a style="color: #ffe60b" href="index.html">INÍCIO</a></li>
+                <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="app/Pages/sobre.html">SOBRE</a></li> 
-                <li><a href="app/Pages/aula.html">AULAS</a></li> 
+                <li><a style="color: #ffe60b" href="app/Pages/aula.html">AULAS</a></li> 
                 <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
             </ul>
         </nav>
