@@ -42,6 +42,22 @@ nav {
     letter-spacing: 3px;
     margin-left: 32px;
 }
+/*PRÓXIMOS EVENTOS*/
+.titulo{
+    margin: 10%;
+    margin-left: 10%;
+    font-family: 'Passion One';
+    font-size: clamp(3.75em, 1em + 5vw, 10.5em);;
+}
+/*LINHA ABAIXO DO TÍTULO "PRÓXIMOS EVENTOS" */
+.linha{
+    background-color: #D62509;
+    position: absolute;
+    width: 290px;
+    height: 5px;
+    margin-left: 10%;
+    margin-top: -11%;
+}
 /*INÍCIO - EFEITO CARROSSEL*/
 .galery{
     margin-top: 10%;
@@ -132,6 +148,7 @@ p{
     top: -100%;
     display: block;
     transition: 350ms;
+    margin-left: -10%;
 }
 /*CONFIGURAÇÃO DO MODAL*/
 .modal{
@@ -159,7 +176,7 @@ p{
 /*CONFIGURAÇÃO DA IMAGEM DENTRO DO MODAL*/
 .img{
     width: 60%;
-    margin-top: -44%;
+    margin-top: -46%;
     margin-left: -35%;
     display: inline-block;
     vertical-align: top;
@@ -171,6 +188,6 @@ p{
     width: 30%;
     margin-top: 5%;
     margin-left: 65%;
-    font-size: clamp(0.1em, 0.2em + 1vw, 2em);
+    font-size: clamp(0.1em, 0.1em + 1vw, 2em);
     line-height: 40px;
 }

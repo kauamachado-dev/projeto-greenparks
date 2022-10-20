@@ -8,7 +8,6 @@ function fecharModal(){
 }
 function abrirModal2(){
     document.getElementById('modal2').style.top = "0";
-    document.getElementById('modal2').style.left = "10%";
   }
   function fecharModal2(){
     document.getElementById('modal2').style.top = "-100%";
