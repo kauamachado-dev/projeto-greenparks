@@ -13,7 +13,7 @@
             <ul class="nav-list">
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="sobre.html">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
+                <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
             </ul>
         </nav>
