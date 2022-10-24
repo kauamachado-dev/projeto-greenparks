@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <title>PROFESSOR</title>
-    <link href='_css/tela-prof.css' rel='stylesheet'>
+    <link href='../View/css/tela-prof.css' rel='stylesheet'>
 </head>
 <body>
      <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->

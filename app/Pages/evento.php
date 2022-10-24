@@ -3,9 +3,9 @@
 <head>
     <meta charset='utf-8'>
     <title>EVENTOS</title>
-    <link href="app/View/css/event.css" rel="stylesheet">
-    <link href="app/View/css/animation.css" rel="stylesheet">
-    <script type="text/javascript" src="app/Controller/_js/modal.js"></script>
+    <link href="../View/css/event.css" rel="stylesheet">
+    <link href="../View/css/animation.css" rel="stylesheet">
+    <script type="text/javascript" src="../Controller/_js/modal.js"></script>
 </head>
 <body>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
@@ -27,10 +27,10 @@
     <main class="main">
         <section class="galery">
             <div class="fotos">
-                <img src="app/View/css/images/img1.png">
-                <img src="app/View/css/images/img2.png">
-                <img src="app/View/css/images/img4.png">
-                <img src="app/View/css/images/img1.png">
+                <img src="../View/css/images/img1.png">
+                <img src="../View/css/images/img2.png">
+                <img src="../View/css/images/img4.png">
+                <img src="../View/css/images/img1.png">
             </div>
         </section>
     </main>
@@ -129,31 +129,31 @@
 
         <div class="container-image">
             <div class="image" data-title="agua">
-                <img src="https://www.1zoom.me/prev/303/302250.jpg" alt="">
-                <h3>Barquinho</h3>
+                <img src="" alt="">
+                <h3></h3>
             </div>
 
             <div class="image" data-title="cores">
-                <img src="https://s1.1zoom.me/prev/582/Texture_581784_600x400.jpg" alt="">
-                <h3>Arco-iris</h3>
+                <img src="" alt="">
+                <h3></h3>
             </div>
 
             <div class="image" data-title="zebra">
-                <img src="https://br.hubspot.com/hs-fs/hub/53/file-2086221936-jpg/Pexel-600x400.jpg?width=600&name=Pexel-600x400.jpg" alt="">
-                <h3>Zebra</h3>
+                <img src="" alt="">
+                <h3></h3>
             </div>
 
             <div class="image" data-title="cores">
-                <img src="https://blog.portalpos.com.br/app/uploads/2021/08/cores.jpg" alt="">
-                <h3>Vermelhinho</h3>
+                <img src="" alt="">
+                <h3></h3>
             </div>
 
             <div class="image" data-title="cinza">
-                <img src="https://novo.ricardoizar.com.br/wp-content/uploads/2017/11/16-imagenes-ensordecedoras-que-reflejan-las-consecuencias-de-la-contaminacion-del-medioambiente-1477644185-600x400.jpg" alt="">
-                <h3>Poluição</h3>
+                <img src="" alt="">
+                <h3></h3>
             </div>
         </div>
     </div>
-<script src="app/Controller/_js/galeria.js"></script>
+<script src="../Controller/_js/galeria.js"></script>
 </body>
 </html>

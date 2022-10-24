@@ -6,7 +6,7 @@
 <head>
     <meta charset='utf-8'>
     <title>ADMINISTRADOR</title>
-    <link href='app/View/css/admin.css' rel='stylesheet'>
+    <link href='../View/css/admin.css' rel='stylesheet'>
     <script src='_js/postagem.js'></script>
 </head>
 <body>

@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <title>SOBRE NÓS</title>
-    <link href="app/View/css/sobre.css" rel="stylesheet">
+    <link href="../View/css/sobre.css" rel="stylesheet">
 </head>
 <body>
     <header>
