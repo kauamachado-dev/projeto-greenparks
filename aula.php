@@ -26,6 +26,7 @@
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
+      <img id="bola1" src="app/View/css/images/Manchas/bolafutebol.png">
     <div class="linha1"></div>
     <!-- IMAGEM PRIMEIRO ESPORTE -->
     <img id="futebol" src="app/View/css/images/img5.png">
@@ -37,7 +38,7 @@
     <div class="futebol">
             <P>Futebol é um dos esportes mais praticados no Brasil!</P>
             <P>E nada melhor que além de brincar, as pessoas apendam as</P>
-            <P>regras, técnicas do esporte, etc... ​</P>
+            <P>regras, técnicas do esporte, etc... </P>
             </div>
     <a href="app/Pages/futebol.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
