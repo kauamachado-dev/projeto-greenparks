@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <title>Aulas</title>
-    <link href="app/View/css/aula.css" rel="stylesheet">
+    <link href="../View/css/aula.css" rel="stylesheet">
 </head>
 <body>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
@@ -23,13 +23,13 @@
     <section class="container">
         <div class="titulo1">AULAS</div>
     </section>
+    <div class="linha1"></div>
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
-      <img id="bola1" src="app/View/css/images/Manchas/bolafutebol.png">
-    <div class="linha1"></div>
+      <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
     <!-- IMAGEM PRIMEIRO ESPORTE -->
-    <img id="futebol" src="app/View/css/images/img5.png">
+    <img id="futebol" src="../View/css/images/img5.png">
    <!-- TÍTULO PRIMEIRO ESPORTE -->
     <section class="container">
         <div id="titulo2">FUTEBOL</div>
@@ -43,8 +43,9 @@
     <a href="app/Pages/futebol.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
+    <img id="bola2" src="../View/css/images/Manchas/bolavolei.png">
     <!-- IMAGEM SEGUNDO ESPORTE -->
-    <img id="volei" src="app/View/css/images/img4.png">
+    <img id="volei" src="../View/css/images/img4.png">
    <!-- TÍTULO SEGUNDO ESPORTE -->
     <section class="container">
         <div id="titulo3">VOLÊI</div>
@@ -57,7 +58,7 @@
     <button type="button" class="botao2" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE VOLEI -->
     <!-- IMAGEM TERCEIRO ESPORTE -->
-        <img id="basquete" src="app/View/css/images/img1.png">
+        <img id="basquete" src="../View/css/images/img1.png">
    <!-- TÍTULO TERCEIRO ESPORTE -->
     <section class="container">
         <div id="titulo4">BASQUETE</div>
@@ -70,7 +71,7 @@
     <button type="button" class="botao3" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE BASQUETE -->
         <!-- IMAGEM QUARTO ESPORTE -->
-        <img id="skate" src="app/View/css/images/img2.png">
+        <img id="skate" src="../View/css/images/img2.png">
    <!-- TÍTULO QUARTO ESPORTE -->
     <section class="container">
         <div id="titulo5">SKATE</div>
@@ -83,7 +84,7 @@
     <button type="button" class="botao4" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE SKATE -->
         <!-- IMAGEM QUINTO ESPORTE -->
-        <img id="handeball" src="app/View/css/images/img3.png">
+        <img id="handeball" src="../View/css/images/img3.png">
    <!-- TÍTULO QUINTOSS ESPORTE -->
     <section class="container">
         <div id="titulo6">HANDEBALL</div>
