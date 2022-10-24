@@ -6,7 +6,7 @@
     <link href="app/View/css/aulas.css" rel="stylesheet">
 </head>
 <body>
-    <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
+    <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
             <a class="logo" href="index.html">GREEN PARKS</a>
