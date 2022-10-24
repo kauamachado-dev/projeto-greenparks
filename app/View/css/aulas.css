@@ -70,7 +70,14 @@ nav {
     position: absolute;
     text-align: center;
     font-size: clamp(1.0em, 1em + 5vw, 1.5em);
-}   
+}  
+/*BOLA FUTEBOL*/
+#bola1{
+    height: 9%;
+    width: 31%;
+    margin-left: 70%;
+    margin-top: 5%;
+} 
 /* TÍTULO FUTEBOL */
 #titulo2{
     font-family: 'Passion One';
