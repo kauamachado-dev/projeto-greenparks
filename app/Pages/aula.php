@@ -12,10 +12,17 @@
             <a class="logo" href="index.html">GREEN PARKS</a>
              <ul class="nav-list">
                 <li><a href="index.html">INÍCIO</a></li>
+<<<<<<< HEAD
+                <li><a href="sobre.php">SOBRE</a></li> 
+                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
+                <li><a href="evento.php">EVENTOS</a></li>     
+            </ul>
+=======
                 <li><a href="app/Pages/sobre.html">SOBRE</a></li> 
                 <li><a style="color: #ffe60b" href="app/Pages/aula.php">AULAS</a></li> 
                 <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
              </ul>
+>>>>>>> 032e484fac6ad5b9cd88ea05a51587c7f4db62dd
         </nav>
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->

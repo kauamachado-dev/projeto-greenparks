@@ -79,7 +79,8 @@ Class Usuario{
             //Estrutura de repetição, sendo criado um array dos dados do usuário 
             while($linha = $verificar->fetch(PDO::FETCH_ASSOC)){
                 //Se os IDS forem igual
-                if($linha['id_usuario'] == $_SESSION['id_usuario']){ 
+                if($linha['id_usuario'] == $_SESSION['id_usuario'])
+                { 
 
                     $nivel  = $linha['nivel_usuario']; //Variável recebendo o nivel de usuário
                     $status = $linha['status_usuario'];//Variável recebendo o status do usuário
