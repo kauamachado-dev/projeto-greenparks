@@ -27,11 +27,16 @@
     <section class="container">
         <div class="titulo1">AULAS</div>
     </section>
+    <div class="linha1"></div>
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
+<<<<<<< HEAD
       <img id="bola1" src="../View/css/images/Manchas/bolafutebol.png">
     <div class="linha1"></div>
+=======
+      <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
+>>>>>>> b585dc2aa58154a0e5523e24cd249fae36277d90
     <!-- IMAGEM PRIMEIRO ESPORTE -->
     <img id="futebol" src="../View/css/images/img5.png">
    <!-- TÍTULO PRIMEIRO ESPORTE -->
@@ -47,6 +52,7 @@
     <a href="app/Pages/futebol.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
+    <img id="bola2" src="../View/css/images/Manchas/bolavolei.png">
     <!-- IMAGEM SEGUNDO ESPORTE -->
     <img id="volei" src="../View/css/images/img4.png">
    <!-- TÍTULO SEGUNDO ESPORTE -->
@@ -61,7 +67,7 @@
     <button type="button" class="botao2" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE VOLEI -->
     <!-- IMAGEM TERCEIRO ESPORTE -->
-        <img id="basquete" src="app/View/css/images/img1.png">
+        <img id="basquete" src="../View/css/images/img1.png">
    <!-- TÍTULO TERCEIRO ESPORTE -->
     <section class="container">
         <div id="titulo4">BASQUETE</div>
