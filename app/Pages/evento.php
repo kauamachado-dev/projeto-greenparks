@@ -3,8 +3,8 @@
 <head>
     <meta charset='utf-8'>
     <title>EVENTOS</title>
-    <link href="app/View/css/event.css" rel="stylesheet">
-    <link href="app/View/css/animation.css" rel="stylesheet">
+    <link href="../View/css/event.css" rel="stylesheet">
+    <link href="../View/css/animation.css" rel="stylesheet">
     <script type="text/javascript" src="app/Controller/_js/modal.js"></script>
 </head>
 <body>
@@ -27,10 +27,10 @@
     <main class="main">
         <section class="galery">
             <div class="fotos">
-                <img src="app/View/css/images/img1.png">
-                <img src="app/View/css/images/img2.png">
-                <img src="app/View/css/images/img4.png">
-                <img src="app/View/css/images/img1.png">
+                <img src="../View/css/images/img1.png">
+                <img src="../View/css/images/img2.png">
+                <img src="../View/css/images/img4.png">
+                <img src="../View/css/images/img1.png">
             </div>
         </section>
     </main>

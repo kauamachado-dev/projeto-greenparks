@@ -6,7 +6,7 @@
 <head>
     <meta charset='utf-8'>
     <title>ADMINISTRADOR</title>
-    <link href='app/View/css/admin.css' rel='stylesheet'>
+    <link href='../View/css/admin.css' rel='stylesheet'>
     <script src='_js/postagem.js'></script>
 </head>
 <body>
@@ -26,15 +26,15 @@
     <div class="titulo">Área administrativa</div>
     <div class="linha"></div>
     <a href="aula.php">
-        <input class="img1" type="image" src="app/View/images/adm_aula.jpg">
+        <input class="img1" type="image" src="../View/images/adm_aula.jpg">
     </a>
     <div class="texto1"> Aulas</div>
     <a href="evento.html">
-        <input class="img2" type="image" src="app/View/images/evento.png">
+        <input class="img2" type="image" src="../View/images/evento.png">
     </a>
     <div class="texto2"> Eventos</div>
     <a href="formaluno.php">
-        <input class="img3" type="image" src="app/View/images/aulas.png"> 
+        <input class="img3" type="image" src="../View/images/aulas.png"> 
     </a>
     <div class="texto3"> Pedidos</div>
 </body>
