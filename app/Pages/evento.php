@@ -5,7 +5,11 @@
     <title>EVENTOS</title>
     <link href="../View/css/event.css" rel="stylesheet">
     <link href="../View/css/animation.css" rel="stylesheet">
+<<<<<<< HEAD
     <script type="text/javascript" src="../Controller/_js/modal.js"></script>
+=======
+    <script type="text/javascript" src="app/Controller/_js/modal.js"></script>
+>>>>>>> 5110217b1900c78f4db6ee57292b26a6f281dd29
 </head>
 <body>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->

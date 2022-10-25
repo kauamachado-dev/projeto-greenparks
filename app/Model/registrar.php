@@ -1,26 +1,22 @@
 <?php
-//Página para cadastrar um funcionário
+//CADASTRO TESTE.
 
-//Inclui o arquivo de conexão e o de usuarios
+//CHAMA ARQUIVOS DE CONEXÃO E DE USUARIO.
 include '../../../Model/Entity/conexao.php';
 require_once '../../../Controller/Pages/usuarios.php';
 
-//Chama a classe
+//CHAMA A CLASSE USUÁRIO.
 $u = new Usuario;
 
-//Inicia a sessão
+//INICIA SESSÃO.
 session_start();
 
-//Se não estiver definida, não possuir um id_usuario
+//SE NÃO ESTIVER DEFINIDO UM ID_USUARIO...
 if (!isset($_SESSION['id_usuario'])) { 
-    //Vai mandar ele devolta para a página de login
+    //RETORNA PARA PÁGINA DE LOGIN.
     header("location: login.php"); 
     exit;
-//Se o usuario for um funcionario
-} else if ($_SESSION['nivel_usuario'] != 1) {
-    //Realoca para a pagina de funcionario
-    header("location: funcionario.php");
-}
+    }
 ?>
  
 <!DOCTYPE html>
@@ -41,12 +37,12 @@ if (!isset($_SESSION['id_usuario'])) {
         <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
             <div class="form-group">
                 <label>Nome do usuário</label>
-                <input type="text" name="username" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <input type="text" name="nome" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
                 <span class="invalid-feedback"><?php echo $username_err; ?></span>
             </div>    
             <div class="form-group">
                 <label>Senha</label>
-                <input type="password" name="password" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
+                <input type="password" name="senha" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $password; ?>">
                 <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
             <div class="form-group">

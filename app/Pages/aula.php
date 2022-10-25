@@ -12,6 +12,13 @@
             <a class="logo" href="index.html">GREEN PARKS</a>
              <ul class="nav-list">
                 <li><a href="index.html">INÍCIO</a></li>
+<<<<<<< HEAD
+=======
+                <li><a href="sobre.php">SOBRE</a></li> 
+                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
+                <li><a href="evento.php">EVENTOS</a></li>     
+            </ul>
+>>>>>>> 5110217b1900c78f4db6ee57292b26a6f281dd29
                 <li><a href="app/Pages/sobre.html">SOBRE</a></li> 
                 <li><a style="color: #ffe60b" href="app/Pages/aula.php">AULAS</a></li> 
                 <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
@@ -26,8 +33,17 @@
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
+<<<<<<< HEAD
       <img id="bola1" src="app/View/css/images/Manchas/bolafutebol.png">
     <div class="linha1"></div>
+=======
+<<<<<<< HEAD
+      <img id="bola1" src="../View/css/images/Manchas/bolafutebol.png">
+    <div class="linha1"></div>
+=======
+      <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
+>>>>>>> b585dc2aa58154a0e5523e24cd249fae36277d90
+>>>>>>> 5110217b1900c78f4db6ee57292b26a6f281dd29
     <!-- IMAGEM PRIMEIRO ESPORTE -->
     <img id="futebol" src="app/View/css/images/img5.png">
    <!-- TÍTULO PRIMEIRO ESPORTE -->

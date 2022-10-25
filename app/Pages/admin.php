@@ -25,16 +25,26 @@
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
     <div class="titulo">Área administrativa</div>
     <div class="linha"></div>
+<<<<<<< HEAD
     <a href="aula.html">
         <input class="img1" type="image" src="app/View/images/adm_aula.jpg">
+=======
+    <a href="aula.php">
+        <input class="img1" type="image" src="../View/images/adm_aula.jpg">
+>>>>>>> 5110217b1900c78f4db6ee57292b26a6f281dd29
     </a>
     <div class="texto1"> Aulas</div>
     <a href="evento.html">
-        <input class="img2" type="image" src="app/View/images/evento.png">
+        <input class="img2" type="image" src="../View/images/evento.png">
     </a>
     <div class="texto2"> Eventos</div>
+<<<<<<< HEAD
     <a href="formaluno.html">
         <input class="img3" type="image" src="app/View/images/aulas.png"> 
+=======
+    <a href="formaluno.php">
+        <input class="img3" type="image" src="../View/images/aulas.png"> 
+>>>>>>> 5110217b1900c78f4db6ee57292b26a6f281dd29
     </a>
     <div class="texto3"> Pedidos</div>
 </body>
