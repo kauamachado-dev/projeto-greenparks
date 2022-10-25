@@ -3,7 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <title>Aulas</title>
-    <link href="app/View/css/aula.css" rel="stylesheet">
+    <link href="../View/css/aula.css" rel="stylesheet">
 </head>
 <body>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
@@ -11,25 +11,11 @@
         <nav>
             <a class="logo" href="index.php">GREEN PARKS</a>
              <ul class="nav-list">
-<<<<<<< HEAD
                 <li><a href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li>     
-=======
-                <li><a href="index.html">INÍCIO</a></li>
-<<<<<<< HEAD
-=======
-                <li><a href="sobre.php">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li>     
+                <li><a href="evento.php">EVENTOS</a></li>       
             </ul>
->>>>>>> 5110217b1900c78f4db6ee57292b26a6f281dd29
-                <li><a href="app/Pages/sobre.html">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="app/Pages/aula.php">AULAS</a></li> 
-                <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
->>>>>>> 5cdfa8f6fa5d9f9d99dd3c829727c9b71c0a9b90
-             </ul>
         </nav>
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
@@ -40,24 +26,10 @@
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
-      <img id="bola1" src="app/View/css/images/Manchas/bolafutebol.png">
-    <div class="linha1"></div>
-=======
-<<<<<<< HEAD
->>>>>>> 5cdfa8f6fa5d9f9d99dd3c829727c9b71c0a9b90
       <img id="bola1" src="../View/css/images/Manchas/bolafutebol.png">
     <div class="linha1"></div>
-      <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
-<<<<<<< HEAD
-=======
->>>>>>> b585dc2aa58154a0e5523e24cd249fae36277d90
->>>>>>> 5110217b1900c78f4db6ee57292b26a6f281dd29
->>>>>>> 5cdfa8f6fa5d9f9d99dd3c829727c9b71c0a9b90
     <!-- IMAGEM PRIMEIRO ESPORTE -->
-    <img id="futebol" src="app/View/css/images/img5.png">
+    <img id="futebol" src="../View/css/images/img5.png">
    <!-- TÍTULO PRIMEIRO ESPORTE -->
     <section class="container">
         <div id="titulo2">FUTEBOL</div>
@@ -68,11 +40,11 @@
             <P>E nada melhor que além de brincar, as pessoas apendam as</P>
             <P>regras, técnicas do esporte, etc... </P>
             </div>
-    <a href="app/Pages/futebol.php" type="button" class="botao1">SAIBA MAIS</a>
+    <a href="../Pages/futebol.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
     <!-- IMAGEM SEGUNDO ESPORTE -->
-    <img id="volei" src="app/View/css/images/img4.png">
+    <img id="volei" src="../View/css/images/img4.png">
    <!-- TÍTULO SEGUNDO ESPORTE -->
     <section class="container">
         <div id="titulo3">VOLÊI</div>
@@ -98,7 +70,7 @@
     <button type="button" class="botao3" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE BASQUETE -->
         <!-- IMAGEM QUARTO ESPORTE -->
-        <img id="skate" src="app/View/css/images/img2.png">
+        <img id="skate" src="../View/css/images/img2.png">
    <!-- TÍTULO QUARTO ESPORTE -->
     <section class="container">
         <div id="titulo5">SKATE</div>
@@ -111,7 +83,7 @@
     <button type="button" class="botao4" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE SKATE -->
         <!-- IMAGEM QUINTO ESPORTE -->
-        <img id="handeball" src="app/View/css/images/img3.png">
+        <img id="handeball" src="../View/css/images/img3.png">
    <!-- TÍTULO QUINTOSS ESPORTE -->
     <section class="container">
         <div id="titulo6">HANDEBALL</div>
@@ -120,7 +92,7 @@
     <div class="handeball">
             <P>Convide seus amigos e se inscreva na aula de handeball!</P>
             </div>
-            <a href="app/Pages/aula.php" type="button" class="botao5">SAIBA MAIS</a>
+            <a href="../Pages/aula.php" type="button" class="botao5">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE HANDEBALL -->
 </body>
 </html>
