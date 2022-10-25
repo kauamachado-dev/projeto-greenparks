@@ -12,9 +12,9 @@
 
     <header>
         <nav>
-            <a class="logo" href="index.html">GREEN PARKS</a>
+            <a class="logo" href="index.php">GREEN PARKS</a>
             <ul class="nav-list">
-                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="index.php">INÍCIO</a></li>
                 <li><a style="color: #ffe60b" href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li>  

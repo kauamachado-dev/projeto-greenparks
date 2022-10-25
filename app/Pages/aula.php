@@ -9,16 +9,12 @@
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
-            <a class="logo" href="index.html">GREEN PARKS</a>
+            <a class="logo" href="index.php">GREEN PARKS</a>
              <ul class="nav-list">
-                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li>     
-            </ul>
-                <li><a href="app/Pages/sobre.html">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="app/Pages/aula.php">AULAS</a></li> 
-                <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
              </ul>
         </nav>
     </header> 
@@ -31,12 +27,9 @@
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
-<<<<<<< HEAD
       <img id="bola1" src="../View/css/images/Manchas/bolafutebol.png">
     <div class="linha1"></div>
-=======
       <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
->>>>>>> b585dc2aa58154a0e5523e24cd249fae36277d90
     <!-- IMAGEM PRIMEIRO ESPORTE -->
     <img id="futebol" src="../View/css/images/img5.png">
    <!-- TÍTULO PRIMEIRO ESPORTE -->
@@ -102,7 +95,7 @@
     <div class="handeball">
             <P>Convide seus amigos e se inscreva na aula de handeball!</P>
             </div>
-    <button type="button" class="botao5" onclick= "">SAIBA MAIS</button>
+            <a href="app/Pages/aula.php" type="button" class="botao5">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE HANDEBALL -->
 </body>
 </html>
