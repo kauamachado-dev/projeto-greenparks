@@ -12,17 +12,10 @@
             <a class="logo" href="index.html">GREEN PARKS</a>
              <ul class="nav-list">
                 <li><a href="index.html">INÍCIO</a></li>
-<<<<<<< HEAD
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li>     
             </ul>
-=======
-                <li><a href="app/Pages/sobre.html">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="app/Pages/aula.php">AULAS</a></li> 
-                <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
-             </ul>
->>>>>>> 032e484fac6ad5b9cd88ea05a51587c7f4db62dd
         </nav>
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
@@ -47,7 +40,7 @@
             <P>E nada melhor que além de brincar, as pessoas apendam as</P>
             <P>regras, técnicas do esporte, etc... </P>
             </div>
-    <a href="app/Pages/futebol.php" type="button" class="botao1">SAIBA MAIS</a>
+    <a href="futebol.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
     <img id="bola2" src="../View/css/images/Manchas/bolavolei.png">
@@ -64,6 +57,7 @@
             </div>
     <button type="button" class="botao2" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE VOLEI -->
+    <img id="bola3" src="../View/css/images/Manchas/bolabasquete.png">
     <!-- IMAGEM TERCEIRO ESPORTE -->
         <img id="basquete" src="../View/css/images/img1.png">
    <!-- TÍTULO TERCEIRO ESPORTE -->
@@ -77,6 +71,7 @@
             </div>
     <button type="button" class="botao3" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE BASQUETE -->
+    <img id="bola4" src="../View/css/images/Manchas/skateaula.png">
         <!-- IMAGEM QUARTO ESPORTE -->
         <img id="skate" src="../View/css/images/img2.png">
    <!-- TÍTULO QUARTO ESPORTE -->
@@ -90,6 +85,7 @@
             </div>
     <button type="button" class="botao4" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE SKATE -->
+    <img id="bola5" src="../View/css/images/Manchas/bolahandeball.png">
         <!-- IMAGEM QUINTO ESPORTE -->
         <img id="handeball" src="../View/css/images/img3.png">
    <!-- TÍTULO QUINTOSS ESPORTE -->
