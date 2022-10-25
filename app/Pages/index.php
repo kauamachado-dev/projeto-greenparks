@@ -111,7 +111,7 @@
             <P>clique no botão para conhecer nossa página</P>
             <P>de eventos e não perder mais nada que rolar</P>
             <P>por perto!</P></div>
-            <a href="app/Pages/evento.php" type="button" class="botao3">EVENTOS</a>
+            <a href="../Model/login.php" type="button" class="botao3">TELA DE LOGIN</a>
             <!-- <img id="evento" src="app/View/css/images/evento.png"> -->
     </section>
     <section></section>

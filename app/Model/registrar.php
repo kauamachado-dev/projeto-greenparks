@@ -2,8 +2,8 @@
 //CADASTRO TESTE.
 
 //CHAMA ARQUIVOS DE CONEXÃO E DE USUARIO.
-include '../../../Model/Entity/conexao.php';
-require_once '../../../Controller/Pages/usuarios.php';
+include '../Model/conexao.php';
+require_once '../Controller/usuarios.php';
 
 //CHAMA A CLASSE USUÁRIO.
 $u = new Usuario;

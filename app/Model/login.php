@@ -1,6 +1,6 @@
 <?php
 //CHAMA O ARQUIVO DE USUÁRIOS.
-require_once 'app/Controller/usuarios.php';
+require_once '../Controller/usuarios.php';
 
 //CHAMA CLASSE.
 $u = new Usuario; 
@@ -97,10 +97,8 @@ $u = new Usuario;
                                     <!-- /PHP -->
                                 </div>
                             </div>
-                                    <h4 class="mb-4">Olá, como vai?</h4>
+                                    <h4 class="mb-4">BEM VINDO</h4>
                                     <p class="mb-4">
-                                    <p>Faça login para poder utilizar o site.</p>
-                                    Caso não lembre o seu usuário e a senha, contate o seu superior.
                                     </p>
                                 </div>
                             </div>
