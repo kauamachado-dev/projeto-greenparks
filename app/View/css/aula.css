@@ -73,8 +73,8 @@ nav {
 }  
 /*BOLA FUTEBOL*/
 #bola1{
-    height: 9%;
-    width: 31%;
+    height: 11%;
+    width: 30%;
     margin-left: 70%;
     margin-top: 5%;
 } 
@@ -99,17 +99,19 @@ nav {
 }
 /*IMAGEM FUTEBOL*/
 #futebol{
-    height: 9%;
-    width: 31%;
-    margin-left: 10%;
+    height: 50%;
+    width: 30%;
+    margin-left: -90%;
     margin-top: 15%;
+    position: absolute;
+    border-radius: 5%;
 }
 /*TEXTO FUTEBOL*/
 .futebol{
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    top: 11%;
+    top: 3%;
     left: 10%;
     text-align: left;
     font-size: clamp(1.4em, 1em + 5vw, 1.0em);
@@ -120,15 +122,22 @@ nav {
     font-family: 'Passion One'; 
     color: #ffffff;
     letter-spacing: 3px;
-    background-color: #ff008c;
+    background-color: #FFB200;
     border-color: #FFB200;
     border-radius: 7px;
     font-size: 35px;
     padding: 10px 19px;
     margin-left: 10%;
-    margin-top: 17%;
+    margin-top: 18%;
     position: absolute;
 }
+/*BOLA VOLEI*/
+#bola2{
+    height: 13%;
+    width: 45%;
+    margin-left: 0%;
+    margin-top: 27%;
+} 
 /* TÍTULO VOLEI */
 #titulo3{
     font-family: 'Passion One';
@@ -150,10 +159,12 @@ nav {
 }
 /*IMAGEM VOLEI*/
 #volei{
-    height: 9%;
-    width: 31%;
+    height: 10%;
+    width: 32%;
     margin-left: 55%;
-    margin-top: 25%;
+    margin-top: -37%;
+    position: relative;
+    border-radius: 5%;
 }
 /*TEXTO VOLEI*/
 .volei{
@@ -180,6 +191,13 @@ nav {
     margin-top: 14%;
     position: absolute;
 }
+/*BOLA BASQUETE*/
+#bola3{
+    height: 11%;
+    width: 27%;
+    margin-left: 75%;
+    margin-top: 23%;
+} 
 /* TÍTULO BASQUETE */
 #titulo4{
     font-family: 'Passion One';
@@ -201,10 +219,11 @@ nav {
 }
 /*IMAGEM BASQUETE*/
 #basquete{
-    height: 9%;
-    width: 31%;
+    height: 10%;
+    width: 32%;
     margin-left: 10%;
-    margin-top: 25%;
+    margin-top: -35%;
+    border-radius: 5%;
 }
 /*TEXTO BASQUETE*/
 .basquete{
@@ -231,6 +250,13 @@ nav {
     margin-top: 14%;
     position: absolute;
 }
+/*DESENHO SKATE*/
+#bola4{
+    height: 11%;
+    width: 27%;
+    margin-left: 0%;
+    margin-top: 23%;
+}
 /* TÍTULO SKATE */
 #titulo5{
     font-family: 'Passion One';
@@ -252,10 +278,11 @@ nav {
 }
 /*IMAGEM SKATE*/
 #skate{
-    height: 9%;
-    width: 31%;
+    height: 10%;
+    width: 32%;
     margin-left: 55%;
-    margin-top: 25%;
+    margin-top: -35%;
+    border-radius: 5%;
 }
 /*TEXTO SKATE*/
 .skate{
@@ -282,6 +309,13 @@ nav {
     margin-top: 14%;
     position: absolute;
 }
+/*BOLA HANDEBALL*/
+#bola5{
+    height: 10%;
+    width: 25%;
+    margin-left: 79%;
+    margin-top: 20%;
+}
 /* TÍTULO HANDEBALL */
 #titulo6{
     font-family: 'Passion One';
@@ -303,10 +337,11 @@ nav {
 }
 /*IMAGEM HANDEBALL*/
 #handeball{
-    height: 9%;
-    width: 31%;
+    height: 10%;
+    width: 32%;
     margin-left: 10%;
-    margin-top: 25%;
+    margin-top: -20%;
+    border-radius: 5%;
 }
 /*TEXTO HANDEBALL*/
 .handeball{

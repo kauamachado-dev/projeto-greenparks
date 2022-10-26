@@ -9,12 +9,19 @@
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
-            <a class="logo" href="index.php">GREEN PARKS</a>
+            <a class="logo" href="index.html">GREEN PARKS</a>
              <ul class="nav-list">
+<<<<<<< HEAD
+                <li><a href="index.html">INÍCIO</a></li>
+                <li><a href="sobre.php">SOBRE</a></li> 
+                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
+                <li><a href="evento.php">EVENTOS</a></li>     
+=======
                 <li><a href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li>       
+>>>>>>> 7652d8203d46ba14fdb3bcf4249f5a72fc88e715
             </ul>
         </nav>
     </header> 
@@ -23,11 +30,16 @@
     <section class="container">
         <div class="titulo1">AULAS</div>
     </section>
+    <div class="linha1"></div>
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
+<<<<<<< HEAD
+      <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
+=======
       <img id="bola1" src="../View/css/images/Manchas/bolafutebol.png">
     <div class="linha1"></div>
+>>>>>>> 7652d8203d46ba14fdb3bcf4249f5a72fc88e715
     <!-- IMAGEM PRIMEIRO ESPORTE -->
     <img id="futebol" src="../View/css/images/img5.png">
    <!-- TÍTULO PRIMEIRO ESPORTE -->
@@ -40,9 +52,14 @@
             <P>E nada melhor que além de brincar, as pessoas apendam as</P>
             <P>regras, técnicas do esporte, etc... </P>
             </div>
+<<<<<<< HEAD
+    <a href="futebol.php" type="button" class="botao1">SAIBA MAIS</a>
+=======
     <a href="../Pages/futebol.php" type="button" class="botao1">SAIBA MAIS</a>
+>>>>>>> 7652d8203d46ba14fdb3bcf4249f5a72fc88e715
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
+    <img id="bola2" src="../View/css/images/Manchas/bolavolei.png">
     <!-- IMAGEM SEGUNDO ESPORTE -->
     <img id="volei" src="../View/css/images/img4.png">
    <!-- TÍTULO SEGUNDO ESPORTE -->
@@ -56,8 +73,9 @@
             </div>
     <button type="button" class="botao2" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE VOLEI -->
+    <img id="bola3" src="../View/css/images/Manchas/bolabasquete.png">
     <!-- IMAGEM TERCEIRO ESPORTE -->
-        <img id="basquete" src="app/View/css/images/img1.png">
+        <img id="basquete" src="../View/css/images/img1.png">
    <!-- TÍTULO TERCEIRO ESPORTE -->
     <section class="container">
         <div id="titulo4">BASQUETE</div>
@@ -69,6 +87,7 @@
             </div>
     <button type="button" class="botao3" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE BASQUETE -->
+    <img id="bola4" src="../View/css/images/Manchas/skateaula.png">
         <!-- IMAGEM QUARTO ESPORTE -->
         <img id="skate" src="../View/css/images/img2.png">
    <!-- TÍTULO QUARTO ESPORTE -->
@@ -82,6 +101,7 @@
             </div>
     <button type="button" class="botao4" onclick= "">SAIBA MAIS</button>
     <!-- FINAL SEÇÃO DE SKATE -->
+    <img id="bola5" src="../View/css/images/Manchas/bolahandeball.png">
         <!-- IMAGEM QUINTO ESPORTE -->
         <img id="handeball" src="../View/css/images/img3.png">
    <!-- TÍTULO QUINTOSS ESPORTE -->
@@ -92,7 +112,11 @@
     <div class="handeball">
             <P>Convide seus amigos e se inscreva na aula de handeball!</P>
             </div>
+<<<<<<< HEAD
+    <button type="button" class="botao5" onclick= "">SAIBA MAIS</button>
+=======
             <a href="../Pages/aula.php" type="button" class="botao5">SAIBA MAIS</a>
+>>>>>>> 7652d8203d46ba14fdb3bcf4249f5a72fc88e715
     <!-- FINAL SEÇÃO DE HANDEBALL -->
 </body>
 </html>
