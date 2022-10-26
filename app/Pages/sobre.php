@@ -6,25 +6,16 @@
     <link href="../View/css/sobre.css" rel="stylesheet">
 </head>
 <body>
-    <header>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
-
 
     <header>
         <nav>
             <a class="logo" href="index.php">GREEN PARKS</a>
             <ul class="nav-list">
-<<<<<<< HEAD
                 <li><a href="index.php">INÍCIO</a></li>
                 <li><a style="color: #ffe60b" href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li>  
-=======
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a style="color: #ffe60b" href="app/Pages/sobre.html">SOBRE</a></li> 
-                <li><a href="app/Pages/aula.html">AULAS</a></li> 
-                <li><a href="app/Pages/evento.html">EVENTOS</a></li>  
->>>>>>> 5cdfa8f6fa5d9f9d99dd3c829727c9b71c0a9b90
+                <li><a href="evento.php">EVENTOS</a></li>   
             </ul>
         </nav>
     </header> 
