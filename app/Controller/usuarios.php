@@ -79,8 +79,7 @@ Class Usuario{
             //Estrutura de repetição, sendo criado um array dos dados do usuário 
             while($linha = $verificar->fetch(PDO::FETCH_ASSOC)){
                 //Se os IDS forem igual
-                if($linha['id_usuario'] == $_SESSION['id_usuario'])
-                { 
+                if($linha['id_usuario'] == $_SESSION['id_usuario']){ 
 
                     $nivel  = $linha['nivel_usuario']; //Variável recebendo o nivel de usuário
                     $status = $linha['status_usuario'];//Variável recebendo o status do usuário
@@ -91,13 +90,13 @@ Class Usuario{
                         //Funcionário(a) ativo
                         case ($nivel == 0 && $status == 1):
                             //Manda para a página dos funcionários
-                            header("location: ../../../resources/View/Pages/funcionario.php");
+                            header("location: View/Pages/funcionario.php");
                         break;
 
                         //Administrador ativo
                         case ($nivel == 1 && $status == 1):
                             //Manda para a página dos administradores
-                            header("location: ../../../resources/View/Pages/administrador.php");
+                            header("location: View/Pages/administrador.php");
                         break;
 
                         //Funcionário(a) inativo
