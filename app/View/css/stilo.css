@@ -2,10 +2,6 @@
 /* INICIO - CORPO DO SITE */
 body {
     background-color: #ffffff;
-<<<<<<< HEAD
-    
-=======
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     height: 3000px;
 }
 /* FINAL - CORPO DO SITE */
@@ -52,11 +48,8 @@ nav {
 /* ÍNICIO - PARALLAX */
 section{
     width: 100%;
-<<<<<<< HEAD
     height: 165px;
-=======
     height: 143px;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -77,7 +70,6 @@ height: 600px;
     top: 63%;
 =======
     top: 77%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 }
 /* INICIO - TÍTULO RESPONSIVO */
 .titulo1{
@@ -98,7 +90,6 @@ height: 600px;
 =======
     margin-top: -18%;
     margin-left: 10%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -110,13 +101,10 @@ height: 600px;
     position: absolute;
     width: 450px;
     height: 5px;
-<<<<<<< HEAD
     margin-left: 13%;
     margin-top: -20%;
-=======
     margin-left: 8%;
     margin-top: -22%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 }
 /* TEXTO DE DESCRIÇÃO SOBRE NÓS */
 .sobre{
@@ -140,11 +128,8 @@ height: 600px;
     font-size: 35px;
     padding: 11px 20px;
     margin-left: 32%;
-<<<<<<< HEAD
     margin-top: 10%;
-=======
     margin-top: 9%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     position: absolute;
 }
 /* ONDA ABAIXO DO SOBRE */
@@ -153,20 +138,14 @@ height: 600px;
     bottom: 0;
     left: 0;
     right: 0;
-<<<<<<< HEAD
     top: 160%;
-=======
     top: 185%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 }
 /* <<<<<<< PARALLAX ENTRE SOBRE E AULAS >>>>>> */
 section:nth-of-type(5){
     background-image: url(images/teste.jpg);
-<<<<<<< HEAD
     height: 10%;
-=======
     height: 10.6%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     }
 /* ONDA ACIMA AULAS */
 .onda3{
@@ -174,16 +153,9 @@ section:nth-of-type(5){
     bottom: 0;
     left: 0;
     right: 0;
-<<<<<<< HEAD
     top: 165%;
 }
 
-
-
-=======
-    top: 190%;
-}
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
@@ -200,11 +172,8 @@ section:nth-of-type(5){
     width: 255px;
     height: 5px;
     margin-left: 68%;
-<<<<<<< HEAD
     margin-top: -7%;
-=======
     margin-top: -8%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 }
 
 /* IMAGEM AULAS 
@@ -215,8 +184,6 @@ section:nth-of-type(5){
     width: 50%;
     height: 90%;
 }*/
-<<<<<<< HEAD
-=======
 /* EFEITO CARROSSEL AULAS */
 .galery{
     margin-top: -4%;
@@ -236,18 +203,14 @@ section:nth-of-type(5){
 .galery .fotos img{
     width: 19.9%;
 }
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 
 /*TEXTO AULAS */
 .aulas{
     font-family: 'Arimo';
-<<<<<<< HEAD
     margin-top: -5%;
     margin-left: 62%;
-=======
     margin-top: -6%;
     margin-left: 59%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     position: absolute;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
     line-height: 50px;
@@ -263,11 +226,9 @@ section:nth-of-type(5){
     font-size: 35px;
     padding: 11px 30px;
     margin-left: 82%;
-<<<<<<< HEAD
     margin-top: 25%;
 =======
     margin-top: 23%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     position: absolute;
 }
 /* ONDA ABAIXO AULAS */
@@ -278,10 +239,8 @@ section:nth-of-type(5){
     right: 0;
 <<<<<<< HEAD
     top: 253%;
-=======
     top: 275%;
     top: 300%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 }
 
 /* <<<<<<< PARALLAX ENTRE AULAS E EVENTOS >>>>>> */
@@ -291,14 +250,9 @@ section:nth-of-type(8){
     height: 9.8%;
     }
 
-
-
 /* ONDA ABAIXO AULAS */
-=======
-    height: 10%;
-    }
+
 /* ONDA ACIMA EVENTOS */
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 .onda5{
     position: absolute;
     bottom: 0;
@@ -309,18 +263,14 @@ section:nth-of-type(8){
 =======
     top: 280%;
     top: 305%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 }
 
 /* TÍTULO EVENTOS */
 #titulo4{
     font-family: 'Passion One';
     margin-top: -9%;
-<<<<<<< HEAD
     margin-left: 15%;
-=======
     margin-left: 10%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -339,11 +289,8 @@ section:nth-of-type(8){
     position: absolute;
     width: 347px;
     height: 5px;
-<<<<<<< HEAD
     margin-left: 13%;
-=======
     margin-left: 8%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     margin-top: -3%;
 }
 /* TEXTO DE DESCRIÇÃO EVENTOS */
@@ -352,9 +299,7 @@ section:nth-of-type(8){
     margin-top: -1%;
 <<<<<<< HEAD
     margin-left: 13%;
-=======
     margin-left: 8%;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
     position: absolute;
     text-align: left;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
@@ -370,7 +315,6 @@ section:nth-of-type(8){
     border-radius: 7px;
     font-size: 35px;
     padding: 11px 30px;
-<<<<<<< HEAD
     margin-left: 35%;
     margin-top: 18%;
     position: absolute;
@@ -379,9 +323,7 @@ section:nth-of-type(8){
 
 footer{
     background-color: #09400A;
-=======
     margin-left: 28%;
     margin-top: 24%;
     position: absolute;
->>>>>>> e33f94b98398072362a9aeabc02c9df5bde1b2ec
 }

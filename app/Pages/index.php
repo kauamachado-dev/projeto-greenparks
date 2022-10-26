@@ -56,7 +56,7 @@
              fill-opacity="1"
              d="M0,192L80,197.3C160,203,320,213,480,186.7C640,160,800,96,960,80C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
         </svg>
-        <a href="app/Pages/aulas.php" type="button" class="botao1">SAIBA MAIS</a>
+        <a href="app/Pages/aula.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- TEXTO E SEÇÃO AULAS!-->
   <section></section>
     <svg class="onda3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -95,7 +95,7 @@
                 fill-opacity="1"
                 d="M0,160L60,144C120,128,240,96,360,106.7C480,117,600,171,720,213.3C840,256,960,288,1080,288C1200,288,1320,256,1380,240L1440,224L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
             </svg>-->
-            <a href="app/Pages/aulas.php" type="button" class="botao2">AULAS</a>
+            <a href="aula.php" type="button" class="botao2">AULAS</a>
     <!-- TEXTO E SEÇÃO SOBRE EVENTOS!-->
     <section></section>
     <!--<svg  class="onda5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
