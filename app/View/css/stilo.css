@@ -48,11 +48,7 @@ nav {
 /* ÍNICIO - PARALLAX */
 section{
     width: 100%;
-<<<<<<< HEAD
     height: 165px;
-    height: 143px;
-=======
->>>>>>> 4dfb5539e082441a9a748feb6628f2fc7b2aa098
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -87,12 +83,6 @@ height: 600px;
     font-family: 'Passion One';
     margin-top: -14%;
     margin-left: 16%;
-<<<<<<< HEAD
-=======
-    margin-top: -18%;
-    margin-left: 10%;
-=======
->>>>>>> 4dfb5539e082441a9a748feb6628f2fc7b2aa098
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -104,13 +94,8 @@ height: 600px;
     position: absolute;
     width: 450px;
     height: 5px;
-<<<<<<< HEAD
     margin-left: 13%;
     margin-top: -20%;
-=======
->>>>>>> 4dfb5539e082441a9a748feb6628f2fc7b2aa098
-    margin-left: 8%;
-    margin-top: -22%;
 }
 /* TEXTO DE DESCRIÇÃO SOBRE NÓS */
 .sobre{
@@ -135,10 +120,6 @@ height: 600px;
     padding: 11px 20px;
     margin-left: 32%;
     margin-top: 10%;
-<<<<<<< HEAD
-    margin-top: 9%;
-=======
->>>>>>> 4dfb5539e082441a9a748feb6628f2fc7b2aa098
     position: absolute;
 }
 /* ONDA ABAIXO DO SOBRE */
@@ -164,10 +145,6 @@ section:nth-of-type(5){
     right: 0;
     top: 165%;
 }
-<<<<<<< HEAD
-
-=======
->>>>>>> 4dfb5539e082441a9a748feb6628f2fc7b2aa098
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
@@ -185,10 +162,6 @@ section:nth-of-type(5){
     height: 5px;
     margin-left: 68%;
     margin-top: -7%;
-<<<<<<< HEAD
-    margin-top: -8%;
-=======
->>>>>>> 4dfb5539e082441a9a748feb6628f2fc7b2aa098
 }
 
 /* IMAGEM AULAS 
@@ -199,24 +172,28 @@ section:nth-of-type(5){
     width: 50%;
     height: 90%;
 }*/
-/* EFEITO CARROSSEL AULAS */
-.galery{
-    margin-top: -4%;
-    width: 600px;
-    height: 400px;
-    background-color: #ffffff;
-    overflow: hidden;
+/* EFEITO SLIDER AULAS */
+#slider {
+    width: 100%;
+    max-width: 600px;
+    height: 500px;
+    max-height: 500px;
+    position: relative;
+    left: 5%;
 }
 
-.galery .fotos{
-    width: 500%;
-    animation-name: animacao;
-    animation-duration: 20s;
-    animation-iteration-count: infinite;
+#slider img{
+    opacity: 0;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: opacity 600ms;
 }
 
-.galery .fotos img{
-    width: 19.9%;
+#slider img.selected { 
+    opacity: 1;
 }
 
 /*TEXTO AULAS */
@@ -242,8 +219,6 @@ section:nth-of-type(5){
     padding: 11px 30px;
     margin-left: 82%;
     margin-top: 25%;
-=======
-    margin-top: 23%;
     position: absolute;
 }
 /* ONDA ABAIXO AULAS */
@@ -252,16 +227,12 @@ section:nth-of-type(5){
     bottom: 0;
     left: 0;
     right: 0;
-<<<<<<< HEAD
     top: 253%;
-    top: 275%;
-    top: 300%;
 }
 
 /* <<<<<<< PARALLAX ENTRE AULAS E EVENTOS >>>>>> */
 section:nth-of-type(8){
     background-image: url(images/teste.jpg);
-<<<<<<< HEAD
     height: 9.8%;
     }
 
@@ -273,11 +244,7 @@ section:nth-of-type(8){
     bottom: 0;
     left: 0;
     right: 0;
-<<<<<<< HEAD
     top: 258%;
-=======
-    top: 280%;
-    top: 305%;
 }
 
 /* TÍTULO EVENTOS */
@@ -312,9 +279,7 @@ section:nth-of-type(8){
 .eventos{
     font-family: 'Arimo';
     margin-top: -1%;
-<<<<<<< HEAD
     margin-left: 13%;
-    margin-left: 8%;
     position: absolute;
     text-align: left;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);

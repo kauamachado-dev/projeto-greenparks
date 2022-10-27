@@ -7,7 +7,6 @@
     <meta charset='utf-8'>
     <title>HOME</title>
     <link href="../View/css/stilo.css" rel="stylesheet">
-    <link href="../View/css/animation.css" rel="stylesheet">
 </head>
 <body>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
@@ -78,16 +77,14 @@
             <P>imprevisto sempre entrarão em contato.</P>
         </div>
         <!-- EFEITO CARROSSEL -->
-        <main class="main">
-            <section class="galery">
-                <div class="fotos">
-                    <img src="../View/css/images/img1.png">
-                    <img src="../View/css/images/img2.png">
-                    <img src="../View/css/images/img4.png">
-                    <img src="../View/css/images/img1.png">
-                </div>
-            </section>
-        </main>
+        <div id ="slider">
+        <img class = "selected"src="../View/css/images/img1.png" alt="image1">
+        <img src="../View/css/images/img2.png" alt="image2">
+        <img src="../View/css/images/img3.png" alt="image3">
+        <img src="../View/css/images/img4.png" alt="image4">
+        <img src="../View/css/images/img5.png" alt="image5">
+    </div>
+    <script src="../controller/_js/slider.js"></script>
         <!-- ONDA 
             <svg class="onda4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
                 <path
