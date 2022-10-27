@@ -1,6 +1,6 @@
 body { 
     overflow-x: hidden;
-    height: 4000px;
+    height: 1500px;
 }
 
 * {
@@ -22,6 +22,7 @@ a:hover {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    z-index: 1;
 }
 
 nav {
@@ -29,7 +30,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #5bb318;
+    background: #ffffff;
     height: 13vh;
 }
 
@@ -41,6 +42,7 @@ nav {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+    z-index: 1;
 }
 /* ONDA INÍCIO */
 .onda1{
@@ -48,15 +50,24 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    top: 10%;
+    top: 0%;
 }
 /* INICIO - TÍTULO RESPONSIVO */
 #titulo1{
     font-family: 'Passion One';
     position: absolute;
-    top: 30%;
-    left: 40%;
+    top: 20%;
+    left: 16%;
     text-align: center;
-    font-size: clamp(3.75em, 1em + 10vw, 6.5em);
+    font-size: clamp(1.5em, 1em + 10vw, 6em);
     color: #09400A;
+}
+/*LINHA ABAIXO DO PRIMEIRO TÍTULO */
+.linha1{
+    background-color: #D62509;
+    position: absolute;
+    width: 320px;
+    height: 5px;
+    margin-left: 16%;
+    margin-top: 10%;
 }
