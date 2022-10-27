@@ -12,10 +12,26 @@
             <a class="logo" href="index.php">GREEN PARKS</a>
             <ul class="nav-list">
                 <li><a href="index.php">INÍCIO</a></li>
+<<<<<<< HEAD
                 <li><a href="evento.php">EVENTOS</a></li>     
+=======
+>>>>>>> ecdef547deeb9fc1c251d37cdb9f8a854ac985e7
                 <li><a href="sobre.php">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
+                <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li>     
             </ul>
         </nav>
-    </header> 
+    </header>
+    <svg  class="onda1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+</svg>
+    <!--TÍTULO-->
+    <section class="container">
+        <div id="titulo1">FUTEBOL</div>
+    </section>
+    <div class="linha1"></div>
+
+    <!--ULTIMA ONDA
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#0099ff" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>-->
