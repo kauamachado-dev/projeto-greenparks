@@ -11,17 +11,10 @@
         <nav>
             <a class="logo" href="index.html">GREEN PARKS</a>
              <ul class="nav-list">
-<<<<<<< HEAD
                 <li><a href="index.html">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li>     
-=======
-                <li><a href="index.php">INÍCIO</a></li>
-                <li><a href="sobre.php">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li>       
->>>>>>> 7652d8203d46ba14fdb3bcf4249f5a72fc88e715
+                <li><a href="evento.php">EVENTOS</a></li>
             </ul>
         </nav>
     </header> 
@@ -34,12 +27,7 @@
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
-<<<<<<< HEAD
       <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
-=======
-      <img id="bola1" src="../View/css/images/Manchas/bolafutebol.png">
-    <div class="linha1"></div>
->>>>>>> 7652d8203d46ba14fdb3bcf4249f5a72fc88e715
     <!-- IMAGEM PRIMEIRO ESPORTE -->
     <img id="futebol" src="../View/css/images/img5.png">
    <!-- TÍTULO PRIMEIRO ESPORTE -->
@@ -52,11 +40,7 @@
             <P>E nada melhor que além de brincar, as pessoas apendam as</P>
             <P>regras, técnicas do esporte, etc... </P>
             </div>
-<<<<<<< HEAD
     <a href="futebol.php" type="button" class="botao1">SAIBA MAIS</a>
-=======
-    <a href="../Pages/futebol.php" type="button" class="botao1">SAIBA MAIS</a>
->>>>>>> 7652d8203d46ba14fdb3bcf4249f5a72fc88e715
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
     <img id="bola2" src="../View/css/images/Manchas/bolavolei.png">
@@ -112,11 +96,7 @@
     <div class="handeball">
             <P>Convide seus amigos e se inscreva na aula de handeball!</P>
             </div>
-<<<<<<< HEAD
     <button type="button" class="botao5" onclick= "">SAIBA MAIS</button>
-=======
-            <a href="../Pages/aula.php" type="button" class="botao5">SAIBA MAIS</a>
->>>>>>> 7652d8203d46ba14fdb3bcf4249f5a72fc88e715
     <!-- FINAL SEÇÃO DE HANDEBALL -->
 </body>
 </html>
