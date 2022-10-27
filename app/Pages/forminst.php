@@ -1,20 +1,24 @@
+<?php 
+
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
     <title>FORMULÁRIO</title>
     <script src='_js/controlle-prof.js'></script>
+    <link href="../View/css/forminst.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 
 <body style="margin-left: 500px">
-  <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+  <form action="../Model/registrar.php" method="post">
 
     <div class="container">
       <div class="row">
         <div class="col">
         <div class="single-input">
-          <input required type="text" name="" id="nome" class="input" placeholder="Nome do aluno...">
+          <input required type="text" name="" id="nome" class="input" placeholder="Insira seu nome...">
           <label for="nome">Nome</label>
         </div>
     </div>
@@ -26,12 +30,12 @@
       </div>
     </div>
     <div class="row">
-        <div class="col">
-        <div class="single-input">
-          <input required type="text" name="" id="nomeresponsavel" class="input" placeholder="Nome do responsável...">
-          <label for="nomeresponsavel">Nome Responsável</label>
-        </div>
-    </div>
+      <div class="col">
+      <div class="single-input">
+          <input required type="cpf" name="" id="cpf" class="input" placeholder="Informe seu cpf...">
+          <label for="cpf">CPF</label>
+          </div>
+      </div>
     <div class="col">
       <div class="single-input">
         <input required type="tel" name="" id="telefonealuno" class="input" placeholder="Informe um telefone...">
@@ -42,41 +46,27 @@
       <div class="row">
       <div class="col">
       <div class="single-input">
-          <input required type="cpf" name="" id="cpfaluno" class="input" placeholder="CPF do aluno...">
-          <label for="cpfaluno">CPF Aluno</label>
-          </div>
-      </div>
-      <div class="col">
-          <div class="single-input">
-              <input required type="cpf" name="" id="cpfresponsavel" class="input" placeholder=" CPF do responsável...">
-              <label for="cpfresponsavel">CPF Responsável</label>
-          </div>
-      </div>   
-      </div>
-      <div class="row">
-      <div class="col">
-      <div class="single-input">
-          <input required type="email" name="" id="emailaluno" class="input" placeholder="Informe seu e-mail...">
-          <label for="emailaluno">E-mail</label>
+          <input required type="email" name="" id="email" class="input" placeholder="Informe seu e-mail...">
+          <label for="email">E-mail</label>
       </div>
       </div>
       <div class="col">
       <div class="single-input">
-          <input required type="password" name="" id="senhaaluno" class="input" placeholder="Digite uma senha...">
-          <label for="senhaaluno">Senha</label>
+          <input required type="password" name="" id="senha" class="input" placeholder="Digite uma senha...">
+          <label for="senha">Senha</label>
       </div>
       </div>
       </div>
       <div class="row">
       <div class="col">
       <div class="single-input">
-          <input required type="cep" name="" id="cepaluno" class="input" placeholder="Infome seu CEP...">
-          <label for="cepaluno">CEP</label>
+          <input required type="cep" name="" id="cep" class="input" placeholder="Infome seu CEP...">
+          <label for="cep">CEP</label>
       </div>
       </div>
       <div class="col">
       <div class="single-input">
-          <input required type="address" name="" id="enderecoaluno" class="input" placeholder="Informe seu endereço...">
+          <input required type="address" name="" id="endereco" class="input" placeholder="Informe seu endereço...">
           <label for="enderecoaluno">Endereço</label>
       </div>
       </div>
@@ -97,10 +87,10 @@
       </div>
       </div>
       <div>
-      <div>
-          <a class="btn btn-1" href="_php/conexao.php">Cadastrar</a></div>
-          <div>
-          <a class="btn btn-2" href="(LINK)">Voltar</a></div>
+      <div class="text-center pt-1 mb-5 pb-1">
+          <input type="submit" value="CADASTRAR" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 mt-4">
+      </div>
+          <a class="btn btn-2" href="../Pages/forminst.php">Voltar</a></div>
       <div>
       </div> 
     </form>
