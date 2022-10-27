@@ -17,7 +17,6 @@ $u = new Usuario;
 <!-- LOGIN  --> 
 <title>Login</title>
 </head>
-
 <body id="body">
     <!-- TELA DE LOGIN -->
     <section class="h-100 gradient-form">
@@ -70,7 +69,7 @@ $u = new Usuario;
                                                 if (!$u->logar($usuario, $senha)) {
                                     ?>
                                                     <div class="text-center p-3 mb-2 bg-danger text-black bg-opacity-75 rounded">
-                                                        <?php echo "Credenciais incorretas!"; ?>
+                                                        <?php echo "Email ou senha invalidos!"; ?>
                                                     </div>
                                                 <?php
                                                 }
