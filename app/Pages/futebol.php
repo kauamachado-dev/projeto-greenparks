@@ -12,6 +12,10 @@
             <a class="logo" href="index.php">GREEN PARKS</a>
             <ul class="nav-list">
                 <li><a href="index.php">INÍCIO</a></li>
+<<<<<<< HEAD
+                <li><a href="evento.php">EVENTOS</a></li>     
+=======
+>>>>>>> ecdef547deeb9fc1c251d37cdb9f8a854ac985e7
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li>     
