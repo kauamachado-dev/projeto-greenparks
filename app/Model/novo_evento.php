@@ -11,8 +11,16 @@
         <input type="date" name="data_eventos" class="form-control">
     </div>
     <div class="mb-3">
+        <label>Horario do Evento:</label>
+        <input type="time" name="horario_eventos" class="form-control">
+    </div>
+    <div class="mb-3">
         <label>Descrição do Evento:</label>
         <input type="text" name="desc_eventos" class="form-control">
+    </div>
+    <div class="mb-3">
+        <label>Endereço:</label>
+        <input type="text" name="id_endereco" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

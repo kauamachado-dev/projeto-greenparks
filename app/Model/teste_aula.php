@@ -14,9 +14,9 @@
             <a class="logo" href="../Pages/admin.php">GREEN PARKS</a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="../Pages/admin.php">Voltar</a></li>
-                <li><a href="teste_eventos.php">inicio</a></li> 
-                <li><a href="?page=novo">Cadastrar Eventos</a></li> 
-                <li><a href="?page=listar">Listar Eventos</a></li>        
+                <li><a href="teste_aula.php">inicio</a></li> 
+                <li><a href="?page=nova">Cadastrar Aulas</a></li> 
+                <li><a href="?page=listar">Listar Aulas</a></li>        
             </ul>
         </nav>
     </header> 
@@ -27,17 +27,17 @@
     <?php
     include("conexao.php");
  switch(@$_REQUEST["page"]){
-  case "novo":
-    include("novo_evento.php");
+  case "nova":
+    include("nova_aula.php");
     break;
   case "listar":
-    include("listar_eventos.php");
+    include("listar_aula.php");
     break;
   case "salvar";
-    include("salvar_eventos.php");
+    include("salvar_aula.php");
     break;
     case "editar";
-    include("editar_eventos.php");
+    include("editar_aula.php");
     break;
     default:
     print  "<h1>Bem vindos!!</h1>";

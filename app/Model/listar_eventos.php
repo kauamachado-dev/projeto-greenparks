@@ -11,6 +11,7 @@
         print "<th>#</th>";
         print "<th>Nome do evento</th>";
         print "<th>data do evento</th>";
+        print "<th>horario do evento</th>";
         print "<th>Descrição do evento</th>";
         print "<th>Ações</th>";
         print "</tr>";
@@ -20,6 +21,7 @@
         print "<td>".$row->id_eventos."</td>";
         print "<td>".$row->nome_eventos."</td>";
         print "<td>".$row->data_eventos."</td>";
+        print "<td>".$row->horario_eventos."</td>";
         print "<td>".$row->desc_eventos."</td>";
         print "<td>
             <button onclick=\"location.href='?page=editar&id=".$row->id_eventos."';\" class='btn btn-success'>Editar</button>

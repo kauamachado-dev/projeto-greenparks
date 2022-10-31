@@ -8,18 +8,24 @@
     <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id_eventos" value="<?php print $row->id_eventos; ?>">
     <div class="mb-3">
-        <label>Nome do evento:</label>
-        <Input type="text" name="nome_eventos" value="<?php print $row->nome_eventos;?>" class="form-control">
+        <label>Nome do Evento:</label>
+        <input type="text" name="nome_eventos" value="<?php print $row->nome_eventos; ?>" class="form-control">
     </div>
     <div class="mb-3">
-        <label>Data do evento:</label>
-        <Input type="date" name="data_eventos" value="<?php print $row->data_eventos;?>" class="form-control">
+        <label>Data do Evento:</label>
+        <input type="date" name="data_eventos" value="<?php print $row->data_eventos; ?>" class="form-control">
     </div>
     <div class="mb-3">
-        <label>Descrição do evento:</label>
-        <Input type="text" name="desc_eventos" value="<?php print $row->desc_eventos;?>" class="form-control">
+        <label>Horario do Evento:</label>
+        <input type="time" name="horario_eventos" value="<?php print $row->horario_eventos; ?>" class="form-control">
     </div>
     <div class="mb-3">
-        <button type="submit" class="btn btn-primary">Enviar</button>
+        <label>Descrição do Evento:</label>
+        <input type="text" name="desc_eventos" value="<?php print $row->desc_eventos; ?>" class="form-control">
     </div>
+    <div class="mb-3">
+        <label>Endereço:</label>
+        <input type="text" name="id_endereco" value="<?php print $row->id_endereco; ?>" class="form-control">
+    </div>
+    <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
