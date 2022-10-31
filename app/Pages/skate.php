@@ -2,8 +2,8 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>Futebol</title>
-    <link href="../View/css/futebol.css" rel="stylesheet">
+    <title>Skate</title>
+    <link href="../View/css/skate.css" rel="stylesheet">
 </head>
 <body>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
@@ -23,18 +23,18 @@
 </svg>
     <!--TÍTULO-->
     <section class="container">
-        <div id="titulo1">FUTEBOL</div>
+        <div id="titulo1">SKATE</div>
     </section>
     <div class="linha1"></div>
-    <img id="futebol" src="../View/css/images/futebol.jpg">
-    <div class="futeboltxt">
-            <P>Venha participar das aulas de futebol!</P>
-            <P>Local: Rua Luís Burgin - Violim</P>
-            <P>Horário: das 15hrs ás 17hrs </P>
+    <img id="skate" src="../View/css/images/skate.jpg">
+    <div class="skatetxt">
+            <P>Venha participar das aulas de skate!</P>
+            <P>Local: Av. Henrique Mansano - Santa Monica</P>
+            <P>Horário: das 17hrs ás 18hrs </P>
             </div>
     <div class="linha2"></div>
-    <div class="datafut">
-            <P>Segundas e quartas-feiras!</P>
+    <div class="dataskt">
+            <P>Quartas e Sextas-feiras!</P>
     <a href="formaluno.php" type="button" class="botao1">ALUNO</a>
     <a href="forminst.php" type="button" class="botao2">INSTRUTOR</a>
     <a href="admin.php" type="button" class="botao3">AUTORIZAR</a>

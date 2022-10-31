@@ -1,6 +1,6 @@
 body { 
     overflow-x: hidden;
-    height: 1300px;
+    height: 1290px;
 }
 
 * {
@@ -66,13 +66,13 @@ nav {
 .linha1{
     background-color: #D62509;
     position: absolute;
-    width: 320px;
+    width: 250px;
     height: 5px;
     margin-left: 16%;
     margin-top: 10%;
 }
-/*IMAGEM FUTEBOL*/
-#futebol{
+/*IMAGEM VOLEI*/
+#volei{
     height: 57%;
     width: 35%;
     margin-left: 16%;
@@ -80,8 +80,8 @@ nav {
     position: absolute;
     border-radius: 2%;
 }
-/*TEXTO FUTEBOL*/
-.futeboltxt{
+/*TEXTO VOLEI*/
+.voleitxt{
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
@@ -100,8 +100,8 @@ nav {
     margin-left: 16%;
     margin-top: 55%;
 }
-/*DATA FUTEBOL*/
-.datafut{
+/*DATA VOLEI*/
+.datavolei{
     font-family: 'Arimo';
     margin-top: 845px;
     position: absolute;

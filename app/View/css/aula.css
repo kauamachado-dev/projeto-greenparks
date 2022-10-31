@@ -1,6 +1,6 @@
 body { 
     overflow-x: hidden;
-    height: 4000px;
+    height: 4250px;
 }
 
 * {
@@ -50,14 +50,15 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    top: 0%;
+    top: -2%;
+    width: 120%;
 }
 /* INICIO - TÍTULO RESPONSIVO */
 .titulo1{
     font-family: 'Passion One';
     position: absolute;
     top: 15%;
-    left: 40%;
+    left: 22%;
     text-align: center;
     font-size: clamp(3.75em, 1em + 10vw, 6.5em);
     color: #09400A;
@@ -68,7 +69,7 @@ nav {
     position: absolute;
     width: 320px;
     height: 5px;
-    margin-left: 37%;
+    margin-left: 19%;
     margin-top: 8%;
 }
 /* SUBITULO AULAS */
@@ -84,13 +85,13 @@ nav {
 #bola1{
     height: 11%;
     width: 30%;
-    margin-left: 70%;
+    margin-left: 73%;
     margin-top: 5%;
 } 
 /* TÍTULO FUTEBOL */
 #titulo2{
     font-family: 'Passion One';
-    margin-top: 1%;
+    margin-top: -1%;
     margin-left: 10%;
     position: absolute;
     text-align: center;
@@ -104,14 +105,14 @@ nav {
     width: 300px;
     height: 5px;
     margin-left: 10%;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 /*IMAGEM FUTEBOL*/
 #futebol{
     height: 50%;
     width: 30%;
-    margin-left: -90%;
-    margin-top: 15%;
+    margin-left: 10%;
+    margin-top: -25%;
     position: absolute;
     border-radius: 5%;
 }
@@ -142,7 +143,7 @@ nav {
 }
 /*BOLA VOLEI*/
 #bola2{
-    height: 13%;
+    height: 10%;
     width: 45%;
     margin-left: 0%;
     margin-top: 27%;
@@ -168,10 +169,10 @@ nav {
 }
 /*IMAGEM VOLEI*/
 #volei{
-    height: 10%;
+    height: 9%;
     width: 32%;
     margin-left: 55%;
-    margin-top: -37%;
+    margin-top: -47%;
     position: relative;
     border-radius: 5%;
 }
@@ -202,8 +203,8 @@ nav {
 }
 /*BOLA BASQUETE*/
 #bola3{
-    height: 11%;
-    width: 27%;
+    height: 9%;
+    width: 26%;
     margin-left: 75%;
     margin-top: 23%;
 } 
@@ -231,7 +232,7 @@ nav {
     height: 10%;
     width: 32%;
     margin-left: 10%;
-    margin-top: -35%;
+    margin-top: -25%;
     border-radius: 5%;
 }
 /*TEXTO BASQUETE*/
@@ -264,7 +265,7 @@ nav {
     height: 11%;
     width: 27%;
     margin-left: 0%;
-    margin-top: 23%;
+    margin-top: 19%;
 }
 /* TÍTULO SKATE */
 #titulo5{
@@ -320,7 +321,7 @@ nav {
 }
 /*BOLA HANDEBALL*/
 #bola5{
-    height: 10%;
+    height: 9%;
     width: 25%;
     margin-left: 79%;
     margin-top: 20%;
@@ -376,4 +377,12 @@ nav {
     margin-left: 10%;
     margin-top: 13%;
     position: absolute;
+}
+/* ONDA FINAL */
+.onda2{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    top: 615%;
+    width: 100%;
 }

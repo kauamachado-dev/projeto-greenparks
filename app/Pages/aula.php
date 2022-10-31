@@ -58,7 +58,7 @@
             <P>Inscreva-se na aula de volei e jogue com segurança em</P>
             <P>alguma quadra próxima a sua casa!</P>
             </div>
-    <button type="button" class="botao2" onclick= "">SAIBA MAIS</button>
+    <a href="volei.php" type="button" class="botao2">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE VOLEI -->
     <img id="bola3" src="../View/css/images/Manchas/bolabasquete.png">
     <!-- IMAGEM TERCEIRO ESPORTE -->
@@ -72,7 +72,7 @@
             <P>Jogar basquete com aos amigos é tão bom quanto aprender</P>
             <P>mais sobre o esporte, venha participar!</P>
             </div>
-    <button type="button" class="botao3" onclick= "">SAIBA MAIS</button>
+    <a href="basquete.php" type="button" class="botao3">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE BASQUETE -->
     <img id="bola4" src="../View/css/images/Manchas/skateaula.png">
         <!-- IMAGEM QUARTO ESPORTE -->
@@ -86,7 +86,7 @@
             <P>Venha aprender as manobras do skate e aprender a</P>
             <P>radicalidade do esporte!</P>
             </div>
-    <button type="button" class="botao4" onclick= "">SAIBA MAIS</button>
+    <a href="skate.php" type="button" class="botao4">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE SKATE -->
     <img id="bola5" src="../View/css/images/Manchas/bolahandeball.png">
         <!-- IMAGEM QUINTO ESPORTE -->
@@ -99,7 +99,11 @@
     <div class="handeball">
             <P>Convide seus amigos e se inscreva na aula de handeball!</P>
             </div>
-    <button type="button" class="botao5" onclick= "">SAIBA MAIS</button>
+    <a href="handeball.php" type="button" class="botao5">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE HANDEBALL -->
+     <!--ULTIMA ONDA-->
+     <svg class="onda2"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>
 </body>
 </html>

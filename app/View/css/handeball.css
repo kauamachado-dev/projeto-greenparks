@@ -66,13 +66,13 @@ nav {
 .linha1{
     background-color: #D62509;
     position: absolute;
-    width: 320px;
+    width: 440px;
     height: 5px;
     margin-left: 16%;
     margin-top: 10%;
 }
-/*IMAGEM FUTEBOL*/
-#futebol{
+/*IMAGEM HANDEBALL*/
+#handeball{
     height: 57%;
     width: 35%;
     margin-left: 16%;
@@ -80,8 +80,8 @@ nav {
     position: absolute;
     border-radius: 2%;
 }
-/*TEXTO FUTEBOL*/
-.futeboltxt{
+/*TEXTO HANDEBALL*/
+.handeballtxt{
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
@@ -101,7 +101,7 @@ nav {
     margin-top: 55%;
 }
 /*DATA FUTEBOL*/
-.datafut{
+.datahnd{
     font-family: 'Arimo';
     margin-top: 845px;
     position: absolute;
@@ -157,7 +157,7 @@ nav {
 .onda2{
     position: absolute;
     bottom: 0;
-    left: -91%;
-    top: 350%;
-    width: 550%;
+    left: -97%;
+    top: 380%;
+    width: 560%;
 }

@@ -1,6 +1,6 @@
 body { 
     overflow-x: hidden;
-    height: 1300px;
+    height: 1280px;
 }
 
 * {
@@ -66,13 +66,13 @@ nav {
 .linha1{
     background-color: #D62509;
     position: absolute;
-    width: 320px;
+    width: 380px;
     height: 5px;
     margin-left: 16%;
-    margin-top: 10%;
+    margin-top: 10.5%;
 }
-/*IMAGEM FUTEBOL*/
-#futebol{
+/*IMAGEM BASQUETE*/
+#basquete{
     height: 57%;
     width: 35%;
     margin-left: 16%;
@@ -80,8 +80,8 @@ nav {
     position: absolute;
     border-radius: 2%;
 }
-/*TEXTO FUTEBOL*/
-.futeboltxt{
+/*TEXTO BASQUETE*/
+.basquetetxt{
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
@@ -100,8 +100,8 @@ nav {
     margin-left: 16%;
     margin-top: 55%;
 }
-/*DATA FUTEBOL*/
-.datafut{
+/*DATA BASQUETE */
+.databsqt{
     font-family: 'Arimo';
     margin-top: 845px;
     position: absolute;
@@ -149,7 +149,7 @@ nav {
     border-radius: 7px;
     font-size: 35px;
     padding: 8px 19px;
-    margin-left: 155%;
+    margin-left: 160%;
     margin-top: 18%;
     position: absolute;
 }
@@ -157,7 +157,7 @@ nav {
 .onda2{
     position: absolute;
     bottom: 0;
-    left: -91%;
-    top: 350%;
-    width: 550%;
+    left: -120%;
+    top: 415%;
+    width: 618%;
 }
