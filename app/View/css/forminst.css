@@ -68,7 +68,7 @@ body{
     width: 100%;
     max-width: 350px; 
     margin-top: 5%;
-    margin-right: 20%;
+    margin-right: 50%;
  }
 
  /* Largura dos campos */
@@ -122,24 +122,27 @@ div.single-input .input:valid ~ label{
 .btn1{
     float: right; 
     border:1px solid;
-    padding: 11px 21px;
+    padding: 11px 15px;
     background:#5BB318;
-    color:white;
-    border-radius:20px;
+    border-color: #5bb318;
+    border-radius:5px;
     font-size: 20px;
     font-family: arial, helvetica;
     text-decoration:none;
     vertical-align: middle;
+    margin-right: 52%;
  } 
 
   .btn2{
     float:left;
     border:1px solid;
-    padding: 13px 40px;
+    padding: 11px 40px;
     background: #FFE60B;
-    color:white;
-    border-radius:20px;
+    border-color: #ffe60b;
+    border-radius: 5px;
     font-size: 20px;
     font-family: Arial, helvetica;
     text-decoration:none;
+    margin-top: -16%;
+    margin-left: 62%;
   }

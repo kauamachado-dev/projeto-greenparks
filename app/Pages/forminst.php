@@ -88,9 +88,9 @@
       </div>
       <div>
       <div class="text-center pt-1 mb-5 pb-1">
-          <input type="submit" value="CADASTRAR" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 mt-4">
+          <a type="submit" value="CADASTRAR" class="btn1">CADASTRAR</a>
       </div>
-          <a class="btn btn-2" href="../Pages/forminst.php">Voltar</a></div>
+          <a class="btn2" href="../Pages/index.php">Voltar</a>
       <div>
       </div> 
     </form>

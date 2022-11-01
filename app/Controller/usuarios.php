@@ -7,7 +7,7 @@ Class Usuario{
     public $msgErro = "";
 
     //Função que contém a conexão entre o banco de dados do login
-    public function conectar($dbnome, $servidor, $usuario, $senha){ 
+    public function conectar($host, $DataBase, $usuario, $senha){ 
         //Para poder ser acessada
         global $pdo; 
         global $msgErro; 
@@ -15,7 +15,7 @@ Class Usuario{
         //Try catch: uma função que é feita pra tratar de erros e falhas como exceções
         try{ 
             //Fazendo a conexão com o banco
-            $pdo =  new PDO("mysql:dbname=" . $dbnome . ";host=" . $servidor, $usuario, $senha);
+            $pdo =  new PDO("mysql:dbname=" . $host . ";host=" . $DataBase, $usuario, $senha);
         //Caso não der certo, será redirecionado ao bloco catch
         }catch (PDOException $e) {
             //Inserindo o erro dentro da variável
