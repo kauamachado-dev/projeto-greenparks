@@ -14,9 +14,9 @@
             <a class="logo" href="../Pages/admin.php">GREEN PARKS</a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="../Pages/admin.php">Voltar</a></li>
-                <li><a href="teste_eventos.php">inicio</a></li> 
-                <li><a href="?page=novo">Cadastrar Eventos</a></li> 
-                <li><a href="?page=listar">Listar Eventos</a></li>        
+                <li><a href="cad_oficina.php">inicio</a></li> 
+                <li><a href="?page=nova_oficina">Cadastrar oficina</a></li> 
+                <li><a href="?page=listar_oficina">Listar oficina</a></li>        
             </ul>
         </nav>
     </header> 
@@ -27,17 +27,17 @@
     <?php
     include("conexao.php");
  switch(@$_REQUEST["page"]){
-  case "novo":
-    include("novo_evento.php");
+  case "nova_oficina":
+    include("nova_oficina.php");
     break;
-  case "listar":
-    include("listar_eventos.php");
+  case "listar_oficina":
+    include("listar_oficina.php");
     break;
-  case "salvar";
-    include("salvar_eventos.php");
+  case "salvar_oficina";
+    include("salvar_oficina.php");
     break;
-    case "editar";
-    include("editar_eventos.php");
+    case "editar_oficina";
+    include("editar_oficina.php");
     break;
     default:
     print  "<h1>Bem vindos!!</h1>";
@@ -46,9 +46,5 @@
     </div>
   </div>
 </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-   
   </body>
 </html>

@@ -14,9 +14,9 @@
             <a class="logo" href="../Pages/admin.php">GREEN PARKS</a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="../Pages/admin.php">Voltar</a></li>
-                <li><a href="teste_aula.php">inicio</a></li> 
-                <li><a href="?page=nova">Cadastrar Aulas</a></li> 
-                <li><a href="?page=listar">Listar Aulas</a></li>        
+                <li><a href="teste_eventos.php">inicio</a></li> 
+                <li><a href="?page=novo">Cadastrar Eventos</a></li> 
+                <li><a href="?page=listar">Listar Eventos</a></li>        
             </ul>
         </nav>
     </header> 
@@ -27,17 +27,17 @@
     <?php
     include("conexao.php");
  switch(@$_REQUEST["page"]){
-  case "nova":
-    include("nova_aula.php");
+  case "novo":
+    include("novo_evento.php");
     break;
   case "listar":
-    include("listar_aula.php");
+    include("listar_eventos.php");
     break;
   case "salvar";
-    include("salvar_aula.php");
+    include("salvar_eventos.php");
     break;
     case "editar";
-    include("editar_aula.php");
+    include("editar_eventos.php");
     break;
     default:
     print  "<h1>Bem vindos!!</h1>";
@@ -46,9 +46,5 @@
     </div>
   </div>
 </div>
-
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
-
-   
   </body>
 </html>
