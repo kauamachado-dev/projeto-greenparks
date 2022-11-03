@@ -32,7 +32,7 @@
       </div>
       <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
     <!-- IMAGEM PRIMEIRO ESPORTE -->
-    <img id="futebol" src="../View/css/images/img5.png">
+    <img id="futebol" src="../View/css/images/futebol.jpg">
    <!-- TÍTULO PRIMEIRO ESPORTE -->
     <section class="container">
         <div id="titulo2">FUTEBOL</div>
@@ -48,7 +48,7 @@
     <!-- INÍCIO SEÇÃO DE VOLEI -->
     <img id="bola2" src="../View/css/images/Manchas/bolavolei.png">
     <!-- IMAGEM SEGUNDO ESPORTE -->
-    <img id="volei" src="../View/css/images/img4.png">
+    <img id="volei" src="../View/css/images/volei.png">
    <!-- TÍTULO SEGUNDO ESPORTE -->
     <section class="container">
         <div id="titulo3">VOLÊI</div>
@@ -62,7 +62,7 @@
     <!-- FINAL SEÇÃO DE VOLEI -->
     <img id="bola3" src="../View/css/images/Manchas/bolabasquete.png">
     <!-- IMAGEM TERCEIRO ESPORTE -->
-        <img id="basquete" src="../View/css/images/img1.png">
+        <img id="basquete" src="../View/css/images/basquete.jpg">
    <!-- TÍTULO TERCEIRO ESPORTE -->
     <section class="container">
         <div id="titulo4">BASQUETE</div>
@@ -76,7 +76,7 @@
     <!-- FINAL SEÇÃO DE BASQUETE -->
     <img id="bola4" src="../View/css/images/Manchas/skateaula.png">
         <!-- IMAGEM QUARTO ESPORTE -->
-        <img id="skate" src="../View/css/images/img2.png">
+        <img id="skate" src="../View/css/images/skate.jpg">
    <!-- TÍTULO QUARTO ESPORTE -->
     <section class="container">
         <div id="titulo5">SKATE</div>
@@ -90,7 +90,7 @@
     <!-- FINAL SEÇÃO DE SKATE -->
     <img id="bola5" src="../View/css/images/Manchas/bolahandeball.png">
         <!-- IMAGEM QUINTO ESPORTE -->
-        <img id="handeball" src="../View/css/images/img3.png">
+        <img id="handeball" src="../View/css/images/handeball.jpg">
    <!-- TÍTULO QUINTOSS ESPORTE -->
     <section class="container">
         <div id="titulo6">HANDEBALL</div>

@@ -58,7 +58,7 @@
              fill-opacity="1"
              d="M0,192L80,197.3C160,203,320,213,480,186.7C640,160,800,96,960,80C1120,64,1280,96,1360,112L1440,128L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
         </svg>
-        <a href="app/Pages/aula.php" type="button" class="botao1">SAIBA MAIS</a>
+        <a href="sobre.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- TEXTO E SEÇÃO AULAS!-->
   <section></section>
     <svg class="onda3" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
@@ -72,26 +72,26 @@
         <div class="linha2"></div>
         <div class="aulas">
             <P>As aulas serão oferecidas à população de</P>
-            <P>forma gratuita, para que todos tenham acesso.</P>
-            <P>Isso vai acontecer de forma segura e</P>
-            <P>confiável, onde os instrutores vão ter</P>
-            <P>acesso ao contato com os pais dos alunos </P>
-            <P>menores de idade, e caso ocorra algum</P>
-            <P>imprevisto sempre entrarão em contato.</P>
+            <P>   forma gratuita, para que todos tenham</P>
+            <P>acesso. Isso vai acontecer de forma segura</P>
+            <P> e confiável, onde os instrutores vão ter</P>
+            <P> acesso ao contato com os pais dos alunos</P>
+            <P>    menores de idade, e caso ocorra algum</P>
+            <P>   imprevisto sempre entrarão em contato.</P>
         </div>
         <!-- EFEITO CARROSSEL -->
         <div id ="slider">
-        <img class = "selected"src="../View/css/images/img1.png" alt="image1">
-        <img src="../View/css/images/img2.png" alt="image2">
-        <img src="../View/css/images/img3.png" alt="image3">
-        <img src="../View/css/images/img4.png" alt="image4">
-        <img src="../View/css/images/img5.png" alt="image5">
+        <img class = "selected" src="../View/css/images/handeball.jpg" alt="image1">
+        <img src="../View/css/images/handeball.jpg" alt="image2">
+        <img src="../View/css/images/futebol.jpg" alt="image3">
+        <img src="../View/css/images/volei.png" alt="image4">
+        <img src="../View/css/images/basquete.jpg" alt="image5">
     </div>
     <script src="../controller/_js/slider.js"></script>
-            <svg class="onda4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-                <path
-                fill="#ffff"
-                fill-opacity="1" d="M0,224L60,197.3C120,171,240,117,360,117.3C480,117,600,171,720,197.3C840,224,960,224,1080,202.7C1200,181,1320,139,1380,117.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
+    <svg class="onda4" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path
+        fill="#ffff"
+        fill-opacity="1" d="M0,224L60,197.3C120,171,240,117,360,117.3C480,117,600,171,720,197.3C840,224,960,224,1080,202.7C1200,181,1320,139,1380,117.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
 </svg>
             <a href="aula.php" type="button" class="botao2">AULAS</a>
     <!-- TEXTO E SEÇÃO SOBRE EVENTOS!-->
@@ -112,6 +112,44 @@
             <P>de eventos e não perder mais nada que rolar</P>
             <P>por perto!</P></div>
             <a href="../Model/login.php" type="button" class="botao3">TELA DE LOGIN</a>
+            <div id ="sliderev">
+                <div class="slides">
+                    <input type="radio" name="radiu-btn" id="radio1">
+                    <input type="radio" name="radiu-btn" id="radio2">
+                    <input type="radio" name="radiu-btn" id="radio3">
+                    <input type="radio" name="radiu-btn" id="radio4">
+                    <div class="slide first">
+                    <img src="../View/css/images/feira.jpg" alt="image1">
+                    </div>
+                    <div class="slide">
+                    <img src="../View/css/images/circo.jpg" alt="image3">
+                    </div>
+                </div>
+                <div class="slide">
+                    <img src="../View/css/images/livro.jpg" alt="image3">
+                    </div>
+                    <div class="slide">
+                    <img src="../View/css/images/skate.jpg" alt="image4">
+                    </div>
+                <div class="navigation-auto">
+                    <div class="auto-btn1"></div>
+                    <div class="auto-btn2"></div>
+                    <div class="auto-btn3"></div>
+                    <div class="auto-btn4"></div>
+                </div>
+                </div>
+                <div class="manual-navigation">
+                    <label for="radio1" class="manual-btn"></div>
+                    <label for="radio2" class="manual-btn"></div>
+                    <label for="radio3" class="manual-btn"></div>
+                    <label for="radio4" class="manual-btn"></div>
+                </div>
+             </div>
+    <script src="../controller/_js/sliderev.js"></script>
+                 <!--ULTIMA ONDA-->
+     <svg class="ondafin"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>
             <!-- <img id="evento" src="app/View/css/images/evento.png"> -->
     </section>
     <section></section>

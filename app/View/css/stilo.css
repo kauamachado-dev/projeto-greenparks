@@ -2,7 +2,7 @@
 /* INICIO - CORPO DO SITE */
 body {
     background-color: #ffffff;
-    height: 3600px;
+    height: 2700px;
 }
 /* FINAL - CORPO DO SITE */
 /* INICIO - ALL */
@@ -146,20 +146,20 @@ section:nth-of-type(5){
     background-image: url(images/teste.jpg);
     height: 10%;
     height: 6.6%;
-    }
+}
 /* ONDA ACIMA AULAS */
 .onda3{
     position: absolute;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 185%;
+    top: 184%;
 }
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
-    margin-top: 7%;
-    margin-left: 70%;
+    margin-top: 5%;
+    margin-left: 79%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -170,18 +170,9 @@ section:nth-of-type(5){
     position: absolute;
     width: 255px;
     height: 5px;
-    margin-left: 68%;
-    margin-top: -4%;
+    margin-left: 75%;
+    margin-top: -2%;
 }
-
-/* IMAGEM AULAS 
-#aula{
-    margin-top: -17%;
-    margin-left: 55%;
-    position: absolute;
-    width: 50%;
-    height: 90%;
-}*/
 /* EFEITO SLIDER AULAS */
 #slider {
     width: 100%;
@@ -190,7 +181,7 @@ section:nth-of-type(5){
     max-height: 400px;
     position: absolute;
     left: 5%;
-    top: 220%;
+    top: 222%;
 }
 
 #slider img{
@@ -201,9 +192,10 @@ section:nth-of-type(5){
     object-fit: cover;
     border-radius: 15px;
     transition: opacity 600ms;
+    z-index: 1;
 }
 
-#slider img.selected { 
+#slider img.selected{ 
     opacity: 1;
 }
 
@@ -212,12 +204,13 @@ section:nth-of-type(5){
     font-family: 'Arimo';
     margin-top: -10%;
     margin-left: 62%;
-    margin-top: 2%;
-    margin-left: 59%;
+    margin-top: -1%;
+    margin-left: 60%;
     position: absolute;
     font-size: clamp(1.5em, 1em + 5vw, 1.0em);
     line-height: 50px;
     z-index: 1;
+    text-align: right;
 }
 /* BOTÃO AULAS */
 .botao2{
@@ -230,7 +223,7 @@ section:nth-of-type(5){
     font-size: 35px;
     padding: 11px 30px;
     margin-left: 82%;
-    margin-top: 29%;
+    margin-top: 26%;
     position: absolute;
 }
 /* ONDA ABAIXO AULAS */
@@ -239,16 +232,15 @@ section:nth-of-type(5){
     bottom: 0;
     left: 0;
     right: 0;
-    top: 281%;
+    top: 268%;
+    z-index: 0;
 }
 
 /* <<<<<<< PARALLAX ENTRE AULAS E EVENTOS >>>>>> */
 section:nth-of-type(8){
     background-image: url(images/teste.jpg);
-    height: 10.8%;
+    height: 9.8%;
     }
-
-/* ONDA ABAIXO AULAS */
 
 /* ONDA ACIMA EVENTOS */
 .onda5{
@@ -256,15 +248,14 @@ section:nth-of-type(8){
     bottom: 0;
     left: 0;
     right: 0;
-    top: 286%;
+    top: 272%;
 }
 
 /* TÍTULO EVENTOS */
 #titulo4{
     font-family: 'Passion One';
-    margin-top: -9%;
-    margin-left: 15%;
-    margin-left: 10%;
+    margin-top: -5%;
+    margin-left: 13%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -284,13 +275,12 @@ section:nth-of-type(8){
     width: 347px;
     height: 5px;
     margin-left: 13%;
-    margin-left: 8%;
-    margin-top: -3%;
+    margin-top: 1%;
 }
 /* TEXTO DE DESCRIÇÃO EVENTOS */
 .eventos{
     font-family: 'Arimo';
-    margin-top: -1%;
+    margin-top: 2%;
     margin-left: 13%;
     position: absolute;
     text-align: left;
@@ -308,6 +298,41 @@ section:nth-of-type(8){
     font-size: 35px;
     padding: 11px 30px;
     margin-left: 35%;
-    margin-top: 18%;
+    margin-top: 22%;
     position: absolute;
+}
+/* EFEITO SLIDER EVENTOS */
+#sliderev {
+    width: 100%;
+    max-width: 500px;
+    height: 400px;
+    max-height: 400px;
+    position: absolute;
+    left: 60%;
+    top: 315%;
+    overflow: hidden;
+    margin: 0 auto;
+}
+
+/*#sliderev img{
+    opacity: 0;
+    position: absolute;
+    width: 90%;
+    height: 90%;
+    object-fit: cover;
+    border-radius: 15px;
+    transition: opacity 600ms;
+    z-index: 1;
+}
+
+#sliderev img.selected1 { 
+    opacity: 1;
+}
+/* ONDA FINAL */
+.ondafin{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    top: 370%;
+    width: 100%;
 }
