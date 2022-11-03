@@ -3,32 +3,36 @@
 <head>
     <meta charset='utf-8'>
     <title>Aulas</title>
-    <link href="app/View/css/aulas.css" rel="stylesheet">
+    <link href="../View/css/aula.css" rel="stylesheet">
 </head>
 <body>
-    <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
+    <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
             <a class="logo" href="index.html">GREEN PARKS</a>
-            <ul class="nav-list">
-                <li><a href="index.html">INÍCIO</a></li>
-                <li><a href="app/Pages/sobre.html">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="app/Pages/aula.html">AULAS</a></li> 
-                <li><a href="app/Pages/evento.html">EVENTOS</a></li>     
+             <ul class="nav-list">
+                <li><a href="index.php">INÍCIO</a></li>
+                <li><a href="sobre.php">SOBRE</a></li> 
+                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
+                <li><a href="evento.php">EVENTOS</a></li>
             </ul>
         </nav>
     </header> 
+    <svg  class="ondain" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+    <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+</svg>
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
     <!-- TITULO COMEÇO DA PÁGINA -->
     <section class="container">
         <div class="titulo1">AULAS</div>
     </section>
+    <div class="linha1"></div>
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
-    <div class="linha1"></div>
+      <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
     <!-- IMAGEM PRIMEIRO ESPORTE -->
-    <img id="futebol" src="app/View/css/images/img5.png">
+    <img id="futebol" src="../View/css/images/img5.png">
    <!-- TÍTULO PRIMEIRO ESPORTE -->
     <section class="container">
         <div id="titulo2">FUTEBOL</div>
@@ -37,13 +41,14 @@
     <div class="futebol">
             <P>Futebol é um dos esportes mais praticados no Brasil!</P>
             <P>E nada melhor que além de brincar, as pessoas apendam as</P>
-            <P>regras, técnicas do esporte, etc... ​</P>
+            <P>regras, técnicas do esporte, etc... </P>
             </div>
-    <button type="button" class="botao1" onclick= "">SAIBA MAIS</button>
+    <a href="futebol.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
+    <img id="bola2" src="../View/css/images/Manchas/bolavolei.png">
     <!-- IMAGEM SEGUNDO ESPORTE -->
-    <img id="volei" src="app/View/css/images/img4.png">
+    <img id="volei" src="../View/css/images/img4.png">
    <!-- TÍTULO SEGUNDO ESPORTE -->
     <section class="container">
         <div id="titulo3">VOLÊI</div>
@@ -53,10 +58,11 @@
             <P>Inscreva-se na aula de volei e jogue com segurança em</P>
             <P>alguma quadra próxima a sua casa!</P>
             </div>
-    <button type="button" class="botao2" onclick= "">SAIBA MAIS</button>
+    <a href="volei.php" type="button" class="botao2">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE VOLEI -->
+    <img id="bola3" src="../View/css/images/Manchas/bolabasquete.png">
     <!-- IMAGEM TERCEIRO ESPORTE -->
-        <img id="basquete" src="app/View/css/images/img1.png">
+        <img id="basquete" src="../View/css/images/img1.png">
    <!-- TÍTULO TERCEIRO ESPORTE -->
     <section class="container">
         <div id="titulo4">BASQUETE</div>
@@ -66,10 +72,11 @@
             <P>Jogar basquete com aos amigos é tão bom quanto aprender</P>
             <P>mais sobre o esporte, venha participar!</P>
             </div>
-    <button type="button" class="botao3" onclick= "">SAIBA MAIS</button>
+    <a href="basquete.php" type="button" class="botao3">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE BASQUETE -->
+    <img id="bola4" src="../View/css/images/Manchas/skateaula.png">
         <!-- IMAGEM QUARTO ESPORTE -->
-        <img id="skate" src="app/View/css/images/img2.png">
+        <img id="skate" src="../View/css/images/img2.png">
    <!-- TÍTULO QUARTO ESPORTE -->
     <section class="container">
         <div id="titulo5">SKATE</div>
@@ -79,10 +86,11 @@
             <P>Venha aprender as manobras do skate e aprender a</P>
             <P>radicalidade do esporte!</P>
             </div>
-    <button type="button" class="botao4" onclick= "">SAIBA MAIS</button>
+    <a href="skate.php" type="button" class="botao4">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE SKATE -->
+    <img id="bola5" src="../View/css/images/Manchas/bolahandeball.png">
         <!-- IMAGEM QUINTO ESPORTE -->
-        <img id="handeball" src="app/View/css/images/img3.png">
+        <img id="handeball" src="../View/css/images/img3.png">
    <!-- TÍTULO QUINTOSS ESPORTE -->
     <section class="container">
         <div id="titulo6">HANDEBALL</div>
@@ -91,7 +99,11 @@
     <div class="handeball">
             <P>Convide seus amigos e se inscreva na aula de handeball!</P>
             </div>
-    <button type="button" class="botao5" onclick= "">SAIBA MAIS</button>
+    <a href="handeball.php" type="button" class="botao5">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE HANDEBALL -->
+     <!--ULTIMA ONDA-->
+     <svg class="onda2"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+  <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
+</svg>
 </body>
 </html>

@@ -1,0 +1,163 @@
+body { 
+    overflow-x: hidden;
+    height: 1290px;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+    z-index: 1;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    background: #ffffff;
+    height: 13vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+    z-index: 1;
+}
+/* ONDA INÍCIO */
+.onda1{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 0%;
+}
+/* INICIO - TÍTULO RESPONSIVO */
+#titulo1{
+    font-family: 'Passion One';
+    position: absolute;
+    top: 20%;
+    left: 16%;
+    text-align: center;
+    font-size: clamp(1.5em, 1em + 10vw, 6em);
+    color: #09400A;
+}
+/*LINHA ABAIXO DO PRIMEIRO TÍTULO */
+.linha1{
+    background-color: #D62509;
+    position: absolute;
+    width: 250px;
+    height: 5px;
+    margin-left: 16%;
+    margin-top: 10%;
+}
+/*IMAGEM VOLEI*/
+#volei{
+    height: 57%;
+    width: 35%;
+    margin-left: 16%;
+    margin-top: 13%;
+    position: absolute;
+    border-radius: 2%;
+}
+/*TEXTO VOLEI*/
+.voleitxt{
+    font-family: 'Arimo';
+    margin-top: 685px;
+    position: absolute;
+    top: -2%;
+    left: 16%;
+    text-align: left;
+    font-size: clamp(1.4em, 1em + 5vw, 1.0em);
+    line-height: 40px;
+}
+/*LINHA EM PÉ */
+.linha2{
+    background-color: #5bb318;
+    position: absolute;
+    width: 3px;
+    height: 50px;
+    margin-left: 16%;
+    margin-top: 55%;
+}
+/*DATA VOLEI*/
+.datavolei{
+    font-family: 'Arimo';
+    margin-top: 845px;
+    position: absolute;
+    top: -2%;
+    left: 18%;
+    text-align: left;
+    font-size: clamp(1.4em, 1em + 5vw, 1.0em);
+    line-height: 40px;
+}
+/*BOTÃO ALUNO*/
+.botao1{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFB200;
+    border-color: #FFB200;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 8px 19px;
+    margin-left: -10%;
+    margin-top: 18%;
+    position: absolute;
+}
+/*BOTÃO INTRUTOR*/
+.botao2{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #FFE60B;
+    border-color: #FFE60B;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 8px 19px;
+    margin-left: 60%;
+    margin-top: 18%;
+    position: absolute;
+}
+/*BOTÃO ADM*/
+.botao3{
+    font-family: 'Passion One'; 
+    color: #ffffff;
+    letter-spacing: 3px;
+    background-color: #5bb318;
+    border-color: #5bb318;
+    border-radius: 7px;
+    font-size: 35px;
+    padding: 8px 19px;
+    margin-left: 155%;
+    margin-top: 18%;
+    position: absolute;
+}
+/* ONDA FINAL */
+.onda2{
+    position: absolute;
+    bottom: 0;
+    left: -91%;
+    top: 350%;
+    width: 550%;
+}

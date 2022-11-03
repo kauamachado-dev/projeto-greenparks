@@ -1,7 +1,6 @@
 body { 
-    background-color: #D62509;
     overflow-x: hidden;
-    height: 4000px;
+    height: 4250px;
 }
 
 * {
@@ -23,6 +22,7 @@ a:hover {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
+    z-index: 1;
 }
 
 nav {
@@ -30,7 +30,7 @@ nav {
     justify-content: space-around;
     align-items: center;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    background: #5bb318;
+    background: #ffffff;
     height: 13vh;
 }
 
@@ -42,14 +42,23 @@ nav {
 .nav-list li {
     letter-spacing: 3px;
     margin-left: 32px;
+    z-index: 1;
 }
-
+/* ONDA INÍCIO */
+.ondain{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: -2%;
+    width: 120%;
+}
 /* INICIO - TÍTULO RESPONSIVO */
 .titulo1{
     font-family: 'Passion One';
     position: absolute;
     top: 15%;
-    left: 40%;
+    left: 22%;
     text-align: center;
     font-size: clamp(3.75em, 1em + 10vw, 6.5em);
     color: #09400A;
@@ -60,7 +69,7 @@ nav {
     position: absolute;
     width: 320px;
     height: 5px;
-    margin-left: 37%;
+    margin-left: 19%;
     margin-top: 8%;
 }
 /* SUBITULO AULAS */
@@ -71,11 +80,18 @@ nav {
     position: absolute;
     text-align: center;
     font-size: clamp(1.0em, 1em + 5vw, 1.5em);
-}
+}  
+/*BOLA FUTEBOL*/
+#bola1{
+    height: 11%;
+    width: 30%;
+    margin-left: 73%;
+    margin-top: 5%;
+} 
 /* TÍTULO FUTEBOL */
 #titulo2{
     font-family: 'Passion One';
-    margin-top: 1%;
+    margin-top: -1%;
     margin-left: 10%;
     position: absolute;
     text-align: center;
@@ -89,21 +105,23 @@ nav {
     width: 300px;
     height: 5px;
     margin-left: 10%;
-    margin-top: 7%;
+    margin-top: 5%;
 }
 /*IMAGEM FUTEBOL*/
 #futebol{
-    height: 9%;
-    width: 31%;
+    height: 50%;
+    width: 30%;
     margin-left: 10%;
-    margin-top: 15%;
+    margin-top: -25%;
+    position: absolute;
+    border-radius: 5%;
 }
 /*TEXTO FUTEBOL*/
 .futebol{
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    top: 11%;
+    top: 3%;
     left: 10%;
     text-align: left;
     font-size: clamp(1.4em, 1em + 5vw, 1.0em);
@@ -120,9 +138,16 @@ nav {
     font-size: 35px;
     padding: 10px 19px;
     margin-left: 10%;
-    margin-top: 17%;
+    margin-top: 18%;
     position: absolute;
 }
+/*BOLA VOLEI*/
+#bola2{
+    height: 10%;
+    width: 45%;
+    margin-left: 0%;
+    margin-top: 27%;
+} 
 /* TÍTULO VOLEI */
 #titulo3{
     font-family: 'Passion One';
@@ -145,9 +170,11 @@ nav {
 /*IMAGEM VOLEI*/
 #volei{
     height: 9%;
-    width: 31%;
+    width: 32%;
     margin-left: 55%;
-    margin-top: 25%;
+    margin-top: -47%;
+    position: relative;
+    border-radius: 5%;
 }
 /*TEXTO VOLEI*/
 .volei{
@@ -174,6 +201,13 @@ nav {
     margin-top: 14%;
     position: absolute;
 }
+/*BOLA BASQUETE*/
+#bola3{
+    height: 9%;
+    width: 26%;
+    margin-left: 75%;
+    margin-top: 23%;
+} 
 /* TÍTULO BASQUETE */
 #titulo4{
     font-family: 'Passion One';
@@ -195,10 +229,11 @@ nav {
 }
 /*IMAGEM BASQUETE*/
 #basquete{
-    height: 9%;
-    width: 31%;
+    height: 10%;
+    width: 32%;
     margin-left: 10%;
-    margin-top: 25%;
+    margin-top: -25%;
+    border-radius: 5%;
 }
 /*TEXTO BASQUETE*/
 .basquete{
@@ -225,6 +260,13 @@ nav {
     margin-top: 14%;
     position: absolute;
 }
+/*DESENHO SKATE*/
+#bola4{
+    height: 11%;
+    width: 27%;
+    margin-left: 0%;
+    margin-top: 19%;
+}
 /* TÍTULO SKATE */
 #titulo5{
     font-family: 'Passion One';
@@ -246,10 +288,11 @@ nav {
 }
 /*IMAGEM SKATE*/
 #skate{
-    height: 9%;
-    width: 31%;
+    height: 10%;
+    width: 32%;
     margin-left: 55%;
-    margin-top: 25%;
+    margin-top: -35%;
+    border-radius: 5%;
 }
 /*TEXTO SKATE*/
 .skate{
@@ -276,6 +319,13 @@ nav {
     margin-top: 14%;
     position: absolute;
 }
+/*BOLA HANDEBALL*/
+#bola5{
+    height: 9%;
+    width: 25%;
+    margin-left: 79%;
+    margin-top: 20%;
+}
 /* TÍTULO HANDEBALL */
 #titulo6{
     font-family: 'Passion One';
@@ -297,10 +347,11 @@ nav {
 }
 /*IMAGEM HANDEBALL*/
 #handeball{
-    height: 9%;
-    width: 31%;
+    height: 10%;
+    width: 32%;
     margin-left: 10%;
-    margin-top: 25%;
+    margin-top: -20%;
+    border-radius: 5%;
 }
 /*TEXTO HANDEBALL*/
 .handeball{
@@ -326,4 +377,12 @@ nav {
     margin-left: 10%;
     margin-top: 13%;
     position: absolute;
+}
+/* ONDA FINAL */
+.onda2{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    top: 615%;
+    width: 100%;
 }
