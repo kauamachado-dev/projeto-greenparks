@@ -1,15 +1,55 @@
+/* INICIO - CORPO DO SITE */
 body {
-    overflow-x: hidden;
-    height: 4000px;
+    background-color: #ffffff;
+    height: 3000px;
 }
-
+/* FINAL - CORPO DO SITE */
+/* INICIO - ALL */
 * {
     margin: 0;
     padding: 0;
 }
-
+/* FINAL - ALL */
+/* INICIO - LETRAS DO MENU DE NAVEGAÇÃO */
 a {
     color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+/* INICIO - LOGO MENU DE NAVEGAÇÃO */
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+/* FINAL - LOGO MENU DE NAVEGAÇÃO */
+/* INICIO - MENU DE NAVEGAÇÃO */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family:'Arimo', sans-serif;
+    background: #5bb318;
+    height: 13vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+/* FINAL - MENU DE NAVEGAÇÃO */
+
+a {
+    color: rgb(255, 255, 255);
     text-decoration: none;
     transition: 0.3s;
 }
@@ -46,6 +86,7 @@ nav {
 
 <!--CARROUSEL-->
 
+ 
 
 body{
 
@@ -77,7 +118,6 @@ input{
  transform-style: preserve-3d;
  flex-direction: column;
  margin-bottom: 100px;
-
 }
 
 .cards{
@@ -87,18 +127,17 @@ input{
  margin-bottom: 20px;
  perspective: 1000px;
  transform-style: preserve-3d;
-
 }
 
 .cards label{
 
   position: absolute;
   width: 430px;
-  left: 0;
+  left: 40%; /*posição*/
   right: 0;
   margin: auto;
   cursor: pointer;
-  transition: transform 0.55s ease;
+  transition: tranform 0.55s ease;
 
 }
 
@@ -135,31 +174,109 @@ justify-content: space-between;
 
 transform: scale(1.5);
 
+}
 
+.cards .image .dots{
+
+
+text-align: center;
+
+}
+
+.dots div{
+
+width: 10px;
+height: 10px;
+border-radius: 50%;
+margin-bottom: 10px;
+
+}
+
+.dots div:nth-child(1){
+
+background-color: #128013;
+
+}
+
+.dots div:nth-child(2){
+
+    background-color: #5bb318;
+}
+
+.dots div:nth-child(3){
+
+    background-color: #ffe60b;
+}
+
+.cards .infos{
+
+display:block;
+text-align: end;
+padding-top: 60px;
+}
+
+.cards .infos span{
+
+display: block;
+
+}
+
+.infos .name{
+
+font-size: 30px;
+color: var(--current-color1);
+letter-spacing: 8px;
+margin-bottom: 20px;
+padding-left: 25%;
+transition: all .6s ease;
+}
+
+.card .lorem{
+
+font-size: 15.5px;
+color: #404457;
+letter-spacing: 3px;
+
+}
+
+
+.card .actions{
+
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+
+}
+
+.actions i{
+
+font-size: 24px;
+transition: all .7s ease;
+color: var(--current-color2)
+
+}
+
+
+.actions:hover i{
+
+transform: scale(1.3);
 
 }
 
 
 
 
+<!--ORGANIZAÇÂO DE SLIDES-->
 
-
-
-
-
-
-
-
-
-
-#s1:checked-.cards #slide4,
-#s2:checked-.cards #slide3,
-#s3:checked-.cards #slide2,
-#s4:checked-.cards #slide3{
+#s1:checked-.cards #slide3,
+#s2:checked-.cards #slide4,
+#s3:checked-.cards #slide1,
+#s4:checked-.cards #slide2{
 
     box-shadow: 0 15px 30px rgb(0, 0, 0, 45%);
     transform: translate3d(-70%, 0, -220px);
-    --current-color1: #ececec;
+    --current-color1:#5bb318;
     --current-color2:#404457;
 }
 
@@ -171,7 +288,7 @@ transform: scale(1.5);
 
     box-shadow: 0 20px 40px rgb(0, 0, 0, 45%);
     transform: translate3d(-35%, 0, -120px);
-    --current-color1: #ececec;
+    --current-color1: #5bb318;
     --current-color2:#404457;
 }
 
@@ -182,8 +299,8 @@ transform: scale(1.5);
 
     box-shadow: 0 25px 50px rgb(0, 0, 0, 50%);
     transform: translate3d(0, 0, 0);
-    --current-color1: #590;
-    --current-color2:#ffffff;
+    --current-color1: #5bb318;
+    --current-color2:#404457;
 }
 
 #s1:checked-.cards #slide2,
@@ -192,8 +309,8 @@ transform: scale(1.5);
 #s4:checked-.cards #slide1{
 
     box-shadow: 0 20px 40px rgb(0, 0, 0, 50%);
-    transform: translate3d(-35%, 0, -120px);
-    --current-color1: #ececec;
+    transform: translate3d(35%, 0, -120px);
+    --current-color1: #5bb318;
     --current-color2:#404457;
 
 }
@@ -204,7 +321,7 @@ transform: scale(1.5);
 #s4:checked-.cards #slide2{
 
     box-shadow: 0 15px 30px rgb(0, 0, 0, 45%);
-    transform: translate3d(-35%, 0, -120px);
-    --current-color1: #ececec;
+    transform: translate3d(70%, 0, -220px);
+    --current-color1: #5bb318;
     --current-color2:#404457;
 }

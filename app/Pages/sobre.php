@@ -1,3 +1,6 @@
+
+<?php
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -6,8 +9,8 @@
     <link href="../View/css/sobre.css" rel="stylesheet">
 </head>
 <body>
+    <header>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
-
     <header>
         <nav>
             <a class="logo" href="index.php">GREEN PARKS</a>
@@ -19,135 +22,110 @@
             </ul>
         </nav>
     </header> 
+</body>
+</html>
 
-  <!--sequencia dos slides-->
+<!--sequencia dos slides-->
 
-    <div class="container">
+<div class="container">
+    <input type="radio" name="slider" id="s1" checked>
+    <input type="radio" name="slider" id="s2">
+    <input type="radio" name="slider" id="s3">
+    <input type="radio" name="slider" id="s4">
 
-        <input type="radio" name="slider" id="s1" checked>
-        <input type="radio" name="slider" id="s2">
-        <input type="radio" name="slider" id="s3">
-        <input type="radio" name="slider" id="s4">
-        
+  <!--slides carrousel click-->
+    <div class="cards">
+
+        <label for="s1" id="slidel">
+            <div class="image">
+                <img src="projeto-greenparks/app/View/css/images/fatima.jpeg" alt="Designer">
+                <div class="dots">
+                    <div></div>
+                    <div></div>
+                    <div></div>
+                </div>
+            </div>
+        </div>
+
+            <div class="infos">
+                <span class="name" Designer></span>
+                <span class="lorem">Designer Fatima elabora designes do site e representações visuais.</span>
+
+                <a href="/detals" class="btn-details"></a>
+
+            </div>
+        </label>
+
+<!--slide 2-->
+<div class="cards">
+
+<label for="s2" id="slide2">
+    <div class="image">
+        <img src="projeto-greenparks/app/View/css/images/kaua.jpeg" alt="Programador">
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </div>
+</div>
+
+    <div class="infos">
+        <span class="name" Programador></span>
+        <span class="lorem">Desenvolvimento do site e funcionalidades.</span>
+
+        <a href="/detals" class="btn-details"></a>
+    </div>
+</label>
 
 
-      <!--slides carrousel click-->
+<!--slide 3-->
+<div class="cards">
+
+<label for="s3" id="slide3">
+    <div class="image">
+        <img src="projeto-greenparks/app/View/css/images/stephane.jpeg" alt="Engenheira de Software">
+        <div class="dots">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </div>
+</div>
+
+    <div class="infos">
+        <span class="name" Designer></span>
+        <span class="lorem">Engenheira de software elabora banco de dados e funcionalidades do site.</span>
+
+        <a href="/detals" class="btn-details"></a>
+
+    </div>
+</label>
+
+      <!--slide 4-->
 
         <div class="cards">
 
-            <label for="s1" id="slidel">
+            <label for="s4" id="slide4">
                 <div class="image">
-                    <img src="/img/fatima.jpeg" alt="Programador">
+                    <img src="projeto-greenparks/app/view/css/images/giovanna.jpeg" alt="Designer">
                     <div class="dots">
                     <div></div>
                     <div></div>
                     <div></div>
                 </div>
-                </div>
+           </div>
+      </div>
 
                 <div class="infoss">
-                    <span class="name" designer></span>
-                    <span class="lorem">Designer fatima elabora designes do site e representações visuais.</span>
-                    <a href="/detals" class="btn-details"></a>
-                    <div class="actions">
-                        <i class="fa-solid fa-cart-shopping"></i>
-                        <i class="fa-regular fa-heart"></i>
-                        <i class="fa-regular fa-bookmark"></i>
-                        <i class="fa-solid fa-share-nodes"></i>
-        
-        </label>
+                    <span class="name" Designer></span>
+                    <span class="lorem">Designer do site elabora projeto visual do site.</span>
 
-    </label for="s2" id="slide2">
+                    <a href="/detals" class="btn-details"></a>  
 
-                <div class="card">
-
-        <!--Imagens e textos das imagens-->
-
-        <div class="image">
-            <img src="/img/kaua.jpeg" alt="Programador">
-            <div class="dots">
-            <div></div>
-            <div></div>
-            <div></div>
-        </div>
-        </div>
-
-       <!--textos e informações-->
-
-        <div class="infoss">
-            <span class="name" Programador></span>
-            <span class="lorem">Elabora programas do site e sua parte de programação e funcionalidade.</span>
-            <a href="/detals" class="btn-details"></a>
-            <div class="actions">
-                <i class="fa-solid fa-cart-shopping"></i>
-                <i class="fa-regular fa-heart"></i>
-                <i class="fa-regular fa-bookmark"></i>
-                <i class="fa-solid fa-share-nodes"></i>
-        </div>
-        </div>
+                </div>
             </label>
-
-        </div>
-
-        <label for="s3" id="=slide3">
-
-        <div  class="card">
-
-            <div class="image">
-                <img src="/img/stephane.jpeg" alt="engenheira de software">
-                <div class="dots">
-                <div></div>
-                <div></div>
-                <div></div>
-            </div>
-            </div>
-
-            <div class="infoss">
-                <span class="name" Programador></span>
-                <span class="lorem">elabora a parte de banco de dados e suas funcionalidade.</span>
-                <a href="/detals" class="btn-details"></a>
-                <div class="actions">
-                    <i class="fa-solid fa-cart-shopping"></i>
-                    <i class="fa-regular fa-heart"></i>
-                    <i class="fa-regular fa-bookmark"></i>
-                    <i class="fa-solid fa-share-nodes"></i>
-                </label>
-
-                <label for="s4" id="slide4">
-
-                    <div  class="card">
-
-                        <div class="image">
-                            <img src="/img/giovanna.jpeg" alt="Designer">
-                            <div class="dots">
-                            <div></div>
-                            <div></div>
-                            <div></div>
-                        </div>
-                        </div>
-
-                        <div class="infoss">
-                            <span class="name" Designer></span>
-                            <span class="lorem">Designer do site elabora projeto visual do site.</span>
-                            <a href="/detals" class="btn-details"></a>
-                            <div class="actions">
-                                <i class="fa-solid fa-cart-shopping"></i>
-                                <i class="fa-regular fa-heart"></i>
-                                <i class="fa-regular fa-bookmark"></i>
-                                <i class="fa-solid fa-share-nodes"></i>
-                            </label>
-        
-
-            
-        
-
-
-            
-
-
-
-
+</div>
 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
 </body>
