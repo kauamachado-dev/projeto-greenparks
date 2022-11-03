@@ -1,5 +1,5 @@
 <?php 
-
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -12,13 +12,18 @@
 </head>
 
 <body style="margin-left: 500px">
-  <form action="../Model/registrar.php" method="post">
-
+  <?php
+      if (isset($_SESSION['msg'])) {
+          echo $_SESSION['msg'];
+          unset($_SESSION['msg']);
+      }
+      ?>
+  <form method="POST" action="../Model/processa.php">
     <div class="container">
       <div class="row">
         <div class="col">
         <div class="single-input">
-          <input required type="text" name="" id="nome" class="input" placeholder="Insira seu nome...">
+          <input required type="text" name="" id="nome_usuario" class="input" placeholder="Insira seu nome...">
           <label for="nome">Nome</label>
         </div>
     </div>
@@ -88,7 +93,7 @@
       </div>
       <div>
       <div class="text-center pt-1 mb-5 pb-1">
-          <a type="submit" value="CADASTRAR" class="btn1">CADASTRAR</a>
+        <input type="submit" value="Cadastrar" name="CadUsuario">
       </div>
           <a class="btn2" href="../Pages/index.php">Voltar</a>
       <div>
