@@ -1,8 +1,8 @@
--- MariaDB dump 10.19  Distrib 10.4.24-MariaDB, for Win64 (AMD64)
+-- MariaDB dump 10.19  Distrib 10.4.25-MariaDB, for Win64 (AMD64)
 --
 -- Host: localhost    Database: greenpark
 -- ------------------------------------------------------
--- Server version	10.4.24-MariaDB
+-- Server version	10.4.25-MariaDB
 
 /*!40101 SET @OLD_CHARACTER_SET_CLIENT=@@CHARACTER_SET_CLIENT */;
 /*!40101 SET @OLD_CHARACTER_SET_RESULTS=@@CHARACTER_SET_RESULTS */;
@@ -59,7 +59,7 @@ CREATE TABLE `endereco` (
   PRIMARY KEY (`id_endereco`),
   KEY `fk_usuario_id_usuario` (`id_usuario`),
   CONSTRAINT `fk_endereco_usuario` FOREIGN KEY (`id_usuario`) REFERENCES `usuario` (`id_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=25 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -68,7 +68,7 @@ CREATE TABLE `endereco` (
 
 LOCK TABLES `endereco` WRITE;
 /*!40000 ALTER TABLE `endereco` DISABLE KEYS */;
-INSERT INTO `endereco` VALUES (1,'86182-692','Jardim Terra Nova','Rua do Sol Nascente',245,7),(2,'82650-280','Boa Vista','Rua Raymundo Bon',1250,8),(3,'87309-136','Jardim Curitiba','Avenida Capitão Índio Bandeira',115,7),(4,'81930-580','Esmeralda','Rua João Domingos Vizintin',564,8);
+INSERT INTO `endereco` VALUES (1,'86182-692','Jardim Terra Nova','Rua do Sol Nascente',245,7),(2,'82650-280','Boa Vista','Rua Raymundo Bon',1250,8),(3,'87309-136','Jardim Curitiba','Avenida Capitão Índio Bandeira',115,7),(4,'81930-580','Esmeralda','Rua João Domingos Vizintin',564,8),(5,'teste','teste','teste',123,3),(6,'','','',0,3),(7,'teste','teste','teste',123,3),(8,'','','',0,3),(9,'','','',0,3),(10,'','','',0,3),(11,'','','',0,3),(12,'','','',0,3),(13,'','','',0,3),(14,'','','',0,3),(15,'','','',0,3),(16,'','','',0,3),(17,'','','',0,3),(18,'','','',0,3),(19,'','','',0,3),(20,'','','',0,3),(21,'','','',0,3),(22,'','','',0,3),(23,'','','',0,3),(24,'teste','teste','teste',123,3);
 /*!40000 ALTER TABLE `endereco` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -81,14 +81,15 @@ DROP TABLE IF EXISTS `eventos`;
 /*!40101 SET character_set_client = utf8 */;
 CREATE TABLE `eventos` (
   `id_eventos` int(11) NOT NULL AUTO_INCREMENT,
-  `nome_enventos` varchar(100) NOT NULL,
+  `nome_eventos` varchar(100) NOT NULL,
   `data_eventos` date NOT NULL,
+  `horario_eventos` time NOT NULL,
   `desc_eventos` varchar(250) NOT NULL,
   `id_endereco` int(11) NOT NULL,
   PRIMARY KEY (`id_eventos`),
   KEY `fk_eventos_endereco` (`id_endereco`),
   CONSTRAINT `fk_eventos_endereco` FOREIGN KEY (`id_endereco`) REFERENCES `endereco` (`id_endereco`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=3 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=5 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -97,7 +98,7 @@ CREATE TABLE `eventos` (
 
 LOCK TABLES `eventos` WRITE;
 /*!40000 ALTER TABLE `eventos` DISABLE KEYS */;
-INSERT INTO `eventos` VALUES (1,'Feira Saul Elkind','2022-10-16','Feira todos os domingos.',0),(2,'Festa de Halloween','2022-10-30','Venha participar da festa de Halloween!!',0);
+INSERT INTO `eventos` VALUES (1,'Feira Saul Elkind','2022-10-16','00:00:00','Feira todos os domingos.',0),(2,'Festa de Halloween','2022-10-30','00:00:00','Venha participar da festa de Halloween!!',0),(3,'','0000-00-00','00:00:00','',23),(4,'teste','4567-03-12','05:43:00','teste',24);
 /*!40000 ALTER TABLE `eventos` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -144,6 +145,7 @@ DROP TABLE IF EXISTS `responsavel`;
 CREATE TABLE `responsavel` (
   `id_responsavel` int(11) NOT NULL AUTO_INCREMENT,
   `nome_responsavel` varchar(100) NOT NULL,
+  `sobrenome_responsavel` varchar(100) NOT NULL,
   `cpf_responsavel` int(20) NOT NULL,
   PRIMARY KEY (`id_responsavel`)
 ) ENGINE=InnoDB AUTO_INCREMENT=7 DEFAULT CHARSET=utf8;
@@ -155,7 +157,7 @@ CREATE TABLE `responsavel` (
 
 LOCK TABLES `responsavel` WRITE;
 /*!40000 ALTER TABLE `responsavel` DISABLE KEYS */;
-INSERT INTO `responsavel` VALUES (1,'Thiago Thomas Araújo',0),(2,'Carolina rosa Freitas',0),(3,'Jaqueline Hernandes Baptista',0),(4,'Michael Roberto da Silva',0),(5,'Maria Carolina Fernandes',0),(6,'Jorge Gabriel de Souza',0);
+INSERT INTO `responsavel` VALUES (1,'Thiago ','Thomas Araújo',0),(2,'Carolina ','Rosa Freitas',0),(3,'Jaqueline ','Hernandes Baptista',0),(4,'Michael ','Roberto da Silva',0),(5,'Maria ','Carolina Fernandes',0),(6,'Jorge ','Gabriel de Souza',0);
 /*!40000 ALTER TABLE `responsavel` ENABLE KEYS */;
 UNLOCK TABLES;
 
@@ -193,6 +195,7 @@ DROP TABLE IF EXISTS `usuario`;
 CREATE TABLE `usuario` (
   `id_usuario` int(11) NOT NULL AUTO_INCREMENT,
   `nome_usuario` varchar(100) NOT NULL,
+  `sobrenome_usuario` varchar(100) NOT NULL,
   `nasc_usuario` date NOT NULL,
   `email_usuario` varchar(100) NOT NULL,
   `fone_usuario` varchar(20) NOT NULL,
@@ -214,7 +217,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Marcele Antonia Baptista','2009-06-10','marcele.dutra@geradornv.com.br','(43) 99205-2454 ','485.860.166-83   ','hKz=BWy07@G',1,3),(2,'Rosiméri Radgonda da Silva','2005-07-12','rosimeri.souza@geradornv.com.br','(43) 96781-1358 ','771.877.469-46','tJdsTvG+*VNN',1,4),(3,'Douglas Rodrigues Freitas','2006-10-06','douglas.almeida@geradornv.com.br','(43) 98230-1546','349.464.319-93','AIZgbvvugQO7',1,2),(4,'Joana Braganza Araújo','2005-08-26','joana.franca@geradornv.com.br','(43) 97105-3285','315.011.579-57','3TACsD**6073',1,1),(5,'Caio Henrique de Souza','2009-08-27','caio.padua@geradornv.com.br','(43) 98636-6748','622.166.799-25','_UcKkUKctWjC',1,6),(6,'Adson Matos Fernandes','2007-11-15','adson.guerini@geradornv.com.br','(43) 98515-6256','453.871.109-89','5TYu0gYS_N(G',1,5),(7,'Evelyn','1992-08-22','evelyn.branco@geradornv.com.br','(43) 96788-7887','510.266.609-63','GS#LW)r0+u6*',2,0),(8,'Raimundo','1996-01-25','raimundo.campelo@geradornv.com.br','(43) 98753-2667','305.838.329-03','auOvU@Rn9TWB',2,0),(9,'ADM','2000-09-15','greenpower.adm@gmail.com','43 956689253','155.040.196-60   ','green123',0,0);
+INSERT INTO `usuario` VALUES (1,'Marcele ','Antonia Baptista','2009-06-10','marcele.dutra@geradornv.com.br','(43) 99205-2454 ','485.860.166-83   ','hKz=BWy07@G',1,3),(2,'Rosiméri ','Radgonda da Silva','2005-07-12','rosimeri.souza@geradornv.com.br','(43) 96781-1358 ','771.877.469-46','tJdsTvG+*VNN',1,4),(3,'Douglas ','Rodrigues Freitas','2006-10-06','douglas.almeida@geradornv.com.br','(43) 98230-1546','349.464.319-93','AIZgbvvugQO7',1,2),(4,'Joana ','Braganza Araújo','2005-08-26','joana.Araújo@geradornv.com.br','(43) 97105-3285','315.011.579-57','3TACsD**6073',1,1),(5,'Caio ','Henrique de Souza','2009-08-27','caio.Henrique@geradornv.com.br','(43) 98636-6748','622.166.799-25','_UcKkUKctWjC',1,6),(6,'Adson ','Matos Fernandes','2007-11-15','adson.Fernandes@geradornv.com.br','(43) 98515-6256','453.871.109-89','5TYu0gYS_N(G',1,5),(7,'Evelyn','Antônia Branco','1992-08-22','evelyn.branco@geradornv.com.br','(43) 96788-7887','510.266.609-63','GS#LW)r0+u6*',2,0),(8,'Raimundo','Campos Campelo','1996-01-25','raimundo.campelo@geradornv.com.br','(43) 98753-2667','305.838.329-03','auOvU@Rn9TWB',2,0),(9,'ADM','','2000-09-15','greenpower.adm@gmail.com','43 956689253','155.040.196-60   ','green123',0,0);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -227,4 +230,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-10-25 16:00:56
+-- Dump completed on 2022-11-06 21:35:20

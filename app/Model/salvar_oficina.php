@@ -9,7 +9,7 @@
                 $id_usuario = $_POST["id_usuario"];
 
                 $sql = "INSERT INTO oficina (nome_oficina, data_oficina, horario_oficina, desc_oficina, id_endereco, id_usuario) VALUES ('{$nome_oficina}', '{$data_oficina}', '{$horario_oficina}', '{$desc_oficina}', '{$id_endereco}', '{$id_usuario}')";
-
+                
                 $res = $conexaoMysqli->query($sql);
 
                 if($res==true){
