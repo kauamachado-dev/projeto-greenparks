@@ -1,46 +1,29 @@
-<?php
+<?php 
+    switch ($_REQUEST["acao"]) {
+            case 'cadastrar':
+                $nome = $_POST["nome_usuario"];
+                $sobrenome = $_POST["sobrenome_usuario"];
+                $nasc = $_POST["nasc_usuario"];
+                $email = $_POST["email_usuario"];
+                $fone = $_POST["fone_usuario"];
+                $cpf = $_POST["cpf_usuario"];
+                $senha = $_POST["senha_usuario"];
+                $id_tipo_usuario = "2";
+                $id_responsavel = "1";
+            
+                $sql = "INSERT INTO oficina (nome_usuario, sobrenome_usuario, nasc_usuario, email_usuario, fone_usuario,
+                cpf_usuario, senha_usuario, id_tipo_usuario, id_responsavel) VALUES ('{$nome}', '{$sobrenome}', '{$nasc}', '{$email}', '{$fone}', '{$cpf}', '{$senha}', '{$id_tipo_usuario}', '{$id_responsavel}')";
+                
+                $res = $conexaoMysqli->query($sql);
 
-session_start(); //Iniciar a sessao
-
-//Limpar o buffer de saida
-ob_start();
-
-//Incluir a conexao com BD
-include_once "conexao.php";
-
-//Receber os dados do formulario
-$dados = filter_input_array(INPUT_POST, FILTER_DEFAULT);
-
-//var_dump($dados);
-
-//Verificar se o usuario clicou no botao
-if(!empty($dados['CadUsuario'])){
-    $query_usuario = "INSERT INTO usuario (nome_usuario, email_usuario) VALUES (:u, :e)";
-    $cad_usuario = $conn->prepare($query_usuario);
-    $cad_usuario->bindParam(':u', $dados['nome_usuario'], PDO::PARAM_STR);
-    $cad_usuario->bindParam(':e', $dados['email_usuario'], PDO::PARAM_STR);
-    $cad_usuario->execute();
-    //var_dump($conn->lastInsertId());
-    //Recuperar o ultimo id inserido
-    $id_usuario = $conn->lastInsertId();
-
-    $query_endereco= "INSERT INTO endereco (cep_endereco, bairro_endereco, rua_endereco, num_casa_endereco, id_usuario) VALUES (:cep, :bairro, :rua, :num_casa, :id_usuario)";
-    $cad_endereco = $conn->prepare($query_endereco);
-    $cad_endereco->bindParam(':cep', $dados['cep_endereco'], PDO::PARAM_STR);
-    $cad_endereco->bindParam(':bairro', $dados['bairro_endereco'], PDO::PARAM_STR);
-    $cad_endereco->bindParam(':rua', $dados['rua_endereco'] , PDO::PARAM_STR);
-    $cad_endereco->bindParam(':id_usuario', $id_usuario, PDO::PARAM_INT);
-    $cad_endereco->execute();
-
-    //Criar a variavel global para salvar a mensagem de sucesso
-    $_SESSION['msg'] = "<p style='color: green;'>Usuário cadastrado com sucesso!</p>";
-
-    //Redirecionar o usuario
-    header("Location: index.php");
-}else{
-    //Criar a variavel global para salvar a mensagem de erro
-    $_SESSION['msg'] = "<p style='color: #f00;'>Erro: Usuário não cadastrado com sucesso!</p>";
-
-    //Redirecionar o usuario
-    header("Location: login.php");
-}
+                if($res==true){
+                    print "<script>alert('oficina cadastrada com sucesso');</script>";
+                    print "<script>location.href='?page=listar_oficina';</script>";
+                }
+                else{
+                    print "<script>alert('Não foi possivel cadastrar a oficina');</script>"; 
+                    print "<script>location.href='?page=listar_oficina';</script>";
+                }
+            break;
+    }
+?>            

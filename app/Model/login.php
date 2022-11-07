@@ -5,35 +5,32 @@
     $u = new Usuario; 
 ?>                                 <!-- PHP -->
     <?php
-                                    //se a variavel estiver definida
-                                    if (isset($_POST['nome_usuario'])) { 
-                                        //Variaveis recebem os valores
-                                        $usuario = addslashes($_POST['nome_usuario']); 
-                                        $senha   = addslashes($_POST['senha_usuario']);    
-
-                                        //se as variáveis não estiverem vazias
-                                        if (!empty($usuario) && !empty($senha)) { 
-                                            //conecta com o banco
-                                            $u->conectar("greenpark", "localhost", "root", "");
-
-                                            //se não apresentar nenhuma mensagem de erro
-                                            if ($u->msgErro == "") {
-                                                //Se as informações estiverem erradas
-                                                if (!$u->logar($usuario, $senha)) {
-                                    ?>
-                                                    <div class="text-center p-3 mb-2 bg-danger text-black bg-opacity-75 rounded">
-                                                        <?php echo "Credenciais incorretas!"; ?>
-                                                    </div>
-                                                <?php
-                                                }
-
-                                            //caso existir algum erro, vai apresentar na tela  
-                                            } else { 
-                                                ?>
-                                                <div class="text-center p-3 mb-2 bg-danger text-black bg-opacity-75 rounded">
-                                                    <?php echo "Erro: " . $u->msgErro; ?>
-                                                </div>
-                                            <?php
+        //se a variavel estiver definida
+        if (isset($_POST['nome_usuario'])) { 
+            //Variaveis recebem os valores
+            $usuario = addslashes($_POST['nome_usuario']); 
+            $senha   = addslashes($_POST['senha_usuario']);    
+                //se as variáveis não estiverem vazias
+                 if (!empty($usuario) && !empty($senha)) { 
+                    //conecta com o banco
+                    $u->conectar("greenpark", "localhost", "root", "");
+                        //se não apresentar nenhuma mensagem de erro
+                        if ($u->msgErro == "") {
+                            //Se as informações estiverem erradas
+                            if (!$u->logar($usuario, $senha)) {
+    ?>
+                                <div class="text-center p-3 mb-2 bg-danger text-black bg-opacity-75 rounded">
+                                    <?php echo "Credenciais incorretas!"; ?>
+                                </div>
+                                <?php
+                            }
+                                    //caso existir algum erro, vai apresentar na tela  
+                                    } else { 
+                                ?>
+                                    <div class="text-center p-3 mb-2 bg-danger text-black bg-opacity-75 rounded">
+                                        <?php echo "Erro: " . $u->msgErro; ?>
+                                    </div>
+                                        <?php
                                             }
 
                                         //se o usuário deixar algum campo vazio...   
