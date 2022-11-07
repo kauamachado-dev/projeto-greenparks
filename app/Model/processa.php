@@ -42,5 +42,5 @@ if(!empty($dados['CadUsuario'])){
     $_SESSION['msg'] = "<p style='color: #f00;'>Erro: Usuário não cadastrado com sucesso!</p>";
 
     //Redirecionar o usuario
-    header("Location: index.php");
+    header("Location: login.php");
 }
