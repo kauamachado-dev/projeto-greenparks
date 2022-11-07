@@ -80,8 +80,8 @@
             <P>   imprevisto sempre entrarão em contato.</P>
         </div>
         <!-- EFEITO CARROSSEL -->
-        <div id ="slider">
-        <img class = "selected" src="../View/css/images/handeball.jpg" alt="image1">
+        <div id ="sliderau">
+        <img class = "selectedau" src="../View/css/images/handeball.jpg" alt="image1">
         <img src="../View/css/images/handeball.jpg" alt="image2">
         <img src="../View/css/images/futebol.jpg" alt="image3">
         <img src="../View/css/images/volei.png" alt="image4">
@@ -112,45 +112,20 @@
             <P>de eventos e não perder mais nada que rolar</P>
             <P>por perto!</P></div>
             <a href="../Model/login.php" type="button" class="botao3">TELA DE LOGIN</a>
+            <!-- EFEITO SLIDER EVENTOS -->
             <div id ="sliderev">
-                <div class="slides">
-                    <input type="radio" name="radiu-btn" id="radio1">
-                    <input type="radio" name="radiu-btn" id="radio2">
-                    <input type="radio" name="radiu-btn" id="radio3">
-                    <input type="radio" name="radiu-btn" id="radio4">
-                    <div class="slide first">
-                    <img src="../View/css/images/feira.jpg" alt="image1">
-                    </div>
-                    <div class="slide">
-                    <img src="../View/css/images/circo.jpg" alt="image3">
-                    </div>
-                </div>
-                <div class="slide">
-                    <img src="../View/css/images/livro.jpg" alt="image3">
-                    </div>
-                    <div class="slide">
-                    <img src="../View/css/images/skate.jpg" alt="image4">
-                    </div>
-                <div class="navigation-auto">
-                    <div class="auto-btn1"></div>
-                    <div class="auto-btn2"></div>
-                    <div class="auto-btn3"></div>
-                    <div class="auto-btn4"></div>
-                </div>
-                </div>
-                <div class="manual-navigation">
-                    <label for="radio1" class="manual-btn"></div>
-                    <label for="radio2" class="manual-btn"></div>
-                    <label for="radio3" class="manual-btn"></div>
-                    <label for="radio4" class="manual-btn"></div>
-                </div>
-             </div>
+                <img class = "selectedev" src="../View/css/images/feira.jpg" alt="image1">
+                <img src="../View/css/images/feira.jpg" alt="image2">
+                <img src="../View/css/images/circo.jpg" alt="image3">
+                <img src="../View/css/images/livro.jpg" alt="image4">
+                <img src="../View/css/images/basquete.jpg" alt="image5">
+            </div>
     <script src="../controller/_js/sliderev.js"></script>
+    <!-- FINAL EFEITO SLIDER -->
                  <!--ULTIMA ONDA-->
      <svg class="ondafin"  xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
   <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,320L1360,320C1280,320,1120,320,960,320C800,320,640,320,480,320C320,320,160,320,80,320L0,320Z"></path>
 </svg>
-            <!-- <img id="evento" src="app/View/css/images/evento.png"> -->
     </section>
     <section></section>
  </body>
