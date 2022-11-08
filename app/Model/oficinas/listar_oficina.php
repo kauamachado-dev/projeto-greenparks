@@ -1,4 +1,4 @@
-<h1>listar eventos</h1>
+<h1>listar Oficinas</h1>
 <?php
  $sql = "SELECT * FROM oficina";
 
@@ -25,7 +25,7 @@
         print "<td>".$row->desc_oficina."</td>";
         print "<td>
             <button onclick=\"location.href='?page=editar_oficina&id=".$row->id_oficina."';\" class='btn btn-success'>Editar</button>
-            <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar_oficina&acao=excluir_aula&id=".$row->id_oficina."';}else{false;}\" class='btn btn-danger'>Excluir</button>
+            <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar_oficina&acao=excluir_oficina&id=".$row->id_oficina."';}else{false;}\" class='btn btn-danger'>Excluir</button>
               </td>";
         print "</tr>";
     }
