@@ -104,16 +104,23 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     </div>
     <div class="col">
         <div class="single-input">
-          <input required type="text" name="sobrenome_usuario" id="sobrenome" class="input">
-          <label for="sobrenome">Sobrenome</label>
+          <input required type="text" name="sobrenome_usuario" id="sobrenome" class="input" placeholder="Informe seu sobrenome...">
+          <label for="sobrenome" >Sobrenome</label>
         </div>
       </div>
     </div>
+    <div class="row">
     <div class="col">
         <div class="single-input">
           <input required type="date" name="nasc_usuario" id="nasc" class="input">
           <label for="datanascaluno">Nascimento</label>
         </div>
+        </div>
+        <div class="col">
+      <div class="single-input">
+          <input required type="cpf" name="cpf_usuario" id="cpf" class="input" placeholder="Informe seu cpf...">
+          <label for="cpf">CPF</label>
+          </div>
       </div>
     </div>
     <div class="row">
@@ -124,29 +131,30 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       </div>
       </div>
       <div class="col">
-        <div class="single-input">
-          <input required type="number" name="fone_usuario" id="fone" class="input">
-          <label for="datanascaluno">Fone</label>
-        </div>
+      <div class="single-input">
+        <input required type="password" name="senha_usuario" id="telefonealuno" class="input" placeholder="Informe uma senha...">
+        <label for="telefonealuno">Senha</label>
       </div>
+    </div>
     </div>
     <div class="row">
       <div class="col">
-      <div class="single-input">
-          <input required type="cpf" name="cpf_usuario" id="cpf" class="input" placeholder="Informe seu cpf...">
-          <label for="cpf">CPF</label>
-          </div>
-      </div>
-    <div class="col">
-      <div class="single-input">
-        <input required type="password" name="senha_usuario" id="telefonealuno" class="input" placeholder="Informe um telefone...">
-        <label for="telefonealuno">Senha</label>
-      </div>
-      <div class="row">
+        <div class="single-input">
+          <input required type="number" name="fone_usuario" id="fone" class="input" placeholder="Informe seu telefone...">
+          <label for="datanascaluno" >Fone</label>
+        </div>
+        </div>
       <div class="col">
       <div class="single-input">
           <input required type="cep" name="cep_usuario" id="cep" class="input" placeholder="Infome seu CEP...">
           <label for="cep">CEP</label>
+      </div>
+      </div>
+      </div>
+      <div class="col">
+      <div class="single-input">
+          <input required type="address" name="rua_endereco" id="rua" class="input"placeholder="Informe seu endereço...">
+          <label for="bairro">RUA</label>
       </div>
       </div>
       <div class="row">
@@ -154,13 +162,6 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <div class="single-input">
           <input required type="address" name="bairro_endereco" id="bairro" class="input"placeholder="Informe seu bairro...">
           <label for="bairro">Bairro</label>
-      </div>
-      </div>
-      <div class="row">
-      <div class="col">
-      <div class="single-input">
-          <input required type="address" name="rua_endereco" id="rua" class="input"placeholder="Informe seu bairro...">
-          <label for="bairro">RUA</label>
       </div>
       </div>
       <div class="col">
