@@ -1,103 +1,129 @@
 <?php
-    require_once '../Controller/usuarios.php'; //CHAMA O ARQUIVO DE USUÁRIOS.
+// Inicialize a sessão
+session_start();
+ 
+// Verifique se o usuário já está logado, em caso afirmativo, redirecione-o para a página de boas-vindas
+if(isset($_SESSION["logado"]) && $_SESSION["logado"] === true){
+    header("location: index.php");
+    exit;
+}
+ 
+// Incluir arquivo de configuração
+require_once "conexao.php";
+ 
+// Defina variáveis e inicialize com valores vazios
+$username = $password = "";
+$username_err = $password_err = $login_err = "";
+ 
+// Processando dados do formulário quando o formulário é enviado
+if($_SERVER["REQUEST_METHOD"] == "POST"){
+ 
+    // Verifique se o nome de usuário está vazio
+    if(empty(trim($_POST["nome_usuario"]))){
+        $username_err = "Por favor, insira o nome de usuário.";
+    } else{
+        $username = trim($_POST["nome_usuario"]);
+    }
+    
+    // Verifique se a senha está vazia
+    if(empty(trim($_POST["senha_usuario"]))){
+        $password_err = "Por favor, insira sua senha.";
+    } else{
+        $password = trim($_POST["senha_usuario"]);
+    }
+    
+    // Validar credenciais
+    if(empty($username_err) && empty($password_err)){
+        // Prepare uma declaração selecionada
+        $sql = "SELECT id_usuario, nome_usuario, senha_usuario FROM usuario WHERE nome_usuario = :u";
+        
+        if($stmt = $conexaoMysqli->prepare($sql)){
+            // Vincule as variáveis à instrução preparada como parâmetros
+            $stmt->bindParam(":u", $param_username, PDO::PARAM_STR);
+            
+            // Definir parâmetros
+            $param_username = trim($_POST["nome_usuario"]);
+            
+            // Tente executar a declaração preparada
+            if($stmt->execute()){
+                // Verifique se o nome de usuário existe, se sim, verifique a senha
+                if($stmt->rowCount() == 1){
+                    if($row = $stmt->fetch()){
+                        $id = $row["id_usuario"];
+                        $username = $row["nome_usuario"];
+                        $hashed_password = $row["senha_usuario"];
+                        if(password_verify($password, $hashed_password)){
+                            // A senha está correta, então inicie uma nova sessão
+                            session_start();
+                            
+                            // Armazene dados em variáveis de sessão
+                            $_SESSION["logado"] = true;
+                            $_SESSION["id_usuario"] = $id;
+                            $_SESSION["nome_usuario"] = $username;                            
+                            
+                            // Redirecionar o usuário para a página de boas-vindas
+                            header("location: welcome.php");
+                        } else{
+                            // A senha não é válida, exibe uma mensagem de erro genérica
+                            $login_err = "Nome de usuário ou senha inválidos.";
+                        }
+                    }
+                } else{
+                    // O nome de usuário não existe, exibe uma mensagem de erro genérica
+                    $login_err = "Nome de usuário ou senha inválidos.";
+                }
+            } else{
+                echo "Ops! Algo deu errado. Por favor, tente novamente mais tarde.";
+            }
 
-    //CHAMA CLASSE.
-    $u = new Usuario; 
-?>                                 <!-- PHP -->
-    <?php
-        //se a variavel estiver definida
-        if (isset($_POST['nome_usuario'])) { 
-            //Variaveis recebem os valores
-            $usuario = addslashes($_POST['nome_usuario']); 
-            $senha   = addslashes($_POST['senha_usuario']);    
-                //se as variáveis não estiverem vazias
-                 if (!empty($usuario) && !empty($senha)) { 
-                    //conecta com o banco
-                    $u->conectar("greenpark", "localhost", "root", "");
-                        //se não apresentar nenhuma mensagem de erro
-                        if ($u->msgErro == "") {
-                            //Se as informações estiverem erradas
-                            if (!$u->logar($usuario, $senha)) {
-    ?>
-                                <div class="text-center p-3 mb-2 bg-danger text-black bg-opacity-75 rounded">
-                                    <?php echo "Credenciais incorretas!"; ?>
-                                </div>
-                                <?php
-                            }
-                                    //caso existir algum erro, vai apresentar na tela  
-                                    } else { 
-                                ?>
-                                    <div class="text-center p-3 mb-2 bg-danger text-black bg-opacity-75 rounded">
-                                        <?php echo "Erro: " . $u->msgErro; ?>
-                                    </div>
-                                        <?php
-                                            }
-
-                                        //se o usuário deixar algum campo vazio...   
-                                        } else { 
-                                            ?>
-                                            <div class="text-center p-3 mb-2 bg-danger text-black bg-opacity-75 rounded">
-                                                <?php echo "Preencha todos os campos obrigatórios!"; ?>
-                                            </div>
-                                    <?php
-                                        }
-                                    }
-                                    ?>
-                                    <!-- Fim do PHP -->
-                                </div>
-                            </div>
-
-                                <!-- HTML  --> 
+            // Fechar declaração
+            unset($stmt);
+        }
+    }
+    
+    // Fechar conexão
+    unset($conexaoMysqli);
+}
+?>
+ 
 <!DOCTYPE html>
 <html lang="pt-br">
-    <head>
-        <meta charset="UTF-8">
-        <title>Login</title>
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    </head>
-    <!-- LOGIN  --> 
+<head>
+    <meta charset="UTF-8">
     <title>Login</title>
-    </head>
-    <body id="body">
-        <!-- TELA DE LOGIN -->
-        <section class="h-100 gradient-form">
-            <div class="container py-5 h-100">
-                <div class="row d-flex justify-content-center align-items-center h-100">
-                    <div class="col-xl-10">
-                        <div class="card rounded-3 text-black">
-                            <div class="row g-0">
-                                <div class="col-lg-6">
-                                    <div class="card-body p-md-5 mx-md-4">
-                                        <!-- FORMULÁRIO -->
-                                        <form method="POST" action="processa.php">
-                                            <!-- USUÁRIO -->
-                                            <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" id="nome_usuario" required name="usuario" maxlength="75" placeholder="Digite o usuário">
-                                                <label for="usuario">Usuário <i class="fas fa-user"></i> </label>
-                                            </div>
-                                            <!-- SENHA -->
-                                            <div class="form-floating mb-3">
-                                                <input type="password" class="form-control" id="senha_usuario" required name="senha" maxlength="75" placeholder="Digite a senha">
-                                                <label for="senha"> Senha <i class="fas fa-key"></i> </label>
-                                                <div id="olho"><abbr title="Mostrar senha" id="##"><i class="fas fa-eye-slash" id="btn-eye" onclick="mostrar()"></i></abbr></div>
-                                            </div>
-                                            <!-- BOTÃO -->
-                                            <div class="text-center pt-1 mb-5 pb-1">
-                                                <input type="submit" value="ACESSAR" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 mt-4">
-                                            </div>
-                                        </form>
-                                    </div>
-                                </div>
-                                        <h4 class="mb-4">BEM VINDO</h4>
-                                        <p class="mb-4">
-                                        </p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body{ font: 14px sans-serif; }
+        .wrapper{ width: 360px; padding: 20px; }
+    </style>
+</head>
+<body>
+    <div class="wrapper">
+        <h2>Login</h2>
+        <p>Por favor, preencha os campos para fazer o login.</p>
+
+        <?php 
+        if(!empty($login_err)){
+            echo '<div class="alert alert-danger">' . $login_err . '</div>';
+        }        
+        ?>
+
+        <form action="<?php echo htmlspecialchars($_SERVER["PHP_SELF"]); ?>" method="post">
+            <div class="form-group">
+                <label>Nome do usuário</label>
+                <input type="text" name="nome_usuario" class="form-control <?php echo (!empty($username_err)) ? 'is-invalid' : ''; ?>" value="<?php echo $username; ?>">
+                <span class="invalid-feedback"><?php echo $username_err; ?></span>
+            </div>    
+            <div class="form-group">
+                <label>Senha</label>
+                <input type="password" name="senha_usuario" class="form-control <?php echo (!empty($password_err)) ? 'is-invalid' : ''; ?>">
+                <span class="invalid-feedback"><?php echo $password_err; ?></span>
             </div>
-        </section>
-    </body>
+            <div class="form-group">
+                <input type="submit" class="btn btn-primary" value="Entrar">
+            </div>
+            <p>Não tem uma conta? <a href="registrar.php">Inscreva-se agora</a>.</p>
+        </form>
+    </div>
+</body>
 </html>

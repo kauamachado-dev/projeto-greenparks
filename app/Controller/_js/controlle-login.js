@@ -2,8 +2,8 @@
 Inicio: Função de verificação dos campos do formulário
 */
 function verificar(){
-	var email = document.getElementById('email').value;
-	var senha = document.getElementById('senha').value;
+	var email = document.getElementById('email_usuario').value;
+	var senha = document.getElementById('senha_usuario').value;
 
 	if(!email || !senha){
 	 	alert("Campos não preenchidos, favor preenche-los");
