@@ -7,7 +7,7 @@ function nextImage() {
 
     images1[currentImageIndex1].classList.remove("selectedev")//remove a imagem que estiver com "class =  selectedev"
  
-   currentImageIndex1++ 
+    currentImageIndex1++ 
 
     if(currentImageIndex1 >= max1)
        currentImageIndex1 = 0
@@ -15,11 +15,11 @@ function nextImage() {
     images1[currentImageIndex1].classList.add("selectedev")//mostra a nova imagem com "class = selectedev"
 }
 // função que inicia a troca de imagens 
-function start() {
+function start1() {
     setInterval(() => {
          //faz a troca de imagens
         nextImage()
     }, time1)
 }
 //inicia o slider assim que a página carregar
-window.addEventListener("load", start)
+window.addEventListener("load", start1)
