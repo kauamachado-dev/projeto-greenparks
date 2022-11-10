@@ -68,13 +68,13 @@ body{
     width: 100%;
     max-width: 350px; 
     margin-top: 8%;
-    margin-right: 10%;
+    margin-right: 14%;
  }
  .titulo1{
     font-family: "Passion One";
     position: absolute;
     top: 0%;
-    left:70%;
+    left:67%;
     text-align: center;
     font-size: 85px;
     color: #09400A;
@@ -85,7 +85,7 @@ body{
     position: absolute;
     width: 350px;
     height: 5px;
-    left: 65%;
+    left: 61%;
     margin-top: 7%;
 }
 
