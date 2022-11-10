@@ -1,86 +1,5 @@
 <?php
-// Incluir arquivo de configuração
-require_once "conexao.php";
- 
-// Defina variáveis e inicialize com valores vazios
-$username = $password = $confirm_password = "";
-$username_err = $password_err = $confirm_password_err = "";
- 
-// Processando dados do formulário quando o formulário é enviado
-if($_SERVER["REQUEST_METHOD"] == "POST"){
- 
-    // Validar nome de usuário
-    if(empty(trim($_POST["nome_usuario"]))){
-        $username_err = "Por favor coloque um nome de usuário.";
-    } elseif(!preg_match('/^[a-zA-Z0-9_]+$/', trim($_POST["nome_usuario"]))){
-        $username_err = "O nome de usuário pode conter apenas letras, números e sublinhados.";
-    } else{
-        // Prepare uma declaração selecionada
-        $sql = "SELECT id_usuario FROM usuario WHERE nome_usuario = :u";
-        
-        if($stmt = $conexaoMysqli->prepare($sql)){
-            // Vincule as variáveis à instrução preparada como parâmetros
-            $stmt->bindParam(":u", $param_username, PDO::PARAM_STR);
-            
-            // Definir parâmetros
-            $param_username = trim($_POST["nome_usuario"]);
-            
-            // Tente executar a declaração preparada
-            if($stmt->execute()){
-                if($stmt->rowCount() == 1){
-                    $username_err = "Este nome de usuário já está em uso.";
-                } else{
-                    $username = trim($_POST["nome_usuario"]);
-                }
-            } else{
-                echo "Ops! Algo deu errado. Por favor, tente novamente mais tarde.";
-            }
-
-            // Fechar declaração
-            unset($stmt);
-        }
-    }
-    
-    // Validar senha
-    if(empty(trim($_POST["senha_usuario"]))){
-        $password_err = "Por favor insira uma senha.";     
-    } elseif(strlen(trim($_POST["senha_usuario"])) < 6){
-        $password_err = "A senha deve ter pelo menos 6 caracteres.";
-    } else{
-        $password = trim($_POST["senha_usuario"]);
-    }
-    
-    // Verifique os erros de entrada antes de inserir no banco de dados
-    if(empty($username_err) && empty($password_err) && empty($confirm_password_err)){
-        
-        // Prepare uma declaração de inserção
-        $sql = "INSERT INTO usuario (nome_usuario, senha_usuario) VALUES (:u, :p)";
-         
-        if($stmt = $conexaoMysqli->prepare($sql)){
-            // Vincule as variáveis à instrução preparada como parâmetros
-            $stmt->bindParam(":u", $param_username, PDO::PARAM_STR);
-            $stmt->bindParam(":p", $param_password, PDO::PARAM_STR);
-            
-            // Definir parâmetros
-            $param_username = $username;
-            $param_password = password_hash($password, PASSWORD_DEFAULT); // Creates a password hash
-            
-            // Tente executar a declaração preparada
-            if($stmt->execute()){
-                // Redirecionar para a página de login
-                header("location: login.php");
-            } else{
-                echo "Ops! Algo deu errado. Por favor, tente novamente mais tarde.";
-            }
-
-            // Fechar declaração
-            unset($stmt);
-        }
-    }
-    
-    // Fechar conexão
-    unset($conexaoMysqli);
-}
+session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -92,7 +11,7 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body style="margin-left: 500px">
-  <form method="POST">
+  <form action="?page=salvar_usuario" method="POST">
   <input type="hidden">
     <div class="container">
       <div class="row">
