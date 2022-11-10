@@ -208,7 +208,7 @@ CREATE TABLE `usuario` (
   KEY `fk_usuario_responsavel` (`id_responsavel`),
   CONSTRAINT `fk_usuario_responsavel` FOREIGN KEY (`id_responsavel`) REFERENCES `responsavel` (`id_responsavel`) ON DELETE NO ACTION ON UPDATE NO ACTION,
   CONSTRAINT `fk_usuario_tipo_usuario` FOREIGN KEY (`id_tipo_usuario`) REFERENCES `tipo_usuario` (`id_tipo_usuario`) ON DELETE NO ACTION ON UPDATE NO ACTION
-) ENGINE=InnoDB AUTO_INCREMENT=10 DEFAULT CHARSET=utf8;
+) ENGINE=InnoDB AUTO_INCREMENT=11 DEFAULT CHARSET=utf8;
 /*!40101 SET character_set_client = @saved_cs_client */;
 
 --
@@ -217,7 +217,7 @@ CREATE TABLE `usuario` (
 
 LOCK TABLES `usuario` WRITE;
 /*!40000 ALTER TABLE `usuario` DISABLE KEYS */;
-INSERT INTO `usuario` VALUES (1,'Marcele ','Antonia Baptista','2009-06-10','marcele.dutra@geradornv.com.br','(43) 99205-2454 ','485.860.166-83   ','hKz=BWy07@G',1,3),(2,'Rosiméri ','Radgonda da Silva','2005-07-12','rosimeri.souza@geradornv.com.br','(43) 96781-1358 ','771.877.469-46','tJdsTvG+*VNN',1,4),(3,'Douglas ','Rodrigues Freitas','2006-10-06','douglas.almeida@geradornv.com.br','(43) 98230-1546','349.464.319-93','AIZgbvvugQO7',1,2),(4,'Joana ','Braganza Araújo','2005-08-26','joana.Araújo@geradornv.com.br','(43) 97105-3285','315.011.579-57','3TACsD**6073',1,1),(5,'Caio ','Henrique de Souza','2009-08-27','caio.Henrique@geradornv.com.br','(43) 98636-6748','622.166.799-25','_UcKkUKctWjC',1,6),(6,'Adson ','Matos Fernandes','2007-11-15','adson.Fernandes@geradornv.com.br','(43) 98515-6256','453.871.109-89','5TYu0gYS_N(G',1,5),(7,'Evelyn','Antônia Branco','1992-08-22','evelyn.branco@geradornv.com.br','(43) 96788-7887','510.266.609-63','GS#LW)r0+u6*',2,0),(8,'Raimundo','Campos Campelo','1996-01-25','raimundo.campelo@geradornv.com.br','(43) 98753-2667','305.838.329-03','auOvU@Rn9TWB',2,0),(9,'ADM','','2000-09-15','greenpower.adm@gmail.com','43 956689253','155.040.196-60   ','green123',0,0);
+INSERT INTO `usuario` VALUES (1,'Marcele ','Antonia Baptista','2009-06-10','marcele.dutra@geradornv.com.br','(43) 99205-2454 ','485.860.166-83   ','hKz=BWy07@G',1,3),(2,'Rosiméri ','Radgonda da Silva','2005-07-12','rosimeri.souza@geradornv.com.br','(43) 96781-1358 ','771.877.469-46','tJdsTvG+*VNN',1,4),(3,'Douglas ','Rodrigues Freitas','2006-10-06','douglas.almeida@geradornv.com.br','(43) 98230-1546','349.464.319-93','AIZgbvvugQO7',1,2),(4,'Joana ','Braganza Araújo','2005-08-26','joana.Araújo@geradornv.com.br','(43) 97105-3285','315.011.579-57','3TACsD**6073',1,1),(5,'Caio ','Henrique de Souza','2009-08-27','caio.Henrique@geradornv.com.br','(43) 98636-6748','622.166.799-25','_UcKkUKctWjC',1,6),(6,'Adson ','Matos Fernandes','2007-11-15','adson.Fernandes@geradornv.com.br','(43) 98515-6256','453.871.109-89','5TYu0gYS_N(G',1,5),(7,'Evelyn','Antônia Branco','1992-08-22','evelyn.branco@geradornv.com.br','(43) 96788-7887','510.266.609-63','GS#LW)r0+u6*',2,0),(8,'Raimundo','Campos Campelo','1996-01-25','raimundo.campelo@geradornv.com.br','(43) 98753-2667','305.838.329-03','auOvU@Rn9TWB',2,0),(9,'ADM','','2000-09-15','greenpower.adm@gmail.com','43 956689253','155.040.196-60   ','green123',0,0),(10,'teste','teste','2022-11-10','teste@teste','4312345678','14573658942','123456',2,NULL);
 /*!40000 ALTER TABLE `usuario` ENABLE KEYS */;
 UNLOCK TABLES;
 /*!40103 SET TIME_ZONE=@OLD_TIME_ZONE */;
@@ -230,4 +230,4 @@ UNLOCK TABLES;
 /*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
 /*!40111 SET SQL_NOTES=@OLD_SQL_NOTES */;
 
--- Dump completed on 2022-11-06 21:35:20
+-- Dump completed on 2022-11-10 16:43:32
