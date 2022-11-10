@@ -19,7 +19,8 @@
             </ul>
         </nav>
     </header>-->
-
+    <div class="titulo1">ALUNO</div>
+<div class="linha1"></div>
         <form action="_php/cadastro.php">
 
             <div class="container">
@@ -68,52 +69,52 @@
         <div class="row">
            <div class="col">
             <div class="single-input">
-                <input required type="email" name="" id="emailaluno" class="input" placeholder="Informe seu e-mail...">
+                <input required type="email" name="" id="emailaluno" class="input" placeholder="Seu e-mail...">
                 <label for="emailaluno">E-mail</label>
             </div>
         </div>
            <div class="col">
             <div class="single-input">
-                <input required type="password" name="" id="senhaaluno" class="input" placeholder="Digite uma senha...">
+                <input required type="password" name="" id="senhaaluno" class="input" placeholder="Uma senha...">
                 <label for="senhaaluno">Senha</label>
             </div>
            </div>
-        </div>
-        <div class="row">
            <div class="col">
             <div class="single-input">
-                <input required type="cep" name="" id="cepaluno" class="input" placeholder="Infome seu CEP...">
+                <input required type="cep" name="" id="cepaluno" class="input" placeholder="Seu CEP...">
                 <label for="cepaluno">CEP</label>
             </div>
            </div>
+            </div>
+           <div class="row">
            <div class="col">
             <div class="single-input">
-                <input required type="address" name="" id="enderecoaluno" class="input" placeholder="Informe seu endereço...">
+                <input required type="address" name="" id="enderecoaluno" class="input" placeholder="Seu endereço...">
                 <label for="enderecoaluno">Endereço</label>
             </div>
            </div>
-        </div>
-        <div class="row">
         <div class="col">
             <div class="single-input">
-                <input required type="address" name="" id="bairro" class="input"placeholder="Informe seu bairro...">
+                <input required type="address" name="" id="bairro" class="input"placeholder="Seu bairro...">
                 <label for="bairro">Bairro</label>
             </div>
         </div>
             <div class="col">
                 <div class="single-input">
-                    <input required type="number" name="" id="numeroaluno" class="input" placeholder="Número de sua casa...">
+                    <input required type="number" name="" id="numeroaluno" class="input" placeholder="Nº de sua casa...">
                     <label for="numeroaluno">Nº</label>
                 </div>
             </div>
         </div>
         </div>
         <div>
-            <div>
-                <a class="btn btn-1" href="_php/conexao.php">Cadastrar</a></div>
-                <div>
-                <a class="btn btn-2" href="(LINK)">Voltar</a></div>
-            <div>
+        <div>
+      <div class="text-center pt-1 mb-5 pb-1">
+        <div class="form-group">
+                <input type="submit" class="btn1" value="CRIAR CONTA">
+                <input type="reset" class="btn2" value="APAGAR DADOS">
+        </div>
+            <p class="login" >Já tem uma conta? <a href="login.php">Entre aqui</a>.</p> 
         </div> 
         </form>
 

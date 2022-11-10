@@ -92,6 +92,8 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body style="margin-left: 500px">
+<div class="titulo1">INSTRUTOR</div>
+<div class="linha1"></div>
   <form method="POST">
   <input type="hidden">
     <div class="container">
@@ -151,22 +153,22 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       </div>
       </div>
       </div>
-      <div class="col">
-      <div class="single-input">
-          <input required type="address" name="rua_endereco" id="rua" class="input"placeholder="Informe seu endereço...">
-          <label for="bairro">RUA</label>
-      </div>
-      </div>
       <div class="row">
       <div class="col">
       <div class="single-input">
-          <input required type="address" name="bairro_endereco" id="bairro" class="input"placeholder="Informe seu bairro...">
+          <input required type="address" name="rua_endereco" id="rua" class="input"placeholder="Seu endereço...">
+          <label for="bairro">RUA</label>
+      </div>
+      </div>
+      <div class="col">
+      <div class="single-input">
+          <input required type="address" name="bairro_endereco" id="bairro" class="input"placeholder="Seu bairro...">
           <label for="bairro">Bairro</label>
       </div>
       </div>
       <div class="col">
           <div class="single-input">
-              <input required type="number" name="num_casa_endereco" id="numeroaluno" class="input" placeholder="Número de sua casa...">
+              <input required type="number" name="num_casa_endereco" id="numeroaluno" class="input" placeholder="Nº de sua casa...">
               <label for="numeroaluno">Nº</label>
           </div>
       </div>
@@ -175,10 +177,10 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
       <div>
       <div class="text-center pt-1 mb-5 pb-1">
         <div class="form-group">
-                <input type="submit" class="btn btn-primary" value="Criar Conta">
-                <input type="reset" class="btn btn-secondary ml-2" value="Apagar Dados">
+                <input type="submit" class="btn1" value="CRIAR CONTA">
+                <input type="reset" class="btn2" value="APAGAR DADOS">
         </div>
-            <p>Já tem uma conta? <a href="login.php">Entre aqui</a>.</p> 
+            <p class="login" >Já tem uma conta? <a href="login.php">Entre aqui</a>.</p> 
     </form>
 </body>
 </html>

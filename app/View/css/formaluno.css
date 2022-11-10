@@ -67,9 +67,27 @@ body{
  form{
     width: 100%;
     max-width: 350px; 
-    margin-top: 5%;
-    margin-right: 20%;
+    margin-top: 8%;
+    margin-right: 10%;
  }
+ .titulo1{
+    font-family: "Passion One";
+    position: absolute;
+    top: 0%;
+    left:70%;
+    text-align: center;
+    font-size: 85px;
+    color: #09400A;
+}
+/*LINHA ABAIXO DO PRIMEIRO TÍTULO */
+.linha1{
+    background-color: #D62509;
+    position: absolute;
+    width: 350px;
+    height: 5px;
+    left: 65%;
+    margin-top: 7%;
+}
 
  /* Largura dos campos */
 div.single-input{
@@ -109,37 +127,50 @@ div.single-input .input:valid ~ label{
     font-size: 16px;
     color: #128013;
 }
-
-.btn{
-   font-size: 18px;
-   font-family: Arial, Helvetica, sans-serif;
-   text-align: center;
-   margin-bottom: 30px;
-   display: block;
-   padding: 10px;
-   font-weight: bold;
+#numeroaluno{
+    width: 120%;
 }
-.btn1{
-    float: right; 
-    border:1px solid;
-    padding: 11px 21px;
-    background:#5BB318;
-    color:white;
-    border-radius:20px;
-    font-size: 20px;
-    font-family: arial, helvetica;
-    text-decoration:none;
-    vertical-align: middle;
- } 
-
-  .btn2{
-    float:left;
-    border:1px solid;
-    padding: 13px 40px;
-    background: #FFE60B;
-    color:white;
-    border-radius:20px;
-    font-size: 20px;
-    font-family: Arial, helvetica;
-    text-decoration:none;
-  }
+.btn{
+    font-size: 18px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    margin-bottom: 30px;
+    display: block;
+    padding: 10px;
+    font-weight: bold;
+ }
+ .btn1{
+     float: right; 
+     border:1px solid;
+     padding: 10px 15px;
+     background:#5BB318;
+     border-color: #5bb318;
+     border-radius:5px;
+     font-size: 24px;
+     font-family: "Passion One";
+     text-decoration:none;
+     vertical-align: middle;
+     margin-right: 55%;
+     color: #ffff;
+  } 
+ 
+   .btn2{
+     float:left;
+     border:1px solid;
+     padding: 10px 15px;
+     background: #D62509;
+     border-color: #D62509;
+     border-radius: 5px;
+     font-size: 24px;
+     font-family: "Passion One";
+     text-decoration:none;
+     margin-top: -17%;
+     margin-left: 57%;
+     color: #ffff;
+   }
+ 
+ .login{
+     font-family: "Arimo";
+     font-size: 17px;
+     margin-top: 20%;
+ }
