@@ -93,7 +93,7 @@ height: 685px;
 /* TÍTULO SOBRE NÓS */
 #titulo2{
     font-family: 'Passion One';
-    margin-top: -19%;
+    margin-top: -13%;
     margin-left: 13%;
     position: absolute;
     text-align: center;
@@ -107,18 +107,18 @@ height: 685px;
     width: 450px;
     height: 5px;
     margin-left: 13%;
-    margin-top: -25%;
+    margin-top: -19%;
 }
 /* TEXTO DE DESCRIÇÃO SOBRE NÓS */
 .sobre{
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    top: 13%;
+    top: 23%;
     left: 13%;
     text-align: left;
-    font-size: clamp(1.5em, 1em + 5vw, 1.0em);
-    line-height: 50px;
+    font-size: clamp(1.4em, 1em + 5vw, 1.0em);
+    line-height: 40px;
 }
 /* BOTÃO SOBRE NÓS */
 .botao1{
@@ -129,7 +129,7 @@ height: 685px;
     border-color: #FFB200;
     border-radius: 7px;
     font-size: 35px;
-    padding: 11px 20px;
+    padding: 10px 13px;
     margin-left: 32%;
     margin-top: 5%;
     position: absolute;
@@ -159,8 +159,8 @@ section:nth-of-type(5){
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
-    margin-top: 5%;
-    margin-left: 79%;
+    margin-top: 10%;
+    margin-left: 74%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -171,8 +171,8 @@ section:nth-of-type(5){
     position: absolute;
     width: 255px;
     height: 5px;
-    margin-left: 75%;
-    margin-top: -2%;
+    margin-left: 70%;
+    margin-top: 3%;
 }
 /* EFEITO SLIDER AULAS */
 #sliderau {
@@ -203,13 +203,11 @@ section:nth-of-type(5){
 /*TEXTO AULAS */
 .aulas{
     font-family: 'Arimo';
-    margin-top: -10%;
-    margin-left: 62%;
-    margin-top: -1%;
+    margin-top: 5%;
     margin-left: 60%;
     position: absolute;
-    font-size: clamp(1.5em, 1em + 5vw, 1.0em);
-    line-height: 50px;
+    font-size: clamp(1.4em, 1em + 5vw, 1.0em);
+    line-height: 40px;
     z-index: 1;
     text-align: right;
 }
@@ -222,9 +220,9 @@ section:nth-of-type(5){
     border-color: #FFB200;
     border-radius: 7px;
     font-size: 35px;
-    padding: 11px 30px;
-    margin-left: 82%;
-    margin-top: 26%;
+    padding: 10px 13px;
+    margin-left: 60%;
+    margin-top: 24%;
     position: absolute;
 }
 /* ONDA ABAIXO AULAS */
@@ -233,7 +231,7 @@ section:nth-of-type(5){
     bottom: 0;
     left: 0;
     right: 0;
-    top: 268%;
+    top: 268.6%;
     z-index: 0;
 }
 
@@ -249,13 +247,13 @@ section:nth-of-type(8){
     bottom: 0;
     left: 0;
     right: 0;
-    top: 272%;
+    top: 272.6%;
 }
 
 /* TÍTULO EVENTOS */
 #titulo4{
     font-family: 'Passion One';
-    margin-top: -5%;
+    margin-top: -2%;
     margin-left: 13%;
     position: absolute;
     text-align: center;
@@ -268,17 +266,17 @@ section:nth-of-type(8){
     width: 347px;
     height: 5px;
     margin-left: 13%;
-    margin-top: 1%;
+    margin-top: 4%;
 }
 /* TEXTO DE DESCRIÇÃO EVENTOS */
 .eventos{
     font-family: 'Arimo';
-    margin-top: 2%;
+    margin-top: 6%;
     margin-left: 13%;
     position: absolute;
     text-align: left;
-    font-size: clamp(1.5em, 1em + 5vw, 1.0em);
-    line-height: 50px;
+    font-size: clamp(1.4em, 1em + 5vw, 1.0em);
+    line-height: 40px;
 }
 /* BOTÃO EVENTOS */
 .botao3{
@@ -291,7 +289,7 @@ section:nth-of-type(8){
     font-size: 35px;
     padding: 11px 30px;
     margin-left: 35%;
-    margin-top: 22%;
+    margin-top: 23%;
     position: absolute;
 }
 /* EFEITO SLIDER EVENTOS */

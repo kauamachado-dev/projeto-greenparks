@@ -71,13 +71,12 @@
     </section>
         <div class="linha2"></div>
         <div class="aulas">
-            <P>As aulas serão oferecidas à população de</P>
-            <P>   forma gratuita, para que todos tenham</P>
-            <P>acesso. Isso vai acontecer de forma segura</P>
-            <P> e confiável, onde os instrutores vão ter</P>
-            <P> acesso ao contato com os pais dos alunos</P>
-            <P>    menores de idade, e caso ocorra algum</P>
-            <P>   imprevisto sempre entrarão em contato.</P>
+            <P>  As aulas serão oferecidas à população</P>
+            <P>   gratuitamente. Isso vai acontecer de</P>
+            <P>      forma segura e confiável, onde os</P>
+            <P>instrutores vão ter contato com os pais</P>
+            <P>dos alunos, se ocorrer algum imprevisto</P>
+            <P>            sempre entrarão em contato.</P>
         </div>
         <!-- EFEITO CARROSSEL -->
         <div id ="sliderau">
@@ -93,7 +92,7 @@
         fill="#ffff"
         fill-opacity="1" d="M0,224L60,197.3C120,171,240,117,360,117.3C480,117,600,171,720,197.3C840,224,960,224,1080,202.7C1200,181,1320,139,1380,117.3L1440,96L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z"></path>
 </svg>
-            <a href="aula.php" type="button" class="botao2">AULAS</a>
+            <a href="aula.php" type="button" class="botao2">SAIBA MAIS</a>
     <!-- TEXTO E SEÇÃO SOBRE EVENTOS!-->
     <section></section>
     <svg  class="onda5" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
