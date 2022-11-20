@@ -63,6 +63,11 @@ body{
     justify-content: right;
 }
 
+#back{
+    left: -3%;
+    width: 100%;
+}
+
 /* Largura do formulário */
  form{
     width: 100%;
