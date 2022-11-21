@@ -11,10 +11,8 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body style="margin-left: 500px">
-<<<<<<< HEAD
-=======
+
 <img id="back" src="../View/css/images/formprof.png">
->>>>>>> 0e26a556ef509952d755dad0ef31ec4612a90ff7
   <form action="?page=salvar_usuario" method="POST">
 <div class="titulo1">INSTRUTOR</div>
 <div class="linha1"></div>
@@ -102,7 +100,7 @@ session_start();
       <div class="text-center pt-1 mb-5 pb-1">
         <div class="form-group">
                 <input type="submit" class="btn1" value="CRIAR CONTA">
-                <input type="reset" class="btn2" value="APAGAR DADOS">
+                <a href="../Pages/index.php" type="submit" class="btn2">VOLTAR</a>
         </div>
             <p class="login" >Já tem uma conta? <a href="login.php">Entre aqui</a>.</p> 
     </form>
