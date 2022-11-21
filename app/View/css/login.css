@@ -1,10 +1,8 @@
-html,body {
-  font-family: 'Open Sans', serif;
-  font-size: 14px;
-  font-weight: 300;
+body {
+  height: 500px;
 }
 .hero.is-success {
-  background: #f2f7fa;
+  background: #faf2f8;
 }
 .hero .nav, .hero.is-success .nav {
   -webkit-box-shadow: none;
@@ -13,6 +11,5 @@ html,body {
 input {
   font-weight: 300;
 }
-p {
-  font-weight: 700;
-}
+
+

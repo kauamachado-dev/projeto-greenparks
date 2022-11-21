@@ -13,6 +13,7 @@ $u = new Usuario;
         <meta charset="UTF-8">
         <title>Login</title>
         <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+        <link rel="stylesheet" href="../View/css/login.css" rel="stylesheet">
     </head>
     <!-- LOGIN  --> 
     <title>Login</title>
@@ -38,7 +39,7 @@ $u = new Usuario;
                                             <div class="form-floating mb-3">
                                                 <input type="password" class="form-control" id="senha_usuario" required name="senha_usuario" maxlength="75" placeholder="Digite a senha">
                                                 <label for="senha"> Senha <i class="fas fa-key"></i> </label>
-                                            </div>
+                                            </div>  
                                             <!-- BOTÃO -->
                                             <div class="text-center pt-1 mb-5 pb-1">
                                                 <input type="submit" value="ACESSAR" class="btn btn-primary btn-block fa-lg gradient-custom-2 mb-3 mt-4">
@@ -47,8 +48,6 @@ $u = new Usuario;
                                     </div>
                                 </div>
                                         <h4 class="mb-4">BEM VINDO</h4>
-                                        <p class="mb-4">
-                                        </p>
                                     </div>
                                 </div>
                             </div>
