@@ -11,7 +11,10 @@ session_start();
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body style="margin-left: 500px">
+<<<<<<< HEAD
 
+=======
+>>>>>>> c512029e8181e4b82596f514e3f015018442c17d
 <img id="back" src="../View/css/images/formprof.png">
   <form action="?page=salvar_usuario" method="POST">
 <div class="titulo1">INSTRUTOR</div>
