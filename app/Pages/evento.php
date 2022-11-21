@@ -3,19 +3,6 @@
 <head>
     <meta charset='utf-8'>
     <title>EVENTOS</title>
-<<<<<<<< HEAD:app/Pages/evento.html
-<<<<<<< HEAD:app/Pages/evento.html
-    <link href="projeto-greenparks/app/View/css/event.css" rel="stylesheet">
-=======
-    <link href="app/View/css/event.css" rel="stylesheet">
-    <link href="app/View/css/animation.css" rel="stylesheet">
->>>>>>> 4f754716cea1006920a20bca9ffed7bc3c8bf2af:evento.html
-    <script type="text/javascript" src="app/Controller/_js/modal.js"></script>
-</head>
-<body>
-    <!--ÍNICIO DO MENU DE NAVEGAÇÃO  COMENTÁRIO DE TESTE-->
-    <header>
-========
     <link href="../View/css/event.css" rel="stylesheet">
     <link href="../View/css/animation.css" rel="stylesheet">
     <script type="text/javascript" src="../Controller/_js/modal.js"></script>
@@ -24,7 +11,6 @@
 <body>
       <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
       <header>
->>>>>>>> 376cdfe8644226382e81a3da5bb4e9ee4228903d:app/Pages/evento.php
         <nav>
             <a class="logo" href="index.php">GREEN PARKS</a>
             <ul class="nav-list">
