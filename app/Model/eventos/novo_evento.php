@@ -1,5 +1,9 @@
 <h1>Adicionar eventos</h1>
 <br><br>
+<?php
+  include_once ('viacep.php');
+  $address = getAddress();
+?>
 
 <form action="?page=salvar" method="POST">
     <input type="hidden" name="acao" value="cadastrar">
@@ -24,19 +28,11 @@
     <h2>Local do evento</h2>
     <div class="mb-3">
         <label>CEP:</label>
-        <input type="text" name="cep_endereco" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label>Bairro:</label>
-        <input type="text" name="bairro_endereco" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label>Rua:</label>
-        <input type="text" name="rua_endereco" class="form-control">
+        <input type="text" name="cep_eventos" class="form-control">
     </div>
     <div class="mb-3">
         <label>Número da casa/local:</label>
-        <input type="text" name="num_casa_endereco" class="form-control">
+        <input type="text" name="num_ende_eventos" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

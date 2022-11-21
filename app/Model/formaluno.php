@@ -19,6 +19,7 @@
             </ul>
         </nav>
     </header>-->
+    <img id="back" src="../View/css/images/formfund.png">
     <div class="titulo1">ALUNO</div>
 <div class="linha1"></div>
         <form action="_php/cadastro.php">

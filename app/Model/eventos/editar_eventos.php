@@ -1,6 +1,6 @@
 <h1>editar evento</h1>
 <?php
-    $sql = "SELECT eventos.nome_eventos, eventos.data_eventos, eventos.horario_eventos, eventos.desc_eventos, endereco.cep_endereco, endereco.bairro_endereco, endereco.rua_endereco, endereco.num_casa_endereco FROM eventos JOIN endereco ON eventos.id_endereco = endereco.id_endereco WHERE id_eventos =".$_REQUEST["id"];
+    $sql = "SELECT * FROM eventos WHERE id_eventos =".$_REQUEST["id"];
 
  
     $res = $conexaoMysqli->query($sql);
@@ -30,19 +30,11 @@
     <h2>Local do evento</h2><br>
     <div class="mb-3">
         <label>CEP:</label>
-        <input type="text" name="cep_endereco" value="<?php print $row->cep_endereco ?>" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label>Bairro:</label>
-        <input type="text" name="bairro_endereco" value="<?php print $row->bairro_endereco ?>" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label>Rua:</label>
-        <input type="text" name="rua_endereco" value="<?php print $row->rua_endereco ?>" class="form-control">
+        <input type="text" name="cep_eventos" value="<?php print $row->cep_eventos ?>" class="form-control">
     </div>
     <div class="mb-3">
         <label>Número da casa/local:</label>
-        <input type="number" name="num_casa_endereco" value="<?php print $row->num_casa_endereco ?>" class="form-control">
+        <input type="number" name="num_ende_eventos" value="<?php print $row->num_ende_eventos ?>" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

@@ -30,7 +30,7 @@
     <div class="subtitulo1">
         <p>As aulas são para crianças de 5 anos de idade até adolescentes de 18 anos!</p>
       </div>
-      <img id="bola1" src="../View/css/images/Manchas/bolateste.png">
+      <!--<img id="bola1" src="../View/css/images/Manchas/bolateste.png">-->
     <!-- IMAGEM PRIMEIRO ESPORTE -->
     <img id="futebol" src="../View/css/images/futebol.jpg">
    <!-- TÍTULO PRIMEIRO ESPORTE -->
@@ -40,13 +40,13 @@
     <div class="linha2"></div>
     <div class="futebol">
             <P>Futebol é um dos esportes mais praticados no Brasil!</P>
-            <P>E nada melhor que além de brincar, as pessoas apendam as</P>
+            <P>E nada melhor que além de brincar, aprendermos as</P>
             <P>regras, técnicas do esporte, etc... </P>
             </div>
     <a href="futebol.php" type="button" class="botao1">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
-    <img id="bola2" src="../View/css/images/Manchas/bolavolei.png">
+    <!--<img id="bola2" src="../View/css/images/Manchas/bolavolei.png">-->
     <!-- IMAGEM SEGUNDO ESPORTE -->
     <img id="volei" src="../View/css/images/volei.png">
    <!-- TÍTULO SEGUNDO ESPORTE -->
@@ -60,7 +60,7 @@
             </div>
     <a href="volei.php" type="button" class="botao2">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE VOLEI -->
-    <img id="bola3" src="../View/css/images/Manchas/bolabasquete.png">
+    <!--<img id="bola3" src="../View/css/images/Manchas/bolabasquete.png">-->
     <!-- IMAGEM TERCEIRO ESPORTE -->
         <img id="basquete" src="../View/css/images/basquete.jpg">
    <!-- TÍTULO TERCEIRO ESPORTE -->
@@ -69,12 +69,12 @@
     </section>
     <div class="linha4"></div>
     <div class="basquete">
-            <P>Jogar basquete com aos amigos é tão bom quanto aprender</P>
-            <P>mais sobre o esporte, venha participar!</P>
+            <P>Jogar basquete com aos amigos é tão bom quanto</P>
+            <P> aprender mais sobre o esporte, venha participar!</P>
             </div>
     <a href="basquete.php" type="button" class="botao3">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE BASQUETE -->
-    <img id="bola4" src="../View/css/images/Manchas/skateaula.png">
+    <!--<img id="bola4" src="../View/css/images/Manchas/skateaula.png">-->
         <!-- IMAGEM QUARTO ESPORTE -->
         <img id="skate" src="../View/css/images/skate.jpg">
    <!-- TÍTULO QUARTO ESPORTE -->
@@ -88,7 +88,7 @@
             </div>
     <a href="skate.php" type="button" class="botao4">SAIBA MAIS</a>
     <!-- FINAL SEÇÃO DE SKATE -->
-    <img id="bola5" src="../View/css/images/Manchas/bolahandeball.png">
+    <!--<img id="bola5" src="../View/css/images/Manchas/bolahandeball.png">-->
         <!-- IMAGEM QUINTO ESPORTE -->
         <img id="handeball" src="../View/css/images/handeball.jpg">
    <!-- TÍTULO QUINTOSS ESPORTE -->

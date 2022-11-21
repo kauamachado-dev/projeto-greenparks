@@ -51,8 +51,8 @@ nav {
 .titulo1{
     font-family: "Passion One";
     position: absolute;
-    top: 0%;
-    left:60%;
+    top: -15%;
+    left: 2%;
     text-align: center;
     font-size: 85px;
     color: #09400A;
@@ -63,8 +63,8 @@ nav {
     position: absolute;
     width: 400px;
     height: 5px;
-    left: 58%;
-    margin-top: 7%;
+    left: 2%;
+    margin-top: -1%;
 }
 
 /*Alinhando os campos */
@@ -74,6 +74,13 @@ body{
     display: flex;
     align-items: right;
     justify-content: right;
+}
+
+#back{
+    left: 0%;
+    width: 60%;
+    top: -3%;
+    position: absolute;
 }
 
 /* Largura do formulário */
