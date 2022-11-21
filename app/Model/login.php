@@ -1,3 +1,11 @@
+<!-- Página de login -->
+<?php
+//chamando o arquivo usuarios.php
+require_once '../Controller/usuarios.php';
+
+//Chama a classe
+$u = new Usuario; 
+?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
@@ -20,17 +28,16 @@
                                 <div class="col-lg-6">
                                     <div class="card-body p-md-5 mx-md-4">
                                         <!-- FORMULÁRIO -->
-                                        <form method="POST">
+                                        <form action="processa.php" method="POST">
                                             <!-- USUÁRIO -->
                                             <div class="form-floating mb-3">
-                                                <input type="text" class="form-control" id="nome_usuario" required name="usuario" maxlength="75" placeholder="Digite o usuário">
+                                                <input type="text" class="form-control" id="nome_usuario" required name="nome_usuario" maxlength="75" placeholder="Digite o usuário">
                                                 <label for="usuario">Usuário <i class="fas fa-user"></i> </label>
                                             </div>
                                             <!-- SENHA -->
                                             <div class="form-floating mb-3">
-                                                <input type="password" class="form-control" id="senha_usuario" required name="senha" maxlength="75" placeholder="Digite a senha">
+                                                <input type="password" class="form-control" id="senha_usuario" required name="senha_usuario" maxlength="75" placeholder="Digite a senha">
                                                 <label for="senha"> Senha <i class="fas fa-key"></i> </label>
-                                                <div id="olho"><abbr title="Mostrar senha" id="##"><i class="fas fa-eye-slash" id="btn-eye" onclick="mostrar()"></i></abbr></div>
                                             </div>
                                             <!-- BOTÃO -->
                                             <div class="text-center pt-1 mb-5 pb-1">
