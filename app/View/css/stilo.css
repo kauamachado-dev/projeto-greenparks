@@ -140,7 +140,7 @@ height: 690px;
     bottom: 0;
     left: 0;
     right: 0;
-    top: 180%;
+    top: 182%;
 }
 /* <<<<<<< PARALLAX ENTRE SOBRE E AULAS >>>>>> */
 section:nth-of-type(5){
@@ -154,12 +154,12 @@ section:nth-of-type(5){
     bottom: 0;
     left: 0;
     right: 0;
-    top: 185%;
+    top: 187%;
 }
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
-    margin-top: 10.5%;
+    margin-top: 12%;
     margin-left: 74%;
     position: absolute;
     text-align: center;
@@ -172,7 +172,7 @@ section:nth-of-type(5){
     width: 255px;
     height: 5px;
     margin-left: 70%;
-    margin-top: -3%;
+    margin-top: -2%;
 }
 /* EFEITO SLIDER AULAS */
 #sliderau {
@@ -182,7 +182,7 @@ section:nth-of-type(5){
     max-height: 400px;
     position: absolute;
     left: 5%;
-    top: 222%;
+    top: 226%;
 }
 
 #sliderau img{
@@ -203,7 +203,7 @@ section:nth-of-type(5){
 /*TEXTO AULAS */
 .aulas{
     font-family: 'Arimo';
-    margin-top: -1%;
+    margin-top: 0%;
     margin-left: 60%;
     position: absolute;
     font-size: clamp(1.4em, 1em + 5vw, 1.0em);
@@ -222,7 +222,7 @@ section:nth-of-type(5){
     font-size: 35px;
     padding: 10px 13px;
     margin-left: 60%;
-    margin-top: 19%;
+    margin-top: 19.4%;
     position: absolute;
 }
 /* ONDA ABAIXO AULAS */
@@ -231,7 +231,7 @@ section:nth-of-type(5){
     bottom: 0;
     left: 0;
     right: 0;
-    top: 270%;
+    top: 275%;
     z-index: 0;
 }
 
@@ -247,7 +247,7 @@ section:nth-of-type(8){
     bottom: 0;
     left: 0;
     right: 0;
-    top: 275%;
+    top: 280%;
 }
 
 /* TÍTULO EVENTOS */
@@ -318,10 +318,10 @@ section:nth-of-type(8){
     opacity: 1;
 }
 #logomarista{
-    margin-top: 47%;
+    margin-top: 39%;
     z-index: 2;
     height: 12%;
-    margin-left: 33%;
+    margin-left: 34%;
     position: absolute;
 }
 /* ONDA FINAL */

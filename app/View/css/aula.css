@@ -50,14 +50,14 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    top: -2%;
+    top: -3%;
     width: 120%;
 }
 /* INICIO - TÍTULO RESPONSIVO */
 .titulo1{
     font-family: 'Passion One';
     position: absolute;
-    top: 15%;
+    top: 23%;
     left: 22%;
     text-align: center;
     font-size: clamp(3.75em, 1em + 10vw, 6.5em);
@@ -70,12 +70,12 @@ nav {
     width: 320px;
     height: 5px;
     margin-left: 19%;
-    margin-top: 8%;
+    margin-top: 12%;
 }
 /* SUBITULO AULAS */
 .subtitulo1{
     font-family: 'Arimo';
-    margin-top: 9%;
+    margin-top: 13%;
     margin-left: 19%;
     position: absolute;
     text-align: center;
@@ -91,7 +91,7 @@ nav {
 /* TÍTULO FUTEBOL */
 #titulo2{
     font-family: 'Passion One';
-    margin-top: 14%;
+    margin-top: 18%;
     margin-left: 10%;
     position: absolute;
     text-align: center;
@@ -105,14 +105,14 @@ nav {
     width: 300px;
     height: 5px;
     margin-left: 10%;
-    margin-top: 20%;
+    margin-top: 24%;
 }
 /*IMAGEM FUTEBOL*/
 #futebol{
     height: 50%;
     width: 30%;
     margin-left: 10%;
-    margin-top: 21%;
+    margin-top: 25%;
     position: absolute;
     border-radius: 3%;
 }
@@ -121,7 +121,7 @@ nav {
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    top: 3%;
+    top: 10%;
     left: 10%;
     text-align: left;
     font-size: clamp(1.1em, 1em + 5vw, 1.0em);
@@ -138,14 +138,14 @@ nav {
     font-size: 35px;
     padding: 10px 19px;
     margin-left: 10%;
-    margin-top: 53%;
+    margin-top: 57%;
     position: absolute;
 }
 
 /* TÍTULO VOLEI */
 #titulo3{
     font-family: 'Passion One';
-    margin-top: 62%;
+    margin-top: 66%;
     margin-left: 55%;
     position: absolute;
     text-align: center;
@@ -159,14 +159,14 @@ nav {
     width: 200px;
     height: 5px;
     margin-left: 55%;
-    margin-top: 68%;
+    margin-top: 72%;
 }
 /*IMAGEM VOLEI*/
 #volei{
     height: 60%;
     width: 32%;
     margin-left: 55%;
-    margin-top: 69%;
+    margin-top: 73%;
     position: absolute;
     border-radius: 3%;
 }
@@ -174,7 +174,7 @@ nav {
 .volei{
     font-family: 'Arimo';
     position: absolute;
-    margin-top: 99%;
+    margin-top: 103%;
     left: 55%;
     text-align: left;
     font-size: clamp(1.1em, 1em + 5vw, 1.0em);
@@ -191,14 +191,14 @@ nav {
     font-size: 35px;
     padding: 10px 19px;
     margin-left: 55%;
-    margin-top: 104%;
+    margin-top: 108%;
     position: absolute;
 }
 
 /* TÍTULO BASQUETE */
 #titulo4{
     font-family: 'Passion One';
-    margin-top: 114%;
+    margin-top: 118%;
     margin-left: 10%;
     position: absolute;
     text-align: center;
@@ -212,14 +212,14 @@ nav {
     width: 330px;
     height: 5px;
     margin-left: 10%;
-    margin-top: 120%;
+    margin-top: 124%;
 }
 /*IMAGEM BASQUETE*/
 #basquete{
     height: 60%;
     width: 32%;
     margin-left: 10%;
-    margin-top: 121%;
+    margin-top: 125%;
     border-radius: 3%;
     position: absolute;
 }
@@ -227,7 +227,7 @@ nav {
 .basquete{
     font-family: 'Arimo';;
     position: absolute;
-    margin-top: 151%;
+    margin-top: 155%;
     left: 10%;
     text-align: left;
     font-size: clamp(1.1em, 1em + 5vw, 1.0em);
@@ -244,14 +244,14 @@ nav {
     font-size: 35px;
     padding: 10px 19px;
     margin-left: 10%;
-    margin-top: 156%;
+    margin-top: 160%;
     position: absolute;
 }
 
 /* TÍTULO SKATE */
 #titulo5{
     font-family: 'Passion One';
-    margin-top: 164%;
+    margin-top: 168%;
     margin-left: 55%;
     position: absolute;
     text-align: center;
@@ -265,14 +265,14 @@ nav {
     width: 205px;
     height: 5px;
     margin-left: 55%;
-    margin-top: 170%;
+    margin-top: 174%;
 }
 /*IMAGEM SKATE*/
 #skate{
     height: 60%;
     width: 32%;
     margin-left: 55%;
-    margin-top: 171%;
+    margin-top: 175%;
     border-radius: 3%;
     position: absolute;
 }
@@ -281,7 +281,7 @@ nav {
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    margin-top: 201%;
+    margin-top: 205%;
     left: 55%;
     text-align: left;
     font-size: clamp(1.1em, 1em + 5vw, 1.0em);
@@ -298,14 +298,14 @@ nav {
     font-size: 35px;
     padding: 10px 19px;
     margin-left: 55%;
-    margin-top: 206%;
+    margin-top: 210%;
     position: absolute;
 }
 
 /* TÍTULO HANDEBALL */
 #titulo6{
     font-family: 'Passion One';
-    margin-top: 214%;
+    margin-top: 221%;
     margin-left: 10%;
     position: absolute;
     text-align: center;
@@ -319,14 +319,14 @@ nav {
     width: 375px;
     height: 5px;
     margin-left: 10%;
-    margin-top: 220%;
+    margin-top: 227%;
 }
 /*IMAGEM HANDEBALL*/
 #handeball{
     height: 60%;
     width: 32%;
     margin-left: 10%;
-    margin-top: 221%;
+    margin-top: 228%;
     border-radius: 3%;
     position: absolute;
 }
@@ -335,7 +335,7 @@ nav {
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    margin-top: 251%;
+    margin-top: 257%;
     left: 10%;
     text-align: left;
     font-size: clamp(1.1em, 1em + 5vw, 1.0em);
@@ -352,14 +352,14 @@ nav {
     font-size: 35px;
     padding: 10px 19px;
     margin-left: 10%;
-    margin-top: 254%;
+    margin-top: 260%;
     position: absolute;
 }
 #logomarista{
-    margin-top: 268%;
+    margin-top: 276%;
     z-index: 2;
     height: 12%;
-    margin-left: 33%;
+    margin-left: 34%;
     position: absolute;
 }
 /* ONDA FINAL */
@@ -367,6 +367,6 @@ nav {
     position: absolute;
     bottom: 0;
     left: 0%;
-    top: 540%;
+    top: 560%;
     width: 100%;
 }
