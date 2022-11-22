@@ -1,3 +1,32 @@
+<?php 
+//Página principal dos funcionários, assim que sair do login, serão redirecionados pra cá...
+
+//Inclui a conexão
+include '../Model/conexao.php';
+
+//inicia a sessão
+session_start(); 
+
+//Se não estiver logado
+if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['tipo_usuario'])) {
+    //Realoca para o login
+    header("location: ../Model/login.php");
+    exit;
+
+//Se for um administrador
+} else if ($_SESSION['tipo_usuario'] != 0) {
+    //Realoca para a pagina de administrador
+    header("location: administrador.php");
+
+//Se estiver logado
+} else if ($_SESSION['descricao'] != 1) {
+    //Exibe um alert e realoca para a pagina de login
+    echo "<script>alert('Usuário sem acesso!');</script>";
+    header("location: ../Model/login.php");
+    exit;
+}
+//SE A PAGINA ESTIVER SENDO IMPEDIDA DE ABRIR COMENTE ESSAS LINHAS DE CODIGO ACIMA !!!!!
+?>
 <!DOCTYPE html>
 <html>
 <head>
@@ -19,6 +48,7 @@
         </nav>
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
+    <h1 class="my-5">Oi, <b><?php echo htmlspecialchars($_SESSION["nome_usuario"]); ?></b>
     <div class="titulo">Área do Professor</div>
     <div class="linha"></div>
     <a href="aula.html">

@@ -81,8 +81,8 @@ Class Usuario{
                 //Se os IDS forem igual
                 if($linha['id_usuario'] == $_SESSION['id_usuario']){ 
 
-                    $nivel  = $linha['nivel_usuario']; //Variável recebendo o nivel de usuário
-                    $status = $linha['status_usuario'];//Variável recebendo o status do usuário
+                    $nivel  = $linha['tipo_usuario']; //Variável recebendo o nivel de usuário
+                    $status = $linha['descricao'];//Variável recebendo o status do usuário
 
                     //Estrutura de decisão sobre o nível e o status do usuário
                     switch ($nivel && $status){
@@ -90,7 +90,7 @@ Class Usuario{
                         //Funcionário(a) ativo
                         case ($nivel == 0 && $status == 1):
                             //Manda para a página dos instrutores
-                            header("location: View/Pages/funcionario.php");
+                            header("location: ../Pages/instrutor.php");
                         break;
 
                         //Administrador ativo
@@ -118,8 +118,8 @@ Class Usuario{
                         break;
                     }
 
-                    $_SESSION['nivel_usuario']  = $nivel;
-                    $_SESSION['status_usuario'] = $status;
+                    $_SESSION['tipo_usuario']  = $nivel;
+                    $_SESSION['descricao'] = $status;
                 }
             }
 

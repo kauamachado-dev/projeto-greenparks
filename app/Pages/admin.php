@@ -1,5 +1,27 @@
 <?php
+    //Página principal pro adm, depois de fazer login será encaminhado pra cá...
 
+    //Inclui o arquivo de conexao
+    include '../Model/conexao.php';
+
+    //inicia a sessão
+    session_start(); 
+
+    //se não estiver definida, não possuir um id_usuario ou um status_usuario
+    if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['status_usuario'])){
+        //vai mandar ele devolta para a página de login
+        header("location: login.php"); 
+        exit;
+        //Se o usuario for funcionario
+    } else if ($_SESSION['nivel_usuario'] != 1) {
+        //Realoca o usuario para o funcionario
+        header("location: funcionario.php");
+        //Se o usuario estiver inativo
+    } else if ($_SESSION['status_usuario'] != 1) {
+        //Realoca para a pagina do login
+        header("location: login.php");
+        exit;
+    }
 ?>
 <!DOCTYPE html>
 <html>

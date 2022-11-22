@@ -1,7 +1,13 @@
 <!-- Página de login -->
 <?php
+session_start();
+
 //chamando o arquivo usuarios.php
 require_once '../Controller/usuarios.php';
+//require_once '../Controller/nivel.php';
+
+// Chama nivel de acesso
+//Nivel();
 
 //Chama a classe
 $u = new Usuario; 
