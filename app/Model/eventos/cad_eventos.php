@@ -35,7 +35,7 @@
   case "salvar";
     include("salvar_eventos.php");
     break;
-    case "editar";
+  case "editar";
     include("editar_eventos.php");
     break;
     default:

@@ -14,7 +14,8 @@
             <a class="logo" href="../Pages/admin.php">GREEN PARKS</a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="../../Pages/admin.php">Voltar</a></li>
-                <li><a href="?page=forminst">Cadastro</a></li>       
+                <li><a href="?page=novo_usuario_inst">Cadastro instrutor</a></li>
+                <li><a href="?page=novo_usuario_aluno">Cadastro aluno</a></li>         
             </ul>
         </nav>
     </header> 
@@ -25,10 +26,13 @@
     <?php
     include("conexao.php");
  switch(@$_REQUEST["page"]){
-  case "forminst":
+  case "novo_usuario_inst":
     include("forminst.php");
     break;
-  case "salvar_usuario";
+  case "novo_usuario_aluno":
+    include("formaluno.php");
+    break;  
+  case "salvar";
     include("salvar_usuario.php");
     break;
     default:
