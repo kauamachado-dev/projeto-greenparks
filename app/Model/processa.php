@@ -3,7 +3,6 @@
     $username = $_POST['nome_usuario'];  
     $password = $_POST['senha_usuario'];  
       
-        //to prevent from mysqli injection  
         $username = stripcslashes($username);  
         $password = stripcslashes($password);  
         $username = mysqli_real_escape_string($conexaoMysqli, $username);  
@@ -15,9 +14,9 @@
         $count = mysqli_num_rows($result);  
           
         if($count == 1){  
-            echo "<h1><center> Logado com sucesso! </center></h1>";  
-        }  
-        else{  
-            echo "<h1> Login invalido! </h1>";  
+            header("location: ../Pages/index.php"); 
+        }else{  
+            echo "<script>alert('Usuario ou senha incorretos!');</script>";
+            //header('location: login.php');
         }     
 ?>  

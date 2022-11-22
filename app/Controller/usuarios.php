@@ -89,14 +89,14 @@ Class Usuario{
 
                         //Funcionário(a) ativo
                         case ($nivel == 0 && $status == 1):
-                            //Manda para a página dos funcionários
+                            //Manda para a página dos instrutores
                             header("location: View/Pages/funcionario.php");
                         break;
 
                         //Administrador ativo
                         case ($nivel == 1 && $status == 1):
                             //Manda para a página dos administradores
-                            header("location: View/Pages/administrador.php");
+                            header("location: ../Pages/admin.php");
                         break;
 
                         //Funcionário(a) inativo
