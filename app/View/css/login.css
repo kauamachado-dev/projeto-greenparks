@@ -1,4 +1,5 @@
 body {
+<<<<<<< HEAD
   overflow-x: hidden;
   height: 4000px;
 }
@@ -119,5 +120,125 @@ nav {
   font-size: 13px;
   margin-top: 0;
   color: #a0d775;
+=======
+    overflow-x: hidden;
+    height: 4000px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+>>>>>>> 93fe7ecbf09c951d0a52876e5fbd2dbe2edc39e5
+}
+
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+a:hover {
+    opacity: 0.7;
+}
+
+.logo {
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 4px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Arimo';
+    background: #5bb318;
+    height: 13vh;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    margin-left: 32px;
+}
+*{
+    font-family: 'Arimo';
+}
+.titulo1{
+    font-family: "Passion One";
+    position: absolute;
+    top: 1%;
+    left: 15%;
+    text-align: center;
+    font-size: 10px;
+    color: #09400A;
+}
+.container{
+    display: flex;
+    justify-content: right;
+    margin-top: 220px;
+    width: 100%;
+}
+.card{
+    background-color: rgba(195, 227, 195, 0.582);
+    padding: 40px;
+    border-radius: 4%;
+    box-shadow: 3px 3px 1px 0px #00000080;
+}
+.label-float input{
+    width: 100%;
+    padding: 5px 5px;
+    display: inline-block;
+    border: 0;
+    border-bottom: 2px solid #5bb318;
+    background-color: transparent;
+    outline: none;
+    min-width: 180px;
+    font-size: 16px;
+    transition: all .3s ease-out;
+    border-radius: 0;
+}
+.btn1{
+    float: right; 
+    border:1px solid;
+    padding: 10px 15px;
+    background:#5BB318;
+    border-color: #5bb318;
+    border-radius:5px;
+    font-size: 24px;
+    font-family: "Passion One";
+    text-decoration:none;
+    vertical-align: middle;
+    margin-right: 55%;
+    color: #ffff;
+ } 
+
+ .label-float{
+    position: relative;
+    padding-top: 13px;
+    margin-top: 5%;
+    margin-bottom: 5px;
+ }
+
+ .label-float input:focus{
+    border-bottom: 2pxs solid #a0d775;
+ }
+
+ .label-float label{
+    color: #5BB318;
+    pointer-events: none;
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin-top: 13px;
+    transition: all .3s ease-out;
+ }
+ .label-float input:focus + label{
+    font-size: 13px;
+    margin-top: 0;
+    color: #a0d775;
+ }
