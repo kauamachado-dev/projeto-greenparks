@@ -2,11 +2,11 @@
 // Inicialize a sessão
 session_start();
  
-// Verifique se o usuário está logado, se não, redirecione-o para uma página de login
-//if(!isset($_SESSION["logado"]) || $_SESSION["logado"] !== true){
-    //header("location: ../Model/login.php");
-   // exit;
-//}
+    // Verifique se o usuário está logado, se não, redirecione-o para uma página de login
+    if(!isset($_SESSION["logado"]) || $_SESSION["logado"] !== true){
+    header("location: ../Model/login.php");
+    exit;
+    }
 ?>
  
 <!DOCTYPE html>

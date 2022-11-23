@@ -114,7 +114,7 @@ nav {
   vertical-align: middle;
   margin-left: 15%;
   color: #ffff;
-  margin-top: 10%;
+  margin-top: 40%;
   position: absolute;
 } 
 
@@ -150,4 +150,22 @@ nav {
   left: 0%;
   width: 56%;
   position: absolute;
+}
+.justify-center{
+  display: flex;
+  justify-content: center;
+}
+p{
+  color:#09400A;
+  font-size: 14pt;
+  text-align: center;
+}
+a{
+  color: #5BB318;
+  font-weight: bold;
+  text-decoration: none;
+  transition: all .4s ease-out;
+}
+a:hover{
+  color: #09400A ;
 }

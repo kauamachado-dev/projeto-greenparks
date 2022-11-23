@@ -1,6 +1,9 @@
-<?php      
+<?php    
+
+    //Inclui arquivo de conexão
     include('conexao.php');  
-    //chamando o arquivo usuarios.php
+    
+    //chamando o arquivo de usuarios
     require_once '../Controller/usuarios.php';
 
     //Chama a classe
@@ -18,12 +21,18 @@
         $result = mysqli_query($conexaoMysqli, $sql);  
         $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
         $count = mysqli_num_rows($result);  
+
+        // Armazena dados em variáveis de sessão
+        $_SESSION["logado"] = true;
+        $_SESSION["id_usuario"] = $id;
+        $_SESSION["nome_usuario"] = $username; 
+
         // Se o usuario existir mande para pagina de inicio
         if($count == 1){  
             header("location: ../Pages/bem-vindo.php"); 
             //Se não da um alert e exibe mensagem de erro
         }else{  
             echo "<script>alert('Usuario ou senha incorretos!');</script>";
-            //header("location: login.php");
+            header("location: login.php");
         }
 ?>  
