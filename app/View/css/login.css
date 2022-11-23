@@ -1,5 +1,4 @@
-body {
-<<<<<<< HEAD
+/*body {
   overflow-x: hidden;
   height: 4000px;
 }
@@ -120,15 +119,14 @@ nav {
   font-size: 13px;
   margin-top: 0;
   color: #a0d775;
-=======
-    overflow-x: hidden;
-    height: 4000px;
+  overflow-x: hidden;
+  height: 4000px;
 }
 
 * {
     margin: 0;
     padding: 0;
->>>>>>> 93fe7ecbf09c951d0a52876e5fbd2dbe2edc39e5
+
 }
 
 a {
@@ -184,7 +182,7 @@ nav {
     width: 100%;
 }
 .card{
-    background-color: rgba(195, 227, 195, 0.582);
+    background-color: #d7ddd3;
     padding: 40px;
     border-radius: 4%;
     box-shadow: 3px 3px 1px 0px #00000080;
@@ -213,10 +211,16 @@ nav {
     font-family: "Passion One";
     text-decoration:none;
     vertical-align: middle;
-    margin-right: 55%;
+    margin-right: -50%;
+    margin-top: 15%;
     color: #ffff;
  } 
-
+.criaconta{
+  margin-top: 10%;
+}
+.conta{
+  color: #ffb200;
+}
  .label-float{
     position: relative;
     padding-top: 13px;
@@ -225,11 +229,11 @@ nav {
  }
 
  .label-float input:focus{
-    border-bottom: 2pxs solid #a0d775;
+    border-bottom: 2pxs solid #d7ddd3;
  }
 
  .label-float label{
-    color: #5BB318;
+    color: #1e3b08;
     pointer-events: none;
     position: absolute;
     top: 0;
@@ -240,5 +244,5 @@ nav {
  .label-float input:focus + label{
     font-size: 13px;
     margin-top: 0;
-    color: #a0d775;
+    color: #d7ddd3;
  }
