@@ -44,7 +44,8 @@
                     <input type="submit" value="ACESSAR" class="btn1">
                 </form>
                 <p> Não tem uma conta?
-                <a href=''> Cadastre-se! </a>
+                <a href="../Model/formaluno.php"> Cadastre-se como aluno! </a>
+                <a href="../Model/forminst.php"> Cadastre-se como professor! </a>
             </div>
         </div>     
 </html>
