@@ -18,7 +18,7 @@
                 <li><a style="color: #ffe60b" href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li>     
+                <li><a href="evento.php">EVENTOS</a></li> 
             </ul>
         </nav>
     </header> 

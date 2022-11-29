@@ -22,8 +22,6 @@
         </nav>
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
-    <div class="titulo">EVENTOS</div>
-    <div class="linha"></div>
     <!---INÍCIO - CARROSSEL-->
     <main class="main">
         <section class="galery">
