@@ -1,8 +1,8 @@
 <?php
     function getAddress(){
 
-        if(isset ($_POST['cep'])){
-        $cep = $_POST['cep'];
+        if(isset ($_POST['cep_eventos'])){
+        $cep = $_POST['cep_eventos'];
 
         $cep = filtercep($cep);
 
@@ -45,3 +45,13 @@ function getAddressViaCep(String $cep){
     return json_decode(file_get_contents($url));
 }
 ?>
+
+<script>
+    var teste = document.getElementById("teste");
+form.addEventListener("focus", function( event ) {
+  event.target.style.background = "pink";
+}, true);
+form.addEventListener("blur", function( event ) {
+  event.target.style.background = "";
+}, true);
+</script>
