@@ -43,7 +43,7 @@
             <P>E nada melhor que além de brincar, aprendermos as</P>
             <P>regras, técnicas do esporte, etc... </P>
             </div>
-    <a href="futebol.php" type="button" class="botao1">SAIBA MAIS</a>
+    <a href="futebol.php" type="button" class="botao1">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
     <!--<img id="bola2" src="../View/css/images/Manchas/bolavolei.png">-->
@@ -58,7 +58,7 @@
             <P>Inscreva-se na aula de volei e jogue com segurança em</P>
             <P>alguma quadra próxima a sua casa!</P>
             </div>
-    <a href="volei.php" type="button" class="botao2">SAIBA MAIS</a>
+    <a href="volei.php" type="button" class="botao2">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE VOLEI -->
     <!--<img id="bola3" src="../View/css/images/Manchas/bolabasquete.png">-->
     <!-- IMAGEM TERCEIRO ESPORTE -->
@@ -72,7 +72,7 @@
             <P>Jogar basquete com aos amigos é tão bom quanto</P>
             <P> aprender mais sobre o esporte, venha participar!</P>
             </div>
-    <a href="basquete.php" type="button" class="botao3">SAIBA MAIS</a>
+    <a href="basquete.php" type="button" class="botao3">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE BASQUETE -->
     <!--<img id="bola4" src="../View/css/images/Manchas/skateaula.png">-->
         <!-- IMAGEM QUARTO ESPORTE -->
@@ -86,7 +86,7 @@
             <P>Venha aprender as manobras do skate e aprender a</P>
             <P>radicalidade do esporte!</P>
             </div>
-    <a href="skate.php" type="button" class="botao4">SAIBA MAIS</a>
+    <a href="skate.php" type="button" class="botao4">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE SKATE -->
     <!--<img id="bola5" src="../View/css/images/Manchas/bolahandeball.png">-->
         <!-- IMAGEM QUINTO ESPORTE -->
@@ -99,7 +99,7 @@
     <div class="handeball">
             <P>Convide seus amigos e se inscreva na aula de handeball!</P>
             </div>
-    <a href="handeball.php" type="button" class="botao5">SAIBA MAIS</a>
+    <a href="handeball.php" type="button" class="botao5">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE HANDEBALL -->
      <!--ULTIMA ONDA-->
      <img id="logomarista" src="../View/css/images/logomarista.png">
