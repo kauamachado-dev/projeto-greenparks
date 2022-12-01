@@ -6,6 +6,7 @@
 <head>
     <meta charset='utf-8'>
     <title>SOBRE NÓS</title>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href="../View/css/sobre.css" rel="stylesheet">
 </head>
 <body>

@@ -4,7 +4,8 @@
 <head>
     <meta charset='utf-8'>
     <meta http-equiv='X-UA-Compatible' content='IE=edge'>
-    <title>Page Title</title>
+    <title>SOBRE NÓS</title>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <link href="../View/css/stilo.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1">
