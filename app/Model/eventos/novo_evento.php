@@ -1,8 +1,7 @@
 <h1>Adicionar eventos</h1>
 <br><br>
 <?php
-  include_once ('viacep.php');
-  $address = getAddress();
+
 ?>
 <form action="?page=salvar" method="POST">
     <input type="hidden" name="acao" value="cadastrar">
