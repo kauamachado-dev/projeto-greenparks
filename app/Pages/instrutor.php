@@ -22,6 +22,7 @@
 <head>
     <meta charset='utf-8'>
     <title>PROFESSOR</title>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href='../View/css/tela-prof.css' rel='stylesheet'>
 </head>
 <body>

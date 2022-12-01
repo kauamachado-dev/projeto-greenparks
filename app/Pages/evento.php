@@ -3,6 +3,7 @@
 <head>
     <meta charset='utf-8'>
     <title>EVENTOS</title>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href="../View/css/event.css" rel="stylesheet">
     <link href="../View/css/animation.css" rel="stylesheet">
     <script type="text/javascript" src="../Controller/_js/modal.js"></script>

@@ -28,6 +28,7 @@
 <head>
     <meta charset='utf-8'>
     <title>ADMINISTRADOR</title>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href='../View/css/admin.css' rel='stylesheet'>
     <script src='_js/postagem.js'></script>
 </head>

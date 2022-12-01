@@ -2,7 +2,8 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>Aulas</title>
+    <title>AULAS</title>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href="../View/css/aula.css" rel="stylesheet">
 </head>
 <body>
