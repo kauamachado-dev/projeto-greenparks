@@ -41,7 +41,7 @@
     <div class="futebol">
             <P>Futebol é um dos esportes mais praticados no Brasil!</P>
             <P>E nada melhor que além de brincar, aprendermos as</P>
-            <P>regras, técnicas do esporte, etc... </P>
+            <P>regras, técnicas do esporte, isso tudo de graça! </P>
             </div>
     <a href="futebol.php" type="button" class="botao1">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
@@ -55,7 +55,8 @@
     </section>
     <div class="linha3"></div>
     <div class="volei">
-            <P>Inscreva-se na aula de volei e jogue com segurança em</P>
+            <P>Inscreva-se na aula de volêi e jogue </P>
+            <P>com segurança em</p>
             <P>alguma quadra próxima a sua casa!</P>
             </div>
     <a href="volei.php" type="button" class="botao2">INSCREVA-SE</a>
