@@ -6,6 +6,6 @@
     //Destroi a sessão se possuir um id_usuario
     unset($_SESSION['id_usuario']); 
     //Manda ele devolta para a página login.php...
-    header("location: ../../resources/View/Pages/login.php"); 
+    header("location: ../Model/login.php"); 
 
 ?>

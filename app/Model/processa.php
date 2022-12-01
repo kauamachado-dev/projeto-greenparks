@@ -8,7 +8,7 @@
 
     //Chama a classe
     $u = new Usuario; 
-    
+
     $username = $_POST['nome_usuario'];  
     $password = $_POST['senha_usuario'];  
       
@@ -29,7 +29,7 @@
 
         // Se o usuario existir mande para pagina de inicio
         if($count == 1){  
-            header("location: ../Pages/bem-vindo.php"); 
+            header("location: ../Pages/index.php"); 
             //Se não da um alert e exibe mensagem de erro
         }else{  
             echo "<script>alert('Usuario ou senha incorretos!');</script>";
