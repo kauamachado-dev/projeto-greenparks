@@ -13,25 +13,25 @@ a {
     text-decoration: none;
     transition: 0.3s;
 }
-
 a:hover {
     opacity: 0.7;
 }
-
+/* INICIO - LOGO MENU DE NAVEGAÇÃO */
 .logo {
     font-size: 24px;
     text-transform: uppercase;
     letter-spacing: 4px;
     z-index: 1;
 }
-
+/* FINAL - LOGO MENU DE NAVEGAÇÃO */
+/* INICIO - MENU DE NAVEGAÇÃO */
 nav {
     display: flex;
     justify-content: space-around;
     align-items: center;
     font-family: 'Arimo';
-    background: #ffffff;
-    height: 13vh;
+    background: #5bb318;
+    height: 9vh;
 }
 
 .nav-list {
@@ -50,15 +50,14 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    top: -3%;
-    width: 120%;
+    top: 0%
 }
 /* INICIO - TÍTULO RESPONSIVO */
 .titulo1{
     font-family: 'Passion One';
     position: absolute;
-    top: 23%;
-    left: 22%;
+    top: 25%;
+    left: 38%;
     text-align: center;
     font-size: clamp(3.75em, 1em + 10vw, 6.5em);
     color: #09400A;
@@ -69,13 +68,13 @@ nav {
     position: absolute;
     width: 320px;
     height: 5px;
-    margin-left: 19%;
-    margin-top: 12%;
+    margin-left: 34.5%;
+    margin-top: 14.5%;
 }
 /* SUBITULO AULAS */
 .subtitulo1{
     font-family: 'Arimo';
-    margin-top: 13%;
+    margin-top: 15%;
     margin-left: 19%;
     position: absolute;
     text-align: center;
@@ -91,8 +90,8 @@ nav {
 /* TÍTULO FUTEBOL */
 #titulo2{
     font-family: 'Passion One';
-    margin-top: 18%;
-    margin-left: 10%;
+    margin-top: 24%;
+    margin-left: 55%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -104,8 +103,8 @@ nav {
     position: absolute;
     width: 300px;
     height: 5px;
-    margin-left: 10%;
-    margin-top: 24%;
+    margin-left: 55%;
+    margin-top: 30%;
 }
 /*IMAGEM FUTEBOL*/
 #futebol{
@@ -121,10 +120,10 @@ nav {
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    top: 10%;
-    left: 10%;
+    top: -21%;
+    left: 55%;
     text-align: left;
-    font-size: clamp(1.1em, 1em + 5vw, 1.0em);
+    font-size: clamp(1.2em, 1em + 5vw, 1.0em);
     line-height: 30px;
 }
 /*BOTÃO FUTEBOL*/
@@ -137,16 +136,16 @@ nav {
     border-radius: 7px;
     font-size: 35px;
     padding: 10px 19px;
-    margin-left: 10%;
-    margin-top: 57%;
+    margin-left: 55%;
+    margin-top: 45%;
     position: absolute;
 }
 
 /* TÍTULO VOLEI */
 #titulo3{
     font-family: 'Passion One';
-    margin-top: 66%;
-    margin-left: 55%;
+    margin-top: 62%;
+    margin-left: 10%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -158,15 +157,15 @@ nav {
     position: absolute;
     width: 200px;
     height: 5px;
-    margin-left: 55%;
-    margin-top: 72%;
+    margin-left: 10%;
+    margin-top: 68%;
 }
 /*IMAGEM VOLEI*/
 #volei{
     height: 60%;
     width: 32%;
     margin-left: 55%;
-    margin-top: 73%;
+    margin-top: 62%;
     position: absolute;
     border-radius: 3%;
 }
@@ -174,10 +173,10 @@ nav {
 .volei{
     font-family: 'Arimo';
     position: absolute;
-    margin-top: 103%;
-    left: 55%;
+    margin-top: 74%;
+    left: 10%;
     text-align: left;
-    font-size: clamp(1.1em, 1em + 5vw, 1.0em);
+    font-size: clamp(1.2em, 1em + 5vw, 1.0em);
     line-height: 30px;
 }
 /*BOTÃO VOLEI*/
@@ -190,16 +189,16 @@ nav {
     border-radius: 7px;
     font-size: 35px;
     padding: 10px 19px;
-    margin-left: 55%;
-    margin-top: 108%;
+    margin-left: 10%;
+    margin-top: 86.5%;
     position: absolute;
 }
 
 /* TÍTULO BASQUETE */
 #titulo4{
     font-family: 'Passion One';
-    margin-top: 118%;
-    margin-left: 10%;
+    margin-top: 102%;
+    margin-left: 55%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -211,15 +210,15 @@ nav {
     position: absolute;
     width: 330px;
     height: 5px;
-    margin-left: 10%;
-    margin-top: 124%;
+    margin-left: 55%;
+    margin-top: 108%;
 }
 /*IMAGEM BASQUETE*/
 #basquete{
     height: 60%;
     width: 32%;
     margin-left: 10%;
-    margin-top: 125%;
+    margin-top: 102%;
     border-radius: 3%;
     position: absolute;
 }
@@ -227,10 +226,10 @@ nav {
 .basquete{
     font-family: 'Arimo';;
     position: absolute;
-    margin-top: 155%;
-    left: 10%;
+    margin-top: 115%;
+    left: 55%;
     text-align: left;
-    font-size: clamp(1.1em, 1em + 5vw, 1.0em);
+    font-size: clamp(1.2em, 1em + 5vw, 1.0em);
     line-height: 30px;
 }
 /*BOTÃO BASQUETE*/
@@ -243,8 +242,8 @@ nav {
     border-radius: 7px;
     font-size: 35px;
     padding: 10px 19px;
-    margin-left: 10%;
-    margin-top: 160%;
+    margin-left: 55%;
+    margin-top: 126.5%;
     position: absolute;
 }
 
