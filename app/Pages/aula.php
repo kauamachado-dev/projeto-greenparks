@@ -84,7 +84,8 @@
     </section>
     <div class="linha5"></div>
     <div class="skate">
-            <P>Venha aprender as manobras do skate e aprender a</P>
+            <P>Venha aprender as manobras do </P>
+            <p>skate e aprender a</p>
             <P>radicalidade do esporte!</P>
             </div>
     <a href="skate.php" type="button" class="botao4">INSCREVA-SE</a>

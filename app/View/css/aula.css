@@ -1,6 +1,6 @@
 body { 
     overflow-x: hidden;
-    height: 3848px;
+    height: 3200px;
 }
 
 * {
@@ -250,8 +250,8 @@ nav {
 /* TÍTULO SKATE */
 #titulo5{
     font-family: 'Passion One';
-    margin-top: 168%;
-    margin-left: 55%;
+    margin-top: 143%;
+    margin-left: 10%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -263,15 +263,15 @@ nav {
     position: absolute;
     width: 205px;
     height: 5px;
-    margin-left: 55%;
-    margin-top: 174%;
+    margin-left: 10%;
+    margin-top: 149%;
 }
 /*IMAGEM SKATE*/
 #skate{
     height: 60%;
     width: 32%;
     margin-left: 55%;
-    margin-top: 175%;
+    margin-top: 143%;
     border-radius: 3%;
     position: absolute;
 }
@@ -280,10 +280,10 @@ nav {
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    margin-top: 205%;
-    left: 55%;
+    margin-top: 155%;
+    left: 10%;
     text-align: left;
-    font-size: clamp(1.1em, 1em + 5vw, 1.0em);
+    font-size: clamp(1.2em, 1em + 5vw, 1.0em);
     line-height: 30px;
 }
 /*BOTÃO SKATE*/
@@ -296,16 +296,16 @@ nav {
     border-radius: 7px;
     font-size: 35px;
     padding: 10px 19px;
-    margin-left: 55%;
-    margin-top: 210%;
+    margin-left: 10%;
+    margin-top: 167.5%;
     position: absolute;
 }
 
 /* TÍTULO HANDEBALL */
 #titulo6{
     font-family: 'Passion One';
-    margin-top: 221%;
-    margin-left: 10%;
+    margin-top: 183%;
+    margin-left: 55%;
     position: absolute;
     text-align: center;
     font-size: clamp(3.75em, 1em + 5vw, 10.5em);
@@ -317,15 +317,15 @@ nav {
     position: absolute;
     width: 375px;
     height: 5px;
-    margin-left: 10%;
-    margin-top: 227%;
+    margin-left: 55%;
+    margin-top: 189%;
 }
 /*IMAGEM HANDEBALL*/
 #handeball{
     height: 60%;
     width: 32%;
     margin-left: 10%;
-    margin-top: 228%;
+    margin-top: 183%;
     border-radius: 3%;
     position: absolute;
 }
@@ -334,10 +334,10 @@ nav {
     font-family: 'Arimo';
     margin-top: 685px;
     position: absolute;
-    margin-top: 257%;
-    left: 10%;
+    margin-top: 197%;
+    left: 55%;
     text-align: left;
-    font-size: clamp(1.1em, 1em + 5vw, 1.0em);
+    font-size: clamp(1.2em, 1em + 5vw, 1.0em);
     line-height: 30px;
 }
 /*BOTÃO HANDEBALL*/
@@ -350,12 +350,12 @@ nav {
     border-radius: 7px;
     font-size: 35px;
     padding: 10px 19px;
-    margin-left: 10%;
-    margin-top: 260%;
+    margin-left: 55%;
+    margin-top: 207.5%;
     position: absolute;
 }
 #logomarista{
-    margin-top: 276%;
+    margin-top: 223%;
     z-index: 2;
     height: 12%;
     margin-left: 34%;
@@ -366,6 +366,6 @@ nav {
     position: absolute;
     bottom: 0;
     left: 0%;
-    top: 560%;
+    top: 448%;
     width: 100%;
 }
