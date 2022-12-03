@@ -14,7 +14,7 @@
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
-            <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
+            <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 16%"></a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
@@ -30,7 +30,8 @@
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
     <section></section>
     <section class="container">
-        <div class="titulo1">GREEN PARKS</div>
+        <div class="titulo1">GREEN 
+                             PARKS</div>
     </section>
     <div>
         <!-- ONDA -->
