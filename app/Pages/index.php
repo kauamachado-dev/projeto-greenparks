@@ -6,7 +6,7 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>ÍNICIO</title>
+    <title>INÍCIO</title>
     <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href="../View/css/stilo.css" rel="stylesheet">
 </head>

@@ -7,21 +7,6 @@
     //inicia a sessão
     session_start(); 
 
-    //se não estiver definida, não possuir um id_usuario ou um status_usuario
-    if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['status_usuario'])){
-        //vai mandar ele devolta para a página de login
-        header("location: login.php"); 
-        exit;
-        //Se o usuario for funcionario
-    } else if ($_SESSION['nivel_usuario'] != 1) {
-        //Realoca o usuario para o funcionario
-        header("location: funcionario.php");
-        //Se o usuario estiver inativo
-    } else if ($_SESSION['status_usuario'] != 1) {
-        //Realoca para a pagina do login
-        header("location: login.php");
-        exit;
-    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -38,6 +23,7 @@
         <nav>
             <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
             <ul class="nav-list">
+                <li><a href="../Controller/sair.php" class="btn btn-danger ml-3">Sair da conta</a></li>
                 <li><a style="color: #ffe60b" href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
@@ -47,6 +33,12 @@
         </nav>
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
+    <?php
+    session_start();
+    echo "Olá: ". $_SESSION['nome_usuario'];    
+    ?>
+    <br>
+    <a href="sair.php">Sair</a>
     <div class="titulo">Área administrativa</div>
     <div class="linha"></div>
 

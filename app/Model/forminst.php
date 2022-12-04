@@ -6,7 +6,8 @@ session_start();
   <head>
     <meta charset='utf-8'>
     <title>FORMULÁRIO</title>
-    <script src='../Controller/_js/controlle-prof.js'></script>
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href="../View/css/forminst.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -56,7 +57,7 @@ session_start();
                 </div>
                 <div class="col">
                   <div class="single-input">
-                    <input required type="number" name="fone_usuario" id="fone" class="input" placeholder="Informe seu telefone...">
+                    <input required type="tel" name="fone_usuario" id="fone" class="input" placeholder="Informe seu telefone...">
                     <label for="datanascaluno" >Fone</label>
                   </div>
                 </div>
@@ -75,6 +76,12 @@ session_start();
                 <p class="login">Já tem uma conta? <a href="login.php">Entre aqui</a>.</p> 
               </div>
             </div>
+            <script>
+              $("#fone").mask("(99) 9999-9999");
+
+              $("#cpf").mask("999.999.999-99");
+
+	          </script>
     </form>
   </body>
 </html>

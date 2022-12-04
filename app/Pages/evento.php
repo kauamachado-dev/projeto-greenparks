@@ -15,10 +15,10 @@
         <nav>
             <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
             <ul class="nav-list">
-                <li><a style="color: #ffe60b" href="index.php">INÍCIO</a></li>
+                <li><a href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li> 
+                <li><a style="color: #ffe60b" href="evento.php">EVENTOS</a></li> 
                 <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
             </ul>
         </nav>

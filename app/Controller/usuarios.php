@@ -75,7 +75,7 @@ Class Usuario{
             $_SESSION['id_usuario'] = $dado['id_usuario'];
 
             //Cria uma variável que seleciona tudo da tabela usuarios quando o id for igual a do $_SESSION
-            $verificar = $pdo->query("SELECT * FROM usuario WHERE id_usuario = '$_SESSION[id_usuario]'");
+            $verificar = $pdo->query("SELECT * FROM usuario WHERE id_usuario = '$_SESSION['id_usuario']'");
             //Estrutura de repetição, sendo criado um array dos dados do usuário 
             while($linha = $verificar->fetch(PDO::FETCH_ASSOC)){
                 //Se os IDS forem igual
@@ -88,7 +88,7 @@ Class Usuario{
                     switch ($nivel && $status){
 
                         //Funcionário(a) ativo
-                        case ($nivel == 0 && $status == 1):
+                        case ($nivel == 0 && $status == 2):
                             //Manda para a página dos instrutores
                             header("location: ../Pages/instrutor.php");
                         break;
@@ -114,7 +114,7 @@ Class Usuario{
                             //Manda um alerta
                             echo "<script>alert('Usuario sem acesso!');</script>";
                             //E manda para a página de login novamente
-                            header("location: login.php");
+                            //header("location: ../Model/login.php");
                         break;
                     }
 

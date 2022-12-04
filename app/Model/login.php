@@ -1,15 +1,16 @@
 <?php
+    //inicia sessão
     session_start();
 
-    //chamando o arquivo usuarios.php
-    require_once '../Controller/usuarios.php';
-    //require_once '../Controller/nivel.php';
 
-    // Chama nivel de acesso
-    //Nivel();
+    //Inclui arquivo de conexão
+    include('conexao.php'); 
 
-    //Chama a classe
-    $u = new Usuario; 
+    //Verifique se o usuário já está logado, em caso afirmativo, redirecione-o para a página de boas-vindas
+    if(isset($_SESSION["logado"]) && $_SESSION["logado"] === true){
+        echo "<script>alert('Já está logado!');</script>";
+        header("location: ../Pages/index.php");
+    }
 ?>
 
 <!DOCTYPE html>
