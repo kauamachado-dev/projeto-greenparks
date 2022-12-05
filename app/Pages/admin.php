@@ -34,7 +34,6 @@
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
     <?php
-    session_start();
     echo "Olá: ". $_SESSION['nome_usuario'];    
     ?>
     <br>

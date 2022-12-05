@@ -4,42 +4,39 @@
     //Inclui arquivo de conexão
     include('conexao.php');  
 
-    //$id = $_POST['id_usuario']
+    //Define as variaveis
+    $id = ['id_usuario'];
     $usuario = $_POST['nome_usuario'];  
     $senha = $_POST['senha_usuario'];  
-      
-        $usuario = stripcslashes($usuario );  
-        $senha = stripcslashes($senha);  
-        $usuario  = mysqli_real_escape_string($conexaoMysqli, $usuario );  
-        $senha = mysqli_real_escape_string($conexaoMysqli, $senha);  
-      
-        $sql = "SELECT * FROM usuario WHERE nome_usuario = '$usuario' AND senha_usuario = '$senha'";  
-        $result = mysqli_query($conexaoMysqli, $sql);  
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
-        $count = mysqli_num_rows($result);  
+    //$tipo_usuario = ['id_tipo_usuario'];
 
-        // Armazena dados em variáveis de sessão
-        $_SESSION["logado"] = true;
-        $_SESSION["id_usuario"] = $id;
-        $_SESSION["nome_usuario"] = $usuario ; 
+    $usuario = stripcslashes($usuario);  
+    $senha = stripcslashes($senha);  
+    $usuario  = mysqli_real_escape_string($conexaoMysqli, $usuario);  
+    $senha = mysqli_real_escape_string($conexaoMysqli, $senha);  
+   
+    $sql = "SELECT * FROM usuario WHERE nome_usuario = '$usuario' AND senha_usuario = '$senha'";  
+    $result = mysqli_query($conexaoMysqli, $sql);  
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
+    $count = mysqli_num_rows($result);  
 
-        $nivel  = $linha['tipo_usuario']; //Variável recebendo o nivel de usuário
-                    $status = $linha['descricao'];//Variável recebendo o status do usuário
+    // Armazena dados em variáveis de sessão
+    $_SESSION["logado"] = true;
+    $_SESSION["id_usuario"] = $id;
+    $_SESSION["nome_usuario"] = $usuario ; 
+    //$_SESSION["id_tipo_usuario"] = $tipo_usuario;
 
-                    //Estrutura de decisão sobre o nível e o status do usuário
-                    switch ($nivel && $status){
-
-                        //Administrador ativo
-                        case ($nivel == 1 && $status == 1):
-                            //Manda para a página dos administradores
-                            header("location: ../Pages/admin.php");
-                        break;
-
-                        //Funcionário(a) ativo
-                        case ($nivel == 0 && $status == 2):
-                            //Manda para a página dos instrutores
-                            header("location: ../Pages/instrutor.php");
-                        break;
-                    }
-       
+    if($_SESSION['id_tipo_usuario'] == "1"){
+        header("Location: ../Pages/admin.php");
+    }elseif($_SESSION['id_tipo_usuario'] == "2"){
+        header("Location: ../Pages/instrutor.php");
+    }elseif($_SESSION['id_tipo_usuario'] == "3"){
+        header("Location: ../Pages/aluno.php");
+    //Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
+    //redireciona o usuario para a página de login
+    }else{    
+    //Váriavel global recebendo a mensagem de erro
+    $_SESSION['loginErro'] = "Usuário ou senha Inválido";
+    header("Location: ../Controller/login.php");
+    }
 ?>  

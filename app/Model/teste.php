@@ -1,36 +1,51 @@
 <?php
+	//inicia sessão
+    session_start(); 
 
-    session_start(); #inicia a sessão do PHP
+    //Incluindo a conexão com banco de dados   
+    include_once("conexao.php");    
 
-    header("Content-type: text/html; charset=utf-8");
-    $LoginErro = "Nenhum usuário com esses dados<br><a href=../Mode/login.php>Login</a>";
-    if((isset($_POST['nome_usuario']) && isset($_POST['senha_usuario'])) || (isset($_SESSION['logado']))){ #Valida se o usuário está logando ou já está logado
+   		 //O campo usuário e senha preenchido entra no if para validar
+    	if((isset($_POST['nome_usuario'])) && (isset($_POST['senha_usuario']))){
 
-	require('conexao.php'); #conexão com o Banco de Dados
+       		$usuario = mysqli_real_escape_string(
+			echo "Falha na conexão: (" . $conexaoMysqli->connect_errno . ") " . $conexaoMysqli->connect_error; 
+			, $_POST['nome_usuario']); 
 
-	if(isset($_POST['nome_usuario']) && isset($_POST['senha_usuario'])){ #Caso o usuário esteja logando
-		$queryUser1 =  mysqli_query($conexaoMysqli, "SELECT * FROM usuario WHERE nome_usuario = '$_POST[nome_usuario]' AND senha_usuario = '$_POST[senha_usuario]' LIMIT 1");
-		if(mysqli_num_rows($queryUser1) != 0){
-			if($queryUser = mysqli_fetch_assoc($queryUser1)){
-				// Armazena dados em variáveis de sessão
-	         $_SESSION["logado"] = true;
-	        $_SESSION["id_usuario"] = $id;
-	        $_SESSION["nome_usuario"] = $username;  #Salva em uma variável de Sessão a ID do usuário que está logado
-				header('Location: ../Mode/login.php');
-			}else{
-				echo $LoginErro;
-			}
-		}else{
-			echo $LoginErro;
-		}
-        //Se não estiver logado
-        if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['tipo_usuario'])) { 
+			//Escapar de caracteres especiais, como aspas, prevenindo SQL injection
+       		$senha = mysqli_real_escape_string(
+			echo "Falha na conexão: ("  . $conexaoMysqli->connect_errno . ") " . $conexaoMysqli->connect_error; , $_POST['senha_usuario']);
+        	$senha = md5($senha);
             
-            //Realoca para o login header("location: ../Model/login.php"); 
-            #Caso o usuário já esteja logado
-                $QueryLogado = mysqli_fetch_assoc(mysqli_query($conexaoMysqli, "SELECT * FROM usuario INNER JOIN tipo_usuario ON id_tipo_usuario = id_usuario;"));
-                echo "Bem vindo <b>".$QueryLogado['nome_usuario']."</b>, tudo bem?<br>Não esqueça que você é <b>".$QueryLogado['descricao']."</b> nesse sistema!";
-                echo '<br><a href=../config/Deslogar.php>Sair</a>';
-	    }
-	}
+       		 //Buscar na tabela usuario o usuário que corresponde com os dados digitado no formulário
+        	$result_usuario = "SELECT * FROM usuario WHERE nome_usuario = '$usuario' && senha_usuario = '$senha' LIMIT 1";
+        	$resultado_usuario = mysqli_query(echo "Falha na conexão: ("  . $conexaoMysqli->connect_errno . ") " . $conexaoMysqli->connect_error;
+			, $result_usuario);
+        	$resultado = mysqli_fetch_assoc($resultado_usuario);
+        
+        	//Encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
+        	if(isset($resultado)){
+           		 $_SESSION['usuarioId'] = $resultado['id_usuario'];
+           		 $_SESSION['usuarioNome'] = $resultado['nome_usuario'];
+            	 $_SESSION['usuarioNiveisAcessoId'] = $resultado['id_tipo_usuario'];
+
+            if($_SESSION['usuarioNiveisAcessoId'] == "1"){
+                header("Location: ../Pages/admin.php");
+            	}elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
+                	header("Location: ../Pages/instrutor.php");
+            		}else{
+                		header("Location: ../Pages/aluno.php");
+           			}
+        	//Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
+        	//redireciona o usuario para a página de login
+        	}else{    
+            //Váriavel global recebendo a mensagem de erro
+            $_SESSION['loginErro'] = "Usuário ou senha Inválido";
+            header("Location: index.php");
+        	}
+    //O campo usuário e senha não preenchido entra no else e redireciona o usuário para a página de login
+    }else{
+        $_SESSION['loginErro'] = "Usuário ou senha inválido";
+        header("Location: ../Controller/erro.php");
+    }
 ?>

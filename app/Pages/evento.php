@@ -1,4 +1,6 @@
 <?php
+session_start();
+
 include("../Model/conexao.php");
 
  $sql = "SELECT * FROM eventos";
