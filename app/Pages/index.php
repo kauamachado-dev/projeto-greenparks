@@ -14,13 +14,13 @@
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
-            <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 16%"></a>
+            <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 15%"></a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li> 
-                <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
+                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >Olá, faça login ou cadastre-se!</a>
             </ul>
         </nav>
     </header> 
@@ -119,7 +119,7 @@
             <div id ="sliderev">
                 <img class = "selectedev" src="../View/css/images/feira.jpg" alt="image1">
                 <img src="../View/css/images/feira.jpg" alt="image2">
-                <img src="../View/css/images/circo.jpg" alt="image3">
+                <img src="../View/css/images/circo.png" alt="image3">
                 <img src="../View/css/images/livro.jpg" alt="image4">
                 <img src="../View/css/images/basquete.jpg" alt="image5">
             </div>
