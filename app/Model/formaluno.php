@@ -3,7 +3,8 @@
 <head>
   <meta charset='utf-8'>
   <title>FORMULÁRIO</title>
-  <script src='_js/controlle-aluno.js'></script>
+  <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+  <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
   <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
   <link href="../View/css/formaluno.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
@@ -97,6 +98,12 @@
 </div>
 <p class="login" >Já tem uma conta? <a href="login.php">Entre aqui</a>.</p> 
 </div> 
+<script>
+  $("#telefonealuno").mask("(99) 9999-9999");
+
+  $("#cpf").mask("999.999.999-99");
+
+</script>
 </form>
 </body>
 </html>

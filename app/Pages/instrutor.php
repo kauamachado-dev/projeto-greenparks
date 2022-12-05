@@ -1,9 +1,11 @@
 <?php
     //Página principal dos funcionários, assim que sair do login, serão redirecionados pra cá... 
 
-    //Inclui a conexão include '../Model/conexao.php';
+    //Inclui a conexão 
+    include '../Model/conexao.php';
 
-    //inicia a sessão session_start(); 
+    //inicia a sessão 
+    session_start(); 
 
     //Se não estiver logado if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['tipo_usuario'])) { 
     //Realoca para o login header("location: ../Model/login.php"); 
@@ -41,7 +43,7 @@
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
     <h1 class="my-5">Olá professor, <b><?php echo htmlspecialchars($_SESSION["nome_usuario"]); ?></b>
-
+        <br>
     <h1>lista </h1>
     <?php
     $sql = "SELECT * FROM aula";
