@@ -64,19 +64,20 @@ nav {
 }
 
 .login{
-    margin-left: 107%;
-    width: 20%;
+    margin-left: -40%;
+    width: 35%;
     z-index:1;
     position: absolute;
-    margin-top: -9%;
+    margin-top: -3%;
 }
 
 .txtlogin{
     z-index: 1;
-    margin-top: 0%;
-    margin-left: 33%;
+    margin-top: -0.5%;
+    margin-left: 45%;
     margin-right: -8%;
-    position: absolute;
+    position: absolute; 
+    font-size: 14px;
 }
 /* FINAL - MENU DE NAVEGAÇÃO */
 /* ÍNICIO - PARALLAX */

@@ -20,7 +20,8 @@
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li> 
-                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >Olá, faça login ou cadastre-se!</a>
+                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >Olá, faça login
+                <br> ou cadastre-se!</a>
             </ul>
         </nav>
     </header> 

@@ -10,7 +10,7 @@
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
-            <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
+        <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 15%"></a>
             <ul class="nav-list">
                 <li><a href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
