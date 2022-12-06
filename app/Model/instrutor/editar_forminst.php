@@ -1,5 +1,5 @@
 <?php
-include("conexao.php");
+include("../conexao.php");
 
 session_start();
 

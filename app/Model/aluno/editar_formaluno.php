@@ -1,5 +1,5 @@
 <?php
-include("conexao.php");
+include("../conexao.php");
 $sql = "SELECT u.* , r.*
 FROM usuario u
 LEFT JOIN responsavel r ON u.id_responsavel = r.id_responsavel WHERE id_usuario= '23'";

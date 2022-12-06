@@ -1,5 +1,5 @@
 <?php 
-include("conexao.php"); /* Inclui a conexão com o banco de dados */
+include("../conexao.php"); /* Inclui a conexão com o banco de dados */
 
   /* Cria as variaveis e armazena os valores que foram inseridos no formulário de cadastro */
  $nome_usuario = $_POST["nome_usuario"];

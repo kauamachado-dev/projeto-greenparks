@@ -41,10 +41,10 @@ include("../Model/conexao.php");
     <main class="main">
         <section class="galery">
             <div class="fotos">
-                <img src="../View/css/images/img1.png">
-                <img src="../View/css/images/img2.png">
-                <img src="../View/css/images/img4.png">
-                <img src="../View/css/images/img1.png">
+                <img src="../View/css/images/festival.png">
+                <img src="../View/css/images/musical.png">
+                <img src="../View/css/images/natal.png">
+                <img src="../View/css/images/teatro.png">
             </div>
         </section>
     </main>
