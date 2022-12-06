@@ -1,0 +1,66 @@
+/* INICIO - CORPO DO SITE */
+body {
+    background-color: #ffffff;
+    height: 2650px;
+    max-height: 2650px;
+}
+
+/* INICIO - LETRAS DO MENU DE NAVEGAÇÃO */
+a {
+    color: #fff;
+    text-decoration: none;
+    transition: 0.3s;
+    font-family: 'Arimo';
+}
+a:hover {
+    opacity: 0.7;
+}
+/* INICIO - LOGO MENU DE NAVEGAÇÃO */
+.logo {
+    letter-spacing: 4px;
+    z-index: 1;
+    margin-top: 2%;
+    position: absolute;
+    left: 10%;
+}
+/* FINAL - LOGO MENU DE NAVEGAÇÃO */
+/* INICIO - MENU DE NAVEGAÇÃO */
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: 'Arimo';
+    background: #5bb318;
+    height: 9vh;
+    font-weight: bold;
+}
+
+.nav-list {
+    list-style: none;
+    display: flex;
+    margin-top: 4%;
+    margin-left: 40%;
+}
+
+.nav-list li {
+    letter-spacing: 3px;
+    z-index: 1;
+    margin-left: 5%;
+    position: static;
+}
+/* ONDA INÍCIO */
+.ondain{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    top: 3%;
+}
+.linha1{
+    background-color: #D62509;
+    position: absolute;
+    width: 550px;
+    height: 5px;
+    margin-left: 0%;
+    margin-top: -2%;
+}
