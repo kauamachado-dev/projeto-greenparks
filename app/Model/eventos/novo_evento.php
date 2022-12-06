@@ -1,11 +1,12 @@
-<h1>Adicionar eventos</h1>
+<h1 style="font-family:'Passion One'; margin-top:6%; font-size:80px; color:#09400A">Adicionar eventos</h1>
+<div class="linha1"></div>
 <br><br>
 <?php
 
 ?>
 <form action="?page=salvar" method="POST">
     <input type="hidden" name="acao" value="cadastrar">
-    <h2>Dados sobre o evento</h2>
+    <h2 style="font-family:'Passion One'; margin-top:2%; font-size:40px; color:#09400A">Dados sobre o evento</h2>
     <div class="mb-3">
         <label>Nome do Evento:</label>
         <input type="text" name="nome_eventos" class="form-control">
@@ -23,7 +24,7 @@
         <input type="text" name="desc_eventos" class="form-control">
     </div>
     <br><br>
-    <h2>Local do evento</h2>
+    <h2 style="font-family:'Passion One'; margin-top:2%; font-size:40px; color:#09400A">Local do evento</h2>
     <div class="mb-3">
         <label>CEP:</label>
         <input type="text" name="cep_eventos" class="form-control">
@@ -32,5 +33,5 @@
         <label>Número da casa/local:</label>
         <input type="text" name="num_ende_eventos" class="form-control">
     </div>
-    <button type="submit" class="btn btn-primary">Enviar</button>
+    <button type="submit" class="btn btn-success">Enviar</button>
 </form>
