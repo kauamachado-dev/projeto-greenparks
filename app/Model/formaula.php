@@ -33,9 +33,7 @@ include("conexao.php");
             <select name="seleciona_oficina">
               <option>Selecione</option>
                 <?php
-                  $sql = "SELECT a.* , o.*
-                  FROM aula a
-                  LEFT JOIN oficina o ON a.id_oficina = o.id_oficina";
+                  $sql = "SELECT a.* , o.* FROM aula a LEFT JOIN oficina o ON a.id_oficina = o.id_oficina";
                   $result = mysqli_query($conexaoMysqli, $sql);
                   while($row = mysqli_fetch_assoc($result)){ ?>
                     <option value="<?php echo $row['id_oficina']?>">
@@ -46,6 +44,5 @@ include("conexao.php");
             </select></br>
     </div>
 </form>
-
 </body>
 </html>
