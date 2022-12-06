@@ -1,8 +1,4 @@
 <?php
-session_id();
-
-$id = session_id();
-
 session_start();
 
 include("conexao.php");
@@ -10,7 +6,7 @@ include("conexao.php");
  $sql = "SELECT * FROM usuario";
 
  $res = mysqli_query($conexaoMysqli,$sql);
-
+ $row = $res->fetch_object();
  ?>
 <!DOCTYPE html>
 <html>
@@ -26,23 +22,31 @@ include("conexao.php");
         <div class="col">
           <div class="single-input">
             <label for="nome">Nome:</label>
-            <input required type="text" name="nome_usuario" id="nome" class="input" value="<?php echo $id['nome_usuario']; ?>">
+            <input required type="text" name="nome_usuario" id="nome" class="input" value="<?php print $row->nome_usuario ?>";>
+            <input type="hidden" name="id_usuario" value="<?php print $row->id_usuario ?>">
           </div>
         </div>
        <br> Oficinas:
-            <select name="seleciona_oficina">
+            <select name="id_oficina">
               <option>Selecione</option>
                 <?php
                   $sql = "SELECT a.* , o.* FROM aula a LEFT JOIN oficina o ON a.id_oficina = o.id_oficina";
+<<<<<<< Updated upstream
                   $result = mysqli_query($conexaoMysqli, $sql);
                   while($row = mysqli_fetch_assoc($result)){ ?>
+=======
+                  $res = mysqli_query($conexaoMysqli, $sql);
+                  while($row = mysqli_fetch_assoc($res)){ ?>
+>>>>>>> Stashed changes
                     <option value="<?php echo $row['id_oficina']?>">
                       <?php echo $row['nome_oficina']; ?>
                     </option> <?php
                   }
                 ?>
             </select></br>
+      </div>
     </div>
+  <button type="submit" class="btn btn-primary">Enviar</button>
 </form>
 </body>
 </html>
