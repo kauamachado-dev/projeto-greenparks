@@ -20,10 +20,10 @@ a:hover {
 .logo {
     letter-spacing: 4px;
     z-index: 1;
-    margin-top: -4%;
+    margin-top: -4.5%;
     position: absolute;
-    width: 110%;
-    margin-left: 3%;
+    width: 112%;
+    margin-left: 4.5%;
 }
 /* FINAL - LOGO MENU DE NAVEGAÇÃO */
 /* INICIO - MENU DE NAVEGAÇÃO */
@@ -57,6 +57,7 @@ nav {
     right: 0;
     top: 3%;
 }
+
 /* INICIO - TÍTULO RESPONSIVO */
 .titulo1{
     font-family: 'Passion One';

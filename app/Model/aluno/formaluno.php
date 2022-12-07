@@ -6,12 +6,12 @@
   <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
   <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
   <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
-  <link href="../View/css/formaluno.css" rel="stylesheet">
+  <link href="../../View/css/formaluno.css" rel="stylesheet">
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 </head>
 <body>  
 
-    <img id="back" src="../View/css/images/formfund.png">
+    <img id="back" src="../../View/css/images/formfund.png">
     <div class="titulo1">ALUNO</div>
     <div class="linha1"></div>
 
@@ -94,9 +94,9 @@
 <div class="text-center pt-1 mb-5 pb-1">
 <div class="form-group">
 <input type="submit" class="btn1" value="CRIAR CONTA">
-<input type="reset" class="btn2" value="APAGAR DADOS">
+<a href="../../Pages/index.php" type="submit" class="btn2">VOLTAR</a>
 </div>
-<p class="login" >Já tem uma conta? <a href="login.php">Entre aqui</a>.</p> 
+<p class="login" >Já tem uma conta? <a href="../login.php">Entre aqui</a>.</p> 
 </div> 
 <script>
   $("#telefonealuno").mask("(99) 9999-9999");

@@ -9,12 +9,12 @@ session_start();
     <script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//cdnjs.cloudflare.com/ajax/libs/jquery.maskedinput/1.4.1/jquery.maskedinput.min.js"></script>
     <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
-    <link href="../View/css/forminst.css" rel="stylesheet">
+    <link href="../../View/css/forminst.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body style="margin-left: 500px">
 
-  <img id="back" src="../View/css/images/formprof.png">
+  <img id="back" src="../../View/css/images/formprof.png">
 
     <form action="cad_instrutor.php" method="POST">
         <div class="titulo1">INSTRUTOR</div>
@@ -72,8 +72,8 @@ session_start();
             <div class="text-center pt-1 mb-5 pb-1">
               <div class="form-group">
                 <input type="submit" class="btn1" value="CRIAR CONTA">
-                <a href="../Pages/index.php" type="submit" class="btn2">VOLTAR</a>
-                <p class="login">Já tem uma conta? <a href="login.php">Entre aqui</a>.</p> 
+                <a href="../../Pages/index.php" type="submit" class="btn2">VOLTAR</a>
+                <p class="login">Já tem uma conta? <a href="../login.php">Entre aqui</a>.</p> 
               </div>
             </div>
             <script>

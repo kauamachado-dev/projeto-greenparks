@@ -13,18 +13,19 @@ include("../Model/conexao.php");
 <head>
     <meta charset='utf-8'>
     <title>EVENTOS</title>
-    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href="../View/css/event.css" rel="stylesheet">
     <link href="../View/css/animation.css" rel="stylesheet">
     <script type="text/javascript" src="../Controller/_js/modal.js"></script>
     <script type="text/javascript" src="app/Controller/_js/modal.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
 </head>
 <body>
       <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
       <header>
         <nav>
+<<<<<<< HEAD
             <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
             <ul class="nav-list">
                 <li><a href="index.php">INÍCIO</a></li>
@@ -32,6 +33,14 @@ include("../Model/conexao.php");
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a style="color: #ffe60b" href="evento.php">EVENTOS</a></li> 
                 <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >ENTRAR</a>
+=======
+        <a class="logo" href="index.php"><img class="logo" src="../View/css/images/logoprincipal.png"></a>
+        <ul class="nav-list">
+                <li><a style="color: #ffff" href="index.php">INÍCIO</a></li>
+                <li><a style="color: #ffff" href="sobre.php">SOBRE</a></li> 
+                <li><a  style="color: #ffff" href="aula.php">AULAS</a></li> 
+                <li><a style="color: #ffe60b"  href="evento.php">EVENTOS</a></li> 
+>>>>>>> f6a752ea9fd657fb6c992d213c281754b9a3cbc0
                 <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
             </ul>
         </nav>
@@ -41,17 +50,18 @@ include("../Model/conexao.php");
     <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
 </svg>
     <!---INÍCIO - CARROSSEL-->
-    <main class="main">
+        <main class="main">
         <section class="galery">
             <div class="fotos">
                 <img src="../View/css/images/festival.png">
                 <img src="../View/css/images/musical.png">
                 <img src="../View/css/images/natal.png">
                 <img src="../View/css/images/teatro.png">
+                <img src="../View/css/images/festival.png">
             </div>
         </section>
     </main>
-    <!---FINAL - CARROSSEL-->
+    <!--FINAL - CARROSSEL-->
     <div class="titulo1">PRÓXIMOS EVENTOS</div>
     <div class="linha1"></div>
     <!---INÍCIO - MODAL-->

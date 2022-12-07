@@ -3,20 +3,21 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Draggable Carousel Slider | CodingNepal</title>
+    <title>SOBRE NÓS</title>
     <link href="../View/css/stilo.css" rel="stylesheet">
     <link href="../View/css/sobre.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script type="text/javascript" src="../Controller/_js/sobre.js" defer></script>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     
   </head>
   <body>
     
   <header>
         <nav>
-            <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 15%"></a>
+        <a class="logo" href="index.php"><img class="logo" src="../View/css/images/logoprincipal.png"></a>
             <ul class="nav-list">
                 <li><a href="index.php">INÍCIO</a></li>
                 <li><a style="color: #ffe60b" href="sobre.php">SOBRE</a></li>

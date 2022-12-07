@@ -23,13 +23,14 @@ a:hover {
     opacity: 0.7;
 }
 /* INICIO - LOGO MENU DE NAVEGAÇÃO */
+/* INICIO - LOGO MENU DE NAVEGAÇÃO */
 .logo {
     letter-spacing: 4px;
     z-index: 1;
     margin-top: -8%;
     position: absolute;
-    width: 40%;
-    margin-left: -32%;
+    width: 41%;
+    margin-left: -31%;
 }
 /* FINAL - LOGO MENU DE NAVEGAÇÃO */
 /* INICIO - MENU DE NAVEGAÇÃO */
@@ -47,14 +48,13 @@ nav {
     list-style: none;
     display: flex;
     margin-top: 4%;
-    margin-left: 7%;
+    margin-left: 29%;
 }
 
 .nav-list li {
     letter-spacing: 3px;
+    margin-left: 32px;
     z-index: 1;
-    margin-left: 5%;
-    position: static;
 }
 /* ONDA INÍCIO */
 .ondain{
@@ -76,7 +76,7 @@ nav {
 .txtlogin{
     z-index: 1;
     margin-top: -0.5%;
-    margin-left: 45%;
+    margin-left: 40%;
     margin-right: -8%;
     position: absolute; 
     font-size: 14px;
