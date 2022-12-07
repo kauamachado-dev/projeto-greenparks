@@ -14,10 +14,17 @@
     $senha = mysqli_real_escape_string($conexaoMysqli, $_POST['senha_usuario']);
 
    
+<<<<<<< HEAD
+    $sql = "SELECT id_usuario, u.nome_usuario, u.senha_usuario, t.id_tipo_usuario FROM usuario u INNER JOIN tipo_usuario t ON u.id_tipo_usuario = t.id_tipo_usuario";  
+    $result = mysqli_query($conexaoMysqli, $sql);  
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
+    $count = mysqli_num_rows($result);  
+=======
     $sql = "SELECT nome_usuario, senha_usuario, id_tipo_usuario FROM usuario INNER JOIN tipo_usuario ON id_tipo_usuario = id_tipo_usuario";  
 
     $result = mysqli_query($conexaoMysqli, $sql);
     $row = mysqli_num_rows($result);  
+>>>>>>> 54b66fd05a12faba5dbd07d8e794e3d71b47e593
 
     // Armazena dados em variáveis de sessão
     $_SESSION["logado"] = true;

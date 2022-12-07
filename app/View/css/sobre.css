@@ -1,3 +1,7 @@
+body{
+    height: 650px;
+}
+
 /* INICIO - LOGO MENU DE NAVEGAÇÃO */
 .logo {
     letter-spacing: 4px;
@@ -386,9 +390,7 @@ nav {
     position: absolute;
 }
 
-html{
-    overflow: hidden;
-}
+
 
 .wrapper-container{
     margin-left: 30px;
@@ -465,4 +467,22 @@ html{
   .carousel img{
     width: 100%;
   }
+}
+
+#logomarista{
+    margin-top: 10%;
+    z-index: 2;
+    height: 12%;
+    margin-left: 34%;
+    position: absolute;
+    background-color: #5BB318;
+}
+/* ONDA FINAL */
+.ondafin{
+    position: absolute;
+    bottom: 0;
+    left: 0%;
+    top: 100%;
+    width: 100%;
+    z-index: -2;
 }

@@ -8,7 +8,6 @@ body {
     margin: 0;
     padding: 0;
 }
-
 a {
     color: #fff;
     text-decoration: none;
@@ -41,8 +40,8 @@ nav {
 .nav-list {
     list-style: none;
     display: flex;
-    margin-top: 4%;
-    margin-left: 29%;
+    margin-top: 5%;
+    margin-left: 26.5%;
 }
 
 .nav-list li {
@@ -79,8 +78,8 @@ nav {
 /*INÍCIO - EFEITO CARROSSEL*/
 .galery{
     margin-top: 10%;
-    margin-left: 25%;
-    width: 900px;
+    margin-left: 0%;
+    width: 850px;
     height: 450px;
     background-color: #ffffff;
     overflow: visible;
@@ -89,7 +88,7 @@ nav {
 .galery .fotos{
     width: 500%;
     animation-name: animacao;
-    animation-duration: 20s;
+    animation-duration: 15s;
     animation-iteration-count: infinite ;
 }
 
