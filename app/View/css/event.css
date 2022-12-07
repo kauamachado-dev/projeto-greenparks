@@ -3,6 +3,7 @@ body {
     height: 4000px;
 }
 
+
 * {
     margin: 0;
     padding: 0;
@@ -18,10 +19,12 @@ a:hover {
 }
 /* INICIO - LOGO MENU DE NAVEGAÇÃO */
 .logo {
-    font-size: 24px;
-    text-transform: uppercase;
     letter-spacing: 4px;
     z-index: 1;
+    margin-top: -8%;
+    position: absolute;
+    width: 41%;
+    margin-left: -31%;
 }
 /* FINAL - LOGO MENU DE NAVEGAÇÃO */
 /* INICIO - MENU DE NAVEGAÇÃO */
@@ -32,11 +35,14 @@ nav {
     font-family: 'Arimo';
     background: #5bb318;
     height: 9vh;
+    font-weight: bold;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
+    margin-top: 4%;
+    margin-left: 29%;
 }
 
 .nav-list li {
@@ -50,8 +56,9 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    top: 0%
+    top: 3%;
 }
+
 /*PRÓXIMOS EVENTOS*/
 .titulo{
     margin: 10%;
@@ -68,12 +75,13 @@ nav {
     margin-left: 10%;
     margin-top: -11%;
 }
+
 /*INÍCIO - EFEITO CARROSSEL*/
 .galery{
-    margin-top: 3%;
+    margin-top: 10%;
     margin-left: 25%;
-    width: 600px;
-    height: 400px;
+    width: 900px;
+    height: 450px;
     background-color: #ffffff;
     overflow: visible;
 }

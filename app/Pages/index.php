@@ -122,7 +122,7 @@
                 <img src="../View/css/images/feira.jpg" alt="image2">
                 <img src="../View/css/images/circo.png" alt="image3">
                 <img src="../View/css/images/livro.jpg" alt="image4">
-                <img src="../View/css/images/basquete.jpg" alt="image5">
+                <img src="../View/css/images/onibus.png" alt="image5">
             </div>
     <script src="../controller/_js/sliderev.js"></script>
     <!-- FINAL EFEITO SLIDER -->
