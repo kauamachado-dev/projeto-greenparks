@@ -24,12 +24,12 @@
         <input type="text" name="desc_oficina" value="<?php print $row->desc_oficina; ?>" class="form-control">
     </div>
     <div class="mb-3">
-        <label>Endereço:</label>
-        <input type="text" name="id_endereco" value="<?php print $row->id_endereco; ?>" class="form-control">
+        <label>CEP:</label>
+        <input type="text" name="cep_oficina" value="<?php print $row->cep_oficina; ?>" class="form-control">
     </div>
     <div class="mb-3">
-        <label>Usuario:</label>
-        <input type="text" name="id_usuario" value="<?php print $row->id_usuario; ?>" class="form-control">
+        <label>Número do endereço:</label>
+        <input type="text" name="cep_oficina" value="<?php print $row->id_usuario; ?>" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

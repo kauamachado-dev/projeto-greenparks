@@ -5,10 +5,11 @@
                 $data_oficina = $_POST["data_oficina"];
                 $horario_oficina = $_POST["horario_oficina"];
                 $desc_oficina = $_POST["desc_oficina"];
-                $id_endereco = $_POST["id_endereco"];
+                $cep_oficina = $_POST["cep_oficina"];
+                $num_ende_oficinaa = $_POST["num_ende_oficina"];
                 $id_usuario = $_POST["id_usuario"];
 
-                $sql = "INSERT INTO oficina (nome_oficina, data_oficina, horario_oficina, desc_oficina, id_endereco, id_usuario) VALUES ('{$nome_oficina}', '{$data_oficina}', '{$horario_oficina}', '{$desc_oficina}', '{$id_endereco}', '{$id_usuario}')";
+                $sql = "INSERT INTO oficina (nome_oficina, data_oficina, horario_oficina, desc_oficina, cep_oficina, num_ende_oficina, id_usuario) VALUES ('{$nome_oficina}', '{$data_oficina}', '{$horario_oficina}', '{$desc_oficina}', '{$cep_oficina}', '{$num_ende_oficina}', '{$id_usuario}')";
                 
                 $res = $conexaoMysqli->query($sql);
 
@@ -27,14 +28,16 @@
                 $data_oficina = $_POST["data_oficina"];
                 $horario_oficina = $_POST["horario_oficina"];
                 $desc_oficina = $_POST["desc_oficina"];
-                $id_endereco = $_POST["id_endereco"];
+                $cep_oficina = $_POST["cep_oficina"];
+                $num_ende_oficina = $_POST["num_ende_oficina"];
                 $id_usuario = $_POST["id_usuario"];
                 $sql = "UPDATE oficina SET 
                             nome_oficina='{$nome_oficina}',
                             data_oficina='{$data_oficina}',
                             horario_oficina='{$horario_oficina}',
                             desc_oficina='{$desc_oficina}',
-                            id_endereco='{$id_endereco}',
+                            cep_oficina='{$cep_oficina}',
+                            num_ende_oficina='{$num_ende_oficina}',
                             id_usuario='{$id_usuario}',
                         WHERE 
                             id_oficina=".$_REQUEST["id_oficina"];

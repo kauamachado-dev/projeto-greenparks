@@ -1,22 +1,24 @@
 <?php
+    //inicia sessão
     session_start();
 
-    //chamando o arquivo usuarios.php
-    require_once '../Controller/usuarios.php';
-    //require_once '../Controller/nivel.php';
 
-    // Chama nivel de acesso
-    //Nivel();
+    //Inclui arquivo de conexão
+    include('conexao.php'); 
 
-    //Chama a classe
-    $u = new Usuario; 
+    //Verifique se o usuário já está logado, em caso afirmativo, redirecione-o para a página de boas-vindas
+    if(isset($_SESSION["logado"]) && $_SESSION["logado"] === true){
+        echo "<script>alert('Já está logado!');</script>";
+        header("location: ../Pages/index.php");
+    }
 ?>
 
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
     <meta charset="UTF-8">
-    <title>Login</title>
+    <title>LOGIN</title>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
     <link rel="stylesheet" href="../View/css/login.css" rel="stylesheet">
 </head>
@@ -44,7 +46,8 @@
                     <input type="submit" value="ACESSAR" class="btn1">
                 </form>
                 <p> Não tem uma conta?
-                <a href=''> Cadastre-se! </a>
+                <a href="../Model/formaluno.php"> Cadastre-se como aluno! </a>
+                <a href="../Model/forminst.php"> Cadastre-se como professor! </a>
             </div>
         </div>     
 </html>

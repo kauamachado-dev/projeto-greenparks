@@ -69,7 +69,7 @@ nav {
   font-family: "Passion One";
   position: absolute;
   top: 1%;
-  left: 35%;
+  left: 30%;
   text-align: center;
   font-size: 65px;
   color: #09400A;
@@ -82,24 +82,24 @@ nav {
   margin-left: 8%;
 }
 .card{
-  background-color: #cbff86;
-  padding: 120px 90px;
+  background-color: #f1ffe7;
+  padding: 140px 80px;
   border-radius: 4%;
   box-shadow: 3px 3px 1px 0px #00000080;
 }
 .label-float input{
-  width: 150%;
+  width: 120%;
   padding: 5px 5px;
   display: inline-block;
   border: 0;
   border-bottom: 3px solid #5bb318;
   background-color: transparent;
   outline: none;
-  min-width: 180px;
+  min-width: 0px;
   font-size: 16px;
   transition: all .3s ease-out;
   border-radius: 0;
-  margin-left: -28%;
+  margin-left: -9%;
 }
  .btn1{
   float: right; 
@@ -110,11 +110,11 @@ nav {
   border-radius:5px;
   font-size: 24px;
   font-family: "Passion One";
-  text-decoration:none;
+  text-decoration: none;
   vertical-align: middle;
   margin-left: 15%;
   color: #ffff;
-  margin-top: 40%;
+  margin-top: 3%;
   position: absolute;
 } 
 
@@ -134,8 +134,8 @@ nav {
   pointer-events: none;
   position: absolute;
   top: 0;
-  left: -28%;
-  margin-top: 13px;
+  left: -9%;
+  margin-top: -10px;
   transition: all .3s ease-out;
 }
 .label-float input:focus + label{
@@ -157,8 +157,11 @@ nav {
 }
 p{
   color:#09400A;
-  font-size: 14pt;
+  font-size: 10pt;
   text-align: center;
+  margin-top: 55%;
+  position: absolute;
+  margin-left: -10%;
 }
 a{
   color: #5BB318;

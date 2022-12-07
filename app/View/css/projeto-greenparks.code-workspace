@@ -1,0 +1,12 @@
+{
+	"folders": [
+		{
+			"path": "../../.."
+		},
+		{
+			"name": "projeto-greenparks",
+			"path": "../../../projeto-greenparks"
+		}
+	],
+	"settings": {}
+}

@@ -9,7 +9,6 @@
 <form action="?page=salvar" method="POST">
     <input type="hidden" name="acao" value="editar">
     <input type="hidden" name="id_eventos" value="<?php print $row->id_eventos; ?>">
-    <input type="hidden" name="id_endereco" value="<?php print $row->id_endereco; ?>"><br><br>
     <h2>Dados sobre o evento</h2><br>
     <div class="mb-3">
         <label>Nome do Evento:</label>

@@ -17,16 +17,17 @@ a {
     color: #fff;
     text-decoration: none;
     transition: 0.3s;
+    font-family: 'Arimo';
 }
 a:hover {
     opacity: 0.7;
 }
 /* INICIO - LOGO MENU DE NAVEGAÇÃO */
 .logo {
-    font-size: 24px;
-    text-transform: uppercase;
     letter-spacing: 4px;
     z-index: 1;
+    margin-top: 2%;
+    position: absolute;
 }
 /* FINAL - LOGO MENU DE NAVEGAÇÃO */
 /* INICIO - MENU DE NAVEGAÇÃO */
@@ -37,17 +38,21 @@ nav {
     font-family: 'Arimo';
     background: #5bb318;
     height: 9vh;
+    font-weight: bold;
 }
 
 .nav-list {
     list-style: none;
     display: flex;
+    margin-top: 4%;
+    margin-left: 7%;
 }
 
 .nav-list li {
     letter-spacing: 3px;
-    margin-left: 32px;
     z-index: 1;
+    margin-left: 5%;
+    position: static;
 }
 /* ONDA INÍCIO */
 .ondain{
@@ -55,7 +60,24 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    top: 0%;
+    top: 3%;
+}
+
+.login{
+    margin-left: -40%;
+    width: 35%;
+    z-index:1;
+    position: absolute;
+    margin-top: -3%;
+}
+
+.txtlogin{
+    z-index: 1;
+    margin-top: -0.5%;
+    margin-left: 45%;
+    margin-right: -8%;
+    position: absolute; 
+    font-size: 14px;
 }
 /* FINAL - MENU DE NAVEGAÇÃO */
 /* ÍNICIO - PARALLAX */
@@ -69,7 +91,7 @@ section{
 }
 section:nth-of-type(1){
 background-image: url(images/teste.jpg);
-height: 690px;
+height: 685px;
 }
 /* FINAL - PARALLAX */
 /* ONDA ABAIXO DO PARALLAX */
@@ -145,7 +167,7 @@ height: 690px;
 /* <<<<<<< PARALLAX ENTRE SOBRE E AULAS >>>>>> */
 section:nth-of-type(5){
     background-image: url(images/teste.jpg);
-    height: 10%;
+    height: 8%;
 }
 
 /* ONDA ACIMA AULAS */

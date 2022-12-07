@@ -1,20 +1,25 @@
+<?php
+    session_start();
+?>
 <!DOCTYPE html>
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>Aulas</title>
+    <title>AULAS</title>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href="../View/css/aula.css" rel="stylesheet">
 </head>
 <body>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
-            <a class="logo" href="index.html">GREEN PARKS</a>
-             <ul class="nav-list">
+        <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 15%"></a>
+            <ul class="nav-list">
                 <li><a href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li>
+                <li><a href="evento.php">EVENTOS</a></li> 
+                <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
             </ul>
         </nav>
     </header> 
@@ -41,9 +46,9 @@
     <div class="futebol">
             <P>Futebol é um dos esportes mais praticados no Brasil!</P>
             <P>E nada melhor que além de brincar, aprendermos as</P>
-            <P>regras, técnicas do esporte, etc... </P>
+            <P>regras, técnicas do esporte, isso tudo de graça! </P>
             </div>
-    <a href="futebol.php" type="button" class="botao1">SAIBA MAIS</a>
+    <a href="futebol.php" type="button" class="botao1">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE FUTEBOL -->
     <!-- INÍCIO SEÇÃO DE VOLEI -->
     <!--<img id="bola2" src="../View/css/images/Manchas/bolavolei.png">-->
@@ -55,10 +60,11 @@
     </section>
     <div class="linha3"></div>
     <div class="volei">
-            <P>Inscreva-se na aula de volei e jogue com segurança em</P>
+            <P>Inscreva-se na aula de volêi e jogue </P>
+            <P>com segurança em</p>
             <P>alguma quadra próxima a sua casa!</P>
             </div>
-    <a href="volei.php" type="button" class="botao2">SAIBA MAIS</a>
+    <a href="volei.php" type="button" class="botao2">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE VOLEI -->
     <!--<img id="bola3" src="../View/css/images/Manchas/bolabasquete.png">-->
     <!-- IMAGEM TERCEIRO ESPORTE -->
@@ -72,7 +78,7 @@
             <P>Jogar basquete com aos amigos é tão bom quanto</P>
             <P> aprender mais sobre o esporte, venha participar!</P>
             </div>
-    <a href="basquete.php" type="button" class="botao3">SAIBA MAIS</a>
+    <a href="basquete.php" type="button" class="botao3">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE BASQUETE -->
     <!--<img id="bola4" src="../View/css/images/Manchas/skateaula.png">-->
         <!-- IMAGEM QUARTO ESPORTE -->
@@ -83,10 +89,11 @@
     </section>
     <div class="linha5"></div>
     <div class="skate">
-            <P>Venha aprender as manobras do skate e aprender a</P>
+            <P>Venha aprender as manobras do </P>
+            <p>skate e aprender a</p>
             <P>radicalidade do esporte!</P>
             </div>
-    <a href="skate.php" type="button" class="botao4">SAIBA MAIS</a>
+    <a href="skate.php" type="button" class="botao4">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE SKATE -->
     <!--<img id="bola5" src="../View/css/images/Manchas/bolahandeball.png">-->
         <!-- IMAGEM QUINTO ESPORTE -->
@@ -99,7 +106,7 @@
     <div class="handeball">
             <P>Convide seus amigos e se inscreva na aula de handeball!</P>
             </div>
-    <a href="handeball.php" type="button" class="botao5">SAIBA MAIS</a>
+    <a href="handeball.php" type="button" class="botao5">INSCREVA-SE</a>
     <!-- FINAL SEÇÃO DE HANDEBALL -->
      <!--ULTIMA ONDA-->
      <img id="logomarista" src="../View/css/images/logomarista.png">

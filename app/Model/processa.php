@@ -1,38 +1,42 @@
 <?php    
+    session_start();
 
     //Inclui arquivo de conexão
     include('conexao.php');  
-    
-    //chamando o arquivo de usuarios
-    require_once '../Controller/usuarios.php';
 
-    //Chama a classe
-    $u = new Usuario; 
-    
-    $username = $_POST['nome_usuario'];  
-    $password = $_POST['senha_usuario'];  
-      
-        $username = stripcslashes($username);  
-        $password = stripcslashes($password);  
-        $username = mysqli_real_escape_string($conexaoMysqli, $username);  
-        $password = mysqli_real_escape_string($conexaoMysqli, $password);  
-      
-        $sql = "SELECT * FROM usuario WHERE nome_usuario = '$username' AND senha_usuario = '$password'";  
-        $result = mysqli_query($conexaoMysqli, $sql);  
-        $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
-        $count = mysqli_num_rows($result);  
+    //Define as variaveis
+    $id = ['id_usuario'];
+    $usuario = $_POST['nome_usuario'];  
+    $senha = $_POST['senha_usuario'];  
+    //$tipo_usuario = ['id_tipo_usuario'];
 
-        // Armazena dados em variáveis de sessão
-        $_SESSION["logado"] = true;
-        $_SESSION["id_usuario"] = $id;
-        $_SESSION["nome_usuario"] = $username; 
+    $usuario = stripcslashes($usuario);  
+    $senha = stripcslashes($senha);  
+    $usuario  = mysqli_real_escape_string($conexaoMysqli, $usuario);  
+    $senha = mysqli_real_escape_string($conexaoMysqli, $senha);  
+   
+    $sql = "SELECT * FROM usuario WHERE nome_usuario = '$usuario' AND senha_usuario = '$senha'";  
+    $result = mysqli_query($conexaoMysqli, $sql);  
+    $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
+    $count = mysqli_num_rows($result);  
 
-        // Se o usuario existir mande para pagina de inicio
-        if($count == 1){  
-            header("location: ../Pages/bem-vindo.php"); 
-            //Se não da um alert e exibe mensagem de erro
-        }else{  
-            echo "<script>alert('Usuario ou senha incorretos!');</script>";
-            header("location: login.php");
-        }
+    // Armazena dados em variáveis de sessão
+    $_SESSION["logado"] = true;
+    $_SESSION["id_usuario"] = $id;
+    $_SESSION["nome_usuario"] = $usuario ; 
+    //$_SESSION["id_tipo_usuario"] = $tipo_usuario;
+
+    if($_SESSION['id_tipo_usuario'] == "1"){
+        header("Location: ../Pages/admin.php");
+    }elseif($_SESSION['id_tipo_usuario'] == "2"){
+        header("Location: ../Pages/instrutor.php");
+    }elseif($_SESSION['id_tipo_usuario'] == "3"){
+        header("Location: ../Pages/aluno.php");
+    //Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
+    //redireciona o usuario para a página de login
+    }else{    
+    //Váriavel global recebendo a mensagem de erro
+    $_SESSION['loginErro'] = "Usuário ou senha Inválido";
+    header("Location: ../Controller/login.php");
+    }
 ?>  

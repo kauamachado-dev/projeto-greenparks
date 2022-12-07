@@ -6,29 +6,33 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>HOME</title>
+    <title>INÍCIO</title>
+    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
     <link href="../View/css/stilo.css" rel="stylesheet">
 </head>
 <body>
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
-            <a class="logo" href="index.php">GREEN PARKS</a>
+            <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 15%"></a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li>     
+                <li><a href="evento.php">EVENTOS</a></li> 
+                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >Olá, faça login
+                <br> ou cadastre-se!</a>
             </ul>
         </nav>
     </header> 
     <svg  class="ondain" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
-</svg>
+        <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+    </svg>
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
     <section></section>
     <section class="container">
-        <div class="titulo1">GREEN PARKS</div>
+        <div class="titulo1">GREEN 
+                             PARKS</div>
     </section>
     <div>
         <!-- ONDA -->
@@ -111,12 +115,12 @@
             <P>clique no botão para conhecer nossa página</P>
             <P>de eventos e não perder mais nada que rolar</P>
             <P>por perto!</P></div>
-            <a href="../Model/login.php" type="button" class="botao3">TELA DE LOGIN</a>
+            <a href="../Pages/evento.php" type="button" class="botao3">SAIBA MAIS</a>
             <!-- EFEITO SLIDER EVENTOS -->
             <div id ="sliderev">
                 <img class = "selectedev" src="../View/css/images/feira.jpg" alt="image1">
                 <img src="../View/css/images/feira.jpg" alt="image2">
-                <img src="../View/css/images/circo.jpg" alt="image3">
+                <img src="../View/css/images/circo.png" alt="image3">
                 <img src="../View/css/images/livro.jpg" alt="image4">
                 <img src="../View/css/images/basquete.jpg" alt="image5">
             </div>
