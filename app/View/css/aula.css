@@ -20,8 +20,10 @@ a:hover {
 .logo {
     letter-spacing: 4px;
     z-index: 1;
-    margin-top: 2%;
+    margin-top: -4%;
     position: absolute;
+    width: 110%;
+    margin-left: 3%;
 }
 /* FINAL - LOGO MENU DE NAVEGAÇÃO */
 /* INICIO - MENU DE NAVEGAÇÃO */
