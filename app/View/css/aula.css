@@ -49,6 +49,22 @@ nav {
     margin-left: 32px;
     z-index: 1;
 }
+.login{
+    margin-left: -40%;
+    width: 35%;
+    z-index:1;
+    position: absolute;
+    margin-top: -3%;
+}
+
+.txtlogin{
+    z-index: 1;
+    margin-top: -0.5%;
+    margin-left: 40%;
+    margin-right: -8%;
+    position: absolute; 
+    font-size: 14px;
+}
 /* ONDA INÍCIO */
 .ondain{
     position: absolute;
