@@ -1,8 +1,23 @@
 <?php 
-session_start();
+    session_start();
 
-include("../Model/conexao.php");
+    include("../Model/conexao.php");
 
+    //se não estiver definida, não possuir um id_usuario ou um status_usuario
+    if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['id_tipo_usuario'])){
+        //vai mandar ele devolta para a página de login
+        header("location: ../Model/login.php"); 
+    exit;
+        //Se o usuario for funcionario
+    } else if ($_SESSION['id_tipo_usuario'] != 3) {
+        //Realoca o usuario para o funcionario
+        header("location: ../Pages/instrutor.php");
+    //Se o usuario estiver inativo
+    } else if ($_SESSION['id_tipo_usuario'] != 3) {
+        //Realoca para a pagina do login
+        header("location: ../Pages/aluno.php");
+    exit;
+    }
 ?>
 <!DOCTYPE html>
 <html>
@@ -22,6 +37,7 @@ include("../Model/conexao.php");
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li> 
+                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >ENTRAR</a>
                 <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
             </ul>
         </nav>
@@ -29,18 +45,42 @@ include("../Model/conexao.php");
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
     <h1 class="my-5">Olá, <b></b> <br><br>
 
-    <h1>lista </h1>
-    <?php 
-    $result = $conexaoMysqli->query("SELECT A.id_oficina, A.id_usuario, B.nome_oficina FROM aula A LEFT JOIN oficina B ON A.id_oficina = B.id_oficina"); 
-    if ($result) {
-            while ($rows = $result->fetch_object()) { 
-              var_dump($rows);
-              echo "id oficina $rows->id_usuario";
-              }
-            }
-            else {
-                echo "Error with SQL";
-            }
+   <h1>lista </h1>
+   <?php
+   $sql = "SELECT * FROM aula";
+
+   $res = $conexaoMysqli->query($sql);
+
+   $qtd = $res->num_rows;
+   if($qtd > 0){
+       print "<table class='table table-hover table-striped table-bordered'>";
+           print "<tr>";
+           print "<th>#</th>";
+           print "<th>Nome da oficina</th>";
+           print "<th>data da oficina</th>";
+           print "<th>horario da oficina</th>";
+           print "<th>Descrição da oficina</th>";
+           print "<th>Ações</th>";
+           print "</tr>";
+       print "<table class='table table-hover table-striped table-bordered'>";
+       while($row = $res->fetch_object()){
+           print "<tr>";
+           print "<td>".$row->id_oficina."</td>";
+           print "<td>".$row->nome_oficina."</td>";
+           print "<td>".$row->data_oficina."</td>";
+           print "<td>".$row->horario_oficina."</td>";
+           print "<td>".$row->desc_oficina."</td>";
+           print "<td>
+               <button onclick=\"location.href='?page=editar_oficina&id=".$row->id_oficina."';\" class='btn btn-success'>Editar</button>
+               <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar_oficina&acao=excluir_oficina&id=".$row->id_oficina."';}else{false;}\" class='btn btn-danger'>Excluir</button>
+               </td>";
+           print "</tr>";
+       }
+       print "</table>";
+   }else{
+       print"<p class='alert alert-danger'>Não encontrou resultados!</p>";
+   }
+   
   ?>
 </body>
 </html>

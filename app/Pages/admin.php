@@ -7,6 +7,22 @@
     //inicia a sessão
     session_start(); 
 
+    //se não estiver definida, não possuir um id_usuario ou um status_usuario
+    if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['id_tipo_usuario'])){
+        //vai mandar ele devolta para a página de login
+        header("location: ../Model/login.php"); 
+    exit;
+        //Se o usuario for funcionario
+    } else if ($_SESSION['id_tipo_usuario'] != 1) {
+        //Realoca o usuario para o funcionario
+        header("location: ../Pages/instrutor.php");
+    //Se o usuario estiver inativo
+    } else if ($_SESSION['id_tipo_usuario'] != 1) {
+        //Realoca para a pagina do login
+        header("location: ../Pages/aluno.php");
+    exit;
+    }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -33,14 +49,13 @@
         </nav>
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
-    <?php
-    echo "Olá: ". $_SESSION['nome_usuario'];    
-    ?>
     <br>
     <a href="sair.php">Sair</a>
     <div class="titulo">Área administrativa</div>
     <div class="linha"></div>
-
+    <?php
+        echo "Olá: ". $_SESSION['nome_usuario'];    
+    ?>
     <a href="../Model/oficinas/cad_oficina.php">
         <input class="img1" type="image" src="../View/images/adm_aula.jpg">
     </a>
