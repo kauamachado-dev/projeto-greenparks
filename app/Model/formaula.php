@@ -31,13 +31,10 @@ include("conexao.php");
               <option>Selecione</option>
                 <?php
                   $sql = "SELECT a.* , o.* FROM aula a LEFT JOIN oficina o ON a.id_oficina = o.id_oficina";
-<<<<<<< Updated upstream
                   $result = mysqli_query($conexaoMysqli, $sql);
                   while($row = mysqli_fetch_assoc($result)){ ?>
-=======
                   $res = mysqli_query($conexaoMysqli, $sql);
                   while($row = mysqli_fetch_assoc($res)){ ?>
->>>>>>> Stashed changes
                     <option value="<?php echo $row['id_oficina']?>">
                       <?php echo $row['nome_oficina']; ?>
                     </option> <?php

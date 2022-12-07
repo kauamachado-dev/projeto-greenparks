@@ -7,18 +7,22 @@
     //inicia a sessão 
     session_start(); 
 
-    //Se não estiver logado if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['tipo_usuario'])) { 
-    //Realoca para o login header("location: ../Model/login.php"); 
-    
-    //exit; 
-    //Se for um administrador } else if ($_SESSION['tipo_usuario'] != 0) { 
-
-    //Realoca para a pagina de administrador header("location: administrador.php"); 
-
-    //Se estiver logado } else if ($_SESSION['descricao'] != 1) { 
-
-    //Exibe um alert e realoca para a pagina de login echo "<script>alert('Usuário sem acesso!');</script>"; header("location: ../Model/login.php"); exit; } 
-    //SE A PAGINA ESTIVER SENDO IMPEDIDA DE ABRIR COMENTE ESSAS LINHAS DE CODIGO ACIMA !!!!! ?>
+    //se não estiver definida, não possuir um id_usuario ou um status_usuario
+    if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['id_tipo_usuario'])){
+        //vai mandar ele devolta para a página de login
+        header("location: ../Model/login.php"); 
+    exit;
+        //Se o usuario for funcionario
+    } else if ($_SESSION['id_tipo_usuario'] != 2) {
+        //Realoca o usuario para o funcionario
+        header("location: ../Pages/instrutor.php");
+    //Se o usuario estiver inativo
+    } else if ($_SESSION['id_tipo_usuario'] != 2) {
+        //Realoca para a pagina do login
+        header("location: ../Pages/aluno.php");
+    exit;
+    }
+?>
 <!DOCTYPE html>
 <html>
 <head>

@@ -19,6 +19,7 @@
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li> 
+                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >ENTRAR</a>
                 <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
             </ul>
         </nav>

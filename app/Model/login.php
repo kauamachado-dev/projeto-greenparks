@@ -7,7 +7,7 @@
     include('conexao.php'); 
 
     //Verifique se o usuário já está logado, em caso afirmativo, redirecione-o para a página de boas-vindas
-    if(isset($_SESSION["logado"]) && $_SESSION["logado"] === true){
+    if(isset($_SESSION["logado"]) && $_SESSION["logado"] == true){
         echo "<script>alert('Já está logado!');</script>";
         header("location: ../Pages/index.php");
     }
@@ -31,16 +31,16 @@
             <div class="card">
                 <div class="titulo1">Login</div>
                  <!-- FORMULÁRIO -->
-                <form action="teste.php" method="POST">
+                <form action="processa.php" method="POST">
                     <!-- USUÁRIO -->
                     <div class="label-float">
                         <input type="text" class="form-control" id="nome_usuario" required name="nome_usuario">
-                        <label for="usuario">Usuário </i> </label>
+                        <label for="usuario">Usuário</i></label>
                     </div>
                     <!-- SENHA -->
                     <div class="label-float">
                         <input type="password" class="form-control" id="senha_usuario" required name="senha_usuario">
-                        <label for="senha"> Senha </i> </label>
+                        <label for="senha">Senha</i></label>
                     </div>
                     <!-- BOTÃO-->
                     <input type="submit" value="ACESSAR" class="btn1">

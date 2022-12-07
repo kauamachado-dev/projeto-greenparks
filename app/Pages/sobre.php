@@ -23,6 +23,7 @@
                 <li><a style="color: #ffe60b" href="sobre.php">SOBRE</a></li>
                 <li><a href="aula.php">AULAS</a></li>
                 <li><a href="evento.php">EVENTOS</a></li>
+                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >ENTRAR</a>
             </ul>
         </nav>
     </header>

@@ -7,6 +7,22 @@
     //inicia a sessão
     session_start(); 
 
+    //se não estiver definida, não possuir um id_usuario ou um status_usuario
+    if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['id_tipo_usuario'])){
+        //vai mandar ele devolta para a página de login
+        header("location: ../Model/login.php"); 
+    exit;
+        //Se o usuario for funcionario
+    } else if ($_SESSION['id_tipo_usuario'] != 1) {
+        //Realoca o usuario para o funcionario
+        header("location: ../Pages/instrutor.php");
+    //Se o usuario estiver inativo
+    } else if ($_SESSION['id_tipo_usuario'] != 1) {
+        //Realoca para a pagina do login
+        header("location: ../Pages/aluno.php");
+    exit;
+    }
+
 ?>
 <!DOCTYPE html>
 <html>
@@ -36,14 +52,13 @@
         <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
     </svg>
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
-    <?php
-    echo "Olá: ". $_SESSION['nome_usuario'];    
-    ?>
     <br>
     <a href="sair.php">Sair</a>
     <div class="titulo">Área administrativa</div>
     <div class="linha"></div>
-
+    <?php
+        echo "Olá: ". $_SESSION['nome_usuario'];    
+    ?>
     <a href="../Model/oficinas/cad_oficina.php">
         <input class="img1" type="image" src="../View/css/images/skate.jpg">
     </a>

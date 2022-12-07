@@ -25,12 +25,22 @@ include("../Model/conexao.php");
       <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
       <header>
         <nav>
+<<<<<<< HEAD
+            <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
+            <ul class="nav-list">
+                <li><a href="index.php">INÍCIO</a></li>
+                <li><a href="sobre.php">SOBRE</a></li> 
+                <li><a href="aula.php">AULAS</a></li> 
+                <li><a style="color: #ffe60b" href="evento.php">EVENTOS</a></li> 
+                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >ENTRAR</a>
+=======
         <a class="logo" href="index.php"><img class="logo" src="../View/css/images/logoprincipal.png"></a>
         <ul class="nav-list">
                 <li><a style="color: #ffff" href="index.php">INÍCIO</a></li>
                 <li><a style="color: #ffff" href="sobre.php">SOBRE</a></li> 
                 <li><a  style="color: #ffff" href="aula.php">AULAS</a></li> 
                 <li><a style="color: #ffe60b"  href="evento.php">EVENTOS</a></li> 
+>>>>>>> f6a752ea9fd657fb6c992d213c281754b9a3cbc0
                 <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
             </ul>
         </nav>
