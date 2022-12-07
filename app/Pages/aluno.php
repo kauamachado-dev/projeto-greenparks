@@ -33,18 +33,14 @@ include("../Model/conexao.php");
     <?php 
     $result = $conexaoMysqli->query("SELECT A.id_oficina, A.id_usuario, B.nome_oficina FROM aula A LEFT JOIN oficina B ON A.id_oficina = B.id_oficina"); 
     if ($result) {
-  
             while ($rows = $result->fetch_object()) { 
               var_dump($rows);
               echo "id oficina $rows->id_usuario";
               }
-         
             }
-            
             else {
                 echo "Error with SQL";
             }
   ?>
-
 </body>
 </html>

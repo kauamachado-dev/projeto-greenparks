@@ -1,3 +1,4 @@
 <p>erro</p>
 
-<li><a href="../Controller/sair.php" class="btn btn-danger ml-3">Sair da conta</a></li>
+
+    <a class="btn btn-danger ml-3" href="../Controller/sair.php"><img src="../View/css/images/erro.png" style="width: 50%">Sair da conta</a>

@@ -14,7 +14,7 @@
     <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
     <header>
         <nav>
-            <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 15%"></a>
+            <a class="logo" href="index.php"><img class="logo" src="../View/css/images/logoprincipal.png"></a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 

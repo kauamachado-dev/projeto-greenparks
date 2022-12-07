@@ -1,51 +1,32 @@
-<?php
-	//inicia sessão
-    session_start(); 
+<?php    
 
-    //Incluindo a conexão com banco de dados   
-    include_once("conexao.php");    
+    //Inclui arquivo de conexão
+    include('conexao.php');  
 
-   		 //O campo usuário e senha preenchido entra no if para validar
-    	if((isset($_POST['nome_usuario'])) && (isset($_POST['senha_usuario']))){
+    $username = $_POST['nome_usuario'];  
+    $password = $_POST['senha_usuario'];  
+      
+        $username = stripcslashes($username);  
+        $password = stripcslashes($password);  
+        $username = mysqli_real_escape_string($conexaoMysqli, $username);  
+        $password = mysqli_real_escape_string($conexaoMysqli, $password);  
+      
+        $sql = "SELECT * FROM usuario WHERE nome_usuario = '$username' AND senha_usuario = '$password'";  
+        $resultado = mysqli_query($conexaoMysqli, $sql);  
+        $row = mysqli_fetch_array($resultado, MYSQLI_ASSOC);  
+        $contador = mysqli_num_rows($resultado);  
 
-       		$usuario = mysqli_real_escape_string(
-			echo "Falha na conexão: (" . $conexaoMysqli->connect_errno . ") " . $conexaoMysqli->connect_error; 
-			, $_POST['nome_usuario']); 
+        // Armazena dados em variáveis de sessão
+        $_SESSION["logado"] = true;
+        $_SESSION["id_usuario"] = $id;
+        $_SESSION["nome_usuario"] = $username; 
 
-			//Escapar de caracteres especiais, como aspas, prevenindo SQL injection
-       		$senha = mysqli_real_escape_string(
-			echo "Falha na conexão: ("  . $conexaoMysqli->connect_errno . ") " . $conexaoMysqli->connect_error; , $_POST['senha_usuario']);
-        	$senha = md5($senha);
-            
-       		 //Buscar na tabela usuario o usuário que corresponde com os dados digitado no formulário
-        	$result_usuario = "SELECT * FROM usuario WHERE nome_usuario = '$usuario' && senha_usuario = '$senha' LIMIT 1";
-        	$resultado_usuario = mysqli_query(echo "Falha na conexão: ("  . $conexaoMysqli->connect_errno . ") " . $conexaoMysqli->connect_error;
-			, $result_usuario);
-        	$resultado = mysqli_fetch_assoc($resultado_usuario);
-        
-        	//Encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
-        	if(isset($resultado)){
-           		 $_SESSION['usuarioId'] = $resultado['id_usuario'];
-           		 $_SESSION['usuarioNome'] = $resultado['nome_usuario'];
-            	 $_SESSION['usuarioNiveisAcessoId'] = $resultado['id_tipo_usuario'];
-
-            if($_SESSION['usuarioNiveisAcessoId'] == "1"){
-                header("Location: ../Pages/admin.php");
-            	}elseif($_SESSION['usuarioNiveisAcessoId'] == "2"){
-                	header("Location: ../Pages/instrutor.php");
-            		}else{
-                		header("Location: ../Pages/aluno.php");
-           			}
-        	//Não foi encontrado um usuario na tabela usuário com os mesmos dados digitado no formulário
-        	//redireciona o usuario para a página de login
-        	}else{    
-            //Váriavel global recebendo a mensagem de erro
-            $_SESSION['loginErro'] = "Usuário ou senha Inválido";
-            header("Location: index.php");
-        	}
-    //O campo usuário e senha não preenchido entra no else e redireciona o usuário para a página de login
-    }else{
-        $_SESSION['loginErro'] = "Usuário ou senha inválido";
-        header("Location: ../Controller/erro.php");
-    }
-?>
+        // Se o usuario estiver ativo mande para pagina de inicio
+        if($contador == 1){  
+            header("location: ../Pages/index.php"); 
+            //Se não da um alert e exibe mensagem de erro
+        }else{  
+            echo "<script>alert('Usuario ou senha incorretos!');</script>";
+            header("location: login.php");
+        }
+?>  

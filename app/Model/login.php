@@ -31,7 +31,7 @@
             <div class="card">
                 <div class="titulo1">Login</div>
                  <!-- FORMULÁRIO -->
-                <form action="processa.php" method="POST">
+                <form action="teste.php" method="POST">
                     <!-- USUÁRIO -->
                     <div class="label-float">
                         <input type="text" class="form-control" id="nome_usuario" required name="nome_usuario">
@@ -46,8 +46,8 @@
                     <input type="submit" value="ACESSAR" class="btn1">
                 </form>
                 <p> Não tem uma conta?
-                <a href="../Model/formaluno.php"> Cadastre-se como aluno! </a>
-                <a href="../Model/forminst.php"> Cadastre-se como professor! </a>
+                <a href="../Model/aluno/formaluno.php"> Cadastre-se como aluno! </a>
+                <a href="../Model/instrutor/forminst.php"> Cadastre-se como professor! </a>
             </div>
         </div>     
 </html>

@@ -26,8 +26,10 @@ a:hover {
 .logo {
     letter-spacing: 4px;
     z-index: 1;
-    margin-top: 2%;
+    margin-top: -8%;
     position: absolute;
+    width: 40%;
+    margin-left: -32%;
 }
 /* FINAL - LOGO MENU DE NAVEGAÇÃO */
 /* INICIO - MENU DE NAVEGAÇÃO */
@@ -167,7 +169,7 @@ height: 685px;
 /* <<<<<<< PARALLAX ENTRE SOBRE E AULAS >>>>>> */
 section:nth-of-type(5){
     background-image: url(images/teste.jpg);
-    height: 8%;
+    height: 9%;
 }
 
 /* ONDA ACIMA AULAS */
@@ -181,7 +183,7 @@ section:nth-of-type(5){
 /* TÍTULO AULAS */
 #titulo3{
     font-family: 'Passion One';
-    margin-top: 12%;
+    margin-top: 11%;
     margin-left: 74%;
     position: absolute;
     text-align: center;
@@ -194,7 +196,7 @@ section:nth-of-type(5){
     width: 255px;
     height: 5px;
     margin-left: 70%;
-    margin-top: -2%;
+    margin-top: -1%;
 }
 /* EFEITO SLIDER AULAS */
 #sliderau {
