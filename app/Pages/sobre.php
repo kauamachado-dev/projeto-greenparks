@@ -3,7 +3,7 @@
 <html lang="en" dir="ltr">
   <head>
     <meta charset="utf-8">
-    <title>Sobre Nós</title>
+    <title>SOBRE NÓS</title>
     <link href="../View/css/stilo.css" rel="stylesheet">
     <link href="../View/css/sobre.css" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
