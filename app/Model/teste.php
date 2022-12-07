@@ -1,70 +1,32 @@
-<?php
-//Função para logar
-	function logar($usuario, $senha){
-        //Para poder ser acessada
-        global $pdo; 
-        global $msgErro;
+<?php    
 
-        //Verifica se o nome de usuário e a senha estao cadastrados
-        $sql = $pdo->prepare("SELECT id_usuario FROM usuario WHERE nome_usuario = :u AND senha_usuario = :s");
-        $sql->bindValue(":u",$usuario); //basicamento o bindValue ele meio que abrevia, o $usuario virou: :u...
-        $sql->bindValue(":s",md5($senha)); // a $senha virou: :s. E o md5, basicamente criptografa a senha do usúario, dando mais segurança...
-        $sql->execute(); //vai executar...
+    //Inclui arquivo de conexão
+    include('conexao.php');  
 
-        //Se sim, vai para uma estrutura para identificar se é um usuário ou administrador
-        if($sql->rowCount() > 0){
-            //Faz um array com a variável
-            $dado = $sql->fetch();
-            //inicia a sessão
-            session_start();
-            //Fazendo uma variável global, que recebe o id_usuario
-            $_SESSION['id_usuario'] = $dado['id_usuario'];
+    $username = $_POST['nome_usuario'];  
+    $password = $_POST['senha_usuario'];  
+      
+        $username = stripcslashes($username);  
+        $password = stripcslashes($password);  
+        $username = mysqli_real_escape_string($conexaoMysqli, $username);  
+        $password = mysqli_real_escape_string($conexaoMysqli, $password);  
+      
+        $sql = "SELECT * FROM usuario WHERE nome_usuario = '$username' AND senha_usuario = '$password'";  
+        $resultado = mysqli_query($conexaoMysqli, $sql);  
+        $row = mysqli_fetch_array($resultado, MYSQLI_ASSOC);  
+        $contador = mysqli_num_rows($resultado);  
 
-            //Cria uma variável que seleciona tudo da tabela usuarios quando o id for igual a do $_SESSION
-            $verificar = $pdo->query("SELECT u.*, t.* FROM usuario u INNER JOIN tipo_usuario t ON u.id_tipo_usuario = t.id_tipo_usuario");
-            //Estrutura de repetição, sendo criado um array dos dados do usuário 
-            while($linha = $verificar->fetch(PDO::FETCH_ASSOC)){
-                //Se os IDS forem igual
-                if($linha['id_usuario'] == $_SESSION['id_usuario']){ 
+        // Armazena dados em variáveis de sessão
+        $_SESSION["logado"] = true;
+        $_SESSION["id_usuario"] = $id;
+        $_SESSION["nome_usuario"] = $username; 
 
-                    $nivel  = $linha['id_tipo_usuario']; //Variável recebendo o nivel de usuário
-                    $status = $linha['tipo_usuario'];//Variável recebendo o status do usuário
-
-                    //Estrutura de decisão sobre o nível e o status do usuário
-                    switch ($nivel && $status){
-
-						//Administrador ativo
-                        case ($nivel == 1 && $status == 1):
-                            //Manda para a página dos administradores
-                            header("location: ../Pages/admin.php");
-                        break;
-
-                        //Funcionário(a) ativo
-                        case ($nivel == 2 && $status == 1):
-                            //Manda para a página dos instrutores
-                            header("location: ../Pages/instrutor.php");
-                        break;
-
-                        //Caso não cair em nenhum dos casos
-                        default:
-                            //Manda um alerta
-                            echo "<script>alert('Usuario sem acesso!');</script>";
-                            //E manda para a página de login novamente
-                            header("location: ../Model/login.php");
-                        break;
-                    }
-
-                    $_SESSION['id_tipo_usuario']  = $nivel;
-                    $_SESSION['tipo_usuario'] = $status;
-                }
-            }
-
-            //Retorna verdadeiro
-            return true;
-
-        //Se não foi possível logar
-        } else{
-            //Retorna falso
-            return false; 
+        // Se o usuario estiver ativo mande para pagina de inicio
+        if($contador == 1){  
+            header("location: ../Pages/index.php"); 
+            //Se não da um alert e exibe mensagem de erro
+        }else{  
+            echo "<script>alert('Usuario ou senha incorretos!');</script>";
+            header("location: login.php");
         }
-    }
+?>  
