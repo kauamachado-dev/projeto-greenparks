@@ -4,17 +4,17 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
-    <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
+    <link rel="shortcut icon" href="../../View/css/images/logo.png" type="image/x-icon">
     <link href='../../View/css/cad_aula.css' rel='stylesheet'>
     <script src='_js/postagem.js'></script>
-    <title>cadastro</title>
+    <title>NOVA OFICINA</title>
   </head>
   <body>
   <header>
         <nav>
             <a class="logo" href="../Pages/admin.php">GREEN PARKS</a>
             <ul class="nav-list">
-                <li><a style="color: #ffe60b" href="../../Pages/admin.php">Voltar</a></li>
+                <li><a href="../../Pages/admin.php">Voltar</a></li>
                 <li><a href="?page=nova_oficina">Cadastrar oficina</a></li> 
                 <li><a href="?page=listar_oficina">Listar oficina</a></li>        
             </ul>

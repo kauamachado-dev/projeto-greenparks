@@ -7,7 +7,7 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link href="../../View/css/cad_ev.css" rel="stylesheet">
     <link rel="shortcut icon" href="../../View/css/images/logo.png" type="image/x-icon">
-    <title>Cadastro</title>
+    <title>NOVO EVENTO</title>
   </head>
   <body>
   <header>
@@ -15,7 +15,7 @@
         <a class="logo" href="index.php"><img src="../../View/css/images/logoprincipal.png" style="width: 15%"></a>
             <ul class="nav-list">
                 <li><a href="../../Pages/admin.php">Voltar</a></li>
-                <li><a style="color: #ffe60b" href="?page=novo">Cadastrar Eventos</a></li> 
+                <li><a href="?page=novo">Cadastrar Eventos</a></li> 
                 <li><a href="?page=listar">Listar Eventos</a></li>        
             </ul>
         </nav>

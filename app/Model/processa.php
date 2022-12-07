@@ -15,7 +15,7 @@
     $usuario  = mysqli_real_escape_string($conexaoMysqli, $usuario);  
     $senha = mysqli_real_escape_string($conexaoMysqli, $senha);  
    
-    $sql = "SELECT u.nome_usuario, u.senha_usuario, t.id_tipo_usuario FROM usuario u INNER JOIN tipo_usuario t ON u.id_tipo_usuario = t.id_tipo_usuario";  
+    $sql = "SELECT id_usuario, u.nome_usuario, u.senha_usuario, t.id_tipo_usuario FROM usuario u INNER JOIN tipo_usuario t ON u.id_tipo_usuario = t.id_tipo_usuario";  
     $result = mysqli_query($conexaoMysqli, $sql);  
     $row = mysqli_fetch_array($result, MYSQLI_ASSOC);  
     $count = mysqli_num_rows($result);  
