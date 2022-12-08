@@ -1,8 +1,6 @@
 <h1>editar evento</h1>
 <?php
     $sql = "SELECT * FROM eventos WHERE id_eventos =".$_REQUEST["id"];
-
- 
     $res = $conexaoMysqli->query($sql);
     $row = $res->fetch_object();
 ?>
@@ -36,5 +34,4 @@
         <input type="number" name="num_ende_eventos" value="<?php print $row->num_ende_eventos ?>" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
-</form>
 </form>

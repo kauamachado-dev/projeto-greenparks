@@ -54,42 +54,60 @@
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
     <h1 class="my-5">Olá, <b></b> <br><br>
 
-   <h1>lista </h1>
    <?php
-   $sql = "SELECT * FROM aula";
 
-   $res = $conexaoMysqli->query($sql);
+$sql = "SELECT u.* , r.*
+FROM usuario u
+LEFT JOIN responsavel r ON u.id_responsavel = r.id_responsavel WHERE id_usuario='23'"; 
 
-   $qtd = $res->num_rows;
-   if($qtd > 0){
-       print "<table class='table table-hover table-striped table-bordered'>";
-           print "<tr>";
-           print "<th>#</th>";
-           print "<th>Nome da oficina</th>";
-           print "<th>data da oficina</th>";
-           print "<th>horario da oficina</th>";
-           print "<th>Descrição da oficina</th>";
-           print "<th>Ações</th>";
-           print "</tr>";
-       print "<table class='table table-hover table-striped table-bordered'>";
-       while($row = $res->fetch_object()){
-           print "<tr>";
-           print "<td>".$row->id_oficina."</td>";
-           print "<td>".$row->nome_oficina."</td>";
-           print "<td>".$row->data_oficina."</td>";
-           print "<td>".$row->horario_oficina."</td>";
-           print "<td>".$row->desc_oficina."</td>";
-           print "<td>
-               <button onclick=\"location.href='?page=editar_oficina&id=".$row->id_oficina."';\" class='btn btn-success'>Editar</button>
-               <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href='?page=salvar_oficina&acao=excluir_oficina&id=".$row->id_oficina."';}else{false;}\" class='btn btn-danger'>Excluir</button>
-               </td>";
-           print "</tr>";
-       }
-       print "</table>";
-   }else{
-       print"<p class='alert alert-danger'>Não encontrou resultados!</p>";
+$res = $conexaoMysqli->query($sql);
+
+$qtd = $res->num_rows;
+if($qtd > 0){
+   print "<table class='table table-hover table-striped table-bordered'>";
+       print "<tr>";
+       print "<th>Ações</th>";
+       print "</tr>";
+   print "<table class='table table-hover table-striped table-bordered'>";
+   while($row = $res->fetch_object()){
+       print "<tr>";
+       print "<td>
+           <button onclick=\"location.href= '../Model/aluno/editar_formaluno.php';\" class='btn btn-success' value=".$row->id_usuario.">Editar</button>
+           <button onclick=\"if(confirm('Tem certeza que deseja excluir?')){location.href= deletar_aluno&id=".$row->id_usuario."';}else{false;}\" class='btn btn-danger'>Excluir</button>
+             </td>";
+       print "</tr>";
    }
+   print "</table>";
+}else{
+   print"<p class='alert alert-danger'>Não encontrou resultados!</p>";
+}
+?>
+   <h1>lista de aulas </h1>
+  <?php 
+  $id = '1';
+
+  $sql = "SELECT A.*, O.*, U.nome_usuario FROM aula A INNER JOIN usuario U ON U.id_usuario = A.id_usuario INNER JOIN oficina O ON O.id_usuario = U.id_usuario WHERE A.id_aula = '$id'";
+
+  $res = $conexaoMysqli->query($sql);
+ 
+  $qtd = $res->num_rows;
+  if($qtd > 0){
+   while($row = $res->fetch_object()){
+   print "<table class='table table-hover' >";
+   print "<thead>";
+   print "<tr>";
+   print " <th scope='col'>".$row->nome_oficina."</th>";
+   print "</tr>";
+   print "</thead>";
    
+   print "<tbody>";
+   print "<tr>";
+   print "<td>".$row->nome_usuario."</td>";
+   print "</tr>";
+   print "</tbody>";
+   print" </table>";
+   }
+  }
   ?>
 </body>
 </html>

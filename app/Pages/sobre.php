@@ -47,21 +47,33 @@
       <i id="left" class="fa-solid fa-angle-left"></i>
       <div class="carousel">
         <img src="../View/css/team/img-1.jpg" alt="img" draggable="false">
-        <img src="../View/css/team/img-2.jpg" alt="img" draggable="false">
         <img src="../View/css/team/img-3.jpg" alt="img" draggable="false">
-        <img src="../View/css/team/img-4.jpg" alt="img" draggable="false">
+        <img src="../View/css/team/img-2.jpg" alt="img" draggable="false">
         <img src="../View/css/team/img-5.jpg" alt="img" draggable="false">
-        <img src="../View/css/team/img-6.jpg" alt="img" draggable="false">
+        <img src="../View/css/team/img-4.jpg" alt="img" draggable="false">
         <img src="../View/css/team/img-7.jpg" alt="img" draggable="false">
-        <img src="../View/css/team/img-8.jpg" alt="img" draggable="false">
-        <img src="../View/css/team/img-9.jpg" alt="img" draggable="false">
+        <img src="../View/css/team/img-6.jpg" alt="img" draggable="false">
+
+        <img src="../View/css/team/stephane.png" alt="img" draggable="false">
       </div>
       <i id="right" class="fa-solid fa-angle-right"></i>
     </div>
 </div>
 
-
-    
+        <div class="titulo1">SOBRE NÓS</div>
+        <div class="linha1"></div>
+<!--TEXTO, IMAGENS, TÍTULO INICIO-->
+<div class="sobre">
+        <p>Green Parks é um projeto de um grupo de estudantes</p>
+        <p>da escola social Marista Ir. Acácio, na zona norte</p>
+        <p>de Londrina. A ideia do nosso projeto surgiu devido</p>
+        <p>a nescessidade de promover a prática de esportes e </p>
+        <p>combater o sedentarismo entre crianças e adolescetes.</p>
+        <p>Por isso decidimos divulgar aulas para esse público de</p>
+        <p>forma gratuita! E para promover o lazer da população, </p>
+        <p>divulgamos os próximos eventos da região! Conheça </p>
+        <p>mais dos nossos desenvolvedores:</p>
+    </div>
 
 
 

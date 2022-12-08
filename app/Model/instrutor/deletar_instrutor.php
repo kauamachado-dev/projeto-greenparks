@@ -1,5 +1,9 @@
 <?php
-$sql = "DELETE FROM usuario WHERE id_usuario=".$_REQUEST["id"];
+session_start();
+
+include("conexao.php");
+
+$sql = "DELETE FROM usuario WHERE id_usuario=".$_SESSION["id"];
 
             $res = $conexaoMysqli->query($sql); 
 

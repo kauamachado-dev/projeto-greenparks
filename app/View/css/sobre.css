@@ -1,5 +1,5 @@
 body{
-    height: 650px;
+    height: 1400px;
 }
 
 /* INICIO - LOGO MENU DE NAVEGAÇÃO */
@@ -393,7 +393,8 @@ nav {
 
 
 .wrapper-container{
-    margin-left: 30px;
+    margin-left: 55px;
+    margin-top: 35%;
 }
 
 .wrapper{
@@ -415,7 +416,7 @@ nav {
   position: absolute;
   text-align: center;
   line-height: 44px;
-  background: #fff;
+  background: #7dce13;
   border-radius: 50%;
   transform: translateY(-50%);
   transition: transform 0.1s linear;
@@ -468,9 +469,35 @@ nav {
     width: 100%;
   }
 }
+/* INICIO - TÍTULO RESPONSIVO */
+.titulo1{
+    font-family: 'Passion One';
+    position: absolute;
+    top: 25%;
+    left: 7%;
+    text-align: center;
+    font-size: clamp(3.75em, 1em + 10vw, 5.5em);
+    color: #09400A;
+}
+.sobre{
+    font-family: 'Arimo';
+    margin-top: 10%;
+    position: absolute;
+    margin-left: -6%;
+    font-size: clamp(1.1em, 1em + 5vw, 1.0em);
+}  
+/* FINAL TEXTO E TÍTULO*/
+/* LINHA*/
+.linha1{
+    width: 400px;
+    height: 5px;
+    margin-top: -69%;
+    background-color: #D62509;
+    margin-left: 7%;
+}
 
 #logomarista{
-    margin-top: 10%;
+    margin-top: 8%;
     z-index: 2;
     height: 12%;
     margin-left: 34%;
@@ -482,7 +509,7 @@ nav {
     position: absolute;
     bottom: 0;
     left: 0%;
-    top: 100%;
+    top: 170%;
     width: 100%;
     z-index: -2;
 }
