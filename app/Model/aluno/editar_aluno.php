@@ -10,7 +10,7 @@ $sql = "UPDATE responsavel SET
             sobrenome_responsavel='{$sobrenome_responsavel}',
             cpf_responsavel='{$cpf_responsavel}'
         WHERE 
-            id_responsavel ='19'";
+            id_responsavel ='2'";
             
     $res_r = $conexaoMysqli->query($sql);
 
@@ -33,7 +33,7 @@ $sql = "UPDATE responsavel SET
               senha_usuario='{$senha_usuario}',
               id_responsavel='{$id_responsavel}'
          WHERE 
-              id_usuario= '23'";
+              id_usuario= '2'";
 
   $res_u = $conexaoMysqli->query($sql);
 

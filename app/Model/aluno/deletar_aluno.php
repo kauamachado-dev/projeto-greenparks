@@ -1,7 +1,11 @@
 <?php
-$deletar_r = "DELETE FROM responsavel WHERE id_responsavel=".$_REQUEST["id"];
+session_start();
 
-$deletar_u = "DELETE FROM usuario WHERE id_usuario=".$_REQUEST["id"];
+include("conexao.php");
+
+$deletar_r = "DELETE FROM responsavel WHERE id_responsavel='12'";
+
+$deletar_u = "DELETE FROM usuario WHERE id_usuario='19'";
 
             $res = $conexaoMysqli->query($sql); 
 

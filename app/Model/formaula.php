@@ -48,12 +48,11 @@ include("conexao.php");
     </section>
             <select name="id_oficina" class="select">
               <option >Selecione</option>
-                <?php
+              <?php
                   $sql = "SELECT a.* , o.* FROM aula a LEFT JOIN oficina o ON a.id_oficina = o.id_oficina";
-                  $result = mysqli_query($conexaoMysqli, $sql);
-                  while($row = mysqli_fetch_assoc($result)){ ?>
                   $res = mysqli_query($conexaoMysqli, $sql);
                   while($row = mysqli_fetch_assoc($res)){ ?>
+
                     <option value="<?php echo $row['id_oficina']?>">
                       <?php echo $row['nome_oficina']; ?>
                     </option> <?php

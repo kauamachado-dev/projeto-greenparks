@@ -7,6 +7,7 @@
 <form action="?page=salvar_oficina" method="POST">
     <input type="hidden" name="acao" value="editar_oficina">
     <input type="hidden" name="id_oficina" value="<?php print $row->id_oficina; ?>">
+    <h2>Dados sobre a oficina</h2><br>
     <div class="mb-3">
         <label>Nome da oficina:</label>
         <input type="text" name="nome_oficina" value="<?php print $row->nome_oficina; ?>" class="form-control">
@@ -23,6 +24,7 @@
         <label>Descrição da oficina:</label>
         <input type="text" name="desc_oficina" value="<?php print $row->desc_oficina; ?>" class="form-control">
     </div>
+    <h2>Local da oficina</h2><br>
     <div class="mb-3">
         <label>CEP:</label>
         <input type="text" name="cep_oficina" value="<?php print $row->cep_oficina; ?>" class="form-control">

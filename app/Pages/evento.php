@@ -15,8 +15,6 @@ include("../Model/conexao.php");
     <title>EVENTOS</title>
     <link href="../View/css/event.css" rel="stylesheet">
     <link href="../View/css/animation.css" rel="stylesheet">
-    <script type="text/javascript" src="../Controller/_js/modal.js"></script>
-    <script type="text/javascript" src="app/Controller/_js/modal.js"></script>
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
     <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
@@ -24,23 +22,13 @@ include("../Model/conexao.php");
 <body>
       <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
       <header>
-        <nav>
-<<<<<<< HEAD
+      <nav>
             <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
             <ul class="nav-list">
                 <li><a href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a style="color: #ffe60b" href="evento.php">EVENTOS</a></li> 
-                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >ENTRAR</a>
-=======
-        <a class="logo" href="index.php"><img class="logo" src="../View/css/images/logoprincipal.png"></a>
-        <ul class="nav-list">
-                <li><a style="color: #ffff" href="index.php">INÍCIO</a></li>
-                <li><a style="color: #ffff" href="sobre.php">SOBRE</a></li> 
-                <li><a  style="color: #ffff" href="aula.php">AULAS</a></li> 
-                <li><a style="color: #ffe60b"  href="evento.php">EVENTOS</a></li> 
->>>>>>> f6a752ea9fd657fb6c992d213c281754b9a3cbc0
                 <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
             </ul>
         </nav>
@@ -65,46 +53,37 @@ include("../Model/conexao.php");
     <div class="titulo1">PRÓXIMOS EVENTOS</div>
     <div class="linha1"></div>
     <!---INÍCIO - MODAL-->
-    <?php while($sql = mysqli_fetch_assoc($res)){ ?>
-    <div class="flex-container">
-        <div class="row row-cols-3">
-            <div class="col">
-        
-              <p onclick="abrirModal()"><?php echo $sql{'nome_eventos'}; ?></p>
-              <button class="abrir" data-bs-toggle="modal" data-bs-target="#exampleModal">Saiba mais</button>
 
-              <div class="fundo_modal" id="modal" onclick="fecharModal()">
-                  <div class="modal">
-                      <span class="fechar" onclick="fecharModal()">&times;</span>
-                      <div class="texto"><p><?php echo $sql{'desc_eventos'}; ?></p></div>
-                  </div>
-              </div>
-            </div>
-        </div>
-    </div>
-<?php } ?>
+    <?php while ($rows = mysqli_fetch_assoc($res)){ ?>
 
-<!-- Button trigger modal -->
+<div class="flex-container">
+    <div class="col">
 
-<!-- Modal -->
-<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-      </div>
-      <div class="modal-body">
-        ...
-      </div>
-      <div class="modal-footer">
-        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-        <button type="button" class="btn btn-primary">Save changes</button>
-      </div>
-    </div>
-  </div>
+    <?php echo $rows{'nome_eventos'}; ?>
+    
+        <button type="button" class="btn btn-warning" data-bs-toggle="modal" data-bs-target="#exampleModal<?php echo $rows{'id_eventos'}; ?>">Vizualizar</button>
+    
+</div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="exampleModal<?php echo $rows{'id_eventos'}; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal-dialog">
+<div class="modal-content">
+<div class="modal-header">
+<h5 class="modal-title" id="exampleModalLabel"><?php echo $rows{'nome_eventos'}; ?></h5>
+<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+</div>
+<div class="modal-body">
+<p>Descrição:</p>
+<p><?php echo $rows{'desc_eventos'}; ?></p>
+<p>CEP:<?php echo $rows{'cep_eventos'}; ?></p>
+<p>Número:<?php echo $rows{'num_ende_eventos'}; ?></p>
+</div>
+</div>
+</div>
+</div>
+<?php } ?> 
     <!---FINAL - MODAL-->
     <!---INÍCIO - GALERIA DE FOTOS-->
     <div class="titulo3">GALERIA DE FOTOS</div>
@@ -115,27 +94,27 @@ include("../Model/conexao.php");
         <input type="text" placeholder="escreva aqui..." id="search-box">
 
         <div class="container-image">
-            <div class="image" data-title="agua">
-                <img src="" alt="">
+            <div class="image" data-title="natal">
+                <img src="../View/css/images/natal1.jpg" alt="">
                 <h3></h3>
             </div>
 
-            <div class="image" data-title="cores">
-                <img src="" alt="">
+            <div class="image" data-title="natal">
+                <img src="../View/css/images/natal2.jpg" alt="">
+                  <h3></h3>
+            </div>
+
+            <div class="image" data-title="natal">
+                <img src="../View/css/images/natal3.jpg" alt="">
                 <h3></h3>
             </div>
 
-            <div class="image" data-title="zebra">
-                <img src="" alt="">
+            <div class="image" data-title="natal">
+                <img src="../View/css/images/natal4.jpg" alt="">
                 <h3></h3>
             </div>
 
-            <div class="image" data-title="cores">
-                <img src="" alt="">
-                <h3></h3>
-            </div>
-
-            <div class="image" data-title="cinza">
+            <div class="image" data-title="natal">
                 <img src="" alt="">
                 <h3></h3>
             </div>

@@ -27,16 +27,8 @@
         <input type="text" name="cep_oficina" id="teste" class="form-control">
     </div>
     <div class="mb-3">
-        <label style="font-family:'Arimo'; font-size: 20px;">Bairro:</label>
-        <input type="text" name="" class="form-control">
-    </div>
-    <div class="mb-3">
-        <label style="font-family:'Arimo'; font-size: 20px;">Rua:</label>
-        <input type="text" name="" class="form-control">
-    </div>
-    <div class="mb-3">
         <label style="font-family:'Arimo'; font-size: 20px;">Número do local:</label>
-        <input type="text" name="num_ende_eventos" class="form-control">
+        <input type="text" name="num_ende_oficina" class="form-control">
     </div>
 </div>
     <button type="submit" class="btn btn-success">Enviar</button>
