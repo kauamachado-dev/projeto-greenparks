@@ -73,6 +73,15 @@ nav {
     margin-top: -3%;
 }
 
+/* Botoes de login */
+.menu-menu {
+    border-radius: 0.3em;
+    position: absolute;
+    margin-top: -1em;
+    transition: opacity 0.3s ease;
+    z-index: 1;
+    margin-left: 6%;
+}
 .txtlogin{
     z-index: 1;
     margin-top: -0.5%;

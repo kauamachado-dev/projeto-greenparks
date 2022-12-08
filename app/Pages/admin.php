@@ -8,7 +8,7 @@
     session_start(); 
 
     //se não estiver definida, não possuir um id_usuario ou um status_usuario
-    if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['id_tipo_usuario'])){
+    /*if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['id_tipo_usuario'])){
         //vai mandar ele devolta para a página de login
         header("location: ../Model/login.php"); 
     exit;
@@ -21,7 +21,7 @@
         //Realoca para a pagina do login
         header("location: ../Pages/aluno.php");
     exit;
-    }
+    }*/
 
 ?>
 <!DOCTYPE html>

@@ -4,7 +4,7 @@
     include("../Model/conexao.php");
 
     //se não estiver definida, não possuir um id_usuario ou um status_usuario
-    if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['id_tipo_usuario'])){
+    /*if (!isset($_SESSION['id_usuario']) || !isset($_SESSION['id_tipo_usuario'])){
         //vai mandar ele devolta para a página de login
         header("location: ../Model/login.php"); 
     exit;
@@ -17,7 +17,7 @@
         //Realoca para a pagina do login
         header("location: ../Pages/aluno.php");
     exit;
-    }
+    }*/
 ?>
 <!DOCTYPE html>
 <html>
@@ -37,9 +37,18 @@
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li> 
-                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >ENTRAR</a>
-                <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
-            </ul>
+                <div id="menu" class="menu" data-aberto="false">
+  <span id="menu-trigger" class="login">
+    <i class="fa fa-plus"></i>
+    <i class="fa fa-minus"></i>
+  </span>
+  <ul class="menu-menu">
+    <li><a href='../Model/login.php'>Login</a></li>
+    <li><a href='../Pages/instrutor.php'>Professor</a></li>
+    <li><a href='../Pages/aluno.php'>Aluno</a></li>
+    <li><a href='../Controller/sair.php'>Sair</a></li>
+  </ul>
+</div>
         </nav>
     </header> 
     <!--FINAL DO MENU DE NAVEGAÇÃO-->

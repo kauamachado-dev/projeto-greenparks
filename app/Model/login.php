@@ -1,8 +1,7 @@
 <?php
     //inicia sessão
     session_start();
-
-
+    
     //Inclui arquivo de conexão
     include('conexao.php'); 
 

@@ -20,7 +20,18 @@
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li> 
-                <a href="../Model/login.php" class="txtlogin"><img class="login" src="../View/css/images/btnlogin.png" >ENTRAR</a>
+                <div id="menu" class="menu" data-aberto="false">
+  <span id="menu-trigger" class="login">
+    <i class="fa fa-plus"></i>
+    <i class="fa fa-minus"></i>
+  </span>
+  <ul class="menu-menu">
+    <li><a href='../Model/login.php'>Login</a></li>
+    <li><a href='../Pages/instrutor.php'>Professor</a></li>
+    <li><a href='../Pages/aluno.php'>Aluno</a></li>
+    <li><a href='../Controller/sair.php'>Sair</a></li>
+  </ul>
+</div>
             </ul>
         </nav>
     </header> 
