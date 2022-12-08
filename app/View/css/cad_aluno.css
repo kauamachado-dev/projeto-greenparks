@@ -38,8 +38,8 @@ nav {
 .nav-list {
     list-style: none;
     display: flex;
-    margin-top: 4%;
-    margin-left: 40%;
+    margin-top: 5%;
+    margin-left: 31%;
 }
 
 .nav-list li {
@@ -54,7 +54,7 @@ nav {
     bottom: 0;
     left: 0;
     right: 0;
-    top: 1%;
+    top: 3%;
 }
 .linha1{
     background-color: #D62509;
@@ -75,15 +75,15 @@ nav {
     font-size: 12px;
 }
 
-h1{
-    margin-top: 10%;
-    margin-left: 25%;
+.ola{
     font-family: 'Passion One';
+    margin-top: 10%;
+    margin-left: 10%;
     color: #5BB318;
-    font-size: 60px;
+}
+ 
+th{
+    color: #5BB318;
+    margin-left: 5%;
 }
 
-.alert-danger{
-    font-family: 'Arimo';
-    margin-left: 25%;
-}

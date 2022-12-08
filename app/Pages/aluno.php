@@ -23,42 +23,35 @@
 <html>
 <head>
     <meta charset='utf-8'>
-    <title>PROFESSOR</title>
+    <title>ALUNO</title>
     <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
-    <link href='../View/css/tela-prof.css' rel='stylesheet'>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href='../View/css/cad_aluno.css' rel='stylesheet'>
 </head>
 <body>
      <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
      <header>
         <nav>
-            <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
+            <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 18%;"></a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
                 <li><a href="aula.php">AULAS</a></li> 
                 <li><a href="evento.php">EVENTOS</a></li> 
-                <div id="menu" class="menu" data-aberto="false">
-  <span id="menu-trigger" class="login">
-    <i class="fa fa-plus"></i>
-    <i class="fa fa-minus"></i>
-  </span>
-  <ul class="menu-menu">
-    <li><a href='../Model/login.php'>Login</a></li>
-    <li><a href='../Pages/instrutor.php'>Professor</a></li>
-    <li><a href='../Pages/aluno.php'>Aluno</a></li>
-    <li><a href='../Controller/sair.php'>Sair</a></li>
-  </ul>
-</div>
         </nav>
     </header> 
+     <!-- ONDA -->
+     <svg  class="ondain" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+    </svg>
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
-    <h1 class="my-5">Olá, <b></b> <br><br>
+    <h1 class="ola">Olá, <b></b> <br><br>
 
    <?php
 
 $sql = "SELECT u.* , r.*
 FROM usuario u
-LEFT JOIN responsavel r ON u.id_responsavel = r.id_responsavel WHERE id_usuario='23'"; 
+LEFT JOIN responsavel r ON u.id_responsavel = r.id_responsavel WHERE id_usuario='2'"; 
 
 $res = $conexaoMysqli->query($sql);
 
@@ -82,18 +75,17 @@ if($qtd > 0){
    print"<p class='alert alert-danger'>Não encontrou resultados!</p>";
 }
 ?>
-   <h1>lista de aulas </h1>
+   <h1 style="font-family:'Passion One'; margin-top:6%; font-size:50px; color:#09400A; margin-left: 10%">Lista de aulas </h1>
   <?php 
-  $id = '1';
-
-  $sql = "SELECT A.*, O.*, U.nome_usuario FROM aula A INNER JOIN usuario U ON U.id_usuario = A.id_usuario INNER JOIN oficina O ON O.id_usuario = U.id_usuario WHERE A.id_aula = '$id'";
+  
+  $sql = "SELECT A.*, O.*, U.nome_usuario FROM aula A INNER JOIN usuario U ON U.id_usuario = A.id_usuario INNER JOIN oficina O ON O.id_usuario = U.id_usuario WHERE U.id_usuario = '3'";
 
   $res = $conexaoMysqli->query($sql);
  
   $qtd = $res->num_rows;
   if($qtd > 0){
    while($row = $res->fetch_object()){
-   print "<table class='table table-hover' >";
+   print "<table class='table table-hover'>";
    print "<thead>";
    print "<tr>";
    print " <th scope='col'>".$row->nome_oficina."</th>";

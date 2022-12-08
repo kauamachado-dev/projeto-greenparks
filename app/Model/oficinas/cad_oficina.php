@@ -12,7 +12,7 @@
   <body>
   <header>
         <nav>
-            <a class="logo" href="../Pages/admin.php">GREEN PARKS</a>
+        <a class="logo" href="index.php"><img src="../../View/css/images/logoprincipal.png" style="width: 15%"></a>
             <ul class="nav-list">
                 <li><a href="../../Pages/admin.php">Voltar</a></li>
                 <li><a href="?page=nova_oficina">Cadastrar oficina</a></li> 

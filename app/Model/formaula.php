@@ -3,7 +3,7 @@ session_start();
 
 include("conexao.php");
 
- $sql = "SELECT * FROM usuario";
+ $sql = "SELECT * FROM usuario WHERE id_usuario ='3'";
 
  $res = mysqli_query($conexaoMysqli,$sql);
  $row = $res->fetch_object();
@@ -22,10 +22,10 @@ include("conexao.php");
     <header>
         <nav>
             <ul class="nav-list">
-                <li><a href="index.php">INÍCIO</a></li>
-                <li><a href="sobre.php">SOBRE</a></li> 
-                <li><a style="color: #ffe60b" href="aula.php">AULAS</a></li> 
-                <li><a href="evento.php">EVENTOS</a></li> 
+                <li><a href="../Pages/index.php">INÍCIO</a></li>
+                <li><a href="../Pages/sobre.php">SOBRE</a></li> 
+                <li><a style="color: #ffe60b" href="../Pages/aula.php">AULAS</a></li> 
+                <li><a href="../Pages/evento.php">EVENTOS</a></li> 
             </ul>
         </nav>
     </header> 

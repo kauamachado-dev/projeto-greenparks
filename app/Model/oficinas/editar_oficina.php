@@ -31,7 +31,7 @@
     </div>
     <div class="mb-3">
         <label>Número do endereço:</label>
-        <input type="text" name="cep_oficina" value="<?php print $row->id_usuario; ?>" class="form-control">
+        <input type="text" name="num_ende_oficina" value="<?php print $row->num_ende_oficina; ?>" class="form-control">
     </div>
     <button type="submit" class="btn btn-primary">Enviar</button>
 </form>

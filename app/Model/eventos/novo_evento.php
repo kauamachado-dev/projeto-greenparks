@@ -1,4 +1,4 @@
-<h1 style="font-family:'Passion One'; margin-top:6%; font-size:80px; color:#09400A">Adicionar eventos</h1>
+<h1 style="font-family:'Passion One'; margin-top:6%; font-size:80px; color:#09400A margin-left: 30%">Adicionar eventos</h1>
 <div class="linha1"></div>
 <br><br>
 <?php

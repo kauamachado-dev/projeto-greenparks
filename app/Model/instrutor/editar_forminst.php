@@ -3,7 +3,7 @@ include("../conexao.php");
 
 session_start();
 
-$sql = "SELECT * FROM usuario WHERE id_usuario = '1'";
+$sql = "SELECT * FROM usuario WHERE id_usuario = '14'";
 
     $res = $conexaoMysqli->query($sql);
     $row = $res->fetch_object();
@@ -14,12 +14,12 @@ $sql = "SELECT * FROM usuario WHERE id_usuario = '1'";
     <meta charset='utf-8'>
     <title>FORMULÁRIO</title>
     <script src='../Controller/_js/controlle-prof.js'></script>
-    <link href="../View/css/forminst.css" rel="stylesheet">
+    <link href="../../View/css/forminst.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body style="margin-left: 500px">
 
-  <img id="back" src="../View/css/images/formprof.png">
+  <img id="back" src="../../View/css/images/formprof.png">
 
     <form action="editar_instrutor.php" method="POST">
     <input type="hidden" name="id_usuario" value="<?php print $row->id_usuario; ?>">

@@ -20,7 +20,7 @@
               senha_usuario='{$senha_usuario}',
               id_responsavel='{$id_responsavel}'
          WHERE 
-              id_usuario= '1'";
+              id_usuario= '14'";
 
   $res = $conexaoMysqli->query($sql);
 

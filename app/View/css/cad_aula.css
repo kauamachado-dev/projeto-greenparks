@@ -1,7 +1,7 @@
 /* INICIO - CORPO DO SITE */
 body {
     background-color: #ffffff;
-    height: 2650px;
+    height: 1050px;
     max-height: 2650px;
 }
 
@@ -21,7 +21,7 @@ a:hover {
     z-index: 1;
     margin-top: 2%;
     position: absolute;
-    left: 10%;
+    left: 5%;
 }
 /* FINAL - LOGO MENU DE NAVEGAÇÃO */
 /* INICIO - MENU DE NAVEGAÇÃO */
@@ -61,7 +61,7 @@ nav {
     position: absolute;
     width: 550px;
     height: 5px;
-    margin-left: 0%;
+    margin-left: 19.5%;
     margin-top: -2%;
 }
 
@@ -75,3 +75,10 @@ nav {
     font-size: 12px;
 }
 
+h1{
+    margin-top: 20%;
+    margin-left: 25%;
+    font-family: 'Passion One';
+    color: #5BB318;
+    font-size: 100px;
+}

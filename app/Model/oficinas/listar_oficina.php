@@ -1,4 +1,4 @@
-<h1>listar Oficinas</h1>
+<h1>Listar Oficinas</h1>
 <?php
  $sql = "SELECT * FROM oficina";
 

@@ -1,4 +1,4 @@
-<h1>lista de eventos</h1>
+<h1>Lista de eventos</h1>
 <?php
  $sql = "SELECT * FROM eventos";
 

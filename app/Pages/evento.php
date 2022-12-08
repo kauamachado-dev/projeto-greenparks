@@ -23,11 +23,11 @@ include("../Model/conexao.php");
       <!--ÍNICIO DO MENU DE NAVEGAÇÃO -->
       <header>
       <nav>
-            <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
+            <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 40%"></a>
             <ul class="nav-list">
-                <li><a href="index.php">INÍCIO</a></li>
-                <li><a href="sobre.php">SOBRE</a></li> 
-                <li><a href="aula.php">AULAS</a></li> 
+                <li><a style="color: #ffff" href="index.php">INÍCIO</a></li>
+                <li><a  style="color: #ffff" href="sobre.php">SOBRE</a></li> 
+                <li><a style="color: #ffff" href="aula.php">AULAS</a></li> 
                 <li><a style="color: #ffe60b" href="evento.php">EVENTOS</a></li> 
                 <!--<a href="../Model/login.php"><img src="../View/css/images/icone_user.png" style="z-index: 0; width: 50%;">olá, faça login ou cadastre-se!</a>-->
             </ul>
@@ -68,20 +68,22 @@ include("../Model/conexao.php");
 
 <!-- Modal -->
 <div class="modal fade" id="exampleModal<?php echo $rows{'id_eventos'}; ?>" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-<div class="modal-dialog">
-<div class="modal-content">
-<div class="modal-header">
-<h5 class="modal-title" id="exampleModalLabel"><?php echo $rows{'nome_eventos'}; ?></h5>
-<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-</div>
-<div class="modal-body">
-<p>Descrição:</p>
-<p><?php echo $rows{'desc_eventos'}; ?></p>
-<p>CEP:<?php echo $rows{'cep_eventos'}; ?></p>
-<p>Número:<?php echo $rows{'num_ende_eventos'}; ?></p>
-</div>
-</div>
-</div>
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h5 class="modal-title" id="exampleModalLabel"><?php echo $rows{'nome_eventos'}; ?></h5>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+            <div class="modal-body">
+                <p>Descrição:</p>
+                <p><?php echo $rows{'desc_eventos'}; ?></p>
+                <p>CEP:<?php echo $rows{'cep_eventos'}; ?></p>
+                <p>Número:<?php echo $rows{'num_ende_eventos'}; ?></p>
+                <p>Data:<?php echo $rows{'data_eventos'}; ?></p>
+                <p>Horário:<?php echo $rows{'horario_eventos'}; ?></p>
+            </div>
+        </div>
+    </div>
 </div>
 <?php } ?> 
     <!---FINAL - MODAL-->
@@ -111,11 +113,6 @@ include("../Model/conexao.php");
 
             <div class="image" data-title="natal">
                 <img src="../View/css/images/natal4.jpg" alt="">
-                <h3></h3>
-            </div>
-
-            <div class="image" data-title="natal">
-                <img src="" alt="">
                 <h3></h3>
             </div>
         </div>

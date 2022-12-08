@@ -10,7 +10,7 @@ $sql = "UPDATE responsavel SET
             sobrenome_responsavel='{$sobrenome_responsavel}',
             cpf_responsavel='{$cpf_responsavel}'
         WHERE 
-            id_responsavel ='2'";
+            id_responsavel ='8'";
             
     $res_r = $conexaoMysqli->query($sql);
 
@@ -21,7 +21,7 @@ $sql = "UPDATE responsavel SET
  $email_usuario = $_POST["email_usuario"];
  $fone_usuario = $_POST["fone_usuario"];
  $senha_usuario = $_POST["senha_usuario"];
- $id_responsavel = "19";
+ $id_responsavel = "8";
 
   $sql = "UPDATE usuario SET 
               nome_usuario='{$nome_usuario}',
@@ -33,15 +33,15 @@ $sql = "UPDATE responsavel SET
               senha_usuario='{$senha_usuario}',
               id_responsavel='{$id_responsavel}'
          WHERE 
-              id_usuario= '2'";
+              id_usuario= '13'";
 
   $res_u = $conexaoMysqli->query($sql);
 
          if($res_u && $res_r==true){
              print "<script>alert('Editado com sucesso');</script>";
-            //print "<script>location.href='';</script>";
+             print "<script>location.href='';</script>";
          }else{
              print "<script>alert('Não foi possivel editar');</script>"; 
-            //print "<script>location.href='';</script>";
+             print "<script>location.href='';</script>";
          }
 ?>

@@ -35,7 +35,7 @@
      <!--ÍNICIO DO MENU DE NAVEGAÇÃO-->
      <header>
         <nav>
-            <a class="logo" href="index.php"><img src="../View/css/images/logo.png" style="width: 6%">GREEN PARKS</a>
+            <a class="logo" href="index.php"><img src="../View/css/images/logoprincipal.png" style="width: 15%"></a>
             <ul class="nav-list">
                 <li><a style="color: #ffe60b" href="index.php">INÍCIO</a></li>
                 <li><a href="sobre.php">SOBRE</a></li> 
@@ -45,12 +45,17 @@
             </ul>
         </nav>
     </header> 
+       <!-- ONDA -->
+       <svg  class="ondain" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
+        <path fill="#5bb318" fill-opacity="1" d="M0,160L80,138.7C160,117,320,75,480,80C640,85,800,139,960,144C1120,149,1280,107,1360,85.3L1440,64L1440,0L1360,0C1280,0,1120,0,960,0C800,0,640,0,480,0C320,0,160,0,80,0L0,0Z"></path>
+    </svg>
     <!--FINAL DO MENU DE NAVEGAÇÃO-->
-    <h1 class="my-5">Olá professor, <b><?php echo htmlspecialchars($_SESSION["nome_usuario"]); ?></b>
-        <br>
-    <h1>lista </h1>
+    <h1 class="ola">Olá professor, <b><?php echo htmlspecialchars($_SESSION["nome_usuario"]); ?></b>
+    <h1>Lista </h1>
     <?php
-    $sql = "SELECT * FROM aula";
+   
+
+    $sql = "SELECT A.*, O.*, U.nome_usuario FROM aula A INNER JOIN usuario U ON U.id_usuario = A.id_usuario INNER JOIN oficina O ON O.id_usuario = U.id_usuario WHERE A.id_usuario = '1'";
 
     $res = $conexaoMysqli->query($sql);
 

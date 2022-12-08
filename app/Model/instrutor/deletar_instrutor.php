@@ -3,7 +3,7 @@ session_start();
 
 include("conexao.php");
 
-$sql = "DELETE FROM usuario WHERE id_usuario=".$_SESSION["id"];
+$sql = "DELETE FROM usuario WHERE id_usuario='13'";
 
             $res = $conexaoMysqli->query($sql); 
 

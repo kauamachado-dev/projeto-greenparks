@@ -1,8 +1,7 @@
 <?php
 include("../conexao.php");
-$sql = "SELECT u.* , r.*
-FROM usuario u
-LEFT JOIN responsavel r ON u.id_responsavel = r.id_responsavel WHERE id_usuario= '23'";
+
+$sql = "SELECT u.* , r.* FROM usuario u LEFT JOIN responsavel r ON u.id_responsavel = r.id_responsavel WHERE id_usuario= '13'";
  
 $res = $conexaoMysqli->query($sql);
 $row = $res->fetch_object();
@@ -14,16 +13,17 @@ $row = $res->fetch_object();
     <title>FORMULÁRIO</title>
     <script src='../Controller/_js/controlle-aluno.js'></script>
     <link rel="shortcut icon" href="../View/css/images/logo.png" type="image/x-icon">
-    <link href="../View/css/formaluno.css" rel="stylesheet">
+    <link href="../../View/css/formaluno.css" rel="stylesheet">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
   </head>
   <body>  
 
-    <img id="back" src="../View/css/images/formfund.png">
+    <img id="back" src="../../View/css/images/formfund.png">
     <div class="titulo1">ALUNO</div>
     <div class="linha1"></div>
 
     <form action="editar_aluno.php" method="POST">
+    <input type="hidden" name="id_usuario" value="<?php print $row->id_usuario; ?>">
       <div class="container">
         <div class="row">
           <div class="col">
@@ -97,7 +97,7 @@ $row = $res->fetch_object();
           </div>
         </div>
       </div>
-      <div>
+    <div>
         <div class="text-center pt-1 mb-5 pb-1">
           <div class="form-group">
             <input type="submit" class="btn1" value="EDITAR CONTA">
